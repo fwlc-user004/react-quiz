@@ -1,0 +1,64 @@
+{
+  "questions": [
+    {
+      "text": "در JSX، چرا نمی‌توانیم حلقه‌های for یا if-else را مستقیماً در داخل JSX بنویسیم؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه B صحیح است؟ JSX تنها عبارات (expressions) را می‌پذیرد و دستورات مقداری برای رندر شدن باز نمی‌گردانند. برای منطق شرطی یا حلقه‌ها باید از عملگر سه‌تایی (?:) یا map و عبارات منطقی (&&) استفاده کنیم.",
+      "tags": ["react.jsx.dynamic"],
+      "answers": [
+        { "text": "مرورگر این دستورات را نمی‌شناسد", "isCorrect": false },
+        { "text": "JSX تنها عبارات (expressions) را می‌پذیرد و دستورات مقداری برای رندر شدن باز نمی‌گردانند", "isCorrect": true },
+        { "text": "چون فقط مقادیر متغیرها قابل نمایش هستند", "isCorrect": false },
+        { "text": "React برای این کار از CSS استفاده می‌کند", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "در مثال زیر، چه چیزی در خروجی h1 نمایش داده می‌شود؟<code dir=\"ltr\">\nfunction UserInfo() {\n  const firstName = 'Sara';\n  const lastName = 'Connor';\n  return (\n    <h1>Full Name: {firstName} {lastName}</h1>\n  );\n}</code>",
+      "difficulty": 1,
+      "explanation": "چرا گزینه B صحیح است؟ عبارات داخل {} در JSX ارزیابی شده و مقدار متغیرها در DOM رندر می‌شود، بنابراین خروجی Full Name: Sara Connor است.",
+      "tags": ["react.jsx.dynamic"],
+      "answers": [
+        { "text": "Full Name: {firstName} {lastName}", "isCorrect": false },
+        { "text": "Full Name: Sara Connor", "isCorrect": true },
+        { "text": "Full Name: undefined undefined", "isCorrect": false },
+        { "text": "خطا در زمان اجرا", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چرا در JSX برای اتریبیوت‌هایی مانند class باید از className استفاده کنیم؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه A صحیح است؟ کلمه class در جاوااسکریپت رزرو شده است، بنابراین JSX از className برای اختصاص کلاس CSS استفاده می‌کند.",
+      "tags": ["react.jsx.dynamic"],
+      "answers": [
+        { "text": "چون class در جاوااسکریپت یک کلمه رزرو شده است", "isCorrect": true },
+        { "text": "چون className سریع‌تر اجرا می‌شود", "isCorrect": false },
+        { "text": "چون مرورگر class را نمی‌شناسد", "isCorrect": false },
+        { "text": "چون JSX فقط با نام‌های camelCase کار می‌کند", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چه تفاوتی بین درج یک متغیر و فراخوانی یک تابع داخل {} در JSX وجود دارد؟",
+      "difficulty": 3,
+      "explanation": "چرا گزینه B صحیح است؟ متغیر فقط مقدار ذخیره شده را نمایش می‌دهد، در حالی که فراخوانی تابع امکان انجام محاسبات یا پردازش قبل از نمایش را فراهم می‌کند.",
+      "tags": ["react.jsx.dynamic"],
+      "answers": [
+        { "text": "هیچ تفاوتی وجود ندارد، هر دو در نهایت مقدارشان در DOM نمایش داده می‌شود", "isCorrect": false },
+        { "text": "متغیر فقط مقدار ذخیره شده را نمایش می‌دهد، فراخوانی تابع امکان انجام محاسبات یا پردازش را قبل از نمایش فراهم می‌کند", "isCorrect": true },
+        { "text": "متغیرها امن‌تر هستند و تابع‌ها باعث خطا می‌شوند", "isCorrect": false },
+        { "text": "تابع‌ها فقط برای اتریبیوت‌ها استفاده می‌شوند", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "کدام یک از گزینه‌های زیر غیرمجاز است در JSX؟",
+      "difficulty": 3,
+      "explanation": "چرا گزینه D صحیح است؟ در JSX نمی‌توان دستورات if-else مستقیم نوشت. باید از عملگر سه‌تایی یا && استفاده کرد.",
+      "tags": ["react.jsx.dynamic"],
+      "answers": [
+        { "text": "<code dir=\"ltr\"><h1>Hello {user.name}</h1></code>", "isCorrect": false },
+        { "text": "<code dir=\"ltr\"><img src={user.imgUrl} alt={'Photo of ' + user.name} /></code>", "isCorrect": false },
+        { "text": "<code dir=\"ltr\"><div><p>Line 1</p><p>Line 2</p></div></code>", "isCorrect": false },
+        { "text": "<code dir=\"ltr\"><h1>{if(user.loggedIn){ 'Hello' }}</h1></code>", "isCorrect": true }
+      ]
+    }
+  ]
+}

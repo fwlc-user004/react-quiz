@@ -1,0 +1,64 @@
+{
+  "questions": [
+    {
+      "text": "چرا در فرم <code dir=\"ltr\">SignupForm</code> از یک شیء واحد به نام formData برای نگهداری تمام فیلدها استفاده می‌کنیم؟",
+      "difficulty": 1,
+      "explanation": "چرا گزینه A صحیح است؟ استفاده از یک شیء واحد، امکان مدیریت ساده‌تر و جلوگیری از تکرار کد برای چندین فیلد را فراهم می‌کند.",
+      "tags": ["react.forms.multiple-fields"],
+      "answers": [
+        { "text": "چون تمام فیلدهای فرم را می‌توان با یک state مدیریت کرد و کد تمیزتر می‌شود", "isCorrect": true },
+        { "text": "چون React تنها یک state در هر کامپوننت پشتیبانی می‌کند", "isCorrect": false },
+        { "text": "چون فرم‌ها در HTML نیز با یک object کار می‌کنند", "isCorrect": false },
+        { "text": "چون هر input نمی‌تواند state جداگانه داشته باشد", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "در تابع handleChange، چرا از prevFormData و سینتکس spread <code dir=\"ltr\">...prevFormData</code> استفاده می‌کنیم؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه B صحیح است؟ استفاده از prevFormData و spread تضمین می‌کند که سایر مقادیر قبلی state حفظ شوند و تنها کلید مربوط به فیلد تغییر یافته به‌روزرسانی شود.",
+      "tags": ["react.forms.multiple-fields"],
+      "answers": [
+        { "text": "برای اینکه مقادیر قبلی فرم حفظ شوند و تنها فیلد تغییر یافته آپدیت شود", "isCorrect": true },
+        { "text": "برای ایجاد یک آرایه جدید از فرم", "isCorrect": false },
+        { "text": "برای حذف فیلدهای اضافی از state", "isCorrect": false },
+        { "text": "برای همزمان کردن state با props", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چگونه می‌توانیم یک event handler عمومی برای تمام فیلدهای فرم ایجاد کنیم؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه C صحیح است؟ با استفاده از اتریبیوت name در هر input و خواندن آن از event.target، می‌توان با یک تابع handleChange، هر فیلد را بر اساس نام آن به‌روزرسانی کرد.",
+      "tags": ["react.forms.multiple-fields"],
+      "answers": [
+        { "text": "با ایجاد یک state برای هر input و تابع جداگانه برای هر کدام", "isCorrect": false },
+        { "text": "با استفاده از useRef برای تمام inputها", "isCorrect": false },
+        { "text": "با خواندن event.target.name و مقدار آن در یک تابع handleChange مشترک", "isCorrect": true },
+        { "text": "با فراخوانی setFormData برای هر input به صورت جداگانه", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "فرض کنید می‌خواهیم در فرم SignupForm فقط فیلد <code dir=\"ltr\">email</code> را به‌روزرسانی کنیم. کدام روش صحیح است؟",
+      "difficulty": 3,
+      "explanation": "چرا گزینه D صحیح است؟ با استفاده از spread روی prevFormData و بازنویسی کلید مورد نظر [name]: value، تنها فیلد email تغییر کرده و سایر فیلدها دست‌نخورده باقی می‌مانند.",
+      "tags": ["react.forms.multiple-fields"],
+      "answers": [
+        { "text": "استفاده از setFormData({ email: value }) بدون spread", "isCorrect": false },
+        { "text": "تغییر مستقیم prevFormData.email = value", "isCorrect": false },
+        { "text": "استفاده از useRef برای فیلد email", "isCorrect": false },
+        { "text": "setFormData(prevFormData => ({ ...prevFormData, email: value }))", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "مزیت اصلی استفاده از یک تابع به‌روزرسان در setFormData چیست؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه A صحیح است؟ تابع به‌روزرسان prevFormData را دریافت می‌کند و تضمین می‌کند که آخرین مقدار state مورد استفاده قرار گیرد، حتی اگر چندین بروزرسانی پشت سر هم رخ دهد.",
+      "tags": ["react.forms.multiple-fields"],
+      "answers": [
+        { "text": "اطمینان از استفاده از آخرین مقدار state و جلوگیری از race condition", "isCorrect": true },
+        { "text": "صرفه‌جویی در حافظه با حذف فیلدهای اضافه", "isCorrect": false },
+        { "text": "فعال کردن callback برای هر input", "isCorrect": false },
+        { "text": "استفاده از spread در JSX", "isCorrect": false }
+      ]
+    }
+  ]
+}

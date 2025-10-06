@@ -1,0 +1,64 @@
+{
+  "questions": [
+    {
+      "text": "چرا یک کامپوننت React تنها می‌تواند یک عنصر ریشه (root element) را برگرداند؟",
+      "difficulty": 1,
+      "explanation": "چرا گزینه C صحیح است؟ در JSX، یک کامپوننت تنها می‌تواند یک عنصر ریشه بازگرداند. برای گروه‌بندی چندین عنصر، باید از یک تگ والد یا Fragment استفاده کرد.",
+      "tags": ["react.jsx.syntax"],
+      "answers": [
+        { "text": "چون چندین عنصر باعث کاهش سرعت می‌شوند", "isCorrect": false },
+        { "text": "چون مرورگر اجازه رندر چند عنصر را نمی‌دهد", "isCorrect": false },
+        { "text": "چون JSX نیاز به یک عنصر ریشه برای هر کامپوننت دارد", "isCorrect": true },
+        { "text": "چون React تنها یک تگ HTML را می‌پذیرد", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چگونه می‌توان چندین عنصر را بدون ایجاد یک div اضافی در DOM گروه‌بندی کرد؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه B صحیح است؟ می‌توان از React Fragment با سینتکس خالی <> ... </> استفاده کرد تا عناصر را بدون اضافه کردن تگ اضافی به DOM گروه‌بندی کرد.",
+      "tags": ["react.jsx.syntax"],
+      "answers": [
+        { "text": "با استفاده از یک div اضافی", "isCorrect": false },
+        { "text": "با استفاده از React Fragment", "isCorrect": true },
+        { "text": "با استفاده از تگ span", "isCorrect": false },
+        { "text": "با استفاده از تگ section", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چه مشکلی ممکن است اگر در JSX تگ‌های self-closing مانند <img> یا <br> را نبندیم؟",
+      "difficulty": 3,
+      "explanation": "چرا گزینه C صحیح است؟ در JSX برخلاف HTML، همه تگ‌ها باید بسته شوند. تگ‌های self-closing باید با /> بسته شوند و در غیر این صورت React خطا تولید می‌کند.",
+      "tags": ["react.jsx.syntax"],
+      "answers": [
+        { "text": "React آن‌ها را خودکار اصلاح می‌کند", "isCorrect": false },
+        { "text": "مرورگر نمایش را نادرست انجام می‌دهد", "isCorrect": false },
+        { "text": "JSX خطا تولید می‌کند و کامپایل نمی‌شود", "isCorrect": true },
+        { "text": "هیچ مشکلی پیش نمی‌آید", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "در JSX، چگونه باید کلاس CSS را به یک عنصر اختصاص دهیم؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه B صحیح است؟ در JSX به جای استفاده از class که کلمه رزرو شده جاوااسکریپت است، باید از className استفاده کرد.",
+      "tags": ["react.jsx.syntax"],
+      "answers": [
+        { "text": "با استفاده از class", "isCorrect": false },
+        { "text": "با استفاده از className", "isCorrect": true },
+        { "text": "با استفاده از style", "isCorrect": false },
+        { "text": "با استفاده از id", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چگونه باید نام اتریبیوت‌های چندکلمه‌ای HTML (مانند onclick) را در JSX بنویسیم؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه C صحیح است؟ در JSX، اتریبیوت‌های HTML چندکلمه‌ای باید با camelCase نوشته شوند؛ برای مثال htmlFor به جای for و onClick به جای onclick.",
+      "tags": ["react.jsx.syntax"],
+      "answers": [
+        { "text": "به همان شکل HTML", "isCorrect": false },
+        { "text": "با فاصله بین کلمات", "isCorrect": false },
+        { "text": "با camelCase", "isCorrect": true },
+        { "text": "با underscore بین کلمات", "isCorrect": false }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "questions": [
+    {
+      "text": "در تایمر، state <code>isActive</code> چه کاربردی دارد؟",
+      "difficulty": 1,
+      "explanation": "چرا گزینه A صحیح است؟ state <code>isActive</code> مشخص می‌کند که تایمر فعال است یا متوقف و با تغییر آن، useEffect اجرا شده و setInterval مدیریت می‌شود.",
+      "tags": ["react.project.timer.useEffect"],
+      "answers": [
+        {
+          "text": "مشخص می‌کند که تایمر در حال اجراست یا متوقف",
+          "isCorrect": true
+        },
+        {
+          "text": "تعداد ثانیه‌های سپری شده را نگه می‌دارد",
+          "isCorrect": false
+        },
+        {
+          "text": "زمان را به فرمت دقیقه:ثانیه تبدیل می‌کند",
+          "isCorrect": false
+        },
+        {
+          "text": "فقط برای اتصال به دکمه‌ها استفاده می‌شود",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "چرا در <code>setTime</code> از فرم تابعی <code>setTime(time => time + 1)</code> استفاده می‌کنیم؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه A صحیح است؟ فرم تابعی تضمین می‌کند که آخرین مقدار state استفاده شود و از stale state جلوگیری می‌کند.",
+      "tags": ["react.project.timer.useEffect"],
+      "answers": [
+        {
+          "text": "برای جلوگیری از stale state و اطمینان از استفاده از آخرین مقدار state",
+          "isCorrect": true
+        },
+        { "text": "برای کاهش تعداد رندرهای کامپوننت", "isCorrect": false },
+        { "text": "برای اتصال به دکمه ریست", "isCorrect": false },
+        { "text": "فقط برای فرمت کردن زمان", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چه چیزی باعث جلوگیری از نشت حافظه در تایمر می‌شود؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه B صحیح است؟ بازگشت یک تابع پاک‌سازی در useEffect که clearInterval فراخوانی می‌کند، interval قدیمی را پاک می‌کند و از نشت حافظه جلوگیری می‌کند.",
+      "tags": ["react.project.timer.useEffect"],
+      "answers": [
+        { "text": "تعریف state با useState", "isCorrect": false },
+        {
+          "text": "بازگشت یک تابع پاک‌سازی در useEffect که clearInterval را فراخوانی می‌کند",
+          "isCorrect": true
+        },
+        { "text": "استفاده از تابع handleStart", "isCorrect": false },
+        { "text": "تبدیل زمان به فرمت دقیقه:ثانیه", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "اگر <code>isActive</code> برابر false شود، چه اتفاقی برای interval رخ می‌دهد؟",
+      "difficulty": 3,
+      "explanation": "چرا گزینه B صحیح است؟ اگر تایمر غیرفعال شود، interval پاک شده و شمارش متوقف می‌گردد.",
+      "tags": ["react.project.timer.useEffect"],
+      "answers": [
+        {
+          "text": "interval فعال باقی می‌ماند و زمان همچنان افزایش می‌یابد",
+          "isCorrect": false
+        },
+        {
+          "text": "interval پاک می‌شود و شمارش متوقف می‌گردد",
+          "isCorrect": true
+        },
+        { "text": "تایمر reset می‌شود و زمان صفر می‌شود", "isCorrect": false },
+        {
+          "text": "useEffect خطا می‌دهد و کامپوننت رندر نمی‌شود",
+          "isCorrect": false
+        }
+      ]
+    },
+
+    {
+      "text": "در تایمر، فرض کنید که در useEffect آرایه وابستگی <code>[isActive, time]</code> قرار داده شود و فرم تابع <code>setTime(time => time + 1)</code> نیز استفاده شود. چه رفتاری مشاهده می‌کنیم؟",
+      "difficulty": 3,
+      "explanation": "چرا گزینه B صحیح است؟ افزودن <code>time</code> به آرایه وابستگی باعث می‌شود که هر بار state <code>time</code> تغییر کند، useEffect دوباره اجرا شده و یک interval جدید ساخته شود. این منجر به چندین interval همزمان و افزایش غیرمنتظره زمان می‌شود. برای جلوگیری از این مشکل، کافی است تنها <code>isActive</code> را به آرایه وابستگی اضافه کنیم و از فرم تابع <code>setTime(time => time + 1)</code> استفاده شود.",
+      "tags": ["react.project.timer.useEffect"],
+      "answers": [
+        {
+          "text": "تایمر به درستی کار می‌کند و شمارش با هر ثانیه افزایش می‌یابد",
+          "isCorrect": false
+        },
+        {
+          "text": "setInterval هر بار که time تغییر می‌کند دوباره ساخته شده و منجر به چندین interval همزمان می‌شود",
+          "isCorrect": true
+        },
+        { "text": "تایمر هیچ وقت شروع به کار نمی‌کند", "isCorrect": false },
+        { "text": "خطا رخ می‌دهد و کامپوننت رندر نمی‌شود", "isCorrect": false }
+      ]
+    }
+  ]
+}

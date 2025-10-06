@@ -1,0 +1,64 @@
+{
+  "questions": [
+    {
+      "text": "چرا <code dir=\"ltr\">React</code> برای ساخت اپلیکیشن‌های تک-صفحه‌ای (<code dir=\"ltr\">SPA</code>) مناسب است؟",
+      "difficulty": 1,
+      "explanation": "پاسخ صحیح گزینه C است، چون معماری مبتنی بر کامپوننت <code dir=\"ltr\">React</code> و استفاده از <code dir=\"ltr\">Virtual DOM</code> به بهینه‌سازی به‌روزرسانی‌ها کمک می‌کند و تجربه کاربری روانی ایجاد می‌کند.",
+      "tags": ["react.applications"],
+      "answers": [
+        { "text": "چون فقط برای ساخت صفحات ثابت استفاده می‌شود", "isCorrect": false },
+        { "text": "چون از دوطرفه data binding استفاده می‌کند", "isCorrect": false },
+        { "text": "چون معماری مبتنی بر کامپوننت و استفاده از <code dir=\"ltr\">Virtual DOM</code> به بهینه‌سازی به‌روزرسانی‌ها کمک می‌کند", "isCorrect": true },
+        { "text": "چون همه تغییرات به صورت دستی روی <code dir=\"ltr\">DOM</code> اعمال می‌شود", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چگونه <code dir=\"ltr\">React Native</code> برای توسعه اپلیکیشن‌های موبایل استفاده می‌شود؟",
+      "difficulty": 2,
+      "explanation": "پاسخ صحیح گزینه B است، چون <code dir=\"ltr\">React Native</code> کامپوننت‌ها را به عناصر UI بومی پلتفرم ترجمه می‌کند و امکان توسعه اپلیکیشن‌های بومی برای iOS و Android را می‌دهد.",
+      "tags": ["react.applications"],
+      "answers": [
+        { "text": "کامپوننت‌ها را به <code dir=\"ltr\">DOM</code> وب ترجمه می‌کند", "isCorrect": false },
+        { "text": "کامپوننت‌ها را به عناصر UI بومی پلتفرم ترجمه می‌کند", "isCorrect": true },
+        { "text": "از API‌های مخصوص هر سیستم عامل برای ایجاد رابط کاربری استفاده می‌کند", "isCorrect": false },
+        { "text": "یک مرورگر داخلی برای رندر کردن اپلیکیشن‌ها فراهم می‌کند", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چه تفاوتی میان اپلیکیشن‌های ساخته شده با <code dir=\"ltr\">React</code> و اپلیکیشن‌های ساخته شده با <code dir=\"ltr\">React Native</code> وجود دارد؟",
+      "difficulty": 2,
+      "explanation": "پاسخ صحیح گزینه D است، چون <code dir=\"ltr\">React</code> برای وب استفاده می‌شود در حالی که <code dir=\"ltr\">React Native</code> برای توسعه اپلیکیشن‌های موبایل بومی طراحی شده است.",
+      "tags": ["react.applications"],
+      "answers": [
+        { "text": "هر دو برای وب استفاده می‌شوند", "isCorrect": false },
+        { "text": "React برای توسعه اپلیکیشن‌های موبایل استفاده می‌شود", "isCorrect": false },
+        { "text": "React Native فقط برای توسعه اپلیکیشن‌های وب است", "isCorrect": false },
+        { "text": "React برای وب و React Native برای اپلیکیشن‌های موبایل بومی استفاده می‌شود", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "چه فریم‌ورک‌هایی برای ایجاد وب‌سایت‌های ایستا با <code dir=\"ltr\">React</code> استفاده می‌شوند؟",
+      "difficulty": 3,
+      "explanation": "پاسخ صحیح گزینه C است، چون فریم‌ورک‌هایی مانند Gatsby و Next.js به شما اجازه می‌دهند تا با استفاده از <code dir=\"ltr\">React</code> وب‌سایت‌های ایستا بسازید.",
+      "tags": ["react.applications"],
+      "answers": [
+        { "text": "Vue.js و Angular", "isCorrect": false },
+        { "text": "Express.js و Django", "isCorrect": false },
+        { "text": "Gatsby و Next.js", "isCorrect": true },
+        { "text": "Ember.js و Svelte", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چرا وب‌سایت‌هایی که محتوای ثابت دارند، از Static Site Generator (<code dir=\"ltr\">SSG</code>) استفاده می‌کنند؟",
+      "difficulty": 2,
+      "explanation": "پاسخ صحیح گزینه A است، چون <code dir=\"ltr\">SSG</code> ها امکان ایجاد وب‌سایت‌های سریع و امن را فراهم می‌کنند و محتوای ایستا را از پیش رندر می‌کنند.",
+      "tags": ["react.applications"],
+      "answers": [
+        { "text": "چون <code dir=\"ltr\">SSG</code> ها امکان ایجاد وب‌سایت‌های سریع و امن را فراهم می‌کنند", "isCorrect": true },
+        { "text": "چون آن‌ها امکان استفاده از API های مختلف را فراهم می‌کنند", "isCorrect": false },
+        { "text": "چون آن‌ها تنها برای اپلیکیشن‌های تعاملی استفاده می‌شوند", "isCorrect": false },
+        { "text": "چون <code dir=\"ltr\">SSG</code> ها تنها برای وب‌سایت‌های داینامیک مناسب هستند", "isCorrect": false }
+      ]
+    }
+  ]
+}

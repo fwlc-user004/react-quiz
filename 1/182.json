@@ -1,0 +1,64 @@
+{
+  "questions": [
+    {
+      "text": "چرا React از رویکرد \"اعلانی\" (Declarative) برای ساخت رابط کاربری استفاده می‌کند؟",
+      "difficulty": 1,
+      "explanation": "چرا گزینه 2 صحیح است؟ React از رویکرد اعلانی استفاده می‌کند چون کار با DOM دستی را حذف می‌کند و باعث کاهش خطاهای کدنویسی می‌شود.",
+      "tags": ["react.basics"],
+      "answers": [
+        { "text": "چون برای نمایش اطلاعات باید مرحله به مرحله به React بگوییم که دقیقا چه تغییراتی را در DOM ایجاد کند.", "isCorrect": false },
+        { "text": "چون کار با DOM دستی را حذف می‌کند و باعث کاهش خطاهای کدنویسی می‌شود.", "isCorrect": true },
+        { "text": "چون نیازی به دستکاری مستقیم state ندارد.", "isCorrect": false },
+        { "text": "چون فقط به تغییرات UI توجه می‌کند و از نمایش اطلاعات جلوگیری می‌کند.", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "در مثال کد LikeButton، چه زمانی متن 'You liked this' به نمایش در می‌آید؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه 2 صحیح است؟ متن 'You liked this' زمانی به نمایش در می‌آید که دکمه کلیک می‌شود و وضعیت liked به true تغییر می‌کند.",
+      "tags": ["react.basics"],
+      "answers": [
+        { "text": "زمانی که وضعیت liked به صورت پیش‌فرض false باشد.", "isCorrect": false },
+        { "text": "زمانی که دکمه کلیک می‌شود و وضعیت liked به true تغییر می‌کند.", "isCorrect": true },
+        { "text": "زمانی که کاربر هیچ اقدامی انجام ندهد.", "isCorrect": false },
+        { "text": "زمانی که state به null تغییر کند.", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چه مزیتی در استفاده از معماری مبتنی بر کامپوننت در React وجود دارد؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه 2 صحیح است؟ استفاده از معماری کامپوننت باعث می‌شود که برنامه ساده‌تر و نگهداری آن راحت‌تر شود. همچنین تست‌پذیری را افزایش می‌دهد.",
+      "tags": ["react.basics"],
+      "answers": [
+        { "text": "باعث افزایش حجم کد می‌شود و از سرعت اجرا می‌کاهد.", "isCorrect": false },
+        { "text": "ساختار پیچیده برنامه را ساده‌تر می‌کند و مدیریت آن راحت‌تر می‌شود.", "isCorrect": true },
+        { "text": "نگهداری و تست برنامه را بسیار پیچیده می‌کند.", "isCorrect": false },
+        { "text": "تنها در صورت داشتن تیم بزرگ توسعه‌دهنده موثر است.", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چه تفاوتی بین دستور <code dir=\"ltr\">const [liked, setLiked] = React.useState(false)</code> و <code dir=\"ltr\">const liked = false</code> در React وجود دارد؟",
+      "difficulty": 3,
+      "explanation": "چرا گزینه 3 صحیح است؟ <code dir=\"ltr\">useState</code> یک متغیر محلی است که به React اجازه می‌دهد state را کنترل کند و آن را در UI نمایش دهد.",
+      "tags": ["react.basics"],
+      "answers": [
+        { "text": "useState فقط برای ذخیره متغیرهای موقتی در نظر گرفته شده است.", "isCorrect": false },
+        { "text": "useState کارایی کد را کاهش می‌دهد و باعث کندی React می‌شود.", "isCorrect": false },
+        { "text": "useState یک متغیر محلی است که به React اجازه می‌دهد state را کنترل کند و آن را در UI نمایش دهد.", "isCorrect": true },
+        { "text": "useState فقط در زمان ساختن کامپوننت‌های پیچیده کاربرد دارد.", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چرا در React از کامپوننت‌ها برای ساخت رابط‌های کاربری استفاده می‌شود؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه 2 صحیح است؟ کامپوننت‌ها باعث می‌شوند که UI قابل استفاده مجدد، نگهداری آسان‌تر و تست‌پذیرتر باشد.",
+      "tags":["react.basics"] ,
+      "answers": [
+        { "text": "چون کد را پیچیده‌تر و مدیریت آن را سخت‌تر می‌کند.", "isCorrect": false },
+        { "text": "چون کامپوننت‌ها باعث می‌شوند که UI قابل استفاده مجدد، نگهداری آسان‌تر و تست‌پذیرتر باشد.", "isCorrect": true },
+        { "text": "باعث افزایش حجم کد می‌شود و از سرعت اجرا می‌کاهد.", "isCorrect": false },
+        { "text": "چون تنها یک بار می‌توان از هر کامپوننت استفاده کرد.", "isCorrect": false }
+      ]
+    }
+  ]
+}

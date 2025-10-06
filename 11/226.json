@@ -1,0 +1,64 @@
+{
+  "questions": [
+    {
+      "text": "در منوی واکنش‌گرا، چرا کلاس CSS <code dir=\"ltr\">.show</code> به زیرمنو اضافه می‌شود؟\n\nمثال:\n<pre><code dir=\"ltr\"><ul className={`dropdown ${dropdown ? 'show' : ''}`}>...</code></pre>",
+      "difficulty": 1,
+      "explanation": "چرا گزینه C صحیح است؟ کلاس <code>.show</code> باعث نمایش زیرمنوها می‌شود و با تغییر state <code>dropdown</code> اضافه یا حذف می‌شود.",
+      "tags": ["react.project.menu.responsive"],
+      "answers": [
+        { "text": "برای تغییر رنگ پس‌زمینه زیرمنو", "isCorrect": false },
+        { "text": "برای افزودن یک آیتم جدید به زیرمنو", "isCorrect": false },
+        { "text": "برای کنترل نمایش یا پنهان شدن زیرمنو با CSS", "isCorrect": true },
+        { "text": "برای ثبت رویداد کلیک روی زیرمنو", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "برای نمایش منوی موبایل، چه کاری انجام می‌دهیم تا منو از حالت افقی دسکتاپ به منوی عمودی تغییر کند؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه B صحیح است؟ با media query و تغییر <code>flex-direction</code> و کنترل <code>display</code> بر اساس state <code>showMenu</code>، منو به صورت عمودی نمایش داده می‌شود.",
+      "tags": ["react.project.menu.responsive"],
+      "answers": [
+        { "text": "با تغییر رنگ منو", "isCorrect": false },
+        { "text": "استفاده از media query و تغییر flex-direction به column و کنترل display با state", "isCorrect": true },
+        { "text": "با اضافه کردن زیرمنو جدید", "isCorrect": false },
+        { "text": "با استفاده از useEffect برای رندر مجدد منو", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "در کامپوننت Navbar، state <code>showMenu</code> چه کاربردی دارد؟",
+      "difficulty": 1,
+      "explanation": "چرا گزینه A صحیح است؟ state <code>showMenu</code> مشخص می‌کند که منوی موبایل باز یا بسته باشد و با کلیک روی دکمه همبرگری toggle می‌شود.",
+      "tags": ["react.project.menu.responsive"],
+      "answers": [
+        { "text": "کنترل باز یا بسته بودن منوی موبایل", "isCorrect": true },
+        { "text": "تعیین رنگ منو", "isCorrect": false },
+        { "text": "اضافه کردن آیتم به منو", "isCorrect": false },
+        { "text": "ثبت رویداد onClick برای زیرمنوها", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چرا در منوی موبایل از یک دکمه همبرگری استفاده می‌کنیم؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه D صحیح است؟ دکمه همبرگری به کاربر اجازه می‌دهد که منوی موبایل را باز و بسته کند، بدون اینکه منوی اصلی همیشه نمایش داده شود.",
+      "tags": ["react.project.menu.responsive"],
+      "answers": [
+        { "text": "برای نمایش زیرمنوها دسکتاپی", "isCorrect": false },
+        { "text": "برای استایل‌دهی CSS ساده‌تر", "isCorrect": false },
+        { "text": "برای اضافه کردن آیتم به منو", "isCorrect": false },
+        { "text": "برای باز و بسته کردن منوی موبایل با کلیک کاربر", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "چه مزیتی در استفاده از state برای کنترل منوی موبایل و زیرمنوها وجود دارد؟",
+      "difficulty": 3,
+      "explanation": "چرا گزینه B صحیح است؟ استفاده از state اجازه می‌دهد که منوها به صورت تعاملی و بدون تغییر مستقیم DOM کنترل شوند و رندر کامپوننت با تغییرات state انجام شود.",
+      "tags": ["react.project.menu.responsive"],
+      "answers": [
+        { "text": "باعث کاهش حجم CSS می‌شود", "isCorrect": false },
+        { "text": "امکان کنترل تعاملی و رندر شرطی بدون دستکاری مستقیم DOM فراهم می‌کند", "isCorrect": true },
+        { "text": "برای اضافه کردن کلاس show به تمام آیتم‌ها به طور همزمان", "isCorrect": false },
+        { "text": "برای اجرای useEffect در منوی موبایل", "isCorrect": false }
+      ]
+    }
+  ]
+}

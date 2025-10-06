@@ -1,0 +1,64 @@
+{
+  "questions": [
+    {
+      "text": "در کد زیر، چرا کامپوننت Welcome با حرف بزرگ شروع شده است؟\n\n<pre><code dir=\"ltr\">function Welcome() {\n  return &lt;h1&gt;Hello, world!&lt;/h1&gt;;\n}</code></pre>",
+      "difficulty": 2,
+      "explanation": "چرا گزینه A صحیح است؟ React تگ‌هایی که با حرف بزرگ شروع می‌شوند را به عنوان کامپوننت‌های سفارشی شناسایی می‌کند. این قانون به React اجازه می‌دهد که تفاوت بین تگ‌های HTML و کامپوننت‌های React را تشخیص دهد.",
+      "tags": ["react.components.basics"],
+      "answers": [
+        { "text": "چون React تنها تگ‌های بزرگ را به عنوان کامپوننت‌های سفارشی شناسایی می‌کند", "isCorrect": true },
+        { "text": "برای سازگاری با استاندارد HTML", "isCorrect": false },
+        { "text": "برای اینکه مرورگر خطای syntax ندهد", "isCorrect": false },
+        { "text": "برای متمایز کردن JSX از JavaScript", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "در کد زیر، چند بار کامپوننت Welcome در خروجی نمایش داده می‌شود؟\n\n<pre><code dir=\"ltr\">function App() {\n  return (\n    &lt;div&gt;\n      &lt;Welcome /&gt;\n      &lt;Welcome /&gt;\n      &lt;Welcome /&gt;\n    &lt;/div&gt;\n  );\n}</code></pre>",
+      "difficulty": 1,
+      "explanation": "چرا گزینه C صحیح است؟ کامپوننت Welcome سه بار در JSX فراخوانی شده است و هر بار یک عنصر JSX مستقل تولید می‌کند، بنابراین سه بار در خروجی نمایش داده می‌شود.",
+      "tags": ["react.components.basics"],
+      "answers": [
+        { "text": "یک بار", "isCorrect": false },
+        { "text": "دو بار", "isCorrect": false },
+        { "text": "سه بار", "isCorrect": true },
+        { "text": "تعداد نمایش وابسته به props", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چرا باید از <code dir=\"ltr\">export default Welcome;</code> در انتهای فایل استفاده کنیم؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه B صحیح است؟ استفاده از export default باعث می‌شود که این کامپوننت در سایر فایل‌های پروژه قابل import باشد و بتوان از آن در کامپوننت‌های دیگر استفاده کرد.",
+      "tags": ["react.components.basics"],
+      "answers": [
+        { "text": "تا فقط یکبار بتوان از کامپوننت استفاده کرد", "isCorrect": false },
+        { "text": "تا این کامپوننت در فایل‌های دیگر قابل import باشد", "isCorrect": true },
+        { "text": "تا React بتواند JSX را به HTML تبدیل کند", "isCorrect": false },
+        { "text": "تا سرور توسعه React کد را سریع‌تر کامپایل کند", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "در React، چرا استفاده از کامپوننت‌های تابعی مزیت قابل توجهی برای ساخت اپلیکیشن‌های پیچیده دارد؟",
+      "difficulty": 3,
+      "explanation": "چرا گزینه A صحیح است؟ کامپوننت‌های تابعی UI را به بلوک‌های مستقل تقسیم می‌کنند که قابل استفاده مجدد هستند و نگهداری برنامه را بسیار ساده‌تر می‌کنند.",
+      "tags": ["react.components.basics"],
+      "answers": [
+        { "text": "چون UI را به بلوک‌های مستقل تقسیم می‌کند و کد قابل استفاده مجدد و قابل نگهداری می‌شود", "isCorrect": true },
+        { "text": "چون باعث افزایش سرعت رندر مرورگر می‌شود", "isCorrect": false },
+        { "text": "چون نیاز به import/ export ندارد", "isCorrect": false },
+        { "text": "چون تنها در پروژه‌های کوچک و ساده قابل استفاده است", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "در کد زیر، اگر Welcome کامپوننت دیگری باشد که props نمی‌گیرد، خروجی نهایی چه خواهد بود؟\n\n<pre><code dir=\"ltr\">function App() {\n  return (\n    &lt;div&gt;\n      &lt;Welcome /&gt;\n      &lt;Welcome /&gt;\n    &lt;/div&gt;\n  );\n}</code></pre>",
+      "difficulty": 2,
+      "explanation": "چرا گزینه B صحیح است؟ هر فراخوانی از کامپوننت Welcome یک عنصر JSX تولید می‌کند، بنابراین دو عنصر جداگانه در خروجی نمایش داده می‌شوند.",
+      "tags": ["react.components.basics"],
+      "answers": [
+        { "text": "تنها یک عنصر h1 با متن Hello, world! نمایش داده می‌شود", "isCorrect": false },
+        { "text": "دو عنصر h1 با متن Hello, world! نمایش داده می‌شود", "isCorrect": true },
+        { "text": "هیچ عنصری نمایش داده نمی‌شود", "isCorrect": false },
+        { "text": "خروجی بستگی به import شدن Welcome دارد", "isCorrect": false }
+      ]
+    }
+  ]
+}

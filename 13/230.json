@@ -1,0 +1,64 @@
+{
+  "questions": [
+    {
+      "text": "در کامپوننت TodoApp، از چه هوکی برای نگهداری لیست وظایف استفاده شده است؟",
+      "difficulty": 1,
+      "explanation": "چرا گزینه B صحیح است؟ useState برای نگهداری آرایه‌ای از اشیاء وظیفه استفاده شده تا تغییرات state باعث رندر مجدد کامپوننت شود.",
+      "tags": ["react.project.todo"],
+      "answers": [
+        { "text": "useEffect", "isCorrect": false },
+        { "text": "useState", "isCorrect": true },
+        { "text": "useReducer", "isCorrect": false },
+        { "text": "useContext", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "کامپوننت TodoForm چه نوع کامپوننتی است و چه کاری انجام می‌دهد؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه C صحیح است؟ TodoForm یک کامپوننت کنترل‌شده است که مقدار ورودی کاربر را در state نگه می‌دارد و هنگام submit، تابع addTodo را فراخوانی می‌کند.",
+      "tags": ["react.project.todo"],
+      "answers": [
+        { "text": "کامپوننت بدون state که فقط نمایش می‌دهد", "isCorrect": false },
+        { "text": "کامپوننت کلاس‌محور که وظایف را مدیریت می‌کند", "isCorrect": false },
+        { "text": "کامپوننت کنترل‌شده که مقدار ورودی را در state نگه می‌دارد و addTodo را فراخوانی می‌کند", "isCorrect": true },
+        { "text": "کامپوننت با useReducer برای مدیریت state", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "در تابع handleSubmit کامپوننت TodoForm چه عملیاتی انجام می‌شود؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه D صحیح است؟ ابتدا رفتار پیش‌فرض فرم با event.preventDefault() متوقف می‌شود، سپس بررسی می‌شود که ورودی خالی نباشد، بعد addTodo فراخوانی و در نهایت مقدار input پاک می‌شود.",
+      "tags": ["react.project.todo"],
+      "answers": [
+        { "text": "مقدار input را مستقیم در DOM تغییر می‌دهد", "isCorrect": false },
+        { "text": "state کامپوننت والد را بدون چک کردن ورودی تغییر می‌دهد", "isCorrect": false },
+        { "text": "فقط addTodo را فراخوانی می‌کند", "isCorrect": false },
+        { "text": "event.preventDefault(), بررسی ورودی، فراخوانی addTodo و پاک کردن input", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "کامپوننت TodoList چه کاری انجام می‌دهد؟",
+      "difficulty": 1,
+      "explanation": "چرا گزینه A صحیح است؟ TodoList آرایه todos را به عنوان prop دریافت کرده و هر آیتم را با map رندر می‌کند.",
+      "tags": ["react.project.todo"],
+      "answers": [
+        { "text": "نمایش لیست وظایف با map و دریافت todos به عنوان prop", "isCorrect": true },
+        { "text": "مدیریت state لیست وظایف", "isCorrect": false },
+        { "text": "اضافه کردن وظایف جدید به state", "isCorrect": false },
+        { "text": "حذف وظایف از state", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چرا استفاده از کامپوننت کنترل‌شده در فرم TodoForm مفید است؟",
+      "difficulty": 3,
+      "explanation": "چرا گزینه C صحیح است؟ کنترل کامل بر روی مقدار ورودی، اعتبارسنجی و اتصال به state والد را فراهم می‌کند و باعث هماهنگی بین UI و داده‌های برنامه می‌شود.",
+      "tags": ["react.project.todo"],
+      "answers": [
+        { "text": "زیرا باعث کاهش تعداد کامپوننت‌ها می‌شود", "isCorrect": false },
+        { "text": "زیرا از useReducer استفاده می‌کند", "isCorrect": false },
+        { "text": "کنترل کامل بر مقدار ورودی، اعتبارسنجی و اتصال به state والد", "isCorrect": true },
+        { "text": "زیرا DOM مقدار input را مستقیم مدیریت می‌کند", "isCorrect": false }
+      ]
+    }
+  ]
+}

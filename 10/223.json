@@ -1,0 +1,67 @@
+{
+  "questions": [
+    {
+      "text": "چرا استفاده از useReducer + useContext در اپلیکیشن‌های کوچک تا متوسط توصیه می‌شود؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه A صحیح است؟ این الگو کاملاً بومی React بوده و نیازی به نصب کتابخانه‌های خارجی ندارد و برای اپلیکیشن‌های کوچک تا متوسط بسیار مناسب است.",
+      "tags": ["react.state-management"],
+      "answers": [
+        { "text": "چون وابستگی خارجی ندارد و بومی React است", "isCorrect": true },
+        { "text": "چون عملکرد در اپلیکیشن‌های بزرگ همیشه بهتر است", "isCorrect": false },
+        { "text": "چون نیاز به reducer ندارد", "isCorrect": false },
+        { "text": "چون همه ابزارهای توسعه حرفه‌ای دارد", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "یکی از محدودیت‌های اصلی استفاده از Context در اپلیکیشن‌های بزرگ چیست؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه A صحیح است؟ هر کامپوننتی که Context را مصرف می‌کند، با تغییر value دوباره رندر می‌شود و این ممکن است در اپلیکیشن‌های بزرگ باعث رندرهای غیرضروری شود.",
+      "tags": ["react.state-management"],
+      "answers": [
+        { "text": "هر تغییر در value context باعث رندر مجدد تمام مصرف‌کنندگان آن می‌شود", "isCorrect": true },
+        { "text": "Context اجازه استفاده از useReducer را نمی‌دهد", "isCorrect": false },
+        { "text": "Context نمی‌تواند داده‌های سراسری را مدیریت کند", "isCorrect": false },
+        { "text": "استفاده از Context همیشه منجر به خطا در runtime می‌شود", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Redux در مقایسه با الگوی useReducer + useContext چه مزیتی دارد؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه C صحیح است؟ Redux دارای ابزارهای توسعه قدرتمند است که امکان مشاهده تغییرات state در طول زمان و time-travel debugging را فراهم می‌کند.",
+      "tags": ["react.state-management"],
+      "answers": [
+      
+        { "text": "نیازی به reducer ندارد", "isCorrect": false },
+        { "text": "وابستگی به Context ندارد", "isCorrect": false },
+          { "text": "ابزارهای دیباگینگ پیشرفته مانند Redux DevTools", "isCorrect": true },
+        { "text": "همیشه ساده‌تر از useReducer + useContext است", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Zustand یا Jotai چه مزیتی نسبت به useReducer + useContext ارائه می‌دهند؟",
+      "difficulty": 1,
+      "explanation": "چرا گزینه B صحیح است؟ این کتابخانه‌ها با استفاده از هوک‌های سفارشی، ایجاد store و مصرف آن را بسیار ساده می‌کنند و نیازی به Provider یا reducerهای پیچیده ندارند.",
+      "tags": ["react.state-management"],
+      "answers": [
+        
+        { "text": "بدون نیاز به هوک‌های React", "isCorrect": false },
+        { "text": "API بسیار ساده و بدون نیاز به Provider یا reducer", "isCorrect": true },
+        { "text": "فقط برای اپلیکیشن‌های کوچک کاربرد دارند", "isCorrect": false },
+        { "text": "تنها با کلاس کامپوننت کار می‌کنند", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "در یک اپلیکیشن بزرگ که state سراسری پیچیده و چندین اکشن همزمان دارد، چه رویکردی بهترین انتخاب است و چرا؟",
+      "difficulty": 3,
+      "explanation": "چرا گزینه D صحیح است؟ در اپلیکیشن‌های بزرگ، کتابخانه‌های اختصاصی مانند Redux یا Zustand ابزارهای بهینه‌سازی، دیباگینگ و مدیریت state پیچیده را به صورت مقیاس‌پذیر ارائه می‌دهند و استفاده از الگوهای بومی ممکن است ناکارآمد باشد.",
+      "tags": ["react.state-management"],
+      "answers": [
+      
+        { "text": "صرفاً useState در هر کامپوننت", "isCorrect": false },
+        { "text": "useReducer + useContext بدون جداسازی state", "isCorrect": false },
+        { "text": "نگهداری state در متغیرهای محلی جاوااسکریپت", "isCorrect": false },
+          { "text": "استفاده از Redux یا Zustand", "isCorrect": true }
+      ]
+    }
+  ]
+}

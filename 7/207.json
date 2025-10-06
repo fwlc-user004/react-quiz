@@ -1,0 +1,76 @@
+{
+  "questions": [
+    {
+      "text": "هوک‌ها در React چه کاربرد اصلی دارند و چرا معرفی شدند؟",
+      "difficulty": 1,
+      "explanation": "چرا گزینه C صحیح است؟ هوک‌ها به کامپوننت‌های تابعی امکان استفاده از قابلیت‌های React مانند state و چرخه حیات را می‌دهند و پیچیدگی کلاس‌ها و this را حذف می‌کنند.",
+      "tags": ["react.hooks"],
+      "answers": [
+        { "text": "برای کاهش سرعت رندر کامپوننت‌ها", "isCorrect": false },
+        { "text": "برای اضافه کردن قابلیت CSS به کامپوننت‌ها", "isCorrect": false },
+        { "text": "برای استفاده از state و چرخه حیات در کامپوننت‌های تابعی بدون کلاس‌ها", "isCorrect": true },
+        { "text": "برای مدیریت داده‌های سرور بدون JSX", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "هوک useState چه چیزی را برمی‌گرداند و چه کاری انجام می‌دهد؟<code dir=\"ltr\">const [state, setState] = useState(initialState);</code>",
+      "difficulty": 2,
+      "explanation": "چرا گزینه B صحیح است؟ useState یک آرایه شامل مقدار فعلی state و یک تابع setter برای به‌روزرسانی آن برمی‌گرداند و با فراخوانی setter، رندر مجدد کامپوننت انجام می‌شود.",
+      "tags": ["react.hooks"],
+      "answers": [
+        { "text": "یک مقدار ثابت بدون قابلیت تغییر", "isCorrect": false },
+        { "text": "یک آرایه شامل مقدار فعلی state و تابع setter برای به‌روزرسانی آن", "isCorrect": true },
+        { "text": "فقط یک تابع برای تغییر state", "isCorrect": false },
+        { "text": "یک object با تمام stateهای پروژه", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "هوک useEffect چه کاربردی دارد و چه چیزی را کنترل می‌کند؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه D صحیح است؟ useEffect به کامپوننت‌ها اجازه می‌دهد که عوارض جانبی (Side Effects) مانند تعامل با API یا DOM را مدیریت کرده و اجرای آنها را با آرایه وابستگی‌ها کنترل کنند.",
+      "tags": ["react.hooks"],
+      "answers": [
+        { "text": "افزودن استایل CSS به کامپوننت", "isCorrect": false },
+        { "text": "تعریف متغیرهای state بدون رندر مجدد", "isCorrect": false },
+        { "text": "مدیریت props در کامپوننت‌ها", "isCorrect": false },
+        { "text": "اجرای عوارض جانبی و کنترل اجرای آن با آرایه وابستگی‌ها", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "قبل از معرفی هوک‌ها، برای استفاده از state و چرخه حیات، باید از چه نوع کامپوننتی استفاده می‌کردیم؟",
+      "difficulty": 1,
+      "explanation": "چرا گزینه B صحیح است؟ پیش از React 16.8، تنها کامپوننت‌های کلاس‌محور امکان استفاده از state و متدهای چرخه حیات را داشتند.",
+      "tags": ["react.hooks"],
+      "answers": [
+        { "text": "کامپوننت‌های تابعی", "isCorrect": false },
+        { "text": "کامپوننت‌های کلاس‌محور", "isCorrect": true },
+        { "text": "هوک‌های سفارشی", "isCorrect": false },
+        { "text": "کامپوننت‌های Pure", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چه مزیتی اصلی باعث شد جامعه React به سمت هوک‌ها حرکت کند؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه A صحیح است؟ هوک‌ها منطق stateدار و افکت‌ها را قابل استفاده مجدد می‌کنند و کد کامپوننت‌های تابعی را ساده و خوانا نگه می‌دارند.",
+      "tags": ["react.hooks"],
+      "answers": [
+        { "text": "اشتراک‌گذاری منطق stateدار بین کامپوننت‌ها ساده شد", "isCorrect": true },
+        { "text": "زمان بارگذاری صفحه کاهش یافت", "isCorrect": false },
+        { "text": "هوک‌ها سرعت اجرای DOM را افزایش دادند", "isCorrect": false },
+        { "text": "هوک‌ها جایگزین JSX شدند", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چه چیزی باعث می‌شود کامپوننت‌های تابعی با هوک‌ها، نسبت به کلاس‌ها ساده‌تر باشند؟",
+      "difficulty": 3,
+      "explanation": "چرا گزینه C صحیح است؟ حذف پیچیدگی this و پراکندگی منطق state و افکت‌ها بین متدهای مختلف چرخه حیات باعث می‌شود کامپوننت‌های تابعی خواناتر و قابل نگهداری‌تر باشند.",
+      "tags": ["react.hooks"],
+      "answers": [
+        { "text": "آنها همیشه سریع‌تر رندر می‌شوند", "isCorrect": false },
+        { "text": "از متدهای چرخه حیات استفاده نمی‌کنند", "isCorrect": false },
+        { "text": "پیچیدگی this حذف شده و منطق state و افکت‌ها متمرکز است", "isCorrect": true },
+        { "text": "کامپوننت‌های تابعی نیازی به JSX ندارند", "isCorrect": false }
+      ]
+    }
+  ]
+}

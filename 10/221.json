@@ -1,0 +1,64 @@
+{
+  "questions": [
+    {
+      "text": "در React، چرا استفاده از Context به جای پاس دادن props از والد به فرزند در چندین سطح توصیه می‌شود؟",
+      "difficulty": 1,
+      "explanation": "چرا گزینه A صحیح است؟ Context اجازه می‌دهد داده‌ها بدون عبور از کامپوننت‌های میانی، به تمام فرزندان درخت کامپوننت دسترسی پیدا کنند و از prop drilling جلوگیری می‌کند.",
+      "tags": ["react.context.usecontext"],
+      "answers": [
+        { "text": "چون داده‌ها بدون نیاز به عبور از کامپوننت‌های میانی قابل دسترسی هستند", "isCorrect": true },
+        { "text": "چون React بدون Context نمی‌تواند props را ارسال کند", "isCorrect": false },
+        { "text": "چون useState در فرزندها کار نمی‌کند", "isCorrect": false },
+        { "text": "چون Context باعث کاهش تعداد رندرها می‌شود", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "در کد زیر، <code dir=\"ltr\">const theme = useContext(ThemeContext);</code> چه اتفاقی می‌افتد؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه B صحیح است؟ این هوک مقدار نزدیک‌ترین Provider مربوط به ThemeContext را می‌خواند و در متغیر theme قرار می‌دهد.",
+      "tags": ["react.context.usecontext"],
+      "answers": [
+        { "text": "یک context جدید ایجاد می‌کند", "isCorrect": false },
+        { "text": "مقدار نزدیک‌ترین Provider مربوط به ThemeContext را دریافت می‌کند", "isCorrect": true },
+        { "text": "تمام Providerهای Context را دریافت می‌کند", "isCorrect": false },
+        { "text": "فقط مقدار پیش‌فرض context را می‌گیرد و Provider را نادیده می‌گیرد", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چه چیزی باعث می‌شود که کامپوننت فرزند، value ارائه‌شده توسط Context Provider را دریافت کند؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه C صحیح است؟ Provider داده‌ها را به درخت کامپوننت‌ها منتقل می‌کند و useContext در فرزند برای خواندن آن استفاده می‌شود.",
+      "tags": ["react.context.usecontext"],
+      "answers": [
+        { "text": "فراخوانی createContext در فرزند", "isCorrect": false },
+        { "text": "استفاده از useState در والد", "isCorrect": false },
+        { "text": "قرار گرفتن فرزند داخل ThemeContext.Provider و استفاده از useContext", "isCorrect": true },
+        { "text": "ارسال props با همان نام value به فرزند", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "کدام یک از موارد زیر رایج‌ترین کاربرد Context در React است؟",
+      "difficulty": 1,
+      "explanation": "چرا گزینه D صحیح است؟ Context معمولاً برای داده‌هایی که به صورت سراسری مورد نیاز هستند، مانند تم اپلیکیشن، زبان یا اطلاعات کاربر لاگین‌شده استفاده می‌شود.",
+      "tags": ["react.context.usecontext"],
+      "answers": [
+        { "text": "مدیریت state محلی ساده هر input", "isCorrect": false },
+        { "text": "کنترل نمایش یک کامپوننت واحد", "isCorrect": false },
+        { "text": "مدیریت رندر کامپوننت والد", "isCorrect": false },
+        { "text": "اشتراک‌گذاری داده‌های سراسری بین کامپوننت‌ها", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "اگر یک کامپوننت فرزند در عمق زیاد قرار داشته باشد و به Context نیاز داشته باشد، چه روشی باعث بهینه شدن کد می‌شود؟",
+      "difficulty": 3,
+      "explanation": "چرا گزینه A صحیح است؟ به جای عبور props از تمام کامپوننت‌های میانی، قرار دادن کامپوننت داخل Provider و استفاده از useContext به صورت مستقیم باعث خوانایی و مقیاس‌پذیری بهتر می‌شود.",
+      "tags": ["react.context.usecontext"],
+      "answers": [
+        { "text": "قرار دادن کامپوننت داخل Provider و خواندن context با useContext", "isCorrect": true },
+        { "text": "ارسال props از والد به فرزند از طریق همه کامپوننت‌های میانی", "isCorrect": false },
+        { "text": "ایجاد یک state محلی در فرزند و کپی داده‌ها", "isCorrect": false },
+        { "text": "استفاده از useState به جای useContext", "isCorrect": false }
+      ]
+    }
+  ]
+}

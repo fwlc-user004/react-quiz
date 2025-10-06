@@ -1,0 +1,109 @@
+{
+  "questions": [
+    {
+      "text": "هوک useRef چه چیزی را در کامپوننت‌های React مدیریت می‌کند و چرا تغییر آن باعث رندر مجدد نمی‌شود؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه A صحیح است؟ شیء برگشتی useRef دارای پراپرتی .current است و تغییر مقدار آن باعث رندر مجدد نمی‌شود، زیرا این مقدار برای نگهداری داده‌های داخلی یا دسترسی به DOM استفاده می‌شود، نه برای نمایش مستقیم در UI.",
+      "tags": ["react.hooks.refs"],
+      "answers": [
+        {
+          "text": "شیء mutable با پراپرتی .current که تغییر آن رندر را تریگر نمی‌کند",
+          "isCorrect": true
+        },
+        {
+          "text": "متغیری که هر تغییرش باعث رندر مجدد کامپوننت می‌شود",
+          "isCorrect": false
+        },
+        {
+          "text": "مقداری ثابت که نمی‌توان آن را تغییر داد",
+          "isCorrect": false
+        },
+        {
+          "text": "مقداری که تنها برای stateهای UI استفاده می‌شود",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "در مثال زیر، چه چیزی باعث می‌شود input پس از رندر خودکار فوکوس شود؟<code dir=\"ltr\">\nfunction FocusInput() {\n  const inputRef = useRef(null);\n\n  useEffect(() => {\n    inputRef.current.focus();\n  }, []);\n\n  return <input ref={inputRef} type=\"text\" />;\n}</code>",
+      "difficulty": 1,
+      "explanation": "چرا گزینه B صحیح است؟ useEffect با آرایه وابستگی خالی باعث می‌شود افکت پس از رندر اولیه اجرا شود و inputRef.current به عنصر DOM واقعی اشاره کرده و متد focus() را فراخوانی می‌کند.",
+      "tags": ["react.hooks.refs"],
+      "answers": [
+        { "text": "JSX خودکار فوکوس را اعمال می‌کند", "isCorrect": false },
+        {
+          "text": "استفاده از <code dir=\"ltr\">inputRef.current.focus()</code> در useEffect پس از mount",
+          "isCorrect": true
+        },
+        {
+          "text": "React به صورت پیش‌فرض همه inputها را فوکوس می‌کند",
+          "isCorrect": false
+        },
+        { "text": "تابع render() عنصر را فوکوس می‌کند", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چرا باید تابع handle یا event handler را بدون () به onClick پاس دهیم؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه C صحیح است؟ اگر تابع را با () فراخوانی کنیم، در همان لحظه رندر اجرا می‌شود. بدون ()، React آن را ذخیره کرده و تنها هنگام وقوع رویداد اجرا می‌کند.",
+      "tags": ["react.hooks.refs"],
+      "answers": [
+        {
+          "text": "چون JSX تنها توابع بدون () را می‌پذیرد",
+          "isCorrect": false
+        },
+        { "text": "چون این یک convention اختیاری است", "isCorrect": false },
+        {
+          "text": "چون React باید تابع را ذخیره کرده و هنگام رخداد رویداد اجرا کند",
+          "isCorrect": true
+        },
+        {
+          "text": "چون تابع با () باعث ایجاد state جدید می‌شود",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "useRef چه مزیتی نسبت به useState دارد زمانی که نیاز داریم داده‌ای را بدون رندر مجدد نگهداری کنیم؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه A صحیح است؟ useRef مقدار mutable خود را بدون ایجاد رندر مجدد نگه می‌دارد و مناسب برای مقادیری است که نیاز به رندر UI ندارند.",
+      "tags": ["react.hooks.refs"],
+      "answers": [
+        { "text": "نگهداری مقدار mutable بدون رندر مجدد", "isCorrect": true },
+        { "text": "نگهداری state و رندر همزمان", "isCorrect": false },
+        { "text": "تنها برای دسترسی به props", "isCorrect": false },
+        { "text": "ایجاد snapshot از DOM در هر رندر", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "کدام یک از موارد زیر بهترین کاربرد useRef برای دسترسی مستقیم به DOM است؟",
+      "difficulty": 3,
+      "explanation": "چرا گزینه B صحیح است؟ فوکوس خودکار روی یک input یک مثال کلاسیک است که نیاز به دسترسی مستقیم به DOM دارد و useRef این امکان را فراهم می‌کند.",
+      "tags": ["react.hooks.refs"],
+      "answers": [
+        { "text": "مدیریت state پیچیده بین کامپوننت‌ها", "isCorrect": false },
+        {
+          "text": "قرار دادن فوکوس خودکار روی input پس از mount",
+          "isCorrect": true
+        },
+        { "text": "ارسال props به کامپوننت فرزند", "isCorrect": false },
+        { "text": "محاسبات داخلی بدون تغییر DOM", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "در یک کامپوننت Timer که از setInterval استفاده می‌کند، چرا باید تابع پاک‌سازی (cleanup) برگردانده شود؟<code dir=\"ltr\">\nuseEffect(() => {\n  const timerId = setInterval(() => setTime(t => t + 1), 1000);\n  return () => clearInterval(timerId);\n}, []);</code>",
+      "difficulty": 3,
+      "explanation": "چرا گزینه A صحیح است؟ تابع cleanup قبل از unmount یا قبل از اجرای افکت جدید اجرا می‌شود و از ادامه کار تایمر در پس‌زمینه جلوگیری کرده و از نشت حافظه جلوگیری می‌کند.",
+      "tags": ["react.hooks.refs"],
+      "answers": [
+        {
+          "text": "برای جلوگیری از ادامه کار تایمر و نشت حافظه",
+          "isCorrect": true
+        },
+        { "text": "برای افزایش سرعت setInterval", "isCorrect": false },
+        { "text": "برای اجرای تابع در هر رندر", "isCorrect": false },
+        { "text": "برای ذخیره state در متغیرهای داخلی", "isCorrect": false }
+      ]
+    }
+  ]
+}

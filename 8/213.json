@@ -1,0 +1,64 @@
+{
+  "questions": [
+    {
+      "text": "در React، چرا از SyntheticEvent به جای استفاده مستقیم از رویدادهای مرورگر استفاده می‌شود؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه B صحیح است؟ React از SyntheticEvent استفاده می‌کند تا رفتار رویدادها در تمام مرورگرها سازگار باشد و API یکنواختی برای مدیریت رویدادها ارائه دهد.",
+      "tags": ["react.events"],
+      "answers": [
+        { "text": "چون SyntheticEvent سریع‌تر است", "isCorrect": false },
+        { "text": "چون این API سازگاری بین مرورگرها ایجاد می‌کند و مدیریت رویدادها را یکنواخت می‌سازد", "isCorrect": true },
+        { "text": "چون مرورگرها از onClick پشتیبانی نمی‌کنند", "isCorrect": false },
+        { "text": "چون useState به SyntheticEvent نیاز دارد", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "در کامپوننت NameInput، چرا از event.target.value برای به‌روزرسانی state استفاده می‌کنیم؟",
+      "difficulty": 1,
+      "explanation": "چرا گزینه C صحیح است؟ شیء event که به event handler پاس داده می‌شود، اطلاعات درباره عنصر رخ‌داده را دارد و event.target.value مقدار فعلی input را ارائه می‌دهد.",
+      "tags": ["react.events"],
+      "answers": [
+        { "text": "چون مقدار input در props ذخیره شده است", "isCorrect": false },
+        { "text": "چون event.preventDefault() مقدار input را ارائه می‌دهد", "isCorrect": false },
+        { "text": "چون event.target.value مقدار فعلی input را در اختیار ما قرار می‌دهد", "isCorrect": true },
+        { "text": "چون useRef مقدار input را فراهم می‌کند", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "در فرم SearchForm، اگر از event.preventDefault() استفاده نکنیم، چه اتفاقی می‌افتد؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه B صحیح است؟ بدون جلوگیری از رفتار پیش‌فرض، مرورگر فرم را ارسال کرده و صفحه رفرش می‌شود که تجربه SPA را مختل می‌کند.",
+      "tags": ["react.events"],
+      "answers": [
+        { "text": "هیچ اتفاقی نمی‌افتد و فرم درست کار می‌کند", "isCorrect": false },
+        { "text": "مرورگر فرم را ارسال کرده و صفحه رفرش می‌شود", "isCorrect": true },
+        { "text": "React به صورت خودکار رفتار پیش‌فرض را جلوگیری می‌کند", "isCorrect": false },
+        { "text": "فقط console.log اجرا می‌شود", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "کدام یک از گزینه‌ها روش صحیح اتصال یک تابع به onClick در JSX است؟",
+      "difficulty": 1,
+      "explanation": "چرا گزینه C صحیح است؟ در React، باید خود تابع را بدون پرانتز به prop رویداد پاس دهیم تا هنگام وقوع رویداد اجرا شود و نه در زمان رندر.",
+      "tags": ["react.events"],
+      "answers": [
+        { "text": "<button onClick={handleClick()}>Click</button>", "isCorrect": false },
+        { "text": "<button onclick={handleClick}>Click</button>", "isCorrect": false },
+        { "text": "<button onClick={handleClick}>Click</button>", "isCorrect": true },
+        { "text": "<button onClick='handleClick()'>Click</button>", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چرا تعریف منطق پیچیده Event Handler به صورت تابع جداگانه بهتر است؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه B صحیح است؟ جدا کردن تابع برای منطق پیچیده باعث می‌شود JSX تمیزتر باشد و نگهداری و دیباگ کردن کد آسان‌تر شود.",
+      "tags": ["react.events"],
+      "answers": [
+        { "text": "چون React تنها توابع جداگانه را می‌پذیرد", "isCorrect": false },
+        { "text": "چون JSX تمیزتر و خواناتر می‌شود و منطق پیچیده از JSX جدا می‌شود", "isCorrect": true },
+        { "text": "چون تابع inline همیشه حافظه مصرف می‌کند", "isCorrect": false },
+        { "text": "چون بدون تابع جداگانه، event اجرا نمی‌شود", "isCorrect": false }
+      ]
+    }
+  ]
+}

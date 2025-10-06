@@ -1,0 +1,64 @@
+{
+  "questions": [
+    {
+      "text": "چه مقادیری برای state در کامپوننت Timer تعریف شده‌اند و وظیفه آنها چیست؟",
+      "difficulty": 1,
+      "explanation": "چرا گزینه A صحیح است؟ state <code>isActive</code> مشخص می‌کند که تایمر فعال یا غیرفعال باشد و state <code>time</code> زمان سپری شده را نگهداری می‌کند.",
+      "tags": ["react.project.timer.state"],
+      "answers": [
+        { "text": "isActive برای فعال/غیرفعال بودن تایمر، time برای نگهداری زمان سپری شده", "isCorrect": true },
+        { "text": "isActive برای نمایش فرمت زمان، time برای فعال بودن دکمه‌ها", "isCorrect": false },
+        { "text": "isActive برای ریست کردن تایمر، time برای تعداد کلیک‌ها", "isCorrect": false },
+        { "text": "isActive برای زمان سپری شده، time برای فعال بودن تایمر", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "تابع <code>formatTime(time)</code> چه کاری انجام می‌دهد؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه B صحیح است؟ این تابع تعداد ثانیه‌ها را به فرمت دقیقه:ثانیه تبدیل می‌کند تا زمان برای کاربر خواناتر شود.",
+      "tags": ["react.project.timer.state"],
+      "answers": [
+        { "text": "ثانیه‌ها را به صورت خام نمایش می‌دهد", "isCorrect": false },
+        { "text": "تعداد ثانیه‌ها را به فرمت دقیقه:ثانیه تبدیل می‌کند", "isCorrect": true },
+        { "text": "زمان را به صورت رشته ساده بازمی‌گرداند", "isCorrect": false },
+        { "text": "تنها دقیقه‌ها را نشان می‌دهد", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چرا استفاده از <code>padStart(2, '0')</code> در تابع <code>formatTime</code> مهم است؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه A صحیح است؟ padStart اطمینان می‌دهد که همه اعداد دو رقمی نمایش داده شوند.",
+      "tags": ["react.project.timer.state"],
+      "answers": [
+        { "text": "برای اطمینان از اینکه همه اعداد دو رقمی نمایش داده شوند", "isCorrect": true },
+        { "text": "برای افزایش سرعت رندر UI", "isCorrect": false },
+        { "text": "برای فعال کردن دکمه‌ها", "isCorrect": false },
+        { "text": "برای شمارش ثانیه‌ها", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "در کامپوننت Timer، چرا بهتر است state <code>time</code> به جای نمایش مستقیم مقادیر ثابت ثانیه، استفاده شود؟",
+      "difficulty": 3,
+      "explanation": "چرا گزینه A صحیح است؟ state باعث می‌شود UI با تغییرات زمان به‌روزرسانی شده و نمایش زمان داینامیک شود.",
+      "tags": ["react.project.timer.state"],
+      "answers": [
+        { "text": "چون state باعث می‌شود زمان در UI با تغییرات منظم update شود", "isCorrect": true },
+        { "text": "چون بدون state دکمه‌ها کار نمی‌کنند", "isCorrect": false },
+        { "text": "چون بدون state تابع formatTime کار نمی‌کند", "isCorrect": false },
+        { "text": "چون state باعث می‌شود JSX کمتر شود", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "در آینده، برای اینکه زمان به صورت خودکار شمارش شود، بهترین روش چیست؟",
+      "difficulty": 3,
+      "explanation": "چرا گزینه B صحیح است؟ با استفاده از useEffect می‌توان تایمر را ایجاد و مدیریت کرد و با cleanup از نشت حافظه جلوگیری کرد.",
+      "tags": ["react.project.timer.state"],
+      "answers": [
+        { "text": "اضافه کردن setInterval در داخل JSX", "isCorrect": false },
+        { "text": "استفاده از useEffect برای ایجاد و مدیریت تایمر", "isCorrect": true },
+        { "text": "افزایش مقدار time به صورت دستی با دکمه Reset", "isCorrect": false },
+        { "text": "ذخیره مقدار time در localStorage", "isCorrect": false }
+      ]
+    }
+  ]
+}

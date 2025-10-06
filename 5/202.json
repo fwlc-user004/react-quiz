@@ -1,0 +1,76 @@
+{
+  "questions": [
+    {
+      "text": "چرا در React هنگام به‌روزرسانی state نباید متغیر state را مستقیماً تغییر دهیم؟",
+      "difficulty": 1,
+      "explanation": "چرا گزینه A صحیح است؟ زیرا direct mutation باعث رفتار غیرقابل پیش‌بینی و رندر ناقص در React می‌شود. استفاده از setter اطمینان می‌دهد که React state جدید را تشخیص داده و رندر مجدد را اعمال کند.",
+      "tags": ["react.state.common-patterns"],
+      "answers": [
+        { "text": "چون تغییر مستقیم state باعث رفتار غیرقابل پیش‌بینی و رندر ناقص می‌شود", "isCorrect": true },
+        { "text": "چون setter ها سریع‌تر اجرا می‌شوند", "isCorrect": false },
+        { "text": "چون مرورگر state را نمی‌شناسد", "isCorrect": false },
+        { "text": "چون useState تنها مقدار اولیه را قبول می‌کند", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "در مثال زیر، چه روش ایمن و استانداردی برای افزایش سن کاربر استفاده شده است؟\n<code dir=\"ltr\">const [user, setUser] = useState({ name: 'Alice', age: 30 });\nfunction handleAgeIncrease() {\n  setUser({ ...user, age: user.age + 1 });\n}</code>",
+      "difficulty": 2,
+      "explanation": "چرا گزینه B صحیح است؟ با استفاده از سینتکس spread، یک شیء جدید ساخته می‌شود و mutation مستقیم انجام نمی‌شود، که مطابق با اصل تغییرناپذیری است.",
+      "tags": ["react.state.common-patterns"],
+      "answers": [
+        { "text": "user.age++", "isCorrect": false },
+        { "text": "setUser({ ...user, age: user.age + 1 })", "isCorrect": true },
+        { "text": "setUser(user.age += 1)", "isCorrect": false },
+        { "text": "user = { ...user, age: user.age + 1 }", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "برای افزودن یک آیتم جدید به آرایه state، کدام روش صحیح است؟\n<code dir=\"ltr\">const [todos, setTodos] = useState([{ id: 1, text: 'Learn React' }]);\nfunction addTodo() {\n  const newTodo = { id: 2, text: 'Build a project' };\n  setTodos([...todos, newTodo]);\n}</code>",
+      "difficulty": 2,
+      "explanation": "چرا گزینه C صحیح است؟ با استفاده از سینتکس spread یک آرایه جدید ساخته می‌شود که شامل آیتم‌های قبلی و آیتم جدید است، بدون تغییر آرایه اصلی.",
+      "tags": ["react.state.common-patterns"],
+      "answers": [
+        { "text": "todos.push(newTodo)", "isCorrect": false },
+        { "text": "todos = [...todos, newTodo]", "isCorrect": false },
+        { "text": "setTodos([...todos, newTodo])", "isCorrect": true },
+        { "text": "setTodos(todos.append(newTodo))", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "برای حذف یک آیتم با id مشخص از آرایه state، کدام روش صحیح است؟\n<code dir=\"ltr\">function deleteTodo(todoId) {\n  setTodos(todos.filter(t => t.id !== todoId));\n}</code>",
+      "difficulty": 2,
+      "explanation": "چرا گزینه B صحیح است؟ متد filter یک آرایه جدید برمی‌گرداند و آرایه اصلی تغییر نمی‌کند، که مطابق با اصل تغییرناپذیری است.",
+      "tags": ["react.state.common-patterns"],
+      "answers": [
+        { "text": "todos.splice(todoId, 1)", "isCorrect": false },
+        { "text": "setTodos(todos.filter(t => t.id !== todoId))", "isCorrect": true },
+        { "text": "todos = todos.filter(t => t.id !== todoId)", "isCorrect": false },
+        { "text": "delete todos[todoId]", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "برای ویرایش یک آیتم خاص در آرایه state، کدام روش صحیح است؟\n<code dir=\"ltr\">function updateTodo(todoId, newText) {\n  setTodos(todos.map(t => t.id === todoId ? { ...t, text: newText } : t));\n}</code>",
+      "difficulty": 2,
+      "explanation": "چرا گزینه A صحیح است؟ با استفاده از map یک آرایه جدید ساخته می‌شود که فقط آیتم مورد نظر تغییر کرده و سایر آیتم‌ها بدون تغییر باقی می‌مانند.",
+      "tags": ["react.state.common-patterns"],
+      "answers": [
+        { "text": "setTodos(todos.map(t => t.id === todoId ? { ...t, text: newText } : t))", "isCorrect": true },
+        { "text": "todos[todoId].text = newText", "isCorrect": false },
+        { "text": "setTodos(todos.forEach(t => t.id === todoId ? t.text = newText : t))", "isCorrect": false },
+        { "text": "setTodos(todos.replace(todoId, newText))", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چرا هنگام به‌روزرسانی state که به مقدار قبلی آن وابسته است، باید از تابع به‌روزرسان استفاده کنیم؟\n<code dir=\"ltr\">setCount(c => c + 1); setCount(c => c + 1); setCount(c => c + 1);</code>",
+      "difficulty": 3,
+      "explanation": "چرا گزینه A صحیح است؟ استفاده از updater function تضمین می‌کند که هر به‌روزرسانی بر اساس مقدار واقعی قبلی انجام شود و چندین فراخوانی پشت سر هم درست اعمال شوند.",
+      "tags": ["react.state.common-patterns"],
+      "answers": [
+        { "text": "چون updater function مقدار واقعی قبلی state را دریافت می‌کند و چندین فراخوانی پشت سر هم درست اعمال می‌شوند", "isCorrect": true },
+        { "text": "چون setCount همیشه تنها یک بار مقدار را اعمال می‌کند", "isCorrect": false },
+        { "text": "چون React فقط آخرین فراخوانی را اعمال می‌کند", "isCorrect": false },
+        { "text": "چون useState مقدار اولیه را نادیده می‌گیرد", "isCorrect": false }
+      ]
+    }
+  ]
+}

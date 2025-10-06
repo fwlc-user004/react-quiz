@@ -1,0 +1,77 @@
+{
+  "questions": [
+    {
+      "text": "useEffect در React چه کاربردی دارد؟",
+      "difficulty": 1,
+      "explanation": "چرا گزینه B صحیح است؟ useEffect به ما اجازه می‌دهد کدهایی که با دنیای خارج از React تعامل دارند (مانند DOM یا APIها) را بعد از رندر کامپوننت اجرا کنیم، بدون اینکه رندر اصلی مسدود شود.",
+      "tags": ["react.hooks.useEffect"],
+      "answers": [
+        { "text": "برای ایجاد state جدید در کامپوننت", "isCorrect": false },
+        { "text": "برای مدیریت عوارض جانبی و اجرای کد پس از رندر", "isCorrect": true },
+        { "text": "برای تعریف props کامپوننت", "isCorrect": false },
+        { "text": "برای بهینه‌سازی CSS", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چه چیزی باعث می‌شود useEffect بعد از هر رندر اجرا شود؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه C صحیح است؟ اگر آرایه وابستگی‌ها ارائه نشود، useEffect بعد از هر بار رندر اجرا می‌شود، چه رندر اولیه و چه رندرهای مجدد ناشی از تغییر state.",
+      "tags": ["react.hooks.useEffect"],
+      "answers": [
+        { "text": "وجود آرایه خالی به عنوان وابستگی", "isCorrect": false },
+        { "text": "تعریف state در useEffect", "isCorrect": false },
+          { "text": "عدم ارائه آرایه وابستگی", "isCorrect": true },
+        { "text": "استفاده از تابع setter", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "در این مثال، چه عملی یک «عوارض جانبی» محسوب می‌شود؟\n<pre><code dir=\"ltr\">useEffect(() => {\n  document.title = `You clicked ${count} times`;\n});</code></pre>",
+      "difficulty": 2,
+      "explanation": "چرا گزینه B صحیح است؟ تغییر document.title عملی است که خارج از دنیای React رخ می‌دهد و به DOM مرورگر وابسته است، بنابراین یک عارضه جانبی است.",
+      "tags": ["react.hooks.useEffect"],
+      "answers": [
+        { "text": "فراخوانی setCount", "isCorrect": false },
+        { "text": "تغییر document.title", "isCorrect": true },
+        { "text": "بازگشت JSX", "isCorrect": false },
+        { "text": "تعریف متغیر count", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چرا باید تابع useEffect در سطح بالای کامپوننت فراخوانی شود؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه C صحیح است؟ فراخوانی useEffect در سطح بالا باعث می‌شود ترتیب اجرای افکت‌ها ثابت بماند و React بتواند آنها را به درستی مدیریت کند، مشابه قوانین سایر هوک‌ها.",
+      "tags": ["react.hooks.useEffect"],
+      "answers": [
+        { "text": "چون useEffect تنها یک بار اجرا می‌شود", "isCorrect": false },
+      
+        { "text": "چون داخل حلقه یا شرط مجاز است", "isCorrect": false },
+          { "text": "چون React نیاز دارد ترتیب اجرای افکت‌ها ثابت باشد", "isCorrect": true },
+        { "text": "چون در خارج از کامپوننت اجرا نمی‌شود", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چه تفاوتی بین اجرای افکت در useEffect و اجرای مستقیم کد در بدنه کامپوننت وجود دارد؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه A صحیح است؟ کدهای داخل useEffect بعد از اعمال تغییرات در DOM اجرا می‌شوند و رندر اصلی را مسدود نمی‌کنند، در حالی که کد داخل بدنه کامپوننت در زمان رندر اجرا می‌شود.",
+      "tags": ["react.hooks.useEffect"],
+      "answers": [
+        { "text": "useEffect بعد از رندر اجرا می‌شود", "isCorrect": true },
+        { "text": "بدنه کامپوننت بعد از رندر اجرا می‌شود", "isCorrect": false },
+        { "text": "useEffect برای تعریف state است", "isCorrect": false },
+        { "text": "هیچ تفاوتی وجود ندارد", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "کدام مثال باعث اجرای غیرضروری useEffect می‌شود؟",
+      "difficulty": 3,
+      "explanation": "چرا گزینه A صحیح است؟ اگر آرایه وابستگی‌ها ارائه نشود، افکت بعد از هر رندر اجرا می‌شود حتی اگر نیاز نباشد و باعث اجرای غیرضروری می‌شود.",
+      "tags": ["react.hooks.useEffect"],
+      "answers": [
+        { "text": "<code dir=\"ltr\">useEffect(() => { console.log(count); });</code>", "isCorrect": true },
+        { "text": "<code dir=\"ltr\">useEffect(() => { console.log(count); }, [count]);</code>", "isCorrect": false },
+        { "text": "<code dir=\"ltr\">useEffect(() => { console.log(count); }, []);</code>", "isCorrect": false },
+        { "text": "<code dir=\"ltr\">useEffect(() => { console.log('hello'); }, []);</code>", "isCorrect": false }
+      ]
+    }
+  ]
+}

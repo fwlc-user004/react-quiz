@@ -1,0 +1,64 @@
+{
+  "questions": [
+    {
+      "text": "چرا در یک کامپوننت کنترل‌شده (Controlled Component) مقدار ورودی همیشه با state هماهنگ است؟",
+      "difficulty": 1,
+      "explanation": "چرا گزینه A صحیح است؟ زیرا تابع onChange با هر تغییر، state را به‌روزرسانی می‌کند و مقدار input از state گرفته می‌شود، بنابراین UI و state همیشه هماهنگ هستند.",
+      "tags": ["react.forms.controlled"],
+      "answers": [
+        { "text": "چون هر بار که کاربر تایپ می‌کند، onChange مقدار state را به‌روزرسانی می‌کند", "isCorrect": true },
+        { "text": "چون React مقدار input را به صورت خودکار با state همسان می‌کند", "isCorrect": false },
+        { "text": "چون value عنصر input به صورت پیش‌فرض برابر state است", "isCorrect": false },
+        { "text": "چون مرورگر مقادیر را کش می‌کند", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "در کامپوننت <code dir=\"ltr\">NameForm</code>، چه چیزی باعث می‌شود فرم از رفرش شدن صفحه جلوگیری کند؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه B صحیح است؟ فراخوانی event.preventDefault() جلوی رفتار پیش‌فرض مرورگر (رفرش شدن فرم) را می‌گیرد و اجازه می‌دهد فرم با React مدیریت شود.",
+      "tags": ["react.forms.controlled"],
+      "answers": [
+        { "text": "فراخوانی alert", "isCorrect": false },
+        { "text": "فراخوانی event.preventDefault()", "isCorrect": true },
+        { "text": "پاس دادن name به alert", "isCorrect": false },
+        { "text": "فراخوانی handleChange", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "کدام بخش در کامپوننت کنترل‌شده مسئول به‌روزرسانی state هنگام تایپ کاربر است؟",
+      "difficulty": 3,
+      "explanation": "چرا گزینه B صحیح است؟ تابع onChange با دریافت event مقدار جدید ورودی را می‌خواند و state را به‌روزرسانی می‌کند.",
+      "tags": ["react.forms.controlled"],
+      "answers": [
+        { "text": "value اتریبیوت input", "isCorrect": false },
+        { "text": "event handler onChange", "isCorrect": true },
+        { "text": "submit button", "isCorrect": false },
+        { "text": "JSX return", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "فرض کنید می‌خواهید یک فیلد input را کنترل کنید و هنگام تایپ کاربر تمام حروف به حروف بزرگ تبدیل شوند. کدام روش صحیح است؟",
+      "difficulty": 1,
+      "explanation": "چرا گزینه B صحیح است؟ در کامپوننت کنترل‌شده، state تنها منبع حقیقت است. با استفاده از `.toUpperCase()` در onChange، مقدار state به حروف بزرگ تبدیل شده و UI هماهنگ می‌شود.",
+      "tags": ["react.forms.controlled"],
+      "answers": [
+        { "text": "تغییر مستقیم مقدار input با DOM API", "isCorrect": false },
+        { "text": "در تابع onChange مقدار state را با `.toUpperCase()` به‌روزرسانی کنید", "isCorrect": true },
+        { "text": "استفاده از setTimeout برای تغییر value بعد از تایپ", "isCorrect": false },
+        { "text": "استفاده از value بدون onChange", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "کامپوننت کنترل‌شده در React چه چیزی را به عنوان منبع حقیقت برای مقدار ورودی‌ها استفاده می‌کند؟",
+      "difficulty": 1,
+      "explanation": "چرا گزینه B صحیح است؟ در Controlled Component، state کامپوننت تنها منبع حقیقت برای مقادیر input است و هر تغییر به state اعمال می‌شود.",
+      "tags": ["react.forms.controlled"],
+      "answers": [
+        { "text": "DOM element", "isCorrect": false },
+        { "text": "state کامپوننت", "isCorrect": true },
+        { "text": "props", "isCorrect": false },
+        { "text": "متغیر محلی", "isCorrect": false }
+      ]
+    }
+  ]
+}

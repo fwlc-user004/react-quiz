@@ -1,0 +1,76 @@
+{
+  "questions": [
+    {
+      "text": "چرا در کامپوننت‌هایی که از useEffect برای اتصال به سرویس خارجی استفاده می‌کنند، باید تابع cleanup داشته باشیم؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه A صحیح است؟ تابع cleanup منابع را هنگام unmount یا قبل از اجرای مجدد افکت آزاد می‌کند تا از نشت حافظه و ایجاد چندین اتصال همزمان جلوگیری شود.",
+      "tags": ["react.hooks.useEffect.cleanup"],
+      "answers": [
+        { "text": "برای جلوگیری از نشت حافظه و آزادسازی منابع هنگام unmount", "isCorrect": true },
+        { "text": "برای اینکه useEffect همیشه دوباره اجرا شود", "isCorrect": false },
+        { "text": "برای ایجاد چندین اتصال به سرویس خارجی", "isCorrect": false },
+        { "text": "برای اینکه state به‌روزرسانی نشود", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "در مثال ChatRoom، اگر prop مربوط به roomId تغییر کند، چه اتفاقی برای افکت قبلی می‌افتد؟<code dir=\"ltr\">\nuseEffect(() => {\n  connection = createConnection(roomId);\n  connection.connect();\n  return () => connection.disconnect();\n}, [roomId]);\n</code>",
+      "difficulty": 3,
+      "explanation": "چرا گزینه C صحیح است؟ قبل از اجرای افکت جدید برای roomId جدید، React تابع cleanup افکت قبلی را فراخوانی می‌کند تا اتصال به اتاق قدیمی قطع شود و از اتصال همزمان جلوگیری شود.",
+      "tags": ["react.hooks.useEffect.cleanup"],
+      "answers": [
+        { "text": "هیچ کاری انجام نمی‌شود، افکت قدیمی باقی می‌ماند", "isCorrect": false },
+        { "text": "افکت قدیمی دوباره اجرا می‌شود", "isCorrect": false },
+        { "text": "تابع cleanup اجرا شده و افکت جدید اجرا می‌شود", "isCorrect": true },
+        { "text": "React خطا می‌دهد", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "در کد Timer، چه زمانی تابع clearInterval فراخوانی می‌شود؟<code dir=\"ltr\">\nreturn () => clearInterval(timerId);\n</code>",
+      "difficulty": 2,
+      "explanation": "چرا گزینه B صحیح است؟ تابع cleanup درست قبل از unmount اجرا می‌شود تا تایمر متوقف شود و منابع آزاد شوند.",
+      "tags": ["react.hooks.useEffect.cleanup"],
+      "answers": [
+        { "text": "قبل از mount کامپوننت", "isCorrect": false },
+        { "text": "قبل از unmount کامپوننت یا قبل از اجرای مجدد افکت", "isCorrect": true },
+        { "text": "بعد از هر رندر بدون توجه به تغییرات", "isCorrect": false },
+        { "text": "هیچ‌وقت اجرا نمی‌شود", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چه مزیتی استفاده از تابع cleanup در useEffect دارد؟",
+      "difficulty": 1,
+      "explanation": "چرا گزینه A صحیح است؟ این کار باعث می‌شود منابع غیرضروری مانند تایمرها یا subscriptionها پس از پایان کار آزاد شوند و از نشت حافظه جلوگیری شود.",
+      "tags": ["react.hooks.useEffect.cleanup"],
+      "answers": [
+        { "text": "جلوگیری از نشت حافظه و آزادسازی منابع", "isCorrect": true },
+        { "text": "اجرای افکت بعد از هر رندر", "isCorrect": false },
+        { "text": "جلوگیری از mount کامپوننت", "isCorrect": false },
+        { "text": "افزایش سرعت setState", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "اگر آرایه وابستگی‌ها را در useEffect وارد کنیم، چه تأثیری بر تابع cleanup دارد؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه C صحیح است؟ تابع cleanup قبل از اجرای افکت بعدی برای هر تغییر در آرایه وابستگی اجرا می‌شود تا محیط قبلی پاک شود.",
+      "tags": ["react.hooks.useEffect.cleanup"],
+      "answers": [
+        { "text": "هیچ تأثیری ندارد، تابع cleanup همیشه اجرا نمی‌شود", "isCorrect": false },
+        { "text": "تابع cleanup بعد از رندر بعدی اجرا می‌شود", "isCorrect": false },
+        { "text": "قبل از اجرای افکت بعدی اجرا می‌شود", "isCorrect": true },
+        { "text": "تنها در mount اجرا می‌شود", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چرا عدم استفاده از تابع cleanup در افکت‌های حاوی subscription یا تایمر مشکل‌ساز است؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه B صحیح است؟ بدون cleanup، منابع رزرو شده آزاد نمی‌شوند، ممکن است چندین اتصال یا تایمر فعال باقی بماند و باعث نشت حافظه و باگ‌های منطقی شود.",
+      "tags": ["react.hooks.useEffect.cleanup"],
+      "answers": [
+        { "text": "چون React cleanup را خودش انجام می‌دهد", "isCorrect": false },
+        { "text": "چون منابع آزاد نمی‌شوند و نشت حافظه رخ می‌دهد", "isCorrect": true },
+        { "text": "چون useState درست کار نمی‌کند", "isCorrect": false },
+        { "text": "چون افکت دیگر اجرا نمی‌شود", "isCorrect": false }
+      ]
+    }
+  ]
+}

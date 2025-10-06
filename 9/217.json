@@ -1,0 +1,76 @@
+{
+  "questions": [
+    {
+      "text": "در فرم <code dir=\"ltr\">ContactForm</code>، چرا از یک state جداگانه به نام <code dir=\"ltr\">errors</code> استفاده می‌کنیم؟",
+      "difficulty": 1,
+      "explanation": "چرا گزینه A صحیح است؟ این state امکان نگهداری پیام‌های خطای هر فیلد را فراهم می‌کند و به ما اجازه می‌دهد بازخورد واضح به کاربر نمایش دهیم.",
+      "tags": ["react.forms.validation"],
+      "answers": [
+        { "text": "برای ذخیره پیام‌های خطا و نمایش شرطی آنها به کاربر", "isCorrect": true },
+        { "text": "برای ذخیره مقادیر ورودی فرم", "isCorrect": false },
+        { "text": "برای رندر کردن مجدد فرم بدون تغییر مقادیر", "isCorrect": false },
+        { "text": "برای جلوگیری از اجرای handleChange", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "تابع <code dir=\"ltr\">validate</code> چه کاری انجام می‌دهد؟",
+      "difficulty": 1,
+      "explanation": "چرا گزینه B صحیح است؟ تابع validate داده‌های فرم را بررسی کرده و یک شیء شامل پیام‌های خطا برای فیلدهای معتبر نشده برمی‌گرداند.",
+      "tags": ["react.forms.validation"],
+      "answers": [
+        { "text": "مقادیر ورودی فرم را به state اصلی منتقل می‌کند", "isCorrect": false },
+        { "text": "خطاهای فرم را بررسی و یک شیء با پیام‌های خطا برمی‌گرداند", "isCorrect": true },
+        { "text": "فرم را به صورت پیش‌فرض ارسال می‌کند", "isCorrect": false },
+        { "text": "فرم را بازنشانی می‌کند", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "در <code dir=\"ltr\">handleSubmit</code>، چرا باید <code dir=\"ltr\">event.preventDefault()</code> فراخوانی شود؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه C صحیح است؟ این کار از رفتار پیش‌فرض مرورگر (رفرش شدن صفحه هنگام ارسال فرم) جلوگیری کرده و امکان کنترل کامل فرم با React را فراهم می‌کند.",
+      "tags": ["react.forms.validation"],
+      "answers": [
+        { "text": "برای پاک‌سازی state فرم قبل از اعتبارسنجی", "isCorrect": false },
+        { "text": "برای نمایش پیام خطا در console", "isCorrect": false },
+        { "text": "برای جلوگیری از رفرش شدن صفحه و کنترل فرم در React", "isCorrect": true },
+        { "text": "برای اجرای تابع validate فقط یک بار", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چگونه می‌توانیم پیام خطا را به صورت شرطی نمایش دهیم؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه A صحیح است؟ با استفاده از شرط وجود مقدار در errors (مثلاً errors.name) و نمایش JSX مربوطه، پیام خطا تنها در صورت وقوع نمایش داده می‌شود.",
+      "tags": ["react.forms.validation"],
+      "answers": [
+        { "text": "با استفاده از شرط در JSX و بررسی وجود مقدار در errors", "isCorrect": true },
+        { "text": "با تعریف state جدید برای هر پیام خطا", "isCorrect": false },
+        { "text": "با فراخوانی تابع validate در render بدون شرط", "isCorrect": false },
+        { "text": "با تغییر مقدار value input به متن خطا", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "اگر validate یک شیء خالی برگرداند، چه اتفاقی می‌افتد؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه D صحیح است؟ شیء خالی نشان‌دهنده عدم وجود خطا است، بنابراین فرم معتبر است و state errors باید پاک شود.",
+      "tags": ["react.forms.validation"],
+      "answers": [
+        { "text": "فرم نامعتبر است و پیام خطا نمایش داده می‌شود", "isCorrect": false },
+        { "text": "فرم رندر نمی‌شود", "isCorrect": false },
+        { "text": "تمام فیلدها بازنشانی می‌شوند", "isCorrect": false },
+        { "text": "فرم معتبر است و پیام خطا پاک می‌شود", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "چرا استفاده از یک state مجزا برای مدیریت خطاها نسبت به نگهداری آنها در formData بهتر است؟",
+      "difficulty": 3,
+      "explanation": "چرا گزینه B صحیح است؟ نگهداری خطاها در state جداگانه باعث می‌شود منطق اعتبارسنجی از داده‌های ورودی جدا باشد و رندر مجدد کامپوننت تنها در صورت تغییر خطاها رخ دهد.",
+      "tags": ["react.forms.validation"],
+      "answers": [
+        { "text": "چون formData نمی‌تواند مقادیر رشته‌ای داشته باشد", "isCorrect": false },
+        { "text": "چون مدیریت جداگانه خطاها باعث رندر بهینه و کد تمیزتر می‌شود", "isCorrect": true },
+        { "text": "چون فرمData فقط برای مقادیر عددی استفاده می‌شود", "isCorrect": false },
+        { "text": "چون state مجزا امکان استفاده از useEffect را نمی‌دهد", "isCorrect": false }
+      ]
+    }
+  ]
+}

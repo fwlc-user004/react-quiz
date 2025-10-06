@@ -1,0 +1,64 @@
+{
+  "questions": [
+    {
+      "text": "Node.js چیست و چرا برای توسعه <code dir=\"ltr\">React</code> نیاز به آن داریم؟",
+      "difficulty": 1,
+      "explanation": "پاسخ صحیح گزینه B است، چون <code dir=\"ltr\">Node.js</code> به ما اجازه می‌دهد جاوااسکریپت را خارج از مرورگر اجرا کنیم و ابزارهای مختلف توسعه مانند Webpack و ابزارهای تست را مدیریت کنیم.",
+      "tags": ["react.setup"],
+      "answers": [
+        { "text": "یک زبان برنامه‌نویسی برای توسعه بک‌اند", "isCorrect": false },
+        { "text": "یک محیط اجرای جاوااسکریپت برای اجرای ابزارهای مختلف در توسعه React", "isCorrect": true },
+        { "text": "یک فریم ورک برای توسعه اپلیکیشن‌های وب", "isCorrect": false },
+        { "text": "یک سرویس میزبانی برای اپلیکیشن‌های React", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "npm چیست و چه نقشی در توسعه <code dir=\"ltr\">React</code> ایفا می‌کند؟",
+      "difficulty": 2,
+      "explanation": "پاسخ صحیح گزینه A است، چون npm مدیر پکیج است و برای نصب و مدیریت وابستگی‌های پروژه‌های React از جمله خود React و کتابخانه‌های دیگر استفاده می‌شود.",
+      "tags": ["react.setup"],
+      "answers": [
+        { "text": "مدیر پکیج برای نصب و مدیریت وابستگی‌های پروژه", "isCorrect": true },
+        { "text": "یک ابزار برای ایجاد اپلیکیشن‌های React", "isCorrect": false },
+        { "text": "یک فریم ورک برای توسعه React", "isCorrect": false },
+        { "text": "یک IDE برای نوشتن کدهای React", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چرا نسخه LTS (<code dir=\"ltr\">Long-Term Support</code>) <code dir=\"ltr\">Node.js</code> برای بیشتر کاربران توصیه می‌شود؟",
+      "difficulty": 2,
+      "explanation": "پاسخ صحیح گزینه D است، چون نسخه LTS پایدارترین نسخه است و از پشتیبانی بلندمدت برخوردار است.",
+      "tags": ["react.setup"],
+      "answers": [
+        { "text": "چون به طور معمول ویژگی‌های جدیدتری دارد", "isCorrect": false },
+        { "text": "چون برای توسعه اپلیکیشن‌های بزرگتر مناسب است", "isCorrect": false },
+        { "text": "چون از ویژگی‌های آزمایشی استفاده می‌کند", "isCorrect": false },
+        { "text": "چون پایدارترین نسخه است و از پشتیبانی بلندمدت برخوردار است", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "چه ابزارهایی در اکوسیستم <code dir=\"ltr\">React</code> از <code dir=\"ltr\">Node.js</code> استفاده می‌کنند؟",
+      "difficulty": 3,
+      "explanation": "پاسخ صحیح گزینه C است، چون ابزارهایی مانند سرورهای توسعه محلی و باندلرها مانند Webpack از <code dir=\"ltr\">Node.js</code> برای مدیریت وابستگی‌ها و اجرای فرایندها استفاده می‌کنند.",
+      "tags": ["react.setup"],
+      "answers": [
+        { "text": "فقط ابزارهای مربوط به طراحی UI", "isCorrect": false },
+        { "text": "فقط برای مدیریت درخواست‌های HTTP", "isCorrect": false },
+        { "text": "ابزارهایی مانند سرورهای توسعه محلی و باندلرها مانند Webpack", "isCorrect": true },
+        { "text": "فقط برای اجرای کدهای JavaScript در مرورگر", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چرا Visual Studio Code (<code dir=\"ltr\">VS Code</code>) برای توسعه <code dir=\"ltr\">React</code> توصیه می‌شود؟",
+      "difficulty": 2,
+      "explanation": "پاسخ صحیح گزینه B است، چون <code dir=\"ltr\">VS Code</code> پشتیبانی عالی از جاوااسکریپت و React، افزونه‌های متنوع و قابلیت‌های دیباگینگ داخلی دارد.",
+      "tags": ["react.setup"],
+      "answers": [
+        { "text": "چون فقط از جاوااسکریپت پشتیبانی می‌کند", "isCorrect": false },
+        { "text": "چون پشتیبانی عالی از جاوااسکریپت و React، افزونه‌های متنوع و قابلیت‌های دیباگینگ داخلی دارد", "isCorrect": true },
+        { "text": "چون رایگان است و سریع‌ترین ویرایشگر کد است", "isCorrect": false },
+        { "text": "چون به صورت پیش‌فرض برای React پیکربندی شده است", "isCorrect": false }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "questions": [
+    {
+      "text": "پوشه <code dir=\"ltr\">node_modules</code> در پروژه <code dir=\"ltr\">React</code> چه کاربردی دارد؟",
+      "difficulty": 1,
+      "explanation": "پاسخ صحیح گزینه B است، چون پوشه <code dir=\"ltr\">node_modules</code> تمام وابستگی‌ها و پکیج‌های جاوااسکریپت را که پروژه نیاز دارد نگهداری می‌کند.",
+      "tags": ["react.project-structure"],
+      "answers": [
+        { "text": "برای نگهداری کدهای جاوااسکریپت نوشته شده توسط تیم توسعه", "isCorrect": false },
+        { "text": "برای نگهداری وابستگی‌ها و پکیج‌های جاوااسکریپت", "isCorrect": true },
+        { "text": "برای ذخیره کردن فایل‌های استاتیک مانند عکس‌ها", "isCorrect": false },
+        { "text": "برای ذخیره کدهای بک‌اند اپلیکیشن", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "فایل <code dir=\"ltr\">package.json</code> در پروژه <code dir=\"ltr\">React</code> چه اطلاعاتی را ذخیره می‌کند؟",
+      "difficulty": 2,
+      "explanation": "پاسخ صحیح گزینه C است، چون فایل <code dir=\"ltr\">package.json</code> اطلاعاتی از جمله نام پروژه، نسخه، و لیستی از وابستگی‌های پروژه را ذخیره می‌کند.",
+      "tags": ["react.project-structure"],
+      "answers": [
+        { "text": "فقط نام پروژه", "isCorrect": false },
+        { "text": "فقط وابستگی‌های پروژه", "isCorrect": false },
+        { "text": "نام پروژه، نسخه، و وابستگی‌های پروژه", "isCorrect": true },
+        { "text": "کدهای جاوااسکریپت برای کامپایل پروژه", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چه کاربردی در فایل <code dir=\"ltr\">public/index.html</code> در پروژه <code dir=\"ltr\">React</code> وجود دارد؟",
+      "difficulty": 2,
+      "explanation": "پاسخ صحیح گزینه A است، چون فایل <code dir=\"ltr\">index.html</code> نقطه ورودی اپلیکیشن <code dir=\"ltr\">React</code> است که کامپوننت‌ها به صورت پویا در آن رندر می‌شوند.",
+      "tags": ["react.project-structure"],
+      "answers": [
+        { "text": "نقطه ورودی اپلیکیشن که کامپوننت‌ها در آن رندر می‌شوند", "isCorrect": true },
+        { "text": "برای ذخیره کردن پیکربندی‌های پروژه", "isCorrect": false },
+        { "text": "برای ذخیره تصاویر و فایل‌های استاتیک", "isCorrect": false },
+        { "text": "برای نوشتن کدهای جاوااسکریپت اپلیکیشن", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چرا فایل <code dir=\"ltr\">package-lock.json</code> در پروژه‌های <code dir=\"ltr\">React</code> مهم است؟",
+      "difficulty": 3,
+      "explanation": "پاسخ صحیح گزینه D است، چون فایل <code dir=\"ltr\">package-lock.json</code> نسخه دقیق پکیج‌های نصب شده را ذخیره می‌کند تا تمامی اعضای تیم و سرور پروداکشن از نسخه‌های یکسان استفاده کنند.",
+      "tags": ["react.project-structure"],
+      "answers": [
+        { "text": "برای ذخیره اطلاعات مربوط به امنیت پکیج‌ها", "isCorrect": false },
+        { "text": "برای کاهش حجم پکیج‌ها", "isCorrect": false },
+        { "text": "برای ذخیره نسخه‌های مختلف پکیج‌ها", "isCorrect": false },
+        { "text": "برای ذخیره نسخه دقیق پکیج‌های نصب شده و اطمینان از استفاده از نسخه‌های یکسان در تیم", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "فایل <code dir=\"ltr\">src/index.js</code> در پروژه <code dir=\"ltr\">React</code> چه نقشی دارد؟",
+      "difficulty": 2,
+      "explanation": "پاسخ صحیح گزینه C است، چون فایل <code dir=\"ltr\">index.js</code> نقطه ورود اصلی اپلیکیشن است که کامپوننت اصلی را در div با id=\"root\" رندر می‌کند.",
+      "tags": ["react.project-structure"],
+      "answers": [
+        { "text": "برای رندر کردن فایل‌های HTML در مرورگر", "isCorrect": false },
+        { "text": "برای ذخیره کامپوننت‌های React", "isCorrect": false },
+        { "text": "برای رندر کردن کامپوننت اصلی در div با id=\"root\"", "isCorrect": true },
+        { "text": "برای پیکربندی سرور توسعه", "isCorrect": false }
+      ]
+    }
+  ]
+}

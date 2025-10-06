@@ -1,0 +1,64 @@
+{
+  "questions": [
+    {
+      "text": "چرا در ترکیب useReducer با useContext، اغلب از دو context جداگانه برای state و dispatch استفاده می‌کنیم؟",
+      "difficulty": 1,
+      "explanation": "چرا گزینه A صحیح است؟ با جداسازی context برای state و dispatch، کامپوننت‌هایی که فقط dispatch را مصرف می‌کنند، با تغییر state دوباره رندر نمی‌شوند و عملکرد بهینه‌تر می‌شود.",
+      "tags": ["react.context-reducer"],
+      "answers": [
+        { "text": "برای اینکه dispatch بدون تغییر state دوباره رندر نشود", "isCorrect": true },
+        { "text": "برای اینکه state بدون dispatch قابل تغییر باشد", "isCorrect": false },
+        { "text": "برای اینکه useReducer دیگر نیاز به reducer نداشته باشد", "isCorrect": false },
+        { "text": "برای اینکه کامپوننت‌های فرزند به state دسترسی نداشته باشند", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "در کد <code dir=\"ltr\">const tasks = useContext(TasksContext);</code> چه عملیاتی انجام می‌دهد؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه B صحیح است؟ این هوک مقدار نزدیک‌ترین Provider مربوط به TasksContext را می‌خواند و در tasks قرار می‌دهد.",
+      "tags": ["react.context-reducer"],
+      "answers": [
+        { "text": "ایجاد یک reducer جدید", "isCorrect": false },
+        { "text": "خواندن state tasks از نزدیک‌ترین TasksContext.Provider", "isCorrect": true },
+        { "text": "ارسال dispatch به Provider", "isCorrect": false },
+        { "text": "مقدار پیش‌فرض context را نادیده می‌گیرد", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "کامپوننت <code dir=\"ltr\">Task</code> فقط نیاز به تغییر state دارد و نه خواندن state. بهترین روش دسترسی به dispatch چیست؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه B صحیح است؟ کامپوننت Task برای تغییر state به dispatch نیاز دارد و مصرف TasksDispatchContext مناسب‌ترین و بهینه‌ترین روش است.",
+      "tags": ["react.context-reducer"],
+      "answers": [
+        { "text": "استفاده از TasksContext", "isCorrect": false },
+        { "text": "استفاده از TasksDispatchContext", "isCorrect": true },
+        { "text": "ارسال props از والد به Task", "isCorrect": false },
+        { "text": "ایجاد state محلی در Task", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "مزیت اصلی جداسازی Providerهای state و dispatch در یک اپلیکیشن بزرگ React چیست؟",
+      "difficulty": 3,
+      "explanation": "چرا گزینه A صحیح است؟ با جداسازی Providerها، کامپوننت‌هایی که فقط dispatch را مصرف می‌کنند، با تغییر state دوباره رندر نمی‌شوند و این باعث بهبود عملکرد می‌شود.",
+      "tags": ["react.context-reducer"],
+      "answers": [
+        { "text": "کاهش تعداد رندرهای غیرضروری و افزایش کارایی", "isCorrect": true },
+        { "text": "ساده‌تر شدن reducer", "isCorrect": false },
+        { "text": "اجبار به استفاده از useState به جای useReducer", "isCorrect": false },
+        { "text": "امکان حذف کامپوننت‌های فرزند از درخت", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چه چیزی باعث می‌شود که یک کامپوننت فرزند بدون prop drilling، به state و dispatch دسترسی داشته باشد؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه B صحیح است؟ با قرار دادن فرزند داخل Provider و استفاده از useContext، دسترسی مستقیم به state و dispatch فراهم می‌شود بدون عبور دادن props از میانه درخت.",
+      "tags": ["react.context-reducer"],
+      "answers": [
+        { "text": "فراخوانی useReducer در فرزند", "isCorrect": false },
+        { "text": "قرار گرفتن فرزند داخل Provider و استفاده از useContext", "isCorrect": true },
+        { "text": "تعریف state محلی در فرزند", "isCorrect": false },
+        { "text": "استفاده از useState به جای useReducer", "isCorrect": false }
+      ]
+    }
+  ]
+}

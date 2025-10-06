@@ -1,0 +1,160 @@
+{
+  "questions": [
+    {
+      "text": "در کامپوننت Toolbar زیر، چرا فراخوانی تابع handleThemeClick با پرانتز () نیست؟\n<code dir=\"ltr\">function Toolbar() {\n  const [isDarkMode, setIsDarkMode] = useState(false);\n  function handleThemeClick() { setIsDarkMode(!isDarkMode); }\n  return (<button onClick={handleThemeClick}>Change Theme</button>);\n}</code>",
+      "difficulty": 2,
+      "explanation": "چرا گزینه B صحیح است؟ فراخوانی تابع بدون پرانتز باعث می‌شود که React آن را تنها وقتی کاربر کلیک می‌کند اجرا کند.",
+      "tags": ["react.events.state"],
+      "answers": [
+        {
+          "text": "چون React نمی‌تواند توابع با پرانتز را مدیریت کند",
+          "isCorrect": false
+        },
+        {
+          "text": "چون می‌خواهیم تابع فقط در زمان رخداد onClick اجرا شود نه هنگام رندر",
+          "isCorrect": true
+        },
+        {
+          "text": "چون handleThemeClick مقدار بازگشتی ندارد",
+          "isCorrect": false
+        },
+        {
+          "text": "چون setIsDarkMode همیشه به صورت خودکار اجرا می‌شود",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "در کامپوننت AlertButton، چگونه handleClick به prop message دسترسی دارد؟\n<code dir=\"ltr\">function AlertButton({ message, children }) {\n  function handleClick() { alert(message); }\n  return (<button onClick={handleClick}>{children}</button>);\n}</code>",
+      "difficulty": 2,
+      "explanation": "چرا گزینه A صحیح است؟ handleClick در scope والد قرار دارد و به prop message دسترسی مستقیم دارد.",
+      "tags": ["react.events.state"],
+      "answers": [
+        {
+          "text": "به دلیل closure در جاوااسکریپت، تابع دسترسی به prop والد دارد",
+          "isCorrect": true
+        },
+        {
+          "text": "چون React به صورت خودکار همه props را به تمام توابع داخلی پاس می‌دهد",
+          "isCorrect": false
+        },
+        { "text": "چون message یک متغیر سراسری است", "isCorrect": false },
+        { "text": "چون children حاوی message است", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چرا تعریف Event Handlerها در سطح بالای کامپوننت اهمیت دارد؟",
+      "difficulty": 3,
+      "explanation": "چرا گزینه C صحیح است؟ تعریف توابع در سطح بالا تضمین می‌کند که هوک‌ها و stateها همیشه به ترتیب صحیح فراخوانی شوند.",
+      "tags": ["react.events.state"],
+      "answers": [
+        { "text": "چون در سطح پایین سرعت کد بیشتر می‌شود", "isCorrect": false },
+        { "text": "چون فقط در سطح بالا می‌توان JSX نوشت", "isCorrect": false },
+        {
+          "text": "چون ترتیب فراخوانی useState و دسترسی به state صحیح حفظ می‌شود",
+          "isCorrect": true
+        },
+        {
+          "text": "چون توابع داخلی نمی‌توانند props را بخوانند",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "در کامپوننت LoginForm، چرا تغییر مقدار email باعث تغییر password نمی‌شود?\n<code dir=\"ltr\">function LoginForm() {\n  const [email, setEmail] = useState('');\n  const [password, setPassword] = useState('');\n  return (<div>\n    <input value={email} onChange={e => setEmail(e.target.value)} />\n    <input value={password} onChange={e => setPassword(e.target.value)} />\n  </div>);\n}</code>",
+      "difficulty": 3,
+      "explanation": "چرا گزینه A صحیح است؟ هر state مستقل است و رندر فقط برای state تغییر یافته انجام می‌شود.",
+      "tags": ["react.state.multiple"],
+      "answers": [
+        {
+          "text": "هر state به صورت مستقل مدیریت می‌شود و رندر فقط برای state تغییر یافته اعمال می‌شود",
+          "isCorrect": true
+        },
+        {
+          "text": "setPassword به صورت خودکار با setEmail هماهنگ می‌شود",
+          "isCorrect": false
+        },
+        {
+          "text": "React رندر مجدد همه stateها را اعمال می‌کند اما effect نمی‌شود",
+          "isCorrect": false
+        },
+        {
+          "text": "useState تنها یک state را در هر رندر به‌روزرسانی می‌کند",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "در کامپوننت Toolbar، چرا تغییر state با setIsDarkMode باعث رندر مجدد UI می‌شود؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه B صحیح است؟ فراخوانی setter باعث می‌شود React کامپوننت را دوباره فراخوانی کرده و تغییرات لازم را روی DOM اعمال کند.",
+      "tags": ["react.state.basic"],
+      "answers": [
+        {
+          "text": "چون setIsDarkMode مقدار را ذخیره می‌کند ولی رندر اتفاق نمی‌افتد",
+          "isCorrect": false
+        },
+        {
+          "text": "چون فراخوانی setter باعث رندر مجدد و به‌روزرسانی UI می‌شود",
+          "isCorrect": true
+        },
+        {
+          "text": "چون React به صورت خودکار تمام متغیرهای محلی را رندر می‌کند",
+          "isCorrect": false
+        },
+        {
+          "text": "چون هر تابع داخل کامپوننت به DOM دسترسی مستقیم دارد",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "چرا استفاده از چند state مستقل در یک کامپوننت بهتر از یک state پیچیده است؟",
+      "difficulty": 3,
+      "explanation": "چرا گزینه C صحیح است؟ نگهداری stateهای غیرمرتبط در متغیرهای جداگانه باعث خواناتر شدن و ساده‌تر شدن منطق به‌روزرسانی می‌شود.",
+      "tags": ["react.state.multiple"],
+      "answers": [
+        {
+          "text": "چون همه stateها همزمان به‌روزرسانی می‌شوند",
+          "isCorrect": false
+        },
+        {
+          "text": "چون React تنها از یک state در هر رندر پشتیبانی می‌کند",
+          "isCorrect": false
+        },
+        {
+          "text": "چون نگهداری و به‌روزرسانی stateها مستقل و ساده‌تر است",
+          "isCorrect": true
+        },
+        {
+          "text": "چون stateهای مستقل باعث جلوگیری از re-render می‌شوند",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "در کامپوننت LoginForm زیر، چرا تغییر مقدار email باعث تغییر password نمی‌شود؟\n<code dir=\"ltr\">function LoginForm() {\n  const [email, setEmail] = useState('');\n  const [password, setPassword] = useState('');\n  return (\n    <div>\n      <input value={email} onChange={e => setEmail(e.target.value)} placeholder=\"Email\" />\n      <input value={password} onChange={e => setPassword(e.target.value)} placeholder=\"Password\" />\n    </div>\n  );\n}</code>",
+      "difficulty": 3,
+      "explanation": "چرا گزینه A صحیح است؟ هر state مستقل است و React رندر مجدد را تنها برای state تغییر یافته اعمال می‌کند. در نتیجه تغییر email فقط بخش مربوط به email را به‌روز می‌کند و password بدون تغییر باقی می‌ماند.",
+      "tags": ["react.state.multiple"],
+      "answers": [
+        {
+          "text": "هر state به صورت مستقل مدیریت می‌شود و رندر فقط برای state تغییر یافته اعمال می‌شود",
+          "isCorrect": true
+        },
+        {
+          "text": "setPassword به صورت خودکار با setEmail هماهنگ می‌شود",
+          "isCorrect": false
+        },
+        {
+          "text": "React رندر مجدد همه stateها را اعمال می‌کند اما effect نمی‌شود",
+          "isCorrect": false
+        },
+        {
+          "text": "useState تنها یک state را در هر رندر به‌روزرسانی می‌کند",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "questions": [
+    {
+      "text": "چرا نمی‌توانیم یک event handler را مستقیماً با پرانتز فراخوانی کنیم، مانند handleAddToCart(productId) در JSX؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه B صحیح است؟ زیرا فراخوانی مستقیم تابع باعث اجرای آن در زمان رندر می‌شود. استفاده از یک تابع لامبدا code dir=\"ltr\">(() => handleAddToCart(...)) </code> تضمین می‌کند که تابع تنها در هنگام وقوع رویداد اجرا شود.",
+      "tags": ["react.events.advanced"],
+      "answers": [
+        {
+          "text": "چون React اجازه فراخوانی توابع با پارامتر را نمی‌دهد",
+          "isCorrect": false
+        },
+        {
+          "text": "چون فراخوانی مستقیم تابع باعث اجرای آن هنگام رندر می‌شود",
+          "isCorrect": true
+        },
+        {
+          "text": "چون توابع event handler باید حتماً async باشند",
+          "isCorrect": false
+        },
+        {
+          "text": "چون JSX تنها توابع بدون آرگومان را می‌پذیرد",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "در کامپوننت SignupForm، چرا فراخوانی code dir=\"ltr\">event.preventDefault()</code> ضروری است؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه A صحیح است؟ زیرا رفتار پیش‌فرض مرورگر هنگام ارسال فرم، رفرش کردن صفحه است. فراخوانی preventDefault() این رفتار را متوقف کرده و کنترل ارسال فرم را به ما می‌دهد.",
+      "tags": ["react.events.advanced"],
+      "answers": [
+        {
+          "text": "برای جلوگیری از رفرش شدن صفحه و مدیریت ارسال فرم با جاوااسکریپت",
+          "isCorrect": true
+        },
+        {
+          "text": "برای جلوگیری از اجرای توابع useEffect در فرم",
+          "isCorrect": false
+        },
+        { "text": "برای جلوگیری از اجرای onClick در دکمه", "isCorrect": false },
+        { "text": "برای متوقف کردن render مجدد کامپوننت", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "در مثال ProductList، استفاده از تابع لامبدا code dir=\"ltr\">(() => handleAddToCart(...))</code>چه مزیتی دارد؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه C صحیح است؟ زیرا این روش تضمین می‌کند که تابع اصلی handleAddToCart تنها زمانی اجرا شود که کاربر روی دکمه کلیک کند و همچنین امکان ارسال پارامترهای متفاوت برای هر محصول فراهم می‌کند.",
+      "tags": ["react.events.advanced"],
+      "answers": [
+        {
+          "text": "باعث می‌شود تابع هنگام رندر اولیه اجرا شود",
+          "isCorrect": false
+        },
+        {
+          "text": "باعث می‌شود همه محصولات به صورت همزمان به cart اضافه شوند",
+          "isCorrect": false
+        },
+        {
+          "text": "امکان ارسال پارامترهای متفاوت و اجرای تابع تنها هنگام کلیک را فراهم می‌کند",
+          "isCorrect": true
+        },
+        { "text": "باعث بهینه‌سازی useEffect می‌شود", "isCorrect": false }
+      ]
+    },
+    {
+      "questions": [
+        {
+          "text": "فرض کنید شما یک لیست از آیتم‌ها دارید و برای هر آیتم یک دکمه “Remove” دارید. اگر برای onClick دکمه، مستقیم removeItem(item.id) را بنویسید و از تابع لامبدا استفاده نکنید، چه مشکلی پیش می‌آید؟",
+          "difficulty": 3,
+          "explanation": "چرا گزینه B صحیح است؟ اگر تابع را مستقیماً با پرانتز فراخوانی کنید، تابع هنگام رندر اولیه اجرا می‌شود و نه هنگام وقوع رویداد کلیک. استفاده از تابع لامبدا (() => removeItem(item.id)) تضمین می‌کند که تابع تنها زمانی اجرا شود که کاربر روی دکمه کلیک کند و برای هر آیتم پارامتر مناسب ارسال شود.",
+          "tags": ["react.events.advanced"],
+          "answers": [
+            {
+              "text": "تابع removeItem هیچ وقت اجرا نمی‌شود",
+              "isCorrect": false
+            },
+            {
+              "text": "تابع removeItem هنگام رندر اولیه همه آیتم‌ها اجرا می‌شود و نه فقط وقتی روی دکمه کلیک شود",
+              "isCorrect": true
+            },
+            {
+              "text": "React خطا می‌دهد و کامپوننت رندر نمی‌شود",
+              "isCorrect": false
+            },
+            {
+              "text": "تابع removeItem تنها روی اولین آیتم کار می‌کند",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "در React، چگونه یک تابع handleClick را به یک دکمه متصل می‌کنیم تا فقط هنگام کلیک اجرا شود؟",
+      "difficulty": 1,
+      "explanation": "چرا گزینه B صحیح است؟ ما خود تابع را به prop onClick می‌دهیم، نه نتیجه فراخوانی آن. با نوشتن onClick={handleClick} تابع تنها هنگام کلیک اجرا می‌شود و نه هنگام رندر.",
+      "tags": ["react.events.advanced"],
+      "answers": [
+        { "text": "onClick={handleClick()}", "isCorrect": false },
+        { "text": "onClick={handleClick}", "isCorrect": true },
+        { "text": "onclick=\"handleClick()\"", "isCorrect": false },
+        { "text": "onClick={() => handleClick()}", "isCorrect": false }
+      ]
+    }
+  ]
+}

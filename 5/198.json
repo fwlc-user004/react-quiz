@@ -1,0 +1,64 @@
+{
+  "questions": [
+    {
+      "text": "چرا از useState در کامپوننت‌های تابعی React استفاده می‌کنیم؟",
+      "difficulty": 1,
+      "explanation": "چرا گزینه B صحیح است؟ useState به کامپوننت‌های تابعی اجازه می‌دهد تا حافظه داخلی (state) داشته باشند و در پاسخ به تعاملات کاربر، UI را پویا و تعاملی نگه دارند.",
+      "tags": ["react.hooks.useState"],
+      "answers": [
+        { "text": "برای وارد کردن props به کامپوننت", "isCorrect": false },
+        { "text": "برای افزودن حافظه داخلی (state) به کامپوننت‌های تابعی", "isCorrect": true },
+        { "text": "برای استفاده از lifecycle methods کلاس‌ها", "isCorrect": false },
+        { "text": "برای تعریف متغیرهای ثابت داخل JSX", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "در سینتکس const [count, setCount] = useState(0)، نقش count و setCount چیست؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه C صحیح است؟ count مقدار فعلی state است و setCount تابعی برای به‌روزرسانی آن مقدار است که باعث رندر مجدد کامپوننت می‌شود.",
+      "tags": ["react.hooks.useState"],
+      "answers": [
+        { "text": "count تابعی برای تغییر مقدار و setCount مقدار فعلی است", "isCorrect": false },
+        { "text": "هر دو متغیر state هستند", "isCorrect": false },
+        { "text": "count مقدار فعلی state و setCount تابع به‌روزرسانی آن است", "isCorrect": true },
+        { "text": "count متغیر محلی و setCount یک prop است", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چرا استفاده از destructuring آرایه با useState توصیه می‌شود؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه B صحیح است؟ destructuring به ما امکان می‌دهد که به صورت خواناتر و مستقیم به مقدار state و تابع setter دسترسی داشته باشیم و کد تمیزتر شود.",
+      "tags": ["react.hooks.useState"],
+      "answers": [
+        { "text": "برای جلوگیری از ایجاد state جدید", "isCorrect": false },
+        { "text": "برای دسترسی خواناتر به state و تابع setter", "isCorrect": true },
+        { "text": "برای افزایش سرعت رندر کامپوننت", "isCorrect": false },
+        { "text": "برای جایگزینی props در کامپوننت", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چه چیزی باعث می‌شود که فراخوانی setCount باعث رندر مجدد کامپوننت شود؟",
+      "difficulty": 3,
+      "explanation": "چرا گزینه C صحیح است؟ فراخوانی تابع setter که توسط useState برگردانده می‌شود، React را مطلع می‌کند که state تغییر کرده و کامپوننت باید دوباره رندر شود.",
+      "tags": ["react.hooks.useState"],
+      "answers": [
+        { "text": "تغییر props کامپوننت", "isCorrect": false },
+        { "text": "استفاده از lifecycle methods کلاس‌ها", "isCorrect": false },
+        { "text": "فراخوانی تابع setter بازگردانده شده توسط useState", "isCorrect": true },
+        { "text": "تغییر مقدار متغیر محلی داخل JSX", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "کدام یک از قوانین استفاده از هوک‌ها باید همیشه رعایت شود؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه B صحیح است؟ هوک‌ها باید فقط در سطح بالای کامپوننت‌های تابعی فراخوانی شوند و نباید داخل حلقه‌ها، شرط‌ها یا توابع تو در تو استفاده شوند.",
+      "tags": ["react.hooks.useState"],
+      "answers": [
+        { "text": "می‌توان آنها را در هر تابع جاوااسکریپت فراخوانی کرد", "isCorrect": false },
+        { "text": "فقط در سطح بالای کامپوننت‌های تابعی فراخوانی شوند", "isCorrect": true },
+        { "text": "می‌توان آنها را در حلقه‌ها و شرط‌ها فراخوانی کرد", "isCorrect": false },
+        { "text": "استفاده از آنها نیاز به کلاس‌های ES6 دارد", "isCorrect": false }
+      ]
+    }
+  ]
+}

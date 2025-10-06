@@ -1,0 +1,64 @@
+{
+  "questions": [
+    {
+      "text": "Virtual DOM در <code dir=\"ltr\">React</code> چیست و چرا به آن نیاز داریم؟",
+      "difficulty": 1,
+      "explanation": "پاسخ صحیح گزینه B است، چون <code dir=\"ltr\">Virtual DOM</code> یک کپی سبک از <code dir=\"ltr\">DOM</code> واقعی است که در حافظه نگهداری می‌شود و به روز رسانی‌های بهینه‌تری را امکان‌پذیر می‌کند.",
+      "tags": ["react.virtual-dom"],
+      "answers": [
+        { "text": "یک نسخه کامل از <code dir=\"ltr\">DOM</code> واقعی که به صورت جداگانه اعمال می‌شود", "isCorrect": false },
+        { "text": "یک نمایش مجازی از <code dir=\"ltr\">DOM</code> که در حافظه نگهداری می‌شود", "isCorrect": true },
+        { "text": "یک ابزار برای کنترل انیمیشن‌های رابط کاربری", "isCorrect": false },
+        { "text": "یک سیستم مدیریت state داخلی برای React", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چه فرآیندی در <code dir=\"ltr\">React</code> برای به‌روزرسانی <code dir=\"ltr\">DOM</code> واقعی استفاده می‌شود؟",
+      "difficulty": 2,
+      "explanation": "پاسخ صحیح گزینه B است، چون <code dir=\"ltr\">React</code> از الگوریتم Diffing برای مقایسه درخت جدید <code dir=\"ltr\">Virtual DOM</code> با نسخه قبلی و اعمال تغییرات به صورت دسته‌ای استفاده می‌کند.",
+      "tags": ["react.virtual-dom"],
+      "answers": [
+        { "text": "استفاده از <code dir=\"ltr\">useEffect</code> برای هر تغییر state", "isCorrect": false },
+        { "text": "استفاده از الگوریتم Diffing برای مقایسه و به‌روزرسانی دسته‌ای", "isCorrect": true },
+        { "text": "به‌روزرسانی <code dir=\"ltr\">DOM</code> به صورت تک به تک", "isCorrect": false },
+        { "text": "استفاده از Virtual DOM برای مدیریت state", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "کامپوننت‌های <code dir=\"ltr\">React</code> چیستند و چه ویژگی‌هایی دارند؟",
+      "difficulty": 2,
+      "explanation": "پاسخ صحیح گزینه A است، چون کامپوننت‌ها بلوک‌های سازنده اصلی در <code dir=\"ltr\">React</code> هستند که می‌توانند مستقل و قابل استفاده مجدد باشند.",
+      "tags": ["react.virtual-dom"],
+      "answers": [
+        { "text": "بلوک‌های سازنده اصلی که مستقل و قابل استفاده مجدد هستند", "isCorrect": true },
+        { "text": "داده‌هایی که از کامپوننت والد به فرزند منتقل می‌شوند", "isCorrect": false },
+        { "text": "توابعی برای اعمال تغییرات مستقیم بر روی <code dir=\"ltr\">DOM</code>", "isCorrect": false },
+        { "text": "فریم ورک‌هایی برای مدیریت وضعیت <code dir=\"ltr\">state</code>", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چه تفاوتی میان پراپ‌ها (<code dir=\"ltr\">props</code>) و وضعیت (<code dir=\"ltr\">state</code>) در <code dir=\"ltr\">React</code> وجود دارد؟",
+      "difficulty": 3,
+      "explanation": "پاسخ صحیح گزینه D است، چون <code dir=\"ltr\">props</code> داده‌هایی هستند که از کامپوننت والد به فرزند ارسال می‌شوند و تغییرناپذیرند، در حالی که <code dir=\"ltr\">state</code> داده‌هایی هستند که در داخل کامپوننت مدیریت می‌شوند و می‌توانند تغییر کنند.",
+      "tags": ["react.virtual-dom"],
+      "answers": [
+        { "text": "هر دو به یک شکل داده‌ها را مدیریت می‌کنند", "isCorrect": false },
+        { "text": "State داده‌هایی است که از کامپوننت والد به فرزند ارسال می‌شود", "isCorrect": false },
+        { "text": "Props تغییرناپذیرند، در حالی که state داده‌هایی هستند که در کامپوننت مدیریت می‌شوند", "isCorrect": false },
+        { "text": "Props داده‌هایی هستند که از کامپوننت والد به فرزند منتقل می‌شوند و تغییرناپذیرند، در حالی که state داده‌هایی هستند که در داخل کامپوننت مدیریت می‌شوند و می‌توانند تغییر کنند", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "چه زمانی در <code dir=\"ltr\">React</code> باید از <code dir=\"ltr\">useState</code> برای مدیریت وضعیت (<code dir=\"ltr\">state</code>) استفاده کنیم؟",
+      "difficulty": 2,
+      "explanation": "پاسخ صحیح گزینه C است، چون <code dir=\"ltr\">useState</code> برای مدیریت وضعیت در کامپوننت‌های تابعی استفاده می‌شود.",
+      "tags": ["react.virtual-dom"],
+      "answers": [
+        { "text": "برای مدیریت وضعیت در کامپوننت‌های کلاسی", "isCorrect": false },
+        { "text": "برای ایجاد کامپوننت‌های قابل استفاده مجدد", "isCorrect": false },
+        { "text": "برای مدیریت وضعیت در کامپوننت‌های تابعی", "isCorrect": true },
+        { "text": "برای ارسال داده‌ها از والد به فرزند", "isCorrect": false }
+      ]
+    }
+  ]
+}

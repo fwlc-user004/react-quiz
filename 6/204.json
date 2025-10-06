@@ -1,0 +1,76 @@
+{
+  "questions": [
+    {
+      "text": "آرایه وابستگی‌ها (Dependency Array) در useEffect چه کاربردی دارد؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه B صحیح است؟ آرایه وابستگی‌ها به React می‌گوید که افکت به کدام مقادیر وابسته است و تنها زمانی که این مقادیر تغییر کنند، افکت دوباره اجرا می‌شود، در نتیجه از اجرای غیرضروری جلوگیری می‌کند.",
+      "tags": ["react.hooks.useEffect"],
+      "answers": [
+        { "text": "برای تعریف state جدید", "isCorrect": false },
+        { "text": "برای کنترل اینکه افکت چه زمانی اجرا شود", "isCorrect": true },
+        { "text": "برای اجرای افکت قبل از رندر", "isCorrect": false },
+        { "text": "برای مدیریت props", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "اگر آرایه وابستگی‌ها خالی باشد، useEffect چه رفتاری دارد؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه A صحیح است؟ اگر آرایه وابستگی‌ها خالی باشد، افکت تنها یک بار پس از رندر اولیه اجرا می‌شود، مشابه componentDidMount در کامپوننت‌های کلاس‌محور.",
+      "tags": ["react.hooks.useEffect"],
+      "answers": [
+        { "text": "افکت تنها یک بار پس از رندر اولیه اجرا می‌شود", "isCorrect": true },
+        { "text": "افکت بعد از هر رندر اجرا می‌شود", "isCorrect": false },
+        { "text": "افکت اجرا نمی‌شود", "isCorrect": false },
+        { "text": "افکت به صورت همزمان با رندر اجرا می‌شود", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "در این مثال، useEffect چه زمانی دوباره اجرا می‌شود؟\n<pre><code dir=\"ltr\">useEffect(() => {\n  console.log(`Fetching data for user: ${userId}`);\n}, [userId]);</code></pre>",
+      "difficulty": 3,
+      "explanation": "چرا گزینه B صحیح است؟ افکت تنها زمانی دوباره اجرا می‌شود که مقدار userId تغییر کند، نه در رندرهای غیرمرتبط دیگر.",
+      "tags": ["react.hooks.useEffect"],
+      "answers": [
+        { "text": "بعد از هر رندر کامپوننت", "isCorrect": false },
+        { "text": "تنها زمانی که userId تغییر کند", "isCorrect": true },
+        { "text": "هر زمان که state دیگری تغییر کند", "isCorrect": false },
+        { "text": "هرگز اجرا نمی‌شود", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چرا باید تمام props و state مورد استفاده در افکت را در آرایه وابستگی‌ها قرار دهیم؟",
+      "difficulty": 3,
+      "explanation": "چرا گزینه C صحیح است؟ این کار تضمین می‌کند که افکت فقط در زمانی که مقادیر واقعی که استفاده می‌کنیم تغییر کرده‌اند، اجرا شود و از باگ‌ها و اجرای غیرضروری جلوگیری می‌کند.",
+      "tags": ["react.hooks.useEffect"],
+      "answers": [
+        { "text": "برای صرفه‌جویی در حافظه", "isCorrect": false },
+        { "text": "برای اجرای افکت قبل از رندر", "isCorrect": false },
+        { "text": "برای جلوگیری از اجرای غیرضروری و حفظ رفتار پیش‌بینی‌پذیر", "isCorrect": true },
+        { "text": "برای هماهنگ کردن useState و props", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "اگر بخواهیم داده‌ها از یک API فقط یک بار دریافت شوند، چه آرایه وابستگی‌ای باید استفاده کنیم؟\n<pre><code dir=\"ltr\">useEffect(() => {\n  fetchData();\n}, ...);</code></pre>",
+      "difficulty": 2,
+      "explanation": "چرا گزینه D صحیح است؟ آرایه خالی [] باعث می‌شود افکت تنها یک بار پس از رندر اولیه اجرا شود و دوباره اجرا نشود.",
+      "tags": ["react.hooks.useEffect"],
+      "answers": [
+        { "text": "[fetchData]", "isCorrect": false },
+        { "text": "[userId]", "isCorrect": false },
+        { "text": "[state]", "isCorrect": false },
+        { "text": "[]", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "چگونه useEffect از ایجاد حلقه بی‌نهایت در فراخوانی API جلوگیری می‌کند؟",
+      "difficulty": 3,
+      "explanation": "چرا گزینه A صحیح است؟ با مشخص کردن مقادیر وابستگی، React افکت را تنها زمانی اجرا می‌کند که این مقادیر تغییر کنند و از اجرای مکرر غیرضروری جلوگیری می‌شود، در نتیجه حلقه بی‌نهایت رخ نمی‌دهد.",
+      "tags": ["react.hooks.useEffect"],
+      "answers": [
+        { "text": "با اجرای افکت تنها زمانی که مقادیر وابسته تغییر کنند", "isCorrect": true },
+        { "text": "با توقف رندر مجدد کامپوننت", "isCorrect": false },
+        { "text": "با تغییر state به صورت مستقیم", "isCorrect": false },
+        { "text": "با استفاده از setTimeout برای تاخیر", "isCorrect": false }
+      ]
+    }
+  ]
+}

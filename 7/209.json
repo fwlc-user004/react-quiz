@@ -1,0 +1,64 @@
+{
+  "questions": [
+ {
+      "text": "در مثال زیر، چه چیزی باعث می‌شود تابع filterTodos تنها وقتی اجرا شود که todos یا tab تغییر کنند؟<code dir=\"ltr\">\nconst visibleTodos = useMemo(() => filterTodos(todos, tab), [todos, tab]);\n</code>",
+      "difficulty": 3,
+      "explanation": "چرا گزینه B صحیح است؟ آرایه وابستگی‌های [todos, tab] به React می‌گوید که فقط وقتی این مقادیر تغییر کردند، محاسبه دوباره انجام شود؛ در غیر این صورت نتیجه قبلی استفاده می‌شود.",
+      "tags": ["react.hooks.useMemo"],
+      "answers": [
+        { "text": "چون useMemo همیشه محاسبه را انجام نمی‌دهد", "isCorrect": false },
+        { "text": "چون آرایه وابستگی‌ها مشخص می‌کند چه موقع محاسبه دوباره انجام شود", "isCorrect": true },
+        { "text": "چون تابع filterTodos تنها یک بار تعریف شده است", "isCorrect": false },
+        { "text": "چون todos و tab ثابت هستند", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "فرض کنید یک کامپوننت فرزند prop یک آرایه را دریافت می‌کند. چه اتفاقی می‌افتد اگر این آرایه در هر رندر والد بازسازی شود و useMemo به کار نرفته باشد؟",
+      "difficulty": 1,
+      "explanation": "چرا گزینه B صحیح است؟ هر بار آرایه جدید ساخته شود، کامپوننت فرزند آن را به عنوان prop جدید می‌بیند و رندر مجدد می‌شود، حتی اگر محتوای آرایه تغییر نکرده باشد.",
+      "tags": ["react.hooks.useMemo"],
+      "answers": [
+        { "text": "کامپوننت فرزند رندر نمی‌شود", "isCorrect": false },
+        { "text": "کامپوننت فرزند به دلیل تغییر مرجع آرایه، رندر مجدد غیرضروری خواهد داشت", "isCorrect": true },
+        { "text": "React خطا می‌دهد", "isCorrect": false },
+        { "text": "useEffect اجرا نمی‌شود", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چه تفاوتی بین useMemo و useCallback وجود دارد؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه C صحیح است؟ useMemo نتیجه یک تابع محاسباتی را cache می‌کند، در حالی که useCallback خود تابع را حفظ می‌کند تا مرجع تابع در رندرهای بعدی ثابت بماند.",
+      "tags": ["react.hooks.useMemo"],
+      "answers": [
+        { "text": "هیچ تفاوتی ندارند و هر دو state را cache می‌کنند", "isCorrect": false },
+        { "text": "useMemo برای DOM و useCallback برای state است", "isCorrect": false },
+        { "text": "useMemo نتیجه محاسبه را cache می‌کند، useCallback تابع را حفظ می‌کند", "isCorrect": true },
+        { "text": "useMemo تنها برای آرایه‌ها کاربرد دارد", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "اگر آرایه وابستگی‌های useMemo نادرست تعریف شوند، چه مشکلی پیش می‌آید؟",
+      "difficulty": 3,
+      "explanation": "چرا گزینه A صحیح است؟ useMemo تنها وقتی محاسبه را دوباره انجام می‌دهد که یکی از وابستگی‌ها تغییر کند. اگر وابستگی‌ها ناقص یا اشتباه باشند، محاسبه به موقع اجرا نمی‌شود و ممکن است نتیجه نادرست نشان داده شود.",
+      "tags": ["react.hooks.useMemo"],
+      "answers": [
+        { "text": "نتیجه محاسبه ممکن است با داده واقعی همگام نباشد", "isCorrect": true },
+        { "text": "React کامپوننت را رندر نمی‌کند", "isCorrect": false },
+        { "text": "تابع setter دیگر کار نمی‌کند", "isCorrect": false },
+        { "text": "افکت‌ها به جای useMemo اجرا می‌شوند", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "در چه سناریویی استفاده از useMemo بی‌فایده یا حتی ضرر است؟",
+      "difficulty": 1,
+      "explanation": "چرا گزینه B صحیح است؟ اگر محاسبه سبک و سریع باشد، overhead حافظه و بررسی وابستگی‌های useMemo بیشتر از محاسبه مستقیم است و استفاده از آن بی‌فایده یا حتی کاهش کارایی است.",
+      "tags": ["react.hooks.useMemo"],
+      "answers": [
+        { "text": "زمانی که تابع بسیار سنگین باشد", "isCorrect": false },
+        { "text": "زمانی که محاسبه سبک و سریع باشد", "isCorrect": true },
+        { "text": "زمانی که آرایه وابستگی‌ها ثابت باشند", "isCorrect": false },
+        { "text": "برای توابعی که نتیجه آنها در DOM رندر نمی‌شود", "isCorrect": false }
+      ]
+    }
+  ]
+}

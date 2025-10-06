@@ -1,0 +1,64 @@
+{
+  "questions": [
+    {
+      "text": "چرا در JSX باید نام Event Handlerها را با سبک camelCase بنویسیم؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه B صحیح است؟ React از camelCase برای تطبیق نام propهای رویداد با استاندارد جاوااسکریپت استفاده می‌کند و آن را با DOM سنتی هم‌خوانی می‌دهد. استفاده از حروف کوچک مانند HTML باعث عدم شناسایی صحیح رویداد می‌شود.",
+      "tags": ["react.events"],
+      "answers": [
+        { "text": "چون مرورگر فقط camelCase را می‌شناسد", "isCorrect": false },
+        { "text": "چون JSX مطابق با استاندارد جاوااسکریپت است و camelCase باعث سازگاری و شناسایی صحیح رویداد می‌شود", "isCorrect": true },
+        { "text": "چون این تنها حالت ممکن در HTML است", "isCorrect": false },
+        { "text": "چون توابع inline فقط با camelCase کار می‌کنند", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "در JSX، چه چیزی را باید به prop رویداد پاس دهیم؟",
+      "difficulty": 1,
+      "explanation": "چرا گزینه C صحیح است؟ در React باید خود تابع event handler را پاس دهیم، نه نتیجه فراخوانی آن. اگر پرانتز بگذاریم، تابع بلافاصله اجرا شده و نه در هنگام رویداد.",
+      "tags": ["react.events"],
+      "answers": [
+        { "text": "نتیجه اجرای تابع", "isCorrect": false },
+        { "text": "نام تابع به صورت رشته", "isCorrect": false },
+        { "text": "خود تابع بدون پرانتز", "isCorrect": true },
+        { "text": "یک آبجکت event", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "کدام یک از روش‌های زیر برای تعریف یک Event Handler کوتاه و ساده در JSX مناسب است؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه A صحیح است؟ استفاده از یک تابع arrow به صورت inline در JSX برای event handlerهای ساده و کوتاه مناسب است و به خوانایی کمک می‌کند.",
+      "tags": ["react.events"],
+      "answers": [
+        { "text": "<button onClick={() => alert('Clicked!')}>Click me</button>", "isCorrect": true },
+        { "text": "<button onClick='alert(\"Clicked!\")'>Click me</button>", "isCorrect": false },
+        { "text": "<button onclick={alert('Clicked!')}>Click me</button>", "isCorrect": false },
+        { "text": "<button onClick={alert}>Click me</button>", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چه خطایی ممکن است رخ دهد اگر پرانتز را هنگام پاس دادن تابع به Event Handler قرار دهیم؟",
+      "difficulty": 3,
+      "explanation": "چرا گزینه C صحیح است؟ اضافه کردن پرانتز باعث می‌شود تابع بلافاصله در زمان رندر اجرا شود و نه هنگام وقوع رویداد، که رفتار پیش‌بینی نشده ایجاد می‌کند.",
+      "tags": ["react.events"],
+      "answers": [
+        { "text": "هیچ خطایی رخ نمی‌دهد و تابع همانطور که انتظار داریم اجرا می‌شود", "isCorrect": false },
+        { "text": "تابع اجرا نمی‌شود و رویداد کار نمی‌کند", "isCorrect": false },
+        { "text": "تابع بلافاصله اجرا می‌شود و نه در زمان رویداد، که منطق رویداد را مختل می‌کند", "isCorrect": true },
+        { "text": "React از JSX پشتیبانی نمی‌کند", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چرا برای منطق پیچیده Event Handlerها بهتر است تابع را جداگانه تعریف کنیم؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه B صحیح است؟ جدا کردن تابع برای منطق پیچیده باعث می‌شود کامپوننت تمیزتر و خواناتر باشد و نگهداری و دیباگ کردن کد آسان‌تر شود.",
+      "tags": ["react.events"],
+      "answers": [
+        { "text": "چون React تنها توابع جداگانه را می‌پذیرد", "isCorrect": false },
+        { "text": "چون کامپوننت تمیزتر و خواناتر می‌شود و منطق پیچیده از JSX جدا می‌شود", "isCorrect": true },
+        { "text": "چون توابع inline باعث خطای جاوااسکریپت می‌شوند", "isCorrect": false },
+        { "text": "چون تابع inline همیشه حافظه را مصرف می‌کند", "isCorrect": false }
+      ]
+    }
+  ]
+}

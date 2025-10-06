@@ -1,0 +1,64 @@
+{
+  "questions": [
+    {
+      "text": "دوران <code dir=\"ltr\">jQuery</code> چه مشکلاتی در توسعه وب ایجاد کرد؟",
+      "difficulty": 1,
+      "explanation": "پاسخ صحیح گزینه C است، چون <code dir=\"ltr\">jQuery</code> به طور مستقیم با DOM دستکاری می‌کند که باعث پیچیدگی و مشکلات مدیریت وضعیت UI می‌شود.",
+      "tags": ["react.history"],
+      "answers": [
+        { "text": "عدم پشتیبانی از دستکاری DOM", "isCorrect": false },
+        { "text": "عدم امکان ایجاد کامپوننت‌های قابل استفاده مجدد", "isCorrect": false },
+        { "text": "دستکاری مستقیم DOM که منجر به پیچیدگی و کدهای مستعد خطا می‌شود", "isCorrect": true },
+        { "text": "عدم وجود مدیریت وضعیت به صورت بهینه", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چه تفاوتی میان <code dir=\"ltr\">Virtual DOM</code> در <code dir=\"ltr\">React</code> و دستکاری مستقیم DOM در <code dir=\"ltr\">jQuery</code> وجود دارد؟",
+      "difficulty": 2,
+      "explanation": "پاسخ صحیح گزینه A است، چون <code dir=\"ltr\">React</code> از <code dir=\"ltr\">Virtual DOM</code> استفاده می‌کند تا تغییرات به صورت بهینه و دسته‌ای بر روی DOM واقعی اعمال شود.",
+      "tags": ["react.history"],
+      "answers": [
+        { "text": "React از Virtual DOM برای بهینه سازی اعمال تغییرات استفاده می‌کند", "isCorrect": true },
+        { "text": "jQuery از Virtual DOM استفاده می‌کند", "isCorrect": false },
+        { "text": "React دستکاری مستقیم DOM را انجام می‌دهد", "isCorrect": false },
+        { "text": "jQuery تغییرات را به صورت دسته‌ای بر روی DOM اعمال می‌کند", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "کدام یک از ویژگی‌های کلیدی <code dir=\"ltr\">React</code> باعث بهبود عملکرد و سادگی نگهداری اپلیکیشن‌های وب شد؟",
+      "difficulty": 2,
+      "explanation": "پاسخ صحیح گزینه B است، چون معماری مبتنی بر کامپوننت در <code dir=\"ltr\">React</code>، امکان توسعه و نگهداری ساده‌تر اپلیکیشن‌ها را فراهم می‌کند.",
+      "tags": ["react.history"],
+      "answers": [
+        { "text": "استفاده از یک معماری MVC", "isCorrect": false },
+        { "text": "معماری مبتنی بر کامپوننت که نگهداری را ساده‌تر می‌کند", "isCorrect": true },
+        { "text": "استفاده از دوطرفه data binding", "isCorrect": false },
+        { "text": "وجود ساختار پیچیده برای مدیریت وضعیت", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چرا <code dir=\"ltr\">React</code> برای ساخت رابط‌های کاربری پیچیده و با عملکرد بالا مناسب است؟",
+      "difficulty": 3,
+      "explanation": "پاسخ صحیح گزینه D است، چون <code dir=\"ltr\">React</code> با استفاده از Virtual DOM و Diffing، تغییرات را بهینه و به صورت دسته‌ای اعمال می‌کند که عملکرد را بهبود می‌بخشد.",
+      "tags": ["react.history"],
+      "answers": [
+        { "text": "چون از جاوااسکریپت ساده استفاده می‌کند", "isCorrect": false },
+        { "text": "چون از دوطرفه data binding استفاده می‌کند", "isCorrect": false },
+        { "text": "چون از Virtual DOM برای افزایش سرعت استفاده می‌کند", "isCorrect": false },
+        { "text": "چون از Virtual DOM و Diffing برای بهینه سازی استفاده می‌کند", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "جریان داده یک طرفه در <code dir=\"ltr\">React</code> چیست؟",
+      "difficulty": 2,
+      "explanation": "پاسخ صحیح گزینه C است، چون در <code dir=\"ltr\">React</code> داده‌ها همیشه از کامپوننت والد به فرزند جریان می‌یابند که این مدل باعث پیش‌بینی‌پذیری بیشتر و آسانی دیباگ می‌شود.",
+      "tags": ["react.history"],
+      "answers": [
+        { "text": "داده‌ها از کامپوننت فرزند به والد جریان می‌یابند", "isCorrect": false },
+        { "text": "داده‌ها به صورت دوطرفه جریان می‌یابند", "isCorrect": false },
+        { "text": "داده‌ها همیشه از کامپوننت والد به فرزند جریان می‌یابند", "isCorrect": true },
+        { "text": "داده‌ها از هر جایی به هر جایی جریان می‌یابند", "isCorrect": false }
+      ]
+    }
+  ]
+}

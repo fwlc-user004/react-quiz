@@ -1,0 +1,64 @@
+{
+  "questions": [
+    {
+      "text": "چرا از props در React استفاده می‌کنیم؟",
+      "difficulty": 1,
+      "explanation": "چرا گزینه B صحیح است؟ props به ما اجازه می‌دهد داده‌ها را از یک کامپوننت والد به فرزند منتقل کنیم تا خروجی کامپوننت‌ها بر اساس داده‌های ورودی پویا و قابل استفاده مجدد باشد.",
+      "tags": ["react.components.props"],
+      "answers": [
+        { "text": "برای مدیریت وضعیت داخلی کامپوننت", "isCorrect": false },
+        { "text": "برای ارسال داده از کامپوننت والد به فرزند و ایجاد خروجی پویا", "isCorrect": true },
+        { "text": "برای ذخیره اطلاعات در حافظه مرورگر", "isCorrect": false },
+        { "text": "برای اعمال استایل‌ها به عناصر JSX", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "در کد زیر، خروجی کامپوننت Greeting چه خواهد بود؟\n\n<pre><code dir=\"ltr\">function Greeting(props) {\n  return (\n    &lt;div&gt;\n      &lt;h2&gt;{props.message}&lt;/h2&gt;\n      &lt;p&gt;This is a message for {props.name}.&lt;/p&gt;\n    &lt;/div&gt;\n  );\n}</code></pre>",
+      "difficulty": 2,
+      "explanation": "چرا گزینه C صحیح است؟ مقدار props.name و props.message از کامپوننت والد ارسال شده و در JSX رندر می‌شود؛ بنابراین متن پیام بر اساس داده‌های ورودی متفاوت خواهد بود.",
+      "tags": ["react.components.props"],
+      "answers": [
+        { "text": "خروجی همیشه یک متن ثابت است", "isCorrect": false },
+        { "text": "خروجی بدون پیام نمایش داده می‌شود", "isCorrect": false },
+        { "text": "خروجی متن پیام را با مقادیر props نشان می‌دهد", "isCorrect": true },
+        { "text": "JSX خطا می‌دهد چون props undefined هستند", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چه تفاوتی بین استفاده از props و state در React وجود دارد؟",
+      "difficulty": 3,
+      "explanation": "چرا گزینه A صحیح است؟ props توسط والد ارسال می‌شوند و تغییرناپذیر هستند، در حالی که state داده‌هایی هستند که می‌توانند در طول عمر کامپوننت تغییر کنند و باعث رندر مجدد آن شوند.",
+      "tags": ["react.components.props"],
+      "answers": [
+        { "text": "props از والد می‌آیند و تغییرناپذیر هستند؛ state قابل تغییر است و باعث رندر مجدد می‌شود", "isCorrect": true },
+        { "text": "state از والد می‌آید و props قابل تغییر هستند", "isCorrect": false },
+        { "text": "هر دو مشابه هستند و تفاوتی ندارند", "isCorrect": false },
+        { "text": "props برای CSS و state برای JavaScript استفاده می‌شوند", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چگونه می‌توانیم کد خواناتر و مختصرتر هنگام کار با props داشته باشیم؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه C صحیح است؟ با استفاده از destructuring می‌توانیم props را در امضای تابع باز کنیم و به جای props.name یا props.message مستقیماً به name و message دسترسی داشته باشیم.",
+      "tags": ["react.components.props"],
+      "answers": [
+        { "text": "با استفاده از توابع کلاس‌محور", "isCorrect": false },
+        { "text": "با استفاده از defaultProps", "isCorrect": false },
+        { "text": "با استفاده از destructuring در امضای تابع", "isCorrect": true },
+        { "text": "با قرار دادن props در useState", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چرا propsها در React تغییرناپذیر (immutable) هستند؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه B صحیح است؟ چون props داده‌هایی هستند که از والد به فرزند منتقل می‌شوند و کامپوننت‌های React باید مانند توابع خالص رفتار کنند تا پیش‌بینی خروجی آسان باشد و باگ‌ها کاهش یابد.",
+      "tags": ["react.components.props"],
+      "answers": [
+        { "text": "چون مرورگر اجازه تغییر داده‌ها را نمی‌دهد", "isCorrect": false },
+        { "text": "برای اطمینان از رفتار پیش‌بینی‌پذیر و کاهش باگ‌ها", "isCorrect": true },
+        { "text": "چون props برای استایل دادن به عناصر هستند", "isCorrect": false },
+        { "text": "چون React از state برای همه داده‌ها استفاده می‌کند", "isCorrect": false }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "questions": [
+    {
+      "text": "در فرم <code dir=\"ltr\">ContactForm</code>، چه چیزی مسئول ردیابی وضعیت ارسال فرم (در حال ارسال، موفق یا خطا) است؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه A صحیح است؟ متغیر state <code dir=\"ltr\">status</code> وضعیت ارسال را نگهداری کرده و به UI اجازه می‌دهد بازخورد مناسب به کاربر نمایش دهد.",
+      "tags": ["react.forms.submission"],
+      "answers": [
+        { "text": "متغیر state <code dir=\"ltr\">status</code>", "isCorrect": true },
+        { "text": "متغیر state <code dir=\"ltr\">formData</code>", "isCorrect": false },
+        { "text": "تابع <code dir=\"ltr\">submitForm</code>", "isCorrect": false },
+        { "text": "رویداد onChange روی inputها", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چه زمانی پیام 'Loading...' در فرم نمایش داده می‌شود؟",
+      "difficulty": 1,
+      "explanation": "چرا گزینه B صحیح است؟ پیام 'Loading...' تنها زمانی نمایش داده می‌شود که <code dir=\"ltr\">status === 'submitting'</code> باشد.",
+      "tags": ["react.forms.submission"],
+      "answers": [
+        { "text": "زمانی که فرم در وضعیت 'typing' است", "isCorrect": false },
+        { "text": "زمانی که فرم در حال ارسال است (status === 'submitting')", "isCorrect": true },
+        { "text": "زمانی که فرم با موفقیت ارسال شده است", "isCorrect": false },
+        { "text": "زمانی که فرم خطا دارد", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چرا دکمه ارسال فرم با <code dir=\"ltr\">disabled</code> به وضعیت submitting وابسته است؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه A صحیح است؟ این کار از ارسال‌های مکرر فرم توسط کاربر جلوگیری کرده و تجربه کاربری روانی ایجاد می‌کند.",
+      "tags": ["react.forms.submission"],
+      "answers": [
+        { "text": "برای جلوگیری از ارسال‌های مکرر فرم", "isCorrect": true },
+        { "text": "برای رندر مجدد فرم در هر تایپ کاربر", "isCorrect": false },
+        { "text": "برای فعال کردن پیام خطا", "isCorrect": false },
+        { "text": "برای ریست کردن مقادیر فرم", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "اگر <code dir=\"ltr\">submitForm</code> با خطا مواجه شود، چه اتفاقی برای state فرم می‌افتد؟",
+      "difficulty": 1,
+      "explanation": "چرا گزینه C صحیح است؟ در صورت reject شدن Promise، status به 'error' تغییر کرده و پیام خطای مناسب به کاربر نمایش داده می‌شود.",
+      "tags": ["react.forms.submission"],
+      "answers": [
+        { "text": "status به 'success' تغییر می‌کند", "isCorrect": false },
+        { "text": "status پاک می‌شود", "isCorrect": false },
+        { "text": "status به 'error' تغییر می‌کند و پیام خطا نمایش داده می‌شود", "isCorrect": true },
+        { "text": "formData پاک می‌شود", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چرا استفاده از state برای ردیابی وضعیت ارسال فرم بهتر از متغیر عادی است؟",
+      "difficulty": 3,
+      "explanation": "چرا گزینه B صحیح است؟ استفاده از state باعث می‌شود که تغییر وضعیت ارسال، UI را به صورت پویا و قابل پیش‌بینی رندر کند و بازخورد مناسب به کاربر نمایش داده شود.",
+      "tags": ["react.forms.submission"],
+      "answers": [
+        { "text": "چون متغیر عادی باعث رندر مجدد فرم می‌شود", "isCorrect": false },
+        { "text": "چون state باعث رندر پویا و نمایش بازخورد مناسب می‌شود", "isCorrect": true },
+        { "text": "چون متغیر عادی نمی‌تواند داده‌ها را نگه دارد", "isCorrect": false },
+        { "text": "چون state مقدار ورودی فرم را تغییر می‌دهد", "isCorrect": false }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "questions": [
+    {
+      "text": "چه عاملی باعث می‌شود React برای یک کامپوننت تابعی رندر مجدد انجام دهد؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه B صحیح است؟ فراخوانی تابع setter که state را به‌روزرسانی می‌کند باعث می‌شود React آن کامپوننت و فرزندانش را برای رندر مجدد صف‌بندی کند.",
+      "tags": ["react.state.rerender"],
+      "answers": [
+        { "text": "فقط وقتی props تغییر کنند", "isCorrect": false },
+        { "text": "هر بار که تابع setter برای state فراخوانی شود", "isCorrect": true },
+        { "text": "فقط در رندر اولیه کامپوننت", "isCorrect": false },
+        { "text": "هر بار که DOM واقعی تغییر کند", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چرا state در طول یک رندر به صورت snapshot عمل می‌کند؟",
+      "difficulty": 1,
+      "explanation": "چرا گزینه C صحیح است؟ مقدار state در طول یک رندر ثابت است و تغییرات توسط setter فقط برای رندر بعدی اعمال می‌شوند. بنابراین در همان رندر فعلی، مقدار ثابت باقی می‌ماند.",
+      "tags": ["react.state.rerender"],
+      "answers": [
+        { "text": "زیرا state همیشه به عنوان prop ارسال می‌شود", "isCorrect": false },
+        { "text": "زیرا فراخوانی setter فوراً مقدار جدید را اعمال می‌کند", "isCorrect": false },
+        { "text": "زیرا state در طول رندر ثابت است و تغییرات فقط در رندر بعدی اعمال می‌شوند", "isCorrect": true },
+        { "text": "زیرا React مقدار state را کپی کرده و جداگانه ذخیره می‌کند", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "text": "React چگونه تغییرات JSX را بعد از رندر مجدد اعمال می‌کند؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه C صحیح است؟ React Virtual DOM جدید را با نسخه قبلی مقایسه کرده و تنها بخش‌هایی از DOM واقعی که تغییر کرده‌اند را به‌روزرسانی می‌کند.",
+      "tags": ["react.state.rerender"],
+      "answers": [
+        { "text": "تمام DOM را دوباره می‌سازد", "isCorrect": false },
+        { "text": "فقط مقادیر متغیرهای جدید را جایگزین می‌کند", "isCorrect": false },
+        { "text": "با مقایسه Virtual DOM جدید و قدیم، تنها بخش‌های تغییر یافته را آپدیت می‌کند", "isCorrect": true },
+        { "text": "DOM واقعی را نادیده می‌گیرد و فقط console را به‌روزرسانی می‌کند", "isCorrect": false }
+      ]
+    },
+    {
+      "text": " چرا فراخوانی <code dir=\"ltr\">setCount(count + 1)</code> چند بار پشت سر هم در یک رندر باعث افزایش چندگانه count نمی‌شود؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه A صحیح است؟ مقدار state در طول رندر ثابت است (snapshot) و هر فراخوانی setCount به React می‌گوید که state جدید با همان مقدار snapshot اعمال شود. بنابراین چند فراخوانی پشت سر هم با مقدار مشابه، تنها یک رندر ایجاد می‌کنند و count فقط یک واحد افزایش می‌یابد.",
+      "tags": ["react.state.rerender"],
+      "answers": [
+        { "text": "زیرا state در طول رندر ثابت است و فراخوانی‌های متوالی با همان snapshot ادغام می‌شوند", "isCorrect": true },
+        { "text": "زیرا setCount مقدار قبلی را نادیده می‌گیرد", "isCorrect": false },
+        { "text": "زیرا console.log مقدار count را قبل از رندر نشان می‌دهد", "isCorrect": false },
+        { "text": "زیرا React از throttle برای فراخوانی setter استفاده می‌کند", "isCorrect": false }
+      ]
+    },
+     {
+      "text": "چه چیزی باعث می‌شود یک کامپوننت فرزند هنگام تغییر state در والد دوباره رندر شود؟",
+      "difficulty": 3,
+      "explanation": "چرا گزینه B صحیح است؟ اگر propsی که به یک کامپوننت فرزند ارسال می‌شوند تغییر کنند، آن کامپوننت فرزند نیز رندر مجدد خواهد شد. این مکانیسم، همگام‌سازی UI با داده‌ها را تضمین می‌کند.",
+      "tags": ["react.state.rerender"],
+      "answers": [
+        { "text": "فقط زمانی که تابع setter در فرزند فراخوانی شود", "isCorrect": false },
+        { "text": "زمانی که props ارسال شده از والد تغییر کنند", "isCorrect": true },
+        { "text": "فقط در رندر اولیه والد", "isCorrect": false },
+        { "text": "هر بار که DOM واقعی در والد تغییر کند", "isCorrect": false }
+      ]
+    }
+  ]
+}

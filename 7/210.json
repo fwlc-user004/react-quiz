@@ -1,0 +1,92 @@
+{
+  "questions": [
+    {
+      "text": "چرا نام یک هوک سفارشی باید با use شروع شود؟",
+      "difficulty": 1,
+      "explanation": "چرا گزینه C صحیح است؟ این قرارداد به React و linterها اجازه می‌دهد که تابع را به عنوان یک هوک تشخیص دهند و قوانین هوک‌ها را در داخل آن اعمال کنند.",
+      "tags": ["react.hooks.custom"],
+      "answers": [
+        { "text": "برای زیبایی نامگذاری و خوانایی کد", "isCorrect": false },
+        { "text": "برای اینکه تابع قابل export شود", "isCorrect": false },
+        {
+          "text": "این یک قرارداد است که React و linterها تشخیص دهند این تابع یک هوک است",
+          "isCorrect": true
+        },
+        {
+          "text": "برای محدود کردن تعداد دفعات فراخوانی useState در آن",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "چه چیزی یک هوک سفارشی را از یک تابع معمولی جاوااسکریپت متمایز می‌کند؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه A صحیح است؟ هوک سفارشی می‌تواند هوک‌های داخلی React مثل useState و useEffect را فراخوانی کند و منطق stateدار را بین چند کامپوننت به اشتراک بگذارد، در حالی که توابع عادی این قابلیت را ندارند.",
+      "tags": ["react.hooks.custom"],
+      "answers": [
+        {
+          "text": "هوک‌های سفارشی می‌توانند از سایر هوک‌ها استفاده کنند",
+          "isCorrect": true
+        },
+        { "text": "می‌تواند JSX بیشتری برگرداند", "isCorrect": false },
+        { "text": "همیشه باید مقدار اولیه state بگیرد", "isCorrect": false },
+        { "text": "قادر است فقط در کلاس‌ها استفاده شود", "isCorrect": false }
+      ]
+    },
+
+    {
+      "text": "در یک اپلیکیشن، یک هوک سفارشی useFormInput تعریف شده است که مقدار ورودی و یک تابع برای به‌روزرسانی آن را مدیریت می‌کند. اگر دو کامپوننت مجزا هر کدام useFormInput('') را برای فیلدهای مشابه فراخوانی کنند، چرا تغییر مقدار در یکی از کامپوننت‌ها روی کامپوننت دیگر تأثیری ندارد؟",
+      "difficulty": 3,
+      "explanation": "چرا گزینه B صحیح است؟ هر فراخوانی useFormInput یک جفت [state, setter] مستقل در React ایجاد می‌کند. حتی اگر هر دو کامپوننت از همان تابع هوک استفاده کنند، React این stateها را در آرایه‌های جداگانه نگه می‌دارد. بنابراین تغییر state در یک کامپوننت روی دیگری تأثیری ندارد.",
+      "tags": ["react.hooks.custom"],
+      "answers": [
+        {
+          "text": "چون JSX مقادیر ورودی را به صورت جداگانه رندر می‌کند",
+          "isCorrect": false
+        },
+        {
+          "text": "چون هر فراخوانی useFormInput یک state مستقل ایجاد می‌کند و React آنها را بر اساس ترتیب فراخوانی در هر کامپوننت مدیریت می‌کند",
+          "isCorrect": true
+        },
+        {
+          "text": "چون props بین دو کامپوننت یکسان نیستند",
+          "isCorrect": false
+        },
+        {
+          "text": "چون تابع handleChange در کامپوننت اول override نمی‌شود",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "چرا در استفاده از هوک‌های سفارشی از سینتکس spread {...firstNameProps} در input استفاده می‌کنیم؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه D صحیح است؟ این کار تمام مقادیر و handlerهای بازگشتی هوک را به input پاس می‌دهد، بدون اینکه نیاز به نوشتن جداگانه value و onChange داشته باشیم.",
+      "tags": ["react.hooks.custom"],
+      "answers": [
+        { "text": "برای ایجاد state جدید", "isCorrect": false },
+        { "text": "برای اجرای useEffect خودکار", "isCorrect": false },
+        { "text": "برای ارسال props به والد", "isCorrect": false },
+        {
+          "text": "برای پاس دادن تمام مقدار و handlerهای هوک به input به صورت مختصر",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "کدام یک از موارد زیر بهترین کاربرد هوک سفارشی است؟",
+      "difficulty": 1,
+      "explanation": "چرا گزینه A صحیح است؟ وقتی چندین کامپوننت منطق مشابه stateدار دارند، هوک‌های سفارشی به اشتراک‌گذاری کد و جلوگیری از تکرار کمک می‌کنند، مانند مدیریت فیلدهای فرم یا دریافت داده‌ها از API.",
+      "tags": ["react.hooks.custom"],
+      "answers": [
+        {
+          "text": "اشتراک‌گذاری منطق stateدار بین چندین کامپوننت مختلف",
+          "isCorrect": true
+        },
+        { "text": "نمایش JSX در داخل یک کامپوننت", "isCorrect": false },
+        { "text": "تعریف props جدید برای یک کامپوننت", "isCorrect": false },
+        { "text": "تنظیم state بدون استفاده از useState", "isCorrect": false }
+      ]
+    }
+  ]
+}

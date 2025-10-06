@@ -1,0 +1,64 @@
+{
+  "questions": [
+    {
+      "text": "چرا اپلیکیشن TodoApp پس از افزودن تمام قابلیت‌ها نیاز به بازسازی (refactoring) پیدا کرد؟",
+      "difficulty": 1,
+      "explanation": "چرا گزینه B صحیح است؟ کامپوننت TodoApp مسئولیت‌های زیادی دارد (مدیریت state، رندر فرم و لیست) که نقض اصل تک-مسئولیتی است و نگهداری آن را دشوار می‌کند.",
+      "tags": ["react.project.todo.refactor"],
+      "answers": [
+        { "text": "برای اضافه کردن هوک‌های جدید", "isCorrect": false },
+        { "text": "به دلیل نقض اصل Single Responsibility و افزایش پیچیدگی کامپوننت", "isCorrect": true },
+        { "text": "برای حذف localStorage", "isCorrect": false },
+        { "text": "به دلیل استفاده از useEffect", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "کامپوننت TodoList چه مسئولیتی دارد؟",
+      "difficulty": 1,
+      "explanation": "چرا گزینه A صحیح است؟ TodoList تنها مسئول پیمایش روی آرایه todos و رندر کردن کامپوننت‌های TodoItem است و منطق business logic در آن قرار ندارد.",
+      "tags": ["react.project.todo.refactor"],
+      "answers": [
+        { "text": "نمایش لیست وظایف و رندر هر TodoItem", "isCorrect": true },
+        { "text": "افزودن وظایف جدید به آرایه todos", "isCorrect": false },
+        { "text": "تعریف هوک useReducer", "isCorrect": false },
+         { "text": "نمایش یک وظیفه و دکمه‌های مربوط به آن", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "کامپوننت TodoItem چه کاری انجام می‌دهد؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه A صحیح است؟ TodoItem مسئول نمایش یک وظیفه واحد و دکمه‌های toggle/delete آن است و هیچ منطق تغییر state ندارد.",
+      "tags": ["react.project.todo.refactor"],
+      "answers": [
+         { "text": "نمایش یک وظیفه و دکمه‌های مربوط به آن", "isCorrect": true },
+        { "text": "نمایش لیست وظایف و رندر هر Item", "isCorrect": false },
+        { "text": "مدیریت آرایه todos و افزودن وظایف", "isCorrect": false },
+        { "text": "مدیریت handlerهای فرم", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "مزیت اصلی تقسیم کامپوننت TodoApp به کانتینر و کامپوننت‌های نمایشی چیست؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه C صحیح است؟ این الگو خوانایی، مقیاس‌پذیری و نگهداری کد را بهبود می‌بخشد و مسئولیت‌ها را از هم جدا می‌کند.",
+      "tags": ["react.project.todo.refactor"],
+      "answers": [
+        { "text": "کاهش تعداد useState در TodoApp", "isCorrect": false },
+        { "text": "اضافه کردن props جدید", "isCorrect": false },
+        { "text": "خوانایی بهتر، مدیریت آسان و رعایت Single Responsibility", "isCorrect": true },
+        { "text": "حذف useEffect", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "کدام یک از موارد زیر نشان‌دهنده رعایت اصل Single Responsibility در بازسازی اپلیکیشن است؟",
+      "difficulty": 3,
+      "explanation": "چرا گزینه B صحیح است؟ هر کامپوننت حالا یک مسئولیت مشخص دارد: TodoApp مدیریت state و logic، TodoList نمایش لیست و TodoItem نمایش یک وظیفه واحد.",
+      "tags": ["react.project.todo.refactor"],
+      "answers": [
+        { "text": "TodoApp مسئول رندر فرم و هر وظیفه است", "isCorrect": false },
+        { "text": "TodoApp مدیریت state، TodoList نمایش لیست، TodoItem نمایش یک وظیفه", "isCorrect": true },
+        { "text": "TodoList و TodoItem مدیریت state اصلی برنامه", "isCorrect": false },
+        { "text": "همه توابع handler در TodoItem قرار دارند", "isCorrect": false }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "questions": [
+    {
+      "text": "در کامپوننتی که از useReducer برای مدیریت لیست کارها استفاده می‌کند، ارسال اکشن <code dir=\"ltr\">dispatch({ type: 'added', id: 3, text: 'Learn Hooks' })</code> چه کاری انجام می‌دهد؟",
+      "difficulty": 1,
+      "explanation": "چرا گزینه B صحیح است؟ این اکشن یک کار جدید با id و متن مشخص شده به آرایه tasks اضافه می‌کند و state جدید را تولید می‌کند.",
+      "tags": ["react.state.reducer.payload"],
+      "answers": [
+        { "text": "تمام کارها را حذف می‌کند", "isCorrect": false },
+        { "text": "یک کار جدید به آرایه tasks اضافه می‌کند", "isCorrect": true },
+        { "text": "کار اول آرایه را تغییر می‌دهد", "isCorrect": false },
+        { "text": "هیچ کاری انجام نمی‌دهد", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "در reducer زیر، چرا از map برای اکشن 'changed' استفاده شده است؟\n<pre><code dir=\"ltr\">case 'changed': {\n  return todos.map(t => {\n    if (t.id === action.task.id) return action.task;\n    else return t;\n  });\n}</code></pre>",
+      "difficulty": 2,
+      "explanation": "چرا گزینه A صحیح است؟ map یک آرایه جدید برمی‌گرداند و تنها آیتمی که id آن با task.id مطابقت دارد جایگزین می‌شود، در حالی که سایر آیتم‌ها بدون تغییر باقی می‌مانند.",
+      "tags": ["react.state.reducer.payload"],
+      "answers": [
+        { "text": "برای ایجاد یک آرایه جدید و جایگزینی تنها کار مشخص شده", "isCorrect": true },
+        { "text": "برای حذف تمام کارها به جز کار مشخص شده", "isCorrect": false },
+        { "text": "برای تغییر ترتیب کارها در آرایه", "isCorrect": false },
+        { "text": "برای بررسی اینکه آیا آرایه خالی است یا نه", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چرا در اکشن‌ها اغلب داده‌های اضافی را در پراپرتی payload یا مشابه آن قرار می‌دهیم؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه B صحیح است؟ این کار به reducer اجازه می‌دهد بر اساس داده‌های اضافی، state را به‌روزرسانی کند و منطق را قابل پیش‌بینی و مقیاس‌پذیر نگه دارد.",
+      "tags": ["react.state.reducer.payload"],
+      "answers": [
+        { "text": "برای اینکه React خودکار state را مدیریت کند", "isCorrect": false },
+        { "text": "برای ارسال داده‌های لازم به reducer و تصمیم‌گیری درباره state جدید", "isCorrect": true },
+        { "text": "برای جلوگیری از رندر مجدد کامپوننت", "isCorrect": false },
+        { "text": "چون type اکشن نمی‌تواند حاوی اطلاعات باشد", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "در کامپوننت TaskApp، اگر بخواهیم یک کار را حذف کنیم، کدام روش درست است؟",
+      "difficulty": 1,
+      "explanation": "چرا گزینه C صحیح است؟ اکشن 'deleted' با id کار ارسال می‌شود و reducer با filter آن کار را از آرایه حذف می‌کند.",
+      "tags": ["react.state.reducer.payload"],
+      "answers": [
+        { "text": "تغییر مستقیم آرایه tasks بدون dispatch", "isCorrect": false },
+        { "text": "setTasks(tasks.filter(...)) بدون reducer", "isCorrect": false },
+        { "text": "dispatch({ type: 'deleted', id: taskId }) و استفاده از filter در reducer", "isCorrect": true },
+        { "text": "تغییر مقدار state در handleDeleteTask بدون dispatch", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چرا استفاده از reducer و dispatch با payload در فرم‌ها یا لیست‌های پیچیده توصیه می‌شود؟",
+      "difficulty": 3,
+      "explanation": "چرا گزینه B صحیح است؟ زیرا تمام منطق به‌روزرسانی state در reducer متمرکز می‌شود و قابلیت اشتراک‌گذاری و نگهداری کد بسیار بهتر می‌شود.",
+      "tags": ["react.state.reducer.payload"],
+      "answers": [
+        { "text": "چون state به طور خودکار در تمام کامپوننت‌ها رندر نمی‌شود", "isCorrect": false },
+        { "text": "چون منطق تغییر state متمرکز، پیش‌بینی‌پذیر و قابل نگهداری می‌شود", "isCorrect": true },
+        { "text": "چون dispatch از رندر مجدد کامپوننت جلوگیری می‌کند", "isCorrect": false },
+        { "text": "چون payload باعث می‌شود state مستقل از reducer شود", "isCorrect": false }
+      ]
+    }
+  ]
+}

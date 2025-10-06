@@ -1,0 +1,64 @@
+{
+  "questions": [
+    {
+      "text": "JSX در React چیست و چه نقشی دارد؟",
+      "difficulty": 1,
+      "explanation": "چرا گزینه B صحیح است؟ JSX یک افزونه سینتکسی برای جاوااسکریپت است که به ما اجازه می‌دهد المنت‌های React را با سینتکس شبیه HTML در داخل کد جاوااسکریپت بنویسیم و UI خواناتر و قابل نگهداری ایجاد کنیم.",
+      "tags": ["react.jsx"],
+      "answers": [
+        { "text": "یک زبان جدید جدا از جاوااسکریپت برای React", "isCorrect": false },
+        { "text": "یک افزونه سینتکسی برای نوشتن المنت‌های React با ساختار شبیه HTML", "isCorrect": true },
+        { "text": "یک کتابخانه جانبی برای مدیریت state در React", "isCorrect": false },
+        { "text": "ابزاری برای تبدیل HTML به CSS", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چرا استفاده از JSX در React توصیه می‌شود؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه C صحیح است؟ استفاده از JSX باعث خواناتر شدن کد، ترکیب منطق جاوااسکریپت و ساختار UI و نگهداری آسان‌تر کامپوننت‌ها می‌شود.",
+      "tags": ["react.jsx"],
+      "answers": [
+        { "text": "چون برای عملکرد React ضروری است", "isCorrect": false },
+        { "text": "چون بدون آن نمی‌توان React را اجرا کرد", "isCorrect": false },
+        { "text": "چون کد را خواناتر و نگهداری آن راحت‌تر می‌کند", "isCorrect": true },
+        { "text": "چون مرورگر بدون JSX نمی‌تواند JSX را درک کند", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "کد JSX در پشت صحنه به چه چیزی تبدیل می‌شود؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه B صحیح است؟ ابزارهایی مانند Babel کد JSX را به فراخوانی‌های معادل <code dir=\"ltr\">React.createElement()</code> ترجمه می‌کنند تا مرورگر بتواند آن را اجرا کند.",
+      "tags": ["react.jsx"],
+      "answers": [
+        { "text": "به HTML خالص تبدیل می‌شود", "isCorrect": false },
+        { "text": "به فراخوانی‌های <code dir=\"ltr\">React.createElement()</code> تبدیل می‌شود", "isCorrect": true },
+        { "text": "به فایل CSS جداگانه تبدیل می‌شود", "isCorrect": false },
+        { "text": "به یک کامپوننت مستقل React Native تبدیل می‌شود", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "کدام جمله درست است درباره JSX؟",
+      "difficulty": 3,
+      "explanation": "چرا گزینه C صحیح است؟ JSX یک شکر سینتکسی برای React.createElement() است و خود زبان جدیدی نیست؛ بلکه به نوشتن کد خواناتر کمک می‌کند.",
+      "tags": ["react.jsx"],
+      "answers": [
+        { "text": "JSX یک زبان برنامه‌نویسی کاملاً مستقل است", "isCorrect": false },
+        { "text": "JSX باعث کاهش عملکرد React می‌شود", "isCorrect": false },
+        { "text": "JSX یک syntactic sugar برای <code dir=\"ltr\">React.createElement()</code> است", "isCorrect": true },
+        { "text": "JSX تنها برای استایل‌دهی استفاده می‌شود", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "React چه مشکلی را با استفاده از JSX و کامپوننت‌ها حل می‌کند؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه B صحیح است؟ React با JSX و معماری کامپوننت‌ها مدیریت پیچیدگی state و DOM را ساده می‌کند و نوشتن UI تعاملی و خوانا را ممکن می‌سازد.",
+      "tags": ["react.jsx"],
+      "answers": [
+        { "text": "React تنها CSS را بهتر مدیریت می‌کند", "isCorrect": false },
+        { "text": "React مدیریت پیچیدگی state و DOM را ساده می‌کند", "isCorrect": true },
+        { "text": "React جایگزین کامل جاوااسکریپت می‌شود", "isCorrect": false },
+        { "text": "React باعث ایجاد برنامه‌های غیر تعاملی می‌شود", "isCorrect": false }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "questions": [
+    {
+      "text": "در کامپوننت TodoApp، تابع <code>addTodo</code> چه کاری انجام می‌دهد؟",
+      "difficulty": 1,
+      "explanation": "چرا گزینه B صحیح است؟ addTodo یک شیء وظیفه جدید با id و متن مشخص می‌سازد و آن را به انتهای آرایه todos اضافه می‌کند.",
+      "tags": ["react.project.todo.crud"],
+      "answers": [
+        { "text": "مقدار ورودی فرم را پاک می‌کند", "isCorrect": false },
+        { "text": "یک وظیفه جدید می‌سازد و به آرایه todos اضافه می‌کند", "isCorrect": true },
+        { "text": "وضعیت completed وظیفه را معکوس می‌کند", "isCorrect": false },
+        { "text": "یک وظیفه را از آرایه todos حذف می‌کند", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "تابع <code>toggleTodo</code> چه کاری انجام می‌دهد؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه C صحیح است؟ toggleTodo با دریافت id یک وظیفه، وضعیت completed آن را معکوس کرده و آرایه جدید todos را با setTodos به‌روزرسانی می‌کند.",
+      "tags": ["react.project.todo.crud"],
+      "answers": [
+        { "text": "یک وظیفه جدید اضافه می‌کند", "isCorrect": false },
+        { "text": "وظایف را مرتب می‌کند", "isCorrect": false },
+        { "text": "وضعیت completed وظیفه مشخصی را معکوس می‌کند", "isCorrect": true },
+        { "text": "تمام وظایف را حذف می‌کند", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "تابع <code>deleteTodo</code> چه کاری انجام می‌دهد؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه A صحیح است؟ deleteTodo با دریافت id یک وظیفه، آرایه todos را فیلتر می‌کند و آن وظیفه را حذف می‌کند.",
+      "tags": ["react.project.todo.crud"],
+      "answers": [
+        { "text": "وظیفه مشخصی را از آرایه todos حذف می‌کند", "isCorrect": true },
+        { "text": "تمام وظایف را تیک می‌زند", "isCorrect": false },
+        { "text": "یک وظیفه جدید اضافه می‌کند", "isCorrect": false },
+        { "text": "آرایه todos را مرتب می‌کند", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چرا توابع handler در کامپوننت والد تعریف می‌شوند و به فرزندان پاس داده می‌شوند؟",
+      "difficulty": 3,
+      "explanation": "چرا گزینه D صحیح است؟ این روش امکان تغییر state اصلی برنامه از کامپوننت‌های فرزند را فراهم می‌کند و مسئولیت مدیریت منطق CRUD در یک مکان متمرکز می‌ماند.",
+      "tags": ["react.project.todo.crud"],
+      "answers": [
+        { "text": "برای اجرای useEffect در فرزند", "isCorrect": false },
+        { "text": "برای رندر کردن JSX در والد", "isCorrect": false },
+        { "text": "برای ایجاد کامپوننت کنترل‌شده", "isCorrect": false },
+        { "text": "برای امکان تغییر state والد از فرزند و مدیریت متمرکز منطق CRUD", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "برای تولید id منحصر به فرد در addTodo از چه روشی استفاده شده است؟",
+      "difficulty": 1,
+      "explanation": "چرا گزینه B صحیح است؟ از Date.now() استفاده شده تا هر وظیفه جدید یک شناسه یکتا داشته باشد.",
+      "tags": ["react.project.todo.crud"],
+      "answers": [
+        { "text": "از یک شمارنده ساده با useState", "isCorrect": false },
+        { "text": "از Date.now() برای تولید شناسه یکتا", "isCorrect": true },
+        { "text": "از uuid.random()", "isCorrect": false },
+        { "text": "از index آرایه todos", "isCorrect": false }
+      ]
+    }
+  ]
+}

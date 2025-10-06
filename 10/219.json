@@ -1,0 +1,76 @@
+{
+  "questions": [
+    {
+      "text": "در کامپوننتی که از useReducer استفاده می‌کند، تابع <code dir=\"ltr\">dispatch({ type: 'increment' })</code> چه کاری انجام می‌دهد؟",
+      "difficulty": 1,
+      "explanation": "چرا گزینه B صحیح است؟ زیرا dispatch یک اکشن به reducer می‌فرستد و reducer تصمیم می‌گیرد state جدید چگونه باشد.",
+      "tags": ["react.state.reducer"],
+      "answers": [
+        { "text": "مستقیماً مقدار state را افزایش می‌دهد", "isCorrect": false },
+        { "text": "یک اکشن به تابع reducer ارسال می‌کند و state جدید را محاسبه می‌کند", "isCorrect": true },
+        { "text": "state را به حالت اولیه برمی‌گرداند", "isCorrect": false },
+        { "text": "باعث رندر مجدد کامپوننت بدون تغییر state می‌شود", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چرا معمولاً تابع reducer را خارج از کامپوننت تعریف می‌کنیم؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه A صحیح است؟ قرار دادن reducer خارج از کامپوننت از ایجاد دوباره تابع در هر رندر جلوگیری می‌کند و به بهینه‌سازی عملکرد کمک می‌کند.",
+      "tags": ["react.state.reducer"],
+      "answers": [
+        { "text": "برای جلوگیری از اجرای مجدد تابع در هر رندر", "isCorrect": true },
+        { "text": "چون در داخل کامپوننت نمی‌توان reducer نوشت", "isCorrect": false },
+        { "text": "برای اینکه React نمی‌تواند reducer داخل کامپوننت را مدیریت کند", "isCorrect": false },
+        { "text": "برای اینکه state به طور خودکار تغییر کند", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چه مزیتی استفاده از useReducer نسبت به useState برای مدیریت state پیچیده دارد؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه B صحیح است؟ با useReducer، تمام منطق تغییر state در تابع reducer جمع‌آوری می‌شود و خوانایی و نگهداری کد آسان‌تر می‌شود.",
+      "tags": ["react.state.reducer"],
+      "answers": [
+        { "text": "state همیشه به صورت رشته ذخیره می‌شود", "isCorrect": false },
+        { "text": "منطق به‌روزرسانی در یک مکان متمرکز و قابل پیش‌بینی است", "isCorrect": true },
+        { "text": "رندر مجدد کامپوننت‌ها متوقف می‌شود", "isCorrect": false },
+        { "text": "کامپوننت به صورت خودکار مقادیر state را پاک می‌کند", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "در یک کامپوننت Counter که از useReducer استفاده می‌کند، چه چیزی باعث می‌شود state همیشه به روز و قابل پیش‌بینی باقی بماند؟",
+      "difficulty": 3,
+      "explanation": "چرا گزینه B صحیح است؟ dispatch با reducer تضمین می‌کند که state تنها از طریق منطق تعریف‌شده تغییر کند و پیش‌بینی‌پذیری حفظ شود.",
+      "tags": ["react.state.reducer"],
+      "answers": [
+        { "text": "فراخوانی مستقیم setState در handlerها", "isCorrect": false },
+        { "text": "استفاده از dispatch و تابع reducer", "isCorrect": true },
+        { "text": "نگه داشتن state در متغیرهای محلی تابع", "isCorrect": false },
+        { "text": "فراخوانی dispatch با مقادیر ثابت بدون reducer", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "در کد زیر، بعد از فراخوانی <code dir=\"ltr\">dispatch({ type: 'reset' })</code> مقدار count چه خواهد شد?\n<pre><code dir=\"ltr\">function reducer(state, action) {\n  switch(action.type) {\n    case 'increment': return { count: state.count + 1 };\n    case 'decrement': return { count: state.count - 1 };\n    case 'reset': return { count: 0 };\n  }\n}</code></pre>",
+      "difficulty": 1,
+      "explanation": "چرا گزینه B صحیح است؟ reducer هنگام دریافت action با type برابر 'reset'، مقدار count را به 0 برمی‌گرداند.",
+      "tags": ["react.state.reducer"],
+      "answers": [
+        { "text": "مقدار count بدون تغییر باقی می‌ماند", "isCorrect": false },
+        { "text": "count به 0 بازنشانی می‌شود", "isCorrect": true },
+        { "text": "count برابر با 1 می‌شود", "isCorrect": false },
+        { "text": "خطا رخ می‌دهد", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "در یک فرم پیچیده با useReducer، چرا استفاده از dispatch به جای setState توصیه می‌شود؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه B صحیح است؟ استفاده از dispatch باعث می‌شود تمام تغییرات state از طریق یک reducer مدیریت شود و خوانایی و نگهداری کد بهتر شود.",
+      "tags": ["react.state.reducer"],
+      "answers": [
+        { "text": "چون dispatch سریع‌تر است", "isCorrect": false },
+        { "text": "چون dispatch منطق تغییر state را متمرکز و قابل پیش‌بینی می‌کند", "isCorrect": true },
+        { "text": "چون setState نمی‌تواند stateهای پیچیده را نگه دارد", "isCorrect": false },
+        { "text": "چون dispatch state را مستقیم تغییر می‌دهد بدون رندر مجدد", "isCorrect": false }
+      ]
+    }
+  ]
+}

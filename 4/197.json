@@ -1,0 +1,64 @@
+{
+  "questions": [
+    {
+      "text": "چرا بهتر است تمام کامپوننت‌ها را در یک پوشه اختصاصی مانند components قرار دهیم؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه B صحیح است؟ این کار باعث سازمان‌دهی بهتر، مدیریت آسان‌تر و یافتن سریع‌تر کامپوننت‌ها می‌شود و ساختار پروژه خواناتر خواهد بود.",
+      "tags": ["react.components.organization"],
+      "answers": [
+        { "text": "چون React به این کار نیاز دارد", "isCorrect": false },
+        { "text": "برای سازمان‌دهی بهتر و مدیریت راحت‌تر پروژه", "isCorrect": true },
+        { "text": "برای افزایش سرعت رندر کامپوننت‌ها", "isCorrect": false },
+        { "text": "چون تنها در این حالت props کار می‌کنند", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چرا هر کامپوننت باید در فایل جداگانه با نام PascalCase قرار گیرد؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه C صحیح است؟ تطابق نام فایل با نام کامپوننت و استفاده از PascalCase استاندارد React است و تشخیص آسان کامپوننت‌ها را ممکن می‌کند.",
+      "tags": ["react.components.organization"],
+      "answers": [
+        { "text": "برای افزایش سرعت اجرای پروژه", "isCorrect": false },
+        { "text": "برای محدود کردن تعداد props قابل ارسال", "isCorrect": false },
+        { "text": "برای استانداردسازی و تشخیص راحت کامپوننت‌ها", "isCorrect": true },
+        { "text": "برای استفاده از CSS داخلی هر کامپوننت", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "در مثال انتقال کامپوننت Greeting به پوشه components، مزیت اصلی این کار چیست؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه B صحیح است؟ فایل App.js تمیزتر شده و تنها مسئولیت چیدمان کلی صفحه را بر عهده دارد، در حالی که جزئیات کامپوننت در فایل خودش کپسوله شده است.",
+      "tags": ["react.components.organization"],
+      "answers": [
+        { "text": "کامپوننت دیگر props دریافت نمی‌کند", "isCorrect": false },
+        { "text": "App.js تمیزتر شده و جزئیات هر کامپوننت کپسوله می‌شوند", "isCorrect": true },
+        { "text": "کامپوننت‌ها سریع‌تر رندر می‌شوند", "isCorrect": false },
+        { "text": "استایل‌ها به صورت خودکار اعمال می‌شوند", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چه چیزی باعث می‌شود پروژه React مقیاس‌پذیر و قابل نگهداری باشد؟",
+      "difficulty": 3,
+      "explanation": "چرا گزینه B صحیح است؟ ساختار منطقی فایل‌ها و پوشه‌ها، قرار دادن هر کامپوننت در فایل مخصوص خودش و استفاده از props باعث می‌شود پروژه بزرگ و پیچیده نیز قابل مدیریت باشد.",
+      "tags": ["react.components.organization"],
+      "answers": [
+        { "text": "استفاده از کلاس‌ها به جای تابع‌ها", "isCorrect": false },
+        { "text": "ساختار منطقی فایل‌ها و پوشه‌ها و استفاده از props", "isCorrect": true },
+        { "text": "عدم استفاده از JSX", "isCorrect": false },
+        { "text": "کاهش تعداد کامپوننت‌ها", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چرا فایل App.js پس از سازمان‌دهی کامپوننت‌ها در پوشه components ساده‌تر می‌شود؟",
+      "difficulty": 1,
+      "explanation": "چرا گزینه C صحیح است؟ چون App.js اکنون فقط وظیفه چیدمان کلی صفحه را دارد و منطق هر کامپوننت در فایل جداگانه کپسوله شده است.",
+      "tags": ["react.components.organization"],
+      "answers": [
+        { "text": "چون دیگر نیاز به JSX ندارد", "isCorrect": false },
+        { "text": "چون props در App.js حذف شده‌اند", "isCorrect": false },
+        { "text": "چون App.js فقط مسئول چیدمان کلی است و جزئیات در کامپوننت‌ها هستند", "isCorrect": true },
+        { "text": "چون App.js دیگر import نمی‌شود", "isCorrect": false }
+      ]
+    }
+  ]
+}

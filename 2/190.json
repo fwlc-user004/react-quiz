@@ -1,0 +1,64 @@
+{
+  "questions": [
+    {
+      "text": "در این درس، چه کاری با فایل <code dir=\"ltr\">src/App.js</code> انجام شد؟",
+      "difficulty": 1,
+      "explanation": "چرا گزینه C صحیح است؟ تمام محتوای پیش‌فرض فایل App.js حذف شد و با یک کامپوننت ساده تابعی جایگزین شد که متن 'Hello, React World!' را نمایش می‌دهد.",
+      "tags": ["react.basics"],
+      "answers": [
+        { "text": "محتوا حفظ شد و فقط استایل‌ها تغییر کرد", "isCorrect": false },
+        { "text": "تنها لوگوی چرخان React جایگزین شد", "isCorrect": false },
+        { "text": "تمام محتوای پیش‌فرض حذف و یک کامپوننت ساده اضافه شد", "isCorrect": true },
+        { "text": "فایل حذف شد و دوباره ایجاد نشد", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "کامپوننت جدید <code dir=\"ltr\">App</code> چه چیزی را برمی‌گرداند؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه A صحیح است؟ کامپوننت App یک عنصر JSX شامل <code dir=\"ltr\">&lt;h1&gt;Hello, React World!&lt;/h1&gt;</code> را برمی‌گرداند که در مرورگر به صورت تیتر بزرگ نمایش داده می‌شود.",
+      "tags": ["react.basics"],
+      "answers": [
+        { "text": "یک تگ <code dir=\"ltr\">&lt;h1&gt;</code> با متن 'Hello, React World!'", "isCorrect": true },
+        { "text": "یک لوگوی چرخان React", "isCorrect": false },
+        { "text": "یک کامپوننت دیگر به نام Hello", "isCorrect": false },
+        { "text": "هیچ چیزی نمایش داده نمی‌شود", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "خط <code dir=\"ltr\">export default App;</code> چه نقشی دارد؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه B صحیح است؟ این خط باعث می‌شود که کامپوننت App در سایر فایل‌های پروژه، به خصوص <code dir=\"ltr\">src/index.js</code> قابل استفاده باشد و بتوان آن را رندر کرد.",
+      "tags": ["react.basics"],
+      "answers": [
+        { "text": "باعث اضافه شدن استایل‌ها به App می‌شود", "isCorrect": false },
+        { "text": "App را در دسترس سایر فایل‌ها قرار می‌دهد", "isCorrect": true },
+        { "text": "نام کامپوننت را تغییر می‌دهد", "isCorrect": false },
+        { "text": "باعث حذف محتوای پیش‌فرض می‌شود", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "پس از ذخیره تغییرات در <code dir=\"ltr\">App.js</code>, چه اتفاقی در مرورگر رخ می‌دهد؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه C صحیح است؟ مرورگر به صورت خودکار رفرش می‌شود و صفحه جدید با متن 'Hello, React World!' نمایش داده می‌شود.",
+      "tags": ["react.basics"],
+      "answers": [
+        { "text": "مرورگر پیام خطا نشان می‌دهد", "isCorrect": false },
+        { "text": "مرورگر تغییری نمی‌کند", "isCorrect": false },
+        { "text": "مرورگر به صورت خودکار رفرش شده و متن جدید نمایش داده می‌شود", "isCorrect": true },
+        { "text": "صفحه قبلی حفظ می‌شود و تغییرات اعمال نمی‌شوند", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چه چیزی در این درس نشان‌دهنده هسته اصلی گردش کار توسعه در React است؟",
+      "difficulty": 3,
+      "explanation": "چرا گزینه A صحیح است؟ ویرایش کامپوننت و مشاهده زنده تغییرات در مرورگر، هسته اصلی توسعه React را نشان می‌دهد و تجربه کار با JSX و state را عملی می‌کند.",
+      "tags": ["react.basics"],
+      "answers": [
+        { "text": "ویرایش کامپوننت و مشاهده زنده تغییرات", "isCorrect": true },
+        { "text": "نصب Create React App", "isCorrect": false },
+        { "text": "استفاده از CSS پیش‌فرض", "isCorrect": false },
+        { "text": "حذف فایل‌های src", "isCorrect": false }
+      ]
+    }
+  ]
+}

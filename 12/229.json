@@ -1,0 +1,64 @@
+{
+  "questions": [
+    {
+      "text": "در کامپوننت Timer، استفاده از <code>useRef</code> برای <code>countRef</code> چه مزیتی نسبت به ذخیره ID تایمر در یک متغیر محلی داخل useEffect دارد؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه A صحیح است؟ useRef اجازه می‌دهد که ID تایمر در طول تمام رندرهای کامپوننت پایدار باقی بماند بدون اینکه باعث رندر مجدد شود، بنابراین می‌توانیم به راحتی interval را در هر handler یا در تابع cleanup مدیریت کنیم.",
+      "tags": ["react.project.timer.handlers"],
+      "answers": [
+        { "text": "ID تایمر را در طول رندرها پایدار نگه می‌دارد و تغییر آن باعث رندر مجدد نمی‌شود", "isCorrect": true },
+        { "text": "به صورت خودکار interval را متوقف می‌کند", "isCorrect": false },
+        { "text": "زمان را به فرمت دقیقه و ثانیه تبدیل می‌کند", "isCorrect": false },
+        { "text": "isActive را به صورت اتوماتیک true یا false می‌کند", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چه کاری تابع <code>handleReset</code> در کامپوننت Timer انجام می‌دهد؟",
+      "difficulty": 1,
+      "explanation": "چرا گزینه C صحیح است؟ handleReset تایمر را متوقف کرده، interval فعال را پاک می‌کند و مقدار time را به صفر بازمی‌گرداند تا تایمر کاملاً ریست شود.",
+      "tags": ["react.project.timer.handlers"],
+      "answers": [
+        { "text": "فقط تایمر را متوقف می‌کند", "isCorrect": false },
+        { "text": "مقدار time را صفر می‌کند اما تایمر ادامه می‌یابد", "isCorrect": false },
+        { "text": "تایمر را متوقف می‌کند، interval را پاک می‌کند و time را صفر می‌کند", "isCorrect": true },
+        { "text": "فقط isActive را true می‌کند", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چرا به دکمه‌های Start و Stop در کامپوننت Timer اتریبیوت <code>disabled</code> اضافه شده است؟",
+      "difficulty": 1,
+      "explanation": "چرا گزینه B صحیح است؟ با افزودن disabled، از کلیک‌های نابجا توسط کاربر جلوگیری می‌شود، مثلاً جلوگیری از اجرای دوباره Start زمانی که تایمر در حال اجراست.",
+      "tags": ["react.project.timer.handlers"],
+      "answers": [
+        { "text": "برای استایل‌دهی بهتر دکمه‌ها", "isCorrect": false },
+        { "text": "برای جلوگیری از کلیک‌های نابجا و تجربه کاربری بهتر", "isCorrect": true },
+        { "text": "برای تبدیل مقدار time به دقیقه و ثانیه", "isCorrect": false },
+        { "text": "برای فعال کردن setInterval خودکار", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "در کامپوننت Timer، تابع پاک‌سازی useEffect چه کاری انجام می‌دهد؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه D صحیح است؟ تابع cleanup با استفاده از clearInterval مطمئن می‌شود که هر interval قبلی قبل از اجرای مجدد افکت یا هنگام unmount شدن کامپوننت پاک شود، جلوگیری از نشت حافظه و رفتارهای ناخواسته.",
+      "tags": ["react.project.timer.handlers"],
+      "answers": [
+        { "text": "isActive را به true یا false تغییر می‌دهد", "isCorrect": false },
+        { "text": "time را به صفر بازمی‌گرداند", "isCorrect": false },
+        { "text": "countRef را به null تنظیم می‌کند", "isCorrect": false },
+        { "text": "interval فعال را پاک می‌کند تا از نشت حافظه جلوگیری شود", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "چرا از فرم تابع در setTime یعنی <code>setTime(time => time + 1)</code> استفاده شده است؟",
+      "difficulty": 3,
+      "explanation": "چرا گزینه C صحیح است؟ با استفاده از فرم تابع، مقدار جدید time همیشه بر اساس آخرین state محاسبه می‌شود و از مشکلات مربوط به stale state در closureها جلوگیری می‌کند، مخصوصاً هنگام اجرای interval.",
+      "tags": ["react.project.timer.handlers"],
+      "answers": [
+        { "text": "برای اینکه time هر بار صفر شود", "isCorrect": false },
+        { "text": "برای اینکه interval سریع‌تر اجرا شود", "isCorrect": false },
+        { "text": "برای اطمینان از استفاده از آخرین مقدار state و جلوگیری از stale state", "isCorrect": true },
+        { "text": "برای غیر فعال کردن دکمه‌ها", "isCorrect": false }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "questions": [
+    {
+      "text": "چرا در React مدرن، تقریباً همیشه از کامپوننت‌های تابعی به جای کلاس‌محور استفاده می‌کنیم؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه C صحیح است؟ کامپوننت‌های تابعی با هوک‌ها کوتاه‌تر، خواناتر و مدیریت state و منطق چرخه حیات را ساده‌تر می‌کنند و کد کمتری نیاز دارند.",
+      "tags": ["react.components.functional-vs-class"],
+      "answers": [
+        { "text": "چون کلاس‌ها در React دیگر پشتیبانی نمی‌شوند", "isCorrect": false },
+        { "text": "چون کامپوننت‌های تابعی به مرورگر سریع‌تر منتقل می‌شوند", "isCorrect": false },
+        { "text": "چون استفاده از هوک‌ها باعث خوانایی و سادگی مدیریت state می‌شود", "isCorrect": true },
+        { "text": "چون کامپوننت‌های کلاس‌محور قابل استفاده مجدد نیستند", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "در یک کامپوننت کلاس‌محور، چه چیزی برای دسترسی به state و props استفاده می‌شود؟",
+      "difficulty": 1,
+      "explanation": "چرا گزینه B صحیح است؟ state داخلی با this.state و props با this.props قابل دسترسی هستند و برای به‌روزرسانی state از this.setState() استفاده می‌شود.",
+      "tags": ["react.components.functional-vs-class"],
+      "answers": [
+        { "text": "props با useProps و state با useState", "isCorrect": false },
+        { "text": "state با this.state و props با this.props", "isCorrect": true },
+        { "text": "state و props مستقیم بدون this", "isCorrect": false },
+        { "text": "state با props و props با state", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "در مثال یک شمارنده ساده، تفاوت اصلی بین کلاس‌محور و تابعی چیست؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه C صحیح است؟ در کامپوننت تابعی با useState، مقدار state و تابع به‌روزرسانی آن مستقیماً در اختیار است و نیازی به constructor، super یا this.setState نیست، که کد را کوتاه‌تر و خواناتر می‌کند.",
+      "tags": ["react.components.functional-vs-class"],
+      "answers": [
+        { "text": "کامپوننت کلاس‌محور سرعت اجرا بالاتری دارد", "isCorrect": false },
+        { "text": "تابعی‌ها نمی‌توانند state داشته باشند", "isCorrect": false },
+        { "text": "تابعی‌ها با useState کد کوتاه‌تر و مدیریت state ساده‌تر دارند", "isCorrect": true },
+        { "text": "تابعی‌ها نیاز به متد render() دارند", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چرا جامعه React به سمت استفاده از هوک‌ها حرکت کرد؟",
+      "difficulty": 3,
+      "explanation": "چرا گزینه B صحیح است؟ هوک‌ها مانند useEffect امکان گروه‌بندی منطق‌های مرتبط، اشتراک‌گذاری بین کامپوننت‌ها و مدیریت بهتر state و چرخه حیات را فراهم می‌کنند و باعث کاهش پیچیدگی می‌شوند.",
+      "tags": ["react.components.functional-vs-class"],
+      "answers": [
+        { "text": "چون کلاس‌ها در ES6 دیگر معتبر نیستند", "isCorrect": false },
+        { "text": "چون هوک‌ها مدیریت state پیچیده و منطق چرخه حیات را ساده می‌کنند", "isCorrect": true },
+        { "text": "چون کامپوننت‌های تابعی سرعت اجرا بالاتری دارند", "isCorrect": false },
+        { "text": "چون کلاس‌ها قابل استفاده مجدد نیستند", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "در React، this.setState() چه کاربردی دارد؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه C صحیح است؟ this.setState() در کامپوننت‌های کلاس‌محور برای به‌روزرسانی state استفاده می‌شود و باعث رندر مجدد کامپوننت می‌شود.",
+      "tags": ["react.components.functional-vs-class"],
+      "answers": [
+        { "text": "برای تعریف props جدید", "isCorrect": false },
+        { "text": "برای تغییر props ارسالی به کامپوننت", "isCorrect": false },
+        { "text": "برای به‌روزرسانی state و رندر مجدد کامپوننت", "isCorrect": true },
+        { "text": "برای فراخوانی کامپوننت تابعی از کلاس", "isCorrect": false }
+      ]
+    }
+  ]
+}

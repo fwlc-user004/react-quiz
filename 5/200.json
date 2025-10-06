@@ -1,0 +1,80 @@
+{
+  "questions": [
+    {
+      "text": "چرا در یک کامپوننت React می‌توانیم چندین useState داشته باشیم؟",
+      "difficulty": 1,
+      "explanation": "چرا گزینه C صحیح است؟ با استفاده از چند useState می‌توان stateهای غیرمرتبط را به صورت مستقل مدیریت کرد و خوانایی و نگهداری کد بهتر می‌شود.",
+      "tags": ["react.state.multiple"],
+      "answers": [
+        { "text": "زیرا React اجازه ندارد فقط یک state داشته باشد", "isCorrect": false },
+        { "text": "زیرا useState محدود به یک متغیر است", "isCorrect": false },
+        { "text": "برای مدیریت stateهای غیرمرتبط به صورت مستقل و ساده‌تر", "isCorrect": true },
+        { "text": "زیرا چند useState سرعت اجرای کامپوننت را افزایش می‌دهد", "isCorrect": false }
+      ]
+    },
+    {
+  "questions": [
+    {
+      "text": "<code dir=\"ltr\">\nimport { useState } from 'react';\n\nfunction LoginForm() {\n  const [email, setEmail] = useState('');\n  const [password, setPassword] = useState('');\n\n  return (\n    <div>\n      <input\n        type=\"email\"\n        value={email}\n        onChange={e => setEmail(e.target.value)}\n        placeholder=\"Email\"\n      />\n      <input\n        type=\"password\"\n        value={password}\n        onChange={e => setPassword(e.target.value)}\n        placeholder=\"Password\"\n      />\n      <p>Logging in as: {email}</p>\n    </div>\n  );\n}\n</code>\n\nدر کامپوننت بالا، چرا تغییر مقدار email باعث تغییر password نمی‌شود؟",
+      "difficulty": 3,
+      "explanation": "چرا گزینه A صحیح است؟ چون هر state با useState به صورت مستقل مدیریت می‌شود و React رندر مجدد را تنها برای state تغییر یافته اعمال می‌کند. در نتیجه تغییر email فقط بخش مربوط به email را به‌روز می‌کند و password بدون تغییر باقی می‌ماند.",
+      "tags": ["react.state.multiple"],
+      "answers": [
+        { "text": "هر state به صورت مستقل مدیریت می‌شود و رندر فقط برای state تغییر یافته اعمال می‌شود", "isCorrect": true },
+        { "text": "setPassword به صورت خودکار با setEmail هماهنگ می‌شود", "isCorrect": false },
+        { "text": "React رندر مجدد همه stateها را اعمال می‌کند اما effect نمی‌شود", "isCorrect": false },
+        { "text": "useState تنها یک state را در هر رندر به‌روزرسانی می‌کند", "isCorrect": false }
+      ]
+    }
+  ]
+},
+    {
+      "text": "چرا فراخوانی useState در شرط‌ها یا حلقه‌ها ممنوع است؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه A صحیح است؟ اگر useState در شرط یا حلقه فراخوانی شود، ترتیب فراخوانی‌ها در هر رندر تغییر می‌کند و React نمی‌تواند stateهای صحیح را به هر فراخوانی اختصاص دهد.",
+      "tags": ["react.state.multiple"],
+      "answers": [
+        { "text": "زیرا تغییر ترتیب فراخوانی باعث باگ در ردیابی stateها می‌شود", "isCorrect": true },
+        { "text": "زیرا React فقط یک useState را پشتیبانی می‌کند", "isCorrect": false },
+        { "text": "زیرا تابع setter در حلقه‌ها کار نمی‌کند", "isCorrect": false },
+        { "text": "زیرا شرط‌ها و حلقه‌ها در JSX مجاز نیستند", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "در React، ترتیب فراخوانی useState چه نقشی دارد؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه B صحیح است؟ React یک آرایه از زوج‌های state را برای هر کامپوننت نگهداری می‌کند و به ترتیب فراخوانی useStateها، state مربوطه را بازیابی می‌کند.",
+      "tags": ["react.state.multiple"],
+      "answers": [
+        { "text": "نقش خاصی ندارد و stateها به نامشان اختصاص می‌یابند", "isCorrect": false },
+        { "text": "ترتیب فراخوانی تعیین می‌کند که هر state به کدام فراخوانی useState تعلق دارد", "isCorrect": true },
+        { "text": "فقط در رندر اولیه اهمیت دارد", "isCorrect": false },
+        { "text": "React خودکار ترتیب را تشخیص می‌دهد و اهمیتی ندارد", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چرا بهتر است stateهای غیرمرتبط را در stateهای جداگانه نگه داریم؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه C صحیح است؟ نگه داشتن stateهای غیرمرتبط در متغیرهای جداگانه، منطق به‌روزرسانی هر state را مستقل می‌کند و از پیچیدگی و اشیاء بزرگ state جلوگیری می‌کند.",
+      "tags": ["react.state.multiple"],
+      "answers": [
+        { "text": "برای اینکه همه stateها همزمان تغییر کنند", "isCorrect": false },
+        { "text": "برای اینکه useState سرعت بیشتری داشته باشد", "isCorrect": false },
+        { "text": "برای مدیریت مستقل و ساده‌تر stateهای غیرمرتبط", "isCorrect": true },
+        { "text": "زیرا React اجازه نگهداری چند state در یک شیء را نمی‌دهد", "isCorrect": false }
+      ]
+    },
+    {
+  "text": "  در یک کامپوننت فرم ساده با دو state مستقل، name و age، چه چیزی باعث می‌شود تغییر name باعث رندر مجدد age نشود؟",
+  "difficulty": 3,
+  "explanation": "چرا گزینه A صحیح است؟ هر state که با useState تعریف می‌شود، مستقل از سایر stateها است. React فقط بخش‌هایی از کامپوننت را که وابسته به state تغییر یافته هستند رندر می‌کند. بنابراین تغییر name فقط بخش مربوط به name را به‌روز می‌کند و age بدون تغییر باقی می‌ماند.",
+  "tags": ["react.state.multiple"],
+  "answers": [
+    { "text": "هر state به صورت مستقل مدیریت می‌شود و رندر فقط برای state تغییر یافته اعمال می‌شود", "isCorrect": true },
+    { "text": "setAge به صورت خودکار با setName هماهنگ می‌شود", "isCorrect": false },
+    { "text": "React رندر مجدد همه stateها را اعمال می‌کند اما effect نمی‌شود", "isCorrect": false },
+    { "text": "useState تنها یک state را در هر رندر به‌روزرسانی می‌کند", "isCorrect": false }
+  ]
+}
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "questions": [
+    {
+      "text": "در React، وقتی useEffect با آرایه وابستگی خالی [] فراخوانی شود، چه رفتاری دارد؟",
+      "difficulty": 1,
+      "explanation": "چرا گزینه A صحیح است؟ آرایه وابستگی خالی باعث می‌شود افکت فقط یک بار پس از اولین رندر (mount) اجرا شود و در رندرهای بعدی کامپوننت اجرا نشود.",
+      "tags": ["react.hooks.useEffect.mount-unmount"],
+      "answers": [
+        { "text": "افکت فقط یک بار پس از mount اجرا می‌شود", "isCorrect": true },
+        { "text": "افکت پس از هر رندر اجرا می‌شود", "isCorrect": false },
+        { "text": "افکت هرگز اجرا نمی‌شود", "isCorrect": false },
+        { "text": "افکت فقط هنگام unmount اجرا می‌شود", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "در مثال Timer، چرا مقدار setInterval داخل useEffect قرار گرفته است؟<code dir=\"ltr\">\nuseEffect(() => {\n  const timerId = setInterval(() => setTime(t => t + 1), 1000);\n  return () => clearInterval(timerId);\n}, []);\n</code>",
+      "difficulty": 2,
+      "explanation": "چرا گزینه B صحیح است؟ چون ایجاد تایمر یک افکت جانبی است که باید پس از رندر اجرا شود و نه در زمان تعریف کامپوننت، بنابراین داخل useEffect قرار داده شده است.",
+      "tags": ["react.hooks.useEffect.mount-unmount"],
+      "answers": [
+        { "text": "تا هر بار که کامپوننت رندر می‌شود، دوباره اجرا شود", "isCorrect": false },
+        { "text": "چون ایجاد تایمر یک عملیات جانبی است و باید بعد از رندر اجرا شود", "isCorrect": true },
+        { "text": "چون استفاده از setInterval در خارج از useEffect باعث خطا نمی‌شود", "isCorrect": false },
+        { "text": "چون useState بدون useEffect کار نمی‌کند", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "در تابع بازگشتی useEffect، بازگرداندن یک تابع چه کاربردی دارد؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه C صحیح است؟ تابع بازگشتی به عنوان cleanup عمل می‌کند و قبل از unmount یا قبل از اجرای مجدد افکت برای پاک‌سازی منابع مانند تایمر یا subscription اجرا می‌شود.",
+      "tags": ["react.hooks.useEffect.mount-unmount"],
+      "answers": [
+        { "text": "برای اجرای افکت یک بار دیگر بعد از mount", "isCorrect": false },
+        { "text": "برای فراخوانی state جدید", "isCorrect": false },
+        { "text": "برای پاک‌سازی منابع هنگام unmount یا قبل از اجرای مجدد افکت", "isCorrect": true },
+        { "text": "برای جلوگیری از اجرای useState", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "اگر آرایه وابستگی‌ها را به useEffect پاس ندهیم، چه اتفاقی می‌افتد؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه B صحیح است؟ در صورت عدم ارائه آرایه وابستگی‌ها، افکت پس از هر رندر کامپوننت اجرا می‌شود، که ممکن است باعث اجرای مکرر و غیرضروری شود.",
+      "tags": ["react.hooks.useEffect.mount-unmount"],
+      "answers": [
+        { "text": "افکت هرگز اجرا نمی‌شود", "isCorrect": false },
+        { "text": "افکت پس از هر رندر اجرا می‌شود", "isCorrect": true },
+        { "text": "افکت فقط یک بار اجرا می‌شود", "isCorrect": false },
+        { "text": "React خطا می‌دهد", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "در مثال PostList، چرا پیام 'Component mounted, fetching data...' تنها یک بار چاپ می‌شود؟<code dir=\"ltr\">\nuseEffect(() => {\n  console.log('Component mounted, fetching data...');\n}, []);\n</code>",
+      "difficulty": 1,
+      "explanation": "چرا گزینه A صحیح است؟ آرایه وابستگی خالی باعث می‌شود این افکت فقط پس از اولین mount اجرا شود و نه در رندرهای بعدی.",
+      "tags": ["react.hooks.useEffect.mount-unmount"],
+      "answers": [
+        { "text": "چون آرایه وابستگی خالی است و افکت فقط یک بار اجرا می‌شود", "isCorrect": true },
+        { "text": "چون useState در کامپوننت استفاده نشده است", "isCorrect": false },
+        { "text": "چون fetch داده‌ها همزمان اجرا نمی‌شود", "isCorrect": false },
+        { "text": "چون console.log همیشه یک بار اجرا می‌شود", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چرا در کامپوننت Timer، وقتی کامپوننت از DOM حذف می‌شود، clearInterval فراخوانی می‌شود؟<code dir=\"ltr\">\nreturn () => { clearInterval(timerId); };\n</code>",
+      "difficulty": 3,
+      "explanation": "چرا گزینه C صحیح است؟ این کار از ادامه اجرای تایمر در پس‌زمینه جلوگیری می‌کند و نشت حافظه (memory leak) را حذف می‌کند. اجرای cleanup تضمین می‌کند منابع غیرضروری آزاد شوند.",
+      "tags": ["react.hooks.useEffect.mount-unmount"],
+      "answers": [
+        { "text": "چون تایمر همیشه به صورت خودکار پاک می‌شود", "isCorrect": false },
+        { "text": "چون useState مقدار تایمر را بازنشانی می‌کند", "isCorrect": false },
+        { "text": "برای جلوگیری از نشت حافظه و آزاد کردن منابع هنگام unmount", "isCorrect": true },
+        { "text": "چون React فقط در mount افکت‌ها را اجرا می‌کند", "isCorrect": false }
+      ]
+    }
+  ]
+}

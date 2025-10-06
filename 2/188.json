@@ -1,0 +1,64 @@
+{
+  "questions": [
+    {
+      "text": "Create React App چیست و چه کارهایی انجام می‌دهد؟",
+      "difficulty": 1,
+      "explanation": "پاسخ صحیح گزینه C است، چون Create React App تمام پیکربندی‌های پیچیده برای ایجاد یک پروژه React را به صورت خودکار انجام می‌دهد.",
+      "tags": ["react.create-app"],
+      "answers": [
+        { "text": "یک فریم ورک برای ساخت اپلیکیشن‌های موبایل", "isCorrect": false },
+        { "text": "یک ابزار برای نوشتن کدهای React به صورت دستی", "isCorrect": false },
+        { "text": "ابزاری که پیکربندی‌های پیچیده پروژه React را به صورت خودکار انجام می‌دهد", "isCorrect": true },
+        { "text": "ابزاری برای ایجاد اپلیکیشن‌های دسکتاپ با React", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چگونه می‌توان یک پروژه React جدید با استفاده از Create React App ایجاد کرد؟",
+      "difficulty": 2,
+      "explanation": "پاسخ صحیح گزینه B است، چون برای ایجاد یک پروژه جدید از دستور `npx create-react-app <project-name>` استفاده می‌کنیم.",
+      "tags": ["react.create-app"],
+      "answers": [
+        { "text": "با استفاده از دستور `npm init react-app <project-name>`", "isCorrect": false },
+        { "text": "با استفاده از دستور `npx create-react-app <project-name>`", "isCorrect": true },
+        { "text": "با استفاده از دستور `npx create-app-react <project-name>`", "isCorrect": false },
+        { "text": "با استفاده از دستور `create-react-app new-project`", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "آیا برای اجرای یک پروژه React باید به صورت دستی پیکربندی‌های Webpack و Babel را انجام داد؟",
+      "difficulty": 2,
+      "explanation": "پاسخ صحیح گزینه B است، چون با استفاده از Create React App این پیکربندی‌ها به صورت خودکار انجام می‌شود.",
+      "tags": ["react.create-app"],
+      "answers": [
+        { "text": "بله، باید پیکربندی Webpack و Babel را به صورت دستی انجام داد", "isCorrect": false },
+        { "text": "خیر، Create React App این پیکربندی‌ها را به صورت خودکار انجام می‌دهد", "isCorrect": true },
+        { "text": "فقط پیکربندی Babel به صورت خودکار انجام می‌شود", "isCorrect": false },
+        { "text": "فقط پیکربندی Webpack به صورت خودکار انجام می‌شود", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چه ویژگی‌ای در Create React App باعث می‌شود تا تغییرات به طور خودکار در مرورگر رفرش شود؟",
+      "difficulty": 3,
+      "explanation": "پاسخ صحیح گزینه A است، چون ویژگی Hot Reloading باعث می‌شود که تغییرات در فایل‌ها به صورت خودکار در مرورگر نمایش داده شوند.",
+      "tags": ["react.create-app"],
+      "answers": [
+        { "text": "Hot Reloading", "isCorrect": true },
+        { "text": "Live Server", "isCorrect": false },
+        { "text": "Auto Refresh", "isCorrect": false },
+        { "text": "Server Watch", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "کدام دستور برای راه‌اندازی سرور توسعه محلی در پروژه React استفاده می‌شود؟",
+      "difficulty": 2,
+      "explanation": "پاسخ صحیح گزینه B است، چون دستور `npm start` برای راه‌اندازی سرور توسعه محلی استفاده می‌شود.",
+      "tags": ["react.create-app"],
+      "answers": [
+        { "text": "npm run dev", "isCorrect": false },
+        { "text": "npm start", "isCorrect": true },
+        { "text": "node start", "isCorrect": false },
+        { "text": "create-react-app start", "isCorrect": false }
+      ]
+    }
+  ]
+}

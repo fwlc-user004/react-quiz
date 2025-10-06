@@ -1,0 +1,64 @@
+{
+  "questions": [
+    {
+      "text": "چرا از <code>localStorage</code> در اپلیکیشن TodoApp استفاده می‌کنیم؟",
+      "difficulty": 1,
+      "explanation": "چرا گزینه C صحیح است؟ localStorage امکان ذخیره دائمی داده‌ها در مرورگر را فراهم می‌کند، بنابراین پس از رفرش یا بستن مرورگر، وظایف کاربر حفظ می‌شوند.",
+      "tags": ["react.project.todo.localstorage"],
+      "answers": [
+        { "text": "برای افزایش سرعت رندر UI", "isCorrect": false },
+        { "text": "برای ارسال داده‌ها به سرور", "isCorrect": false },
+        { "text": "برای ذخیره دائمی وظایف کاربر در مرورگر", "isCorrect": true },
+        { "text": "برای جلوگیری از استفاده از useState", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "برای ذخیره آرایه todos در localStorage چرا از <code>JSON.stringify()</code> استفاده می‌کنیم؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه B صحیح است؟ localStorage تنها توانایی ذخیره رشته‌ها را دارد، بنابراین آرایه todos را ابتدا به رشته JSON تبدیل می‌کنیم.",
+      "tags": ["react.project.todo.localstorage"],
+      "answers": [
+        { "text": "برای تبدیل آرایه به عدد", "isCorrect": false },
+        { "text": "برای تبدیل آرایه به رشته JSON قابل ذخیره در localStorage", "isCorrect": true },
+        { "text": "برای افزایش سرعت رندر کامپوننت", "isCorrect": false },
+        { "text": "برای پاک کردن مقادیر قبلی", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چرا مقدار اولیه state todos با یک تابع به useState پاس داده می‌شود؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه A صحیح است؟ پاس دادن یک تابع به useState باعث می‌شود که localStorage فقط در رندر اولیه خوانده شود و عملیات تنبلی (lazy initialization) انجام گیرد.",
+      "tags": ["react.project.todo.localstorage"],
+      "answers": [
+        { "text": "برای اجرای فقط یک بار خواندن از localStorage هنگام بارگذاری اولیه", "isCorrect": true },
+        { "text": "برای اینکه هر رندر کامپوننت localStorage خوانده شود", "isCorrect": false },
+        { "text": "برای اینکه آرایه todos به صورت رشته ذخیره شود", "isCorrect": false },
+        { "text": "برای جلوگیری از رندر JSX", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چه زمانی useEffect مربوط به todos اجرا می‌شود؟",
+      "difficulty": 1,
+      "explanation": "چرا گزینه B صحیح است؟ useEffect وابسته به todos است و هر بار که آرایه todos تغییر کند، داده‌ها به localStorage ذخیره می‌شوند.",
+      "tags": ["react.project.todo.localstorage"],
+      "answers": [
+        { "text": "هر بار که کامپوننت والد رندر می‌شود", "isCorrect": false },
+        { "text": "هر بار که آرایه todos تغییر کند", "isCorrect": true },
+        { "text": "فقط در اولین بار رندر", "isCorrect": false },
+        { "text": "هر بار که کاربر روی دکمه Reset کلیک کند", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "چرا JSON.parse در مقداردهی اولیه useState استفاده می‌شود؟",
+      "difficulty": 2,
+      "explanation": "چرا گزینه A صحیح است؟ داده‌ها در localStorage به صورت رشته JSON ذخیره شده‌اند و برای استفاده به عنوان آرایه، باید آن‌ها را دوباره تبدیل به آرایه کنیم.",
+      "tags": ["react.project.todo.localstorage"],
+      "answers": [
+        { "text": "برای تبدیل رشته JSON خوانده شده از localStorage به آرایه قابل استفاده در state", "isCorrect": true },
+        { "text": "برای افزایش سرعت رندر", "isCorrect": false },
+        { "text": "برای تولید id یکتا برای هر وظیفه", "isCorrect": false },
+        { "text": "برای جلوگیری از استفاده از useEffect", "isCorrect": false }
+      ]
+    }
+  ]
+}

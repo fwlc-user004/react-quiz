@@ -1,63 +1,133 @@
 {
   "questions": [
- {
-      "text": "در مثال زیر، چه چیزی باعث می‌شود تابع filterTodos تنها وقتی اجرا شود که todos یا tab تغییر کنند؟<code dir=\"ltr\">\nconst visibleTodos = useMemo(() => filterTodos(todos, tab), [todos, tab]);\n</code>",
+    {
+      "text": "<p>در مثال زیر، چه چیزی باعث می‌شود تابع <code dir=\"lt\">filterTodos</code> تنها وقتی اجرا شود که <code dir=\"lt\">todos</code> یا <code dir=\"lt\">tab</code> تغییر کنند؟<code dir=\"lt\">\nconst visibleTodos = useMemo(() => filterTodos(todos, tab), [todos, tab]);\n</code></p>",
       "difficulty": 3,
-      "explanation": "چرا گزینه B صحیح است؟ آرایه وابستگی‌های [todos, tab] به React می‌گوید که فقط وقتی این مقادیر تغییر کردند، محاسبه دوباره انجام شود؛ در غیر این صورت نتیجه قبلی استفاده می‌شود.",
-      "tags": ["react.hooks.useMemo"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ آرایه وابستگی‌های [<code dir=\"lt\">todos</code>, <code dir=\"lt\">tab</code>] به <code dir=\"lt\">React</code> می‌گوید که فقط وقتی این مقادیر تغییر کردند، محاسبه دوباره انجام شود؛ در غیر این صورت نتیجه قبلی استفاده می‌شود.</p>",
+      "tags": [
+        "react.hooks.useMemo"
+      ],
       "answers": [
-        { "text": "چون useMemo همیشه محاسبه را انجام نمی‌دهد", "isCorrect": false },
-        { "text": "چون آرایه وابستگی‌ها مشخص می‌کند چه موقع محاسبه دوباره انجام شود", "isCorrect": true },
-        { "text": "چون تابع filterTodos تنها یک بار تعریف شده است", "isCorrect": false },
-        { "text": "چون todos و tab ثابت هستند", "isCorrect": false }
+        {
+          "text": "<p>چون <code dir=\"lt\">useMemo</code> همیشه محاسبه را انجام نمی‌دهد</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>چون آرایه وابستگی‌ها مشخص می‌کند چه موقع محاسبه دوباره انجام شود</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>چون تابع <code dir=\"lt\">filterTodos</code> تنها یک بار تعریف شده است</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>چون <code dir=\"lt\">todos</code> و <code dir=\"lt\">tab</code> ثابت هستند</p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "فرض کنید یک کامپوننت فرزند prop یک آرایه را دریافت می‌کند. چه اتفاقی می‌افتد اگر این آرایه در هر رندر والد بازسازی شود و useMemo به کار نرفته باشد؟",
+      "text": "<p>فرض کنید یک کامپوننت فرزند <code dir=\"lt\">prop</code> یک آرایه را دریافت می‌کند. چه اتفاقی می‌افتد اگر این آرایه در هر رندر والد بازسازی شود و <code dir=\"lt\">useMemo</code> به کار نرفته باشد؟</p>",
       "difficulty": 1,
-      "explanation": "چرا گزینه B صحیح است؟ هر بار آرایه جدید ساخته شود، کامپوننت فرزند آن را به عنوان prop جدید می‌بیند و رندر مجدد می‌شود، حتی اگر محتوای آرایه تغییر نکرده باشد.",
-      "tags": ["react.hooks.useMemo"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ هر بار آرایه جدید ساخته شود، کامپوننت فرزند آن را به عنوان <code dir=\"lt\">prop</code> جدید می‌بیند و رندر مجدد می‌شود، حتی اگر محتوای آرایه تغییر نکرده باشد.</p>",
+      "tags": [
+        "react.hooks.useMemo"
+      ],
       "answers": [
-        { "text": "کامپوننت فرزند رندر نمی‌شود", "isCorrect": false },
-        { "text": "کامپوننت فرزند به دلیل تغییر مرجع آرایه، رندر مجدد غیرضروری خواهد داشت", "isCorrect": true },
-        { "text": "React خطا می‌دهد", "isCorrect": false },
-        { "text": "useEffect اجرا نمی‌شود", "isCorrect": false }
+        {
+          "text": "<p>کامپوننت فرزند رندر نمی‌شود</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p><code dir=\"lt\">React</code> خطا می‌دهد</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>کامپوننت فرزند به دلیل تغییر مرجع آرایه، رندر مجدد غیرضروری خواهد داشت</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p><code dir=\"lt\">useEffect</code> اجرا نمی‌شود</p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "چه تفاوتی بین useMemo و useCallback وجود دارد؟",
+      "text": "<p>چه تفاوتی بین <code dir=\"lt\">useMemo</code> و <code dir=\"lt\">useCallback</code> وجود دارد؟</p>",
       "difficulty": 2,
-      "explanation": "چرا گزینه C صحیح است؟ useMemo نتیجه یک تابع محاسباتی را cache می‌کند، در حالی که useCallback خود تابع را حفظ می‌کند تا مرجع تابع در رندرهای بعدی ثابت بماند.",
-      "tags": ["react.hooks.useMemo"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">C</code> صحیح است؟ <code dir=\"lt\">useMemo</code> نتیجه یک تابع محاسباتی را <code dir=\"lt\">cache</code> می‌کند، در حالی که <code dir=\"lt\">useCallback</code> خود تابع را حفظ می‌کند تا مرجع تابع در رندرهای بعدی ثابت بماند.</p>",
+      "tags": [
+        "react.hooks.useMemo"
+      ],
       "answers": [
-        { "text": "هیچ تفاوتی ندارند و هر دو state را cache می‌کنند", "isCorrect": false },
-        { "text": "useMemo برای DOM و useCallback برای state است", "isCorrect": false },
-        { "text": "useMemo نتیجه محاسبه را cache می‌کند، useCallback تابع را حفظ می‌کند", "isCorrect": true },
-        { "text": "useMemo تنها برای آرایه‌ها کاربرد دارد", "isCorrect": false }
+        {
+          "text": "<p>هیچ تفاوتی ندارند و هر دو <code dir=\"lt\">state</code> را <code dir=\"lt\">cache</code> می‌کنند</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p><code dir=\"lt\">useMemo</code> برای <code dir=\"lt\">DOM</code> و <code dir=\"lt\">useCallback</code> برای <code dir=\"lt\">state</code> است</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p><code dir=\"lt\">useMemo</code> تنها برای آرایه‌ها کاربرد دارد</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p><code dir=\"lt\">useMemo</code> نتیجه محاسبه را <code dir=\"lt\">cache</code> می‌کند، <code dir=\"lt\">useCallback</code> تابع را حفظ می‌کند</p>",
+          "isCorrect": true
+        }
       ]
     },
     {
-      "text": "اگر آرایه وابستگی‌های useMemo نادرست تعریف شوند، چه مشکلی پیش می‌آید؟",
+      "text": "<p>اگر آرایه وابستگی‌های <code dir=\"lt\">useMemo</code> نادرست تعریف شوند، چه مشکلی پیش می‌آید؟</p>",
       "difficulty": 3,
-      "explanation": "چرا گزینه A صحیح است؟ useMemo تنها وقتی محاسبه را دوباره انجام می‌دهد که یکی از وابستگی‌ها تغییر کند. اگر وابستگی‌ها ناقص یا اشتباه باشند، محاسبه به موقع اجرا نمی‌شود و ممکن است نتیجه نادرست نشان داده شود.",
-      "tags": ["react.hooks.useMemo"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">A</code> صحیح است؟ <code dir=\"lt\">useMemo</code> تنها وقتی محاسبه را دوباره انجام می‌دهد که یکی از وابستگی‌ها تغییر کند. اگر وابستگی‌ها ناقص یا اشتباه باشند، محاسبه به موقع اجرا نمی‌شود و ممکن است نتیجه نادرست نشان داده شود.</p>",
+      "tags": [
+        "react.hooks.useMemo"
+      ],
       "answers": [
-        { "text": "نتیجه محاسبه ممکن است با داده واقعی همگام نباشد", "isCorrect": true },
-        { "text": "React کامپوننت را رندر نمی‌کند", "isCorrect": false },
-        { "text": "تابع setter دیگر کار نمی‌کند", "isCorrect": false },
-        { "text": "افکت‌ها به جای useMemo اجرا می‌شوند", "isCorrect": false }
+        {
+          "text": "<p>نتیجه محاسبه ممکن است با داده واقعی همگام نباشد</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p><code dir=\"lt\">React</code> کامپوننت را رندر نمی‌کند</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>تابع <code dir=\"lt\">setter</code> دیگر کار نمی‌کند</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>افکت‌ها به جای <code dir=\"lt\">useMemo</code> اجرا می‌شوند</p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "در چه سناریویی استفاده از useMemo بی‌فایده یا حتی ضرر است؟",
+      "text": "<p>در چه سناریویی استفاده از <code dir=\"lt\">useMemo</code> بی‌فایده یا حتی ضرر است؟</p>",
       "difficulty": 1,
-      "explanation": "چرا گزینه B صحیح است؟ اگر محاسبه سبک و سریع باشد، overhead حافظه و بررسی وابستگی‌های useMemo بیشتر از محاسبه مستقیم است و استفاده از آن بی‌فایده یا حتی کاهش کارایی است.",
-      "tags": ["react.hooks.useMemo"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ اگر محاسبه سبک و سریع باشد، <code dir=\"lt\">overhead</code> حافظه و بررسی وابستگی‌های <code dir=\"lt\">useMemo</code> بیشتر از محاسبه مستقیم است و استفاده از آن بی‌فایده یا حتی کاهش کارایی است.</p>",
+      "tags": [
+        "react.hooks.useMemo"
+      ],
       "answers": [
-        { "text": "زمانی که تابع بسیار سنگین باشد", "isCorrect": false },
-        { "text": "زمانی که محاسبه سبک و سریع باشد", "isCorrect": true },
-        { "text": "زمانی که آرایه وابستگی‌ها ثابت باشند", "isCorrect": false },
-        { "text": "برای توابعی که نتیجه آنها در DOM رندر نمی‌شود", "isCorrect": false }
+        {
+          "text": "<p>زمانی که تابع بسیار سنگین باشد</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>زمانی که محاسبه سبک و سریع باشد</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>زمانی که آرایه وابستگی‌ها ثابت باشند</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>برای توابعی که نتیجه آنها در <code dir=\"lt\">DOM</code> رندر نمی‌شود</p>",
+          "isCorrect": false
+        }
       ]
     }
   ]

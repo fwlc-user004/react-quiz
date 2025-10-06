@@ -1,63 +1,133 @@
 {
   "questions": [
     {
-      "text": "در React، چرا استفاده از Context به جای پاس دادن props از والد به فرزند در چندین سطح توصیه می‌شود؟",
+      "text": "<p>در <code dir=\"lt\">React</code>، چرا استفاده از <code dir=\"lt\">Context</code> به جای پاس دادن <code dir=\"lt\">props</code> از والد به فرزند در چندین سطح توصیه می‌شود؟</p>",
       "difficulty": 1,
-      "explanation": "چرا گزینه A صحیح است؟ Context اجازه می‌دهد داده‌ها بدون عبور از کامپوننت‌های میانی، به تمام فرزندان درخت کامپوننت دسترسی پیدا کنند و از prop drilling جلوگیری می‌کند.",
-      "tags": ["react.context.usecontext"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">A</code> صحیح است؟ <code dir=\"lt\">Context</code> اجازه می‌دهد داده‌ها بدون عبور از کامپوننت‌های میانی، به تمام فرزندان درخت کامپوننت دسترسی پیدا کنند و از <code dir=\"lt\">prop</code> <code dir=\"lt\">drilling</code> جلوگیری می‌کند.</p>",
+      "tags": [
+        "react.context.usecontext"
+      ],
       "answers": [
-        { "text": "چون داده‌ها بدون نیاز به عبور از کامپوننت‌های میانی قابل دسترسی هستند", "isCorrect": true },
-        { "text": "چون React بدون Context نمی‌تواند props را ارسال کند", "isCorrect": false },
-        { "text": "چون useState در فرزندها کار نمی‌کند", "isCorrect": false },
-        { "text": "چون Context باعث کاهش تعداد رندرها می‌شود", "isCorrect": false }
+        {
+          "text": "<p>چون داده‌ها بدون نیاز به عبور از کامپوننت‌های میانی قابل دسترسی هستند</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>چون <code dir=\"lt\">React</code> بدون <code dir=\"lt\">Context</code> نمی‌تواند <code dir=\"lt\">props</code> را ارسال کند</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>چون <code dir=\"lt\">useState</code> در فرزندها کار نمی‌کند</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>چون <code dir=\"lt\">Context</code> باعث کاهش تعداد رندرها می‌شود</p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "در کد زیر، <code dir=\"ltr\">const theme = useContext(ThemeContext);</code> چه اتفاقی می‌افتد؟",
+      "text": "<p>در کد زیر، <code dir=\"lt\">const theme = useContext(ThemeContext);</code> چه اتفاقی می‌افتد؟</p>",
       "difficulty": 2,
-      "explanation": "چرا گزینه B صحیح است؟ این هوک مقدار نزدیک‌ترین Provider مربوط به ThemeContext را می‌خواند و در متغیر theme قرار می‌دهد.",
-      "tags": ["react.context.usecontext"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ این هوک مقدار نزدیک‌ترین <code dir=\"lt\">Provider</code> مربوط به <code dir=\"lt\">ThemeContext</code> را می‌خواند و در متغیر <code dir=\"lt\">theme</code> قرار می‌دهد.</p>",
+      "tags": [
+        "react.context.usecontext"
+      ],
       "answers": [
-        { "text": "یک context جدید ایجاد می‌کند", "isCorrect": false },
-        { "text": "مقدار نزدیک‌ترین Provider مربوط به ThemeContext را دریافت می‌کند", "isCorrect": true },
-        { "text": "تمام Providerهای Context را دریافت می‌کند", "isCorrect": false },
-        { "text": "فقط مقدار پیش‌فرض context را می‌گیرد و Provider را نادیده می‌گیرد", "isCorrect": false }
+        {
+          "text": "<p>یک <code dir=\"lt\">context</code> جدید ایجاد می‌کند</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>مقدار نزدیک‌ترین <code dir=\"lt\">Provider</code> مربوط به <code dir=\"lt\">ThemeContext</code> را دریافت می‌کند</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>تمام <code dir=\"lt\">Provider</code>های <code dir=\"lt\">Context</code> را دریافت می‌کند</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>فقط مقدار پیش‌فرض <code dir=\"lt\">context</code> را می‌گیرد و <code dir=\"lt\">Provider</code> را نادیده می‌گیرد</p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "چه چیزی باعث می‌شود که کامپوننت فرزند، value ارائه‌شده توسط Context Provider را دریافت کند؟",
+      "text": "<p>چه چیزی باعث می‌شود که کامپوننت فرزند، <code dir=\"lt\">value</code> ارائه‌شده توسط <code dir=\"lt\">Context</code> <code dir=\"lt\">Provider</code> را دریافت کند؟</p>",
       "difficulty": 2,
-      "explanation": "چرا گزینه C صحیح است؟ Provider داده‌ها را به درخت کامپوننت‌ها منتقل می‌کند و useContext در فرزند برای خواندن آن استفاده می‌شود.",
-      "tags": ["react.context.usecontext"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">C</code> صحیح است؟ <code dir=\"lt\">Provider</code> داده‌ها را به درخت کامپوننت‌ها منتقل می‌کند و <code dir=\"lt\">useContext</code> در فرزند برای خواندن آن استفاده می‌شود.</p>",
+      "tags": [
+        "react.context.usecontext"
+      ],
       "answers": [
-        { "text": "فراخوانی createContext در فرزند", "isCorrect": false },
-        { "text": "استفاده از useState در والد", "isCorrect": false },
-        { "text": "قرار گرفتن فرزند داخل ThemeContext.Provider و استفاده از useContext", "isCorrect": true },
-        { "text": "ارسال props با همان نام value به فرزند", "isCorrect": false }
+        {
+          "text": "<p>فراخوانی <code dir=\"lt\">createContext</code> در فرزند</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>استفاده از <code dir=\"lt\">useState</code> در والد</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>قرار گرفتن فرزند داخل <code dir=\"lt\">ThemeContext</code>.<code dir=\"lt\">Provider</code> و استفاده از <code dir=\"lt\">useContext</code></p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>ارسال <code dir=\"lt\">props</code> با همان نام <code dir=\"lt\">value</code> به فرزند</p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "کدام یک از موارد زیر رایج‌ترین کاربرد Context در React است؟",
+      "text": "<p>کدام یک از موارد زیر رایج‌ترین کاربرد <code dir=\"lt\">Context</code> در <code dir=\"lt\">React</code> است؟</p>",
       "difficulty": 1,
-      "explanation": "چرا گزینه D صحیح است؟ Context معمولاً برای داده‌هایی که به صورت سراسری مورد نیاز هستند، مانند تم اپلیکیشن، زبان یا اطلاعات کاربر لاگین‌شده استفاده می‌شود.",
-      "tags": ["react.context.usecontext"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">D</code> صحیح است؟ <code dir=\"lt\">Context</code> معمولاً برای داده‌هایی که به صورت سراسری مورد نیاز هستند، مانند تم اپلیکیشن، زبان یا اطلاعات کاربر لاگین‌شده استفاده می‌شود.</p>",
+      "tags": [
+        "react.context.usecontext"
+      ],
       "answers": [
-        { "text": "مدیریت state محلی ساده هر input", "isCorrect": false },
-        { "text": "کنترل نمایش یک کامپوننت واحد", "isCorrect": false },
-        { "text": "مدیریت رندر کامپوننت والد", "isCorrect": false },
-        { "text": "اشتراک‌گذاری داده‌های سراسری بین کامپوننت‌ها", "isCorrect": true }
+        {
+          "text": "<p>مدیریت <code dir=\"lt\">state</code> محلی ساده هر <code dir=\"lt\">input</code></p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>کنترل نمایش یک کامپوننت واحد</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>مدیریت رندر کامپوننت والد</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>اشتراک‌گذاری داده‌های سراسری بین کامپوننت‌ها</p>",
+          "isCorrect": true
+        }
       ]
     },
     {
-      "text": "اگر یک کامپوننت فرزند در عمق زیاد قرار داشته باشد و به Context نیاز داشته باشد، چه روشی باعث بهینه شدن کد می‌شود؟",
+      "text": "<p>اگر یک کامپوننت فرزند در عمق زیاد قرار داشته باشد و به <code dir=\"lt\">Context</code> نیاز داشته باشد، چه روشی باعث بهینه شدن کد می‌شود؟</p>",
       "difficulty": 3,
-      "explanation": "چرا گزینه A صحیح است؟ به جای عبور props از تمام کامپوننت‌های میانی، قرار دادن کامپوننت داخل Provider و استفاده از useContext به صورت مستقیم باعث خوانایی و مقیاس‌پذیری بهتر می‌شود.",
-      "tags": ["react.context.usecontext"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">A</code> صحیح است؟ به جای عبور <code dir=\"lt\">props</code> از تمام کامپوننت‌های میانی، قرار دادن کامپوننت داخل <code dir=\"lt\">Provider</code> و استفاده از <code dir=\"lt\">useContext</code> به صورت مستقیم باعث خوانایی و مقیاس‌پذیری بهتر می‌شود.</p>",
+      "tags": [
+        "react.context.usecontext"
+      ],
       "answers": [
-        { "text": "قرار دادن کامپوننت داخل Provider و خواندن context با useContext", "isCorrect": true },
-        { "text": "ارسال props از والد به فرزند از طریق همه کامپوننت‌های میانی", "isCorrect": false },
-        { "text": "ایجاد یک state محلی در فرزند و کپی داده‌ها", "isCorrect": false },
-        { "text": "استفاده از useState به جای useContext", "isCorrect": false }
+        {
+          "text": "<p>قرار دادن کامپوننت داخل <code dir=\"lt\">Provider</code> و خواندن <code dir=\"lt\">context</code> با <code dir=\"lt\">useContext</code></p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>ارسال <code dir=\"lt\">props</code> از والد به فرزند از طریق همه کامپوننت‌های میانی</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>ایجاد یک <code dir=\"lt\">state</code> محلی در فرزند و کپی داده‌ها</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>استفاده از <code dir=\"lt\">useState</code> به جای <code dir=\"lt\">useContext</code></p>",
+          "isCorrect": false
+        }
       ]
     }
   ]

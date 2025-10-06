@@ -1,75 +1,159 @@
 {
   "questions": [
     {
-      "text": "چرا در React هنگام به‌روزرسانی state نباید متغیر state را مستقیماً تغییر دهیم؟",
+      "text": "<p>چرا در <code dir=\"lt\">React</code> هنگام به‌روزرسانی <code dir=\"lt\">state</code> نباید متغیر <code dir=\"lt\">state</code> را مستقیماً تغییر دهیم؟</p>",
       "difficulty": 1,
-      "explanation": "چرا گزینه A صحیح است؟ زیرا direct mutation باعث رفتار غیرقابل پیش‌بینی و رندر ناقص در React می‌شود. استفاده از setter اطمینان می‌دهد که React state جدید را تشخیص داده و رندر مجدد را اعمال کند.",
-      "tags": ["react.state.common-patterns"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">A</code> صحیح است؟ زیرا <code dir=\"lt\">direct</code> <code dir=\"lt\">mutation</code> باعث رفتار غیرقابل پیش‌بینی و رندر ناقص در <code dir=\"lt\">React</code> می‌شود. استفاده از <code dir=\"lt\">setter</code> اطمینان می‌دهد که <code dir=\"lt\">React</code> <code dir=\"lt\">state</code> جدید را تشخیص داده و رندر مجدد را اعمال کند.</p>",
+      "tags": [
+        "react.state.common-patterns"
+      ],
       "answers": [
-        { "text": "چون تغییر مستقیم state باعث رفتار غیرقابل پیش‌بینی و رندر ناقص می‌شود", "isCorrect": true },
-        { "text": "چون setter ها سریع‌تر اجرا می‌شوند", "isCorrect": false },
-        { "text": "چون مرورگر state را نمی‌شناسد", "isCorrect": false },
-        { "text": "چون useState تنها مقدار اولیه را قبول می‌کند", "isCorrect": false }
+        {
+          "text": "<p>چون تغییر مستقیم <code dir=\"lt\">state</code> باعث رفتار غیرقابل پیش‌بینی و رندر ناقص می‌شود</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>چون <code dir=\"lt\">setter</code> ها سریع‌تر اجرا می‌شوند</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>چون مرورگر <code dir=\"lt\">state</code> را نمی‌شناسد</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>چون <code dir=\"lt\">useState</code> تنها مقدار اولیه را قبول می‌کند</p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "در مثال زیر، چه روش ایمن و استانداردی برای افزایش سن کاربر استفاده شده است؟\n<code dir=\"ltr\">const [user, setUser] = useState({ name: 'Alice', age: 30 });\nfunction handleAgeIncrease() {\n  setUser({ ...user, age: user.age + 1 });\n}</code>",
+      "text": "<p>در مثال زیر، چه روش ایمن و استانداردی برای افزایش سن کاربر استفاده شده است؟\n<code dir=\"lt\">const [user, setUser] = useState({ name: 'Alice', age: 30 });\nfunction handleAgeIncrease() {\n  setUser({ ...user, age: user.age + 1 });\n}</code></p>",
       "difficulty": 2,
-      "explanation": "چرا گزینه B صحیح است؟ با استفاده از سینتکس spread، یک شیء جدید ساخته می‌شود و mutation مستقیم انجام نمی‌شود، که مطابق با اصل تغییرناپذیری است.",
-      "tags": ["react.state.common-patterns"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ با استفاده از سینتکس <code dir=\"lt\">spread</code>، یک شیء جدید ساخته می‌شود و <code dir=\"lt\">mutation</code> مستقیم انجام نمی‌شود، که مطابق با اصل تغییرناپذیری است.</p>",
+      "tags": [
+        "react.state.common-patterns"
+      ],
       "answers": [
-        { "text": "user.age++", "isCorrect": false },
-        { "text": "setUser({ ...user, age: user.age + 1 })", "isCorrect": true },
-        { "text": "setUser(user.age += 1)", "isCorrect": false },
-        { "text": "user = { ...user, age: user.age + 1 }", "isCorrect": false }
+        {
+          "text": "<p><code dir=\"lt\">user</code>.<code dir=\"lt\">age</code>++</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p><code dir=\"lt\">setUser</code>({ ...<code dir=\"lt\">user</code>, <code dir=\"lt\">age</code>: <code dir=\"lt\">user</code>.<code dir=\"lt\">age</code> + <code dir=\"lt\">1</code> })</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p><code dir=\"lt\">setUser</code>(<code dir=\"lt\">user</code>.<code dir=\"lt\">age</code> += <code dir=\"lt\">1</code>)</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p><code dir=\"lt\">user</code> = { ...<code dir=\"lt\">user</code>, <code dir=\"lt\">age</code>: <code dir=\"lt\">user</code>.<code dir=\"lt\">age</code> + <code dir=\"lt\">1</code> }</p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "برای افزودن یک آیتم جدید به آرایه state، کدام روش صحیح است؟\n<code dir=\"ltr\">const [todos, setTodos] = useState([{ id: 1, text: 'Learn React' }]);\nfunction addTodo() {\n  const newTodo = { id: 2, text: 'Build a project' };\n  setTodos([...todos, newTodo]);\n}</code>",
+      "text": "<p>برای افزودن یک آیتم جدید به آرایه <code dir=\"lt\">state</code>، کدام روش صحیح است؟\n<code dir=\"lt\">const [todos, setTodos] = useState([{ id: 1, text: 'Learn React' }]);\nfunction addTodo() {\n  const newTodo = { id: 2, text: 'Build a project' };\n  setTodos([...todos, newTodo]);\n}</code></p>",
       "difficulty": 2,
-      "explanation": "چرا گزینه C صحیح است؟ با استفاده از سینتکس spread یک آرایه جدید ساخته می‌شود که شامل آیتم‌های قبلی و آیتم جدید است، بدون تغییر آرایه اصلی.",
-      "tags": ["react.state.common-patterns"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">C</code> صحیح است؟ با استفاده از سینتکس <code dir=\"lt\">spread</code> یک آرایه جدید ساخته می‌شود که شامل آیتم‌های قبلی و آیتم جدید است، بدون تغییر آرایه اصلی.</p>",
+      "tags": [
+        "react.state.common-patterns"
+      ],
       "answers": [
-        { "text": "todos.push(newTodo)", "isCorrect": false },
-        { "text": "todos = [...todos, newTodo]", "isCorrect": false },
-        { "text": "setTodos([...todos, newTodo])", "isCorrect": true },
-        { "text": "setTodos(todos.append(newTodo))", "isCorrect": false }
+        {
+          "text": "<p><code dir=\"lt\">todos</code>.<code dir=\"lt\">push</code>(<code dir=\"lt\">newTodo</code>)</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p><code dir=\"lt\">todos</code> = [...<code dir=\"lt\">todos</code>, <code dir=\"lt\">newTodo</code>]</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p><code dir=\"lt\">setTodos</code>([...<code dir=\"lt\">todos</code>, <code dir=\"lt\">newTodo</code>])</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p><code dir=\"lt\">setTodos</code>(<code dir=\"lt\">todos</code>.<code dir=\"lt\">append</code>(<code dir=\"lt\">newTodo</code>))</p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "برای حذف یک آیتم با id مشخص از آرایه state، کدام روش صحیح است؟\n<code dir=\"ltr\">function deleteTodo(todoId) {\n  setTodos(todos.filter(t => t.id !== todoId));\n}</code>",
+      "text": "<p>برای حذف یک آیتم با <code dir=\"lt\">id</code> مشخص از آرایه <code dir=\"lt\">state</code>، کدام روش صحیح است؟\n<code dir=\"lt\">function deleteTodo(todoId) {\n  setTodos(todos.filter(t => t.id !== todoId));\n}</code></p>",
       "difficulty": 2,
-      "explanation": "چرا گزینه B صحیح است؟ متد filter یک آرایه جدید برمی‌گرداند و آرایه اصلی تغییر نمی‌کند، که مطابق با اصل تغییرناپذیری است.",
-      "tags": ["react.state.common-patterns"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ متد <code dir=\"lt\">filter</code> یک آرایه جدید برمی‌گرداند و آرایه اصلی تغییر نمی‌کند، که مطابق با اصل تغییرناپذیری است.</p>",
+      "tags": [
+        "react.state.common-patterns"
+      ],
       "answers": [
-        { "text": "todos.splice(todoId, 1)", "isCorrect": false },
-        { "text": "setTodos(todos.filter(t => t.id !== todoId))", "isCorrect": true },
-        { "text": "todos = todos.filter(t => t.id !== todoId)", "isCorrect": false },
-        { "text": "delete todos[todoId]", "isCorrect": false }
+        {
+          "text": "<p><code dir=\"lt\">todos</code>.<code dir=\"lt\">splice</code>(<code dir=\"lt\">todoId</code>, <code dir=\"lt\">1</code>)</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p><code dir=\"lt\">setTodos(todos.filter(t => t.id !== todoId))</code></p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p><code dir=\"lt\">todos = todos.filter(t => t.id !== todoId)</code></p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p><code dir=\"lt\">delete</code> <code dir=\"lt\">todos</code>[<code dir=\"lt\">todoId</code>]</p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "برای ویرایش یک آیتم خاص در آرایه state، کدام روش صحیح است؟\n<code dir=\"ltr\">function updateTodo(todoId, newText) {\n  setTodos(todos.map(t => t.id === todoId ? { ...t, text: newText } : t));\n}</code>",
+      "text": "<p>برای ویرایش یک آیتم خاص در آرایه <code dir=\"lt\">state</code>، کدام روش صحیح است؟\n<code dir=\"lt\">function updateTodo(todoId, newText) {\n  setTodos(todos.map(t => t.id === todoId ? { ...t, text: newText } : t));\n}</code></p>",
       "difficulty": 2,
-      "explanation": "چرا گزینه A صحیح است؟ با استفاده از map یک آرایه جدید ساخته می‌شود که فقط آیتم مورد نظر تغییر کرده و سایر آیتم‌ها بدون تغییر باقی می‌مانند.",
-      "tags": ["react.state.common-patterns"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">A</code> صحیح است؟ با استفاده از <code dir=\"lt\">map</code> یک آرایه جدید ساخته می‌شود که فقط آیتم مورد نظر تغییر کرده و سایر آیتم‌ها بدون تغییر باقی می‌مانند.</p>",
+      "tags": [
+        "react.state.common-patterns"
+      ],
       "answers": [
-        { "text": "setTodos(todos.map(t => t.id === todoId ? { ...t, text: newText } : t))", "isCorrect": true },
-        { "text": "todos[todoId].text = newText", "isCorrect": false },
-        { "text": "setTodos(todos.forEach(t => t.id === todoId ? t.text = newText : t))", "isCorrect": false },
-        { "text": "setTodos(todos.replace(todoId, newText))", "isCorrect": false }
+        {
+          "text": "<p><code dir=\"lt\">setTodos(todos.map(t => t.id === todoId ? { ...t, text: newText } : t))</code></p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p><code dir=\"lt\">todos</code>[<code dir=\"lt\">todoId</code>].<code dir=\"lt\">text</code> = <code dir=\"lt\">newText</code></p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p><code dir=\"lt\">setTodos(todos.forEach(t => t.id === todoId ? t.text = newText : t))</code></p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p><code dir=\"lt\">setTodos</code>(<code dir=\"lt\">todos</code>.<code dir=\"lt\">replace</code>(<code dir=\"lt\">todoId</code>, <code dir=\"lt\">newText</code>))</p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "چرا هنگام به‌روزرسانی state که به مقدار قبلی آن وابسته است، باید از تابع به‌روزرسان استفاده کنیم؟\n<code dir=\"ltr\">setCount(c => c + 1); setCount(c => c + 1); setCount(c => c + 1);</code>",
+      "text": "<p>چرا هنگام به‌روزرسانی <code dir=\"lt\">state</code> که به مقدار قبلی آن وابسته است، باید از تابع به‌روزرسان استفاده کنیم؟\n<code dir=\"lt\">setCount(c => c + 1); setCount(c => c + 1); setCount(c => c + 1);</code></p>",
       "difficulty": 3,
-      "explanation": "چرا گزینه A صحیح است؟ استفاده از updater function تضمین می‌کند که هر به‌روزرسانی بر اساس مقدار واقعی قبلی انجام شود و چندین فراخوانی پشت سر هم درست اعمال شوند.",
-      "tags": ["react.state.common-patterns"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">A</code> صحیح است؟ استفاده از <code dir=\"lt\">updater</code> <code dir=\"lt\">function</code> تضمین می‌کند که هر به‌روزرسانی بر اساس مقدار واقعی قبلی انجام شود و چندین فراخوانی پشت سر هم درست اعمال شوند.</p>",
+      "tags": [
+        "react.state.common-patterns"
+      ],
       "answers": [
-        { "text": "چون updater function مقدار واقعی قبلی state را دریافت می‌کند و چندین فراخوانی پشت سر هم درست اعمال می‌شوند", "isCorrect": true },
-        { "text": "چون setCount همیشه تنها یک بار مقدار را اعمال می‌کند", "isCorrect": false },
-        { "text": "چون React فقط آخرین فراخوانی را اعمال می‌کند", "isCorrect": false },
-        { "text": "چون useState مقدار اولیه را نادیده می‌گیرد", "isCorrect": false }
+        {
+          "text": "<p>چون <code dir=\"lt\">setCount</code> همیشه تنها یک بار مقدار را اعمال می‌کند</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>چون <code dir=\"lt\">updater</code> <code dir=\"lt\">function</code> مقدار واقعی قبلی <code dir=\"lt\">state</code> را دریافت می‌کند و چندین فراخوانی پشت سر هم درست اعمال می‌شوند</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>چون <code dir=\"lt\">React</code> فقط آخرین فراخوانی را اعمال می‌کند</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>چون <code dir=\"lt\">useState</code> مقدار اولیه را نادیده می‌گیرد</p>",
+          "isCorrect": false
+        }
       ]
     }
   ]

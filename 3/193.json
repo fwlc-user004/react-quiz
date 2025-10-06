@@ -1,63 +1,133 @@
 {
   "questions": [
     {
-      "text": "در JSX، چرا نمی‌توانیم حلقه‌های for یا if-else را مستقیماً در داخل JSX بنویسیم؟",
+      "text": "<p>در <code dir=\"lt\">JSX</code>، چرا نمی‌توانیم حلقه‌های <code dir=\"lt\">for</code> یا <code dir=\"lt\">if-else</code> را مستقیماً در داخل <code dir=\"lt\">JSX</code> بنویسیم؟</p>",
       "difficulty": 2,
-      "explanation": "چرا گزینه B صحیح است؟ JSX تنها عبارات (expressions) را می‌پذیرد و دستورات مقداری برای رندر شدن باز نمی‌گردانند. برای منطق شرطی یا حلقه‌ها باید از عملگر سه‌تایی (?:) یا map و عبارات منطقی (&&) استفاده کنیم.",
-      "tags": ["react.jsx.dynamic"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ <code dir=\"lt\">JSX</code> تنها عبارات (<code dir=\"lt\">expressions</code>) را می‌پذیرد و دستورات مقداری برای رندر شدن باز نمی‌گردانند. برای منطق شرطی یا حلقه‌ها باید از عملگر سه‌تایی (?:) یا <code dir=\"lt\">map</code> و عبارات منطقی (&&) استفاده کنیم.</p>",
+      "tags": [
+        "react.jsx.dynamic"
+      ],
       "answers": [
-        { "text": "مرورگر این دستورات را نمی‌شناسد", "isCorrect": false },
-        { "text": "JSX تنها عبارات (expressions) را می‌پذیرد و دستورات مقداری برای رندر شدن باز نمی‌گردانند", "isCorrect": true },
-        { "text": "چون فقط مقادیر متغیرها قابل نمایش هستند", "isCorrect": false },
-        { "text": "React برای این کار از CSS استفاده می‌کند", "isCorrect": false }
+        {
+          "text": "<p>مرورگر این دستورات را نمی‌شناسد</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p><code dir=\"lt\">JSX</code> تنها عبارات (<code dir=\"lt\">expressions</code>) را می‌پذیرد و دستورات مقداری برای رندر شدن باز نمی‌گردانند</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>چون فقط مقادیر متغیرها قابل نمایش هستند</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p><code dir=\"lt\">React</code> برای این کار از <code dir=\"lt\">CSS</code> استفاده می‌کند</p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "در مثال زیر، چه چیزی در خروجی h1 نمایش داده می‌شود؟<code dir=\"ltr\">\nfunction UserInfo() {\n  const firstName = 'Sara';\n  const lastName = 'Connor';\n  return (\n    <h1>Full Name: {firstName} {lastName}</h1>\n  );\n}</code>",
+      "text": "<p>در مثال زیر، چه چیزی در خروجی <code dir=\"lt\">h1</code> نمایش داده می‌شود؟<code dir=\"lt\">\nfunction UserInfo() {\n  const firstName = 'Sara';\n  const lastName = 'Connor';\n  return (\n    <h1>Full Name: {firstName} {lastName}</h1>\n  );\n}</code></p>",
       "difficulty": 1,
-      "explanation": "چرا گزینه B صحیح است؟ عبارات داخل {} در JSX ارزیابی شده و مقدار متغیرها در DOM رندر می‌شود، بنابراین خروجی Full Name: Sara Connor است.",
-      "tags": ["react.jsx.dynamic"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ عبارات داخل {} در <code dir=\"lt\">JSX</code> ارزیابی شده و مقدار متغیرها در <code dir=\"lt\">DOM</code> رندر می‌شود، بنابراین خروجی <code dir=\"lt\">Full</code> <code dir=\"lt\">Name</code>: <code dir=\"lt\">Sara</code> <code dir=\"lt\">Connor</code> است.</p>",
+      "tags": [
+        "react.jsx.dynamic"
+      ],
       "answers": [
-        { "text": "Full Name: {firstName} {lastName}", "isCorrect": false },
-        { "text": "Full Name: Sara Connor", "isCorrect": true },
-        { "text": "Full Name: undefined undefined", "isCorrect": false },
-        { "text": "خطا در زمان اجرا", "isCorrect": false }
+        {
+          "text": "<p><code dir=\"lt\">Full</code> <code dir=\"lt\">Name</code>: {<code dir=\"lt\">firstName</code>} {<code dir=\"lt\">lastName</code>}</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p><code dir=\"lt\">Full</code> <code dir=\"lt\">Name</code>: <code dir=\"lt\">undefined</code> <code dir=\"lt\">undefined</code></p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p><code dir=\"lt\">Full</code> <code dir=\"lt\">Name</code>: <code dir=\"lt\">Sara</code> <code dir=\"lt\">Connor</code></p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>خطا در زمان اجرا</p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "چرا در JSX برای اتریبیوت‌هایی مانند class باید از className استفاده کنیم؟",
+      "text": "<p>چرا در <code dir=\"lt\">JSX</code> برای اتریبیوت‌هایی مانند <code dir=\"lt\">class</code> باید از <code dir=\"lt\">className</code> استفاده کنیم؟</p>",
       "difficulty": 2,
-      "explanation": "چرا گزینه A صحیح است؟ کلمه class در جاوااسکریپت رزرو شده است، بنابراین JSX از className برای اختصاص کلاس CSS استفاده می‌کند.",
-      "tags": ["react.jsx.dynamic"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">A</code> صحیح است؟ کلمه <code dir=\"lt\">class</code> در جاوااسکریپت رزرو شده است، بنابراین <code dir=\"lt\">JSX</code> از <code dir=\"lt\">className</code> برای اختصاص کلاس <code dir=\"lt\">CSS</code> استفاده می‌کند.</p>",
+      "tags": [
+        "react.jsx.dynamic"
+      ],
       "answers": [
-        { "text": "چون class در جاوااسکریپت یک کلمه رزرو شده است", "isCorrect": true },
-        { "text": "چون className سریع‌تر اجرا می‌شود", "isCorrect": false },
-        { "text": "چون مرورگر class را نمی‌شناسد", "isCorrect": false },
-        { "text": "چون JSX فقط با نام‌های camelCase کار می‌کند", "isCorrect": false }
+        {
+          "text": "<p>چون <code dir=\"lt\">class</code> در جاوااسکریپت یک کلمه رزرو شده است</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>چون <code dir=\"lt\">className</code> سریع‌تر اجرا می‌شود</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>چون مرورگر <code dir=\"lt\">class</code> را نمی‌شناسد</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>چون <code dir=\"lt\">JSX</code> فقط با نام‌های <code dir=\"lt\">camelCase</code> کار می‌کند</p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "چه تفاوتی بین درج یک متغیر و فراخوانی یک تابع داخل {} در JSX وجود دارد؟",
+      "text": "<p>چه تفاوتی بین درج یک متغیر و فراخوانی یک تابع داخل {} در <code dir=\"lt\">JSX</code> وجود دارد؟</p>",
       "difficulty": 3,
-      "explanation": "چرا گزینه B صحیح است؟ متغیر فقط مقدار ذخیره شده را نمایش می‌دهد، در حالی که فراخوانی تابع امکان انجام محاسبات یا پردازش قبل از نمایش را فراهم می‌کند.",
-      "tags": ["react.jsx.dynamic"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ متغیر فقط مقدار ذخیره شده را نمایش می‌دهد، در حالی که فراخوانی تابع امکان انجام محاسبات یا پردازش قبل از نمایش را فراهم می‌کند.</p>",
+      "tags": [
+        "react.jsx.dynamic"
+      ],
       "answers": [
-        { "text": "هیچ تفاوتی وجود ندارد، هر دو در نهایت مقدارشان در DOM نمایش داده می‌شود", "isCorrect": false },
-        { "text": "متغیر فقط مقدار ذخیره شده را نمایش می‌دهد، فراخوانی تابع امکان انجام محاسبات یا پردازش را قبل از نمایش فراهم می‌کند", "isCorrect": true },
-        { "text": "متغیرها امن‌تر هستند و تابع‌ها باعث خطا می‌شوند", "isCorrect": false },
-        { "text": "تابع‌ها فقط برای اتریبیوت‌ها استفاده می‌شوند", "isCorrect": false }
+        {
+          "text": "<p>هیچ تفاوتی وجود ندارد، هر دو در نهایت مقدارشان در <code dir=\"lt\">DOM</code> نمایش داده می‌شود</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>متغیر فقط مقدار ذخیره شده را نمایش می‌دهد، فراخوانی تابع امکان انجام محاسبات یا پردازش را قبل از نمایش فراهم می‌کند</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>متغیرها امن‌تر هستند و تابع‌ها باعث خطا می‌شوند</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>تابع‌ها فقط برای اتریبیوت‌ها استفاده می‌شوند</p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "کدام یک از گزینه‌های زیر غیرمجاز است در JSX؟",
+      "text": "<p>کدام یک از گزینه‌های زیر غیرمجاز است در <code dir=\"lt\">JSX</code>؟</p>",
       "difficulty": 3,
-      "explanation": "چرا گزینه D صحیح است؟ در JSX نمی‌توان دستورات if-else مستقیم نوشت. باید از عملگر سه‌تایی یا && استفاده کرد.",
-      "tags": ["react.jsx.dynamic"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">D</code> صحیح است؟ در <code dir=\"lt\">JSX</code> نمی‌توان دستورات <code dir=\"lt\">if-else</code> مستقیم نوشت. باید از عملگر سه‌تایی یا && استفاده کرد.</p>",
+      "tags": [
+        "react.jsx.dynamic"
+      ],
       "answers": [
-        { "text": "<code dir=\"ltr\"><h1>Hello {user.name}</h1></code>", "isCorrect": false },
-        { "text": "<code dir=\"ltr\"><img src={user.imgUrl} alt={'Photo of ' + user.name} /></code>", "isCorrect": false },
-        { "text": "<code dir=\"ltr\"><div><p>Line 1</p><p>Line 2</p></div></code>", "isCorrect": false },
-        { "text": "<code dir=\"ltr\"><h1>{if(user.loggedIn){ 'Hello' }}</h1></code>", "isCorrect": true }
+        {
+          "text": "<p><code dir=\"lt\"><h1>Hello {user.name}</h1></code></p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p><code dir=\"lt\"><img src={user.imgUrl} alt={'Photo of ' + user.name} /></code></p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p><code dir=\"lt\"><div><p>Line 1</p><p>Line 2</p></div></code></p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p><code dir=\"lt\"><h1>{if(user.loggedIn){ 'Hello' }}</h1></code></p>",
+          "isCorrect": true
+        }
       ]
     }
   ]

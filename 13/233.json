@@ -1,63 +1,133 @@
 {
   "questions": [
     {
-      "text": "چرا اپلیکیشن TodoApp پس از افزودن تمام قابلیت‌ها نیاز به بازسازی (refactoring) پیدا کرد؟",
+      "text": "<p>چرا اپلیکیشن <code dir=\"lt\">TodoApp</code> پس از افزودن تمام قابلیت‌ها نیاز به بازسازی (<code dir=\"lt\">refactoring</code>) پیدا کرد؟</p>",
       "difficulty": 1,
-      "explanation": "چرا گزینه B صحیح است؟ کامپوننت TodoApp مسئولیت‌های زیادی دارد (مدیریت state، رندر فرم و لیست) که نقض اصل تک-مسئولیتی است و نگهداری آن را دشوار می‌کند.",
-      "tags": ["react.project.todo.refactor"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ کامپوننت <code dir=\"lt\">TodoApp</code> مسئولیت‌های زیادی دارد (مدیریت <code dir=\"lt\">state</code>، رندر فرم و لیست) که نقض اصل تک-مسئولیتی است و نگهداری آن را دشوار می‌کند.</p>",
+      "tags": [
+        "react.project.todo.refactor"
+      ],
       "answers": [
-        { "text": "برای اضافه کردن هوک‌های جدید", "isCorrect": false },
-        { "text": "به دلیل نقض اصل Single Responsibility و افزایش پیچیدگی کامپوننت", "isCorrect": true },
-        { "text": "برای حذف localStorage", "isCorrect": false },
-        { "text": "به دلیل استفاده از useEffect", "isCorrect": false }
+        {
+          "text": "<p>برای اضافه کردن هوک‌های جدید</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>به دلیل نقض اصل <code dir=\"lt\">Single</code> <code dir=\"lt\">Responsibility</code> و افزایش پیچیدگی کامپوننت</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>برای حذف <code dir=\"lt\">localStorage</code></p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>به دلیل استفاده از <code dir=\"lt\">useEffect</code></p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "کامپوننت TodoList چه مسئولیتی دارد؟",
+      "text": "<p>کامپوننت <code dir=\"lt\">TodoList</code> چه مسئولیتی دارد؟</p>",
       "difficulty": 1,
-      "explanation": "چرا گزینه A صحیح است؟ TodoList تنها مسئول پیمایش روی آرایه todos و رندر کردن کامپوننت‌های TodoItem است و منطق business logic در آن قرار ندارد.",
-      "tags": ["react.project.todo.refactor"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">A</code> صحیح است؟ <code dir=\"lt\">TodoList</code> تنها مسئول پیمایش روی آرایه <code dir=\"lt\">todos</code> و رندر کردن کامپوننت‌های <code dir=\"lt\">TodoItem</code> است و منطق <code dir=\"lt\">business</code> <code dir=\"lt\">logic</code> در آن قرار ندارد.</p>",
+      "tags": [
+        "react.project.todo.refactor"
+      ],
       "answers": [
-        { "text": "نمایش لیست وظایف و رندر هر TodoItem", "isCorrect": true },
-        { "text": "افزودن وظایف جدید به آرایه todos", "isCorrect": false },
-        { "text": "تعریف هوک useReducer", "isCorrect": false },
-         { "text": "نمایش یک وظیفه و دکمه‌های مربوط به آن", "isCorrect": false }
+        {
+          "text": "<p>نمایش لیست وظایف و رندر هر <code dir=\"lt\">TodoItem</code></p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>افزودن وظایف جدید به آرایه <code dir=\"lt\">todos</code></p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>تعریف هوک <code dir=\"lt\">useReducer</code></p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>نمایش یک وظیفه و دکمه‌های مربوط به آن</p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "کامپوننت TodoItem چه کاری انجام می‌دهد؟",
+      "text": "<p>کامپوننت <code dir=\"lt\">TodoItem</code> چه کاری انجام می‌دهد؟</p>",
       "difficulty": 2,
-      "explanation": "چرا گزینه A صحیح است؟ TodoItem مسئول نمایش یک وظیفه واحد و دکمه‌های toggle/delete آن است و هیچ منطق تغییر state ندارد.",
-      "tags": ["react.project.todo.refactor"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">A</code> صحیح است؟ <code dir=\"lt\">TodoItem</code> مسئول نمایش یک وظیفه واحد و دکمه‌های <code dir=\"lt\">toggle</code>/<code dir=\"lt\">delete</code> آن است و هیچ منطق تغییر <code dir=\"lt\">state</code> ندارد.</p>",
+      "tags": [
+        "react.project.todo.refactor"
+      ],
       "answers": [
-         { "text": "نمایش یک وظیفه و دکمه‌های مربوط به آن", "isCorrect": true },
-        { "text": "نمایش لیست وظایف و رندر هر Item", "isCorrect": false },
-        { "text": "مدیریت آرایه todos و افزودن وظایف", "isCorrect": false },
-        { "text": "مدیریت handlerهای فرم", "isCorrect": false }
+        {
+          "text": "<p>نمایش لیست وظایف و رندر هر <code dir=\"lt\">Item</code></p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>نمایش یک وظیفه و دکمه‌های مربوط به آن</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>مدیریت آرایه <code dir=\"lt\">todos</code> و افزودن وظایف</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>مدیریت <code dir=\"lt\">handler</code>های فرم</p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "مزیت اصلی تقسیم کامپوننت TodoApp به کانتینر و کامپوننت‌های نمایشی چیست؟",
+      "text": "<p>مزیت اصلی تقسیم کامپوننت <code dir=\"lt\">TodoApp</code> به کانتینر و کامپوننت‌های نمایشی چیست؟</p>",
       "difficulty": 2,
-      "explanation": "چرا گزینه C صحیح است؟ این الگو خوانایی، مقیاس‌پذیری و نگهداری کد را بهبود می‌بخشد و مسئولیت‌ها را از هم جدا می‌کند.",
-      "tags": ["react.project.todo.refactor"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">C</code> صحیح است؟ این الگو خوانایی، مقیاس‌پذیری و نگهداری کد را بهبود می‌بخشد و مسئولیت‌ها را از هم جدا می‌کند.</p>",
+      "tags": [
+        "react.project.todo.refactor"
+      ],
       "answers": [
-        { "text": "کاهش تعداد useState در TodoApp", "isCorrect": false },
-        { "text": "اضافه کردن props جدید", "isCorrect": false },
-        { "text": "خوانایی بهتر، مدیریت آسان و رعایت Single Responsibility", "isCorrect": true },
-        { "text": "حذف useEffect", "isCorrect": false }
+        {
+          "text": "<p>کاهش تعداد <code dir=\"lt\">useState</code> در <code dir=\"lt\">TodoApp</code></p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>اضافه کردن <code dir=\"lt\">props</code> جدید</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>خوانایی بهتر، مدیریت آسان و رعایت <code dir=\"lt\">Single</code> <code dir=\"lt\">Responsibility</code></p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>حذف <code dir=\"lt\">useEffect</code></p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "کدام یک از موارد زیر نشان‌دهنده رعایت اصل Single Responsibility در بازسازی اپلیکیشن است؟",
+      "text": "<p>کدام یک از موارد زیر نشان‌دهنده رعایت اصل <code dir=\"lt\">Single</code> <code dir=\"lt\">Responsibility</code> در بازسازی اپلیکیشن است؟</p>",
       "difficulty": 3,
-      "explanation": "چرا گزینه B صحیح است؟ هر کامپوننت حالا یک مسئولیت مشخص دارد: TodoApp مدیریت state و logic، TodoList نمایش لیست و TodoItem نمایش یک وظیفه واحد.",
-      "tags": ["react.project.todo.refactor"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ هر کامپوننت حالا یک مسئولیت مشخص دارد: <code dir=\"lt\">TodoApp</code> مدیریت <code dir=\"lt\">state</code> و <code dir=\"lt\">logic</code>، <code dir=\"lt\">TodoList</code> نمایش لیست و <code dir=\"lt\">TodoItem</code> نمایش یک وظیفه واحد.</p>",
+      "tags": [
+        "react.project.todo.refactor"
+      ],
       "answers": [
-        { "text": "TodoApp مسئول رندر فرم و هر وظیفه است", "isCorrect": false },
-        { "text": "TodoApp مدیریت state، TodoList نمایش لیست، TodoItem نمایش یک وظیفه", "isCorrect": true },
-        { "text": "TodoList و TodoItem مدیریت state اصلی برنامه", "isCorrect": false },
-        { "text": "همه توابع handler در TodoItem قرار دارند", "isCorrect": false }
+        {
+          "text": "<p><code dir=\"lt\">TodoApp</code> مسئول رندر فرم و هر وظیفه است</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p><code dir=\"lt\">TodoApp</code> مدیریت <code dir=\"lt\">state</code>، <code dir=\"lt\">TodoList</code> نمایش لیست، <code dir=\"lt\">TodoItem</code> نمایش یک وظیفه</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p><code dir=\"lt\">TodoList</code> و <code dir=\"lt\">TodoItem</code> مدیریت <code dir=\"lt\">state</code> اصلی برنامه</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>همه توابع <code dir=\"lt\">handler</code> در <code dir=\"lt\">TodoItem</code> قرار دارند</p>",
+          "isCorrect": false
+        }
       ]
     }
   ]

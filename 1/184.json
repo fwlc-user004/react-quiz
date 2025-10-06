@@ -1,63 +1,133 @@
 {
   "questions": [
     {
-      "text": "React چیست و چه ویژگی‌هایی دارد؟",
+      "text": "<p><code dir=\"lt\">React</code> چیست و چه ویژگی‌هایی دارد؟</p>",
       "difficulty": 1,
-      "explanation": "پاسخ صحیح گزینه A است، چون React یک کتابخانه جاوااسکریپت است که تنها مسئولیت ساخت رابط‌های کاربری را بر عهده دارد.",
-      "tags": ["react.frameworks-comparison"],
+      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"lt\">A</code> است، چون <code dir=\"lt\">React</code> یک کتابخانه جاوااسکریپت است که تنها مسئولیت ساخت رابط‌های کاربری را بر عهده دارد.</p>",
+      "tags": [
+        "react.frameworks-comparison"
+      ],
       "answers": [
-        { "text": "یک کتابخانه جاوااسکریپت برای ساخت رابط‌های کاربری", "isCorrect": true },
-        { "text": "یک فریم ورک کامل برای ساخت اپلیکیشن‌های وب", "isCorrect": false },
-        { "text": "یک سیستم مدیریت state برای اپلیکیشن‌های وب", "isCorrect": false },
-        { "text": "یک کتابخانه برای ارسال درخواست‌های HTTP", "isCorrect": false }
+        {
+          "text": "<p>یک کتابخانه جاوااسکریپت برای ساخت رابط‌های کاربری</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>یک فریم ورک کامل برای ساخت اپلیکیشن‌های وب</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>یک سیستم مدیریت <code dir=\"lt\">state</code> برای اپلیکیشن‌های وب</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>یک کتابخانه برای ارسال درخواست‌های <code dir=\"lt\">HTTP</code></p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "چه تفاوتی میان <code dir=\"ltr\">React</code> و <code dir=\"ltr\">Angular</code> از لحاظ معماری وجود دارد؟",
+      "text": "<p>چه تفاوتی میان <code dir=\"lt\">React</code> و <code dir=\"lt\">Angular</code> از لحاظ معماری وجود دارد؟</p>",
       "difficulty": 2,
-      "explanation": "پاسخ صحیح گزینه B است، چون <code dir=\"ltr\">React</code> یک کتابخانه است که تنها برای UI استفاده می‌شود، در حالی که <code dir=\"ltr\">Angular</code> یک فریم ورک کامل است.",
-      "tags": ["react.frameworks-comparison"],
+      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"lt\">B</code> است، چون <code dir=\"lt\">React</code> یک کتابخانه است که تنها برای <code dir=\"lt\">UI</code> استفاده می‌شود، در حالی که <code dir=\"lt\">Angular</code> یک فریم ورک کامل است.</p>",
+      "tags": [
+        "react.frameworks-comparison"
+      ],
       "answers": [
-        { "text": "هر دو ابزار به یک شکل عمل می‌کنند", "isCorrect": false },
-        { "text": "React یک کتابخانه است، در حالی که Angular یک فریم ورک کامل است", "isCorrect": true },
-        { "text": "React و Angular هر دو فریم ورک‌هایی هستند که از هر جنبه‌ای از اپلیکیشن پشتیبانی می‌کنند", "isCorrect": false },
-        { "text": "Angular تنها برای UI مناسب است", "isCorrect": false }
+        {
+          "text": "<p>هر دو ابزار به یک شکل عمل می‌کنند</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p><code dir=\"lt\">React</code> یک کتابخانه است، در حالی که <code dir=\"lt\">Angular</code> یک فریم ورک کامل است</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p><code dir=\"lt\">React</code> و <code dir=\"lt\">Angular</code> هر دو فریم ورک‌هایی هستند که از هر جنبه‌ای از اپلیکیشن پشتیبانی می‌کنند</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p><code dir=\"lt\">Angular</code> تنها برای <code dir=\"lt\">UI</code> مناسب است</p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "کدام فریم ورک از تمامی جنبه‌های یک اپلیکیشن پشتیبانی می‌کند؟",
+      "text": "<p>کدام فریم ورک از تمامی جنبه‌های یک اپلیکیشن پشتیبانی می‌کند؟</p>",
       "difficulty": 2,
-      "explanation": "پاسخ صحیح گزینه B است، چون <code dir=\"ltr\">Angular</code> برای تمام جنبه‌های اپلیکیشن، از مسیریابی تا مدیریت state، راه‌حل‌های داخلی دارد.",
-      "tags": ["react.frameworks-comparison"],
+      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"lt\">B</code> است، چون <code dir=\"lt\">Angular</code> برای تمام جنبه‌های اپلیکیشن، از مسیریابی تا مدیریت <code dir=\"lt\">state</code>، راه‌حل‌های داخلی دارد.</p>",
+      "tags": [
+        "react.frameworks-comparison"
+      ],
       "answers": [
-        { "text": "React", "isCorrect": false },
-        { "text": "Angular", "isCorrect": true },
-        { "text": "Vue", "isCorrect": false },
-        { "text": "Ember", "isCorrect": false }
+        {
+          "text": "<p><code dir=\"lt\">React</code></p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p><code dir=\"lt\">Vue</code></p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p><code dir=\"lt\">Angular</code></p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p><code dir=\"lt\">Ember</code></p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "چه تفاوت‌هایی میان <code dir=\"ltr\">Vue</code> و <code dir=\"ltr\">React</code> از نظر انعطاف‌پذیری و جامعیت وجود دارد؟",
+      "text": "<p>چه تفاوت‌هایی میان <code dir=\"lt\">Vue</code> و <code dir=\"lt\">React</code> از نظر انعطاف‌پذیری و جامعیت وجود دارد؟</p>",
       "difficulty": 3,
-      "explanation": "پاسخ صحیح گزینه D است، چون <code dir=\"ltr\">Vue</code> از نظر انعطاف‌پذیری شبیه <code dir=\"ltr\">React</code> است ولی با یک فریم ورک پیشرفته‌تر ترکیب می‌شود.",
-      "tags": ["react.frameworks-comparison"],
+      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"lt\">D</code> است، چون <code dir=\"lt\">Vue</code> از نظر انعطاف‌پذیری شبیه <code dir=\"lt\">React</code> است ولی با یک فریم ورک پیشرفته‌تر ترکیب می‌شود.</p>",
+      "tags": [
+        "react.frameworks-comparison"
+      ],
       "answers": [
-        { "text": "Vue فقط برای UI طراحی شده است", "isCorrect": false },
-        { "text": "React به شما کنترل بیشتری می‌دهد و معماری آن به شما اجازه می‌دهد هر ابزار را به دلخواه انتخاب کنید", "isCorrect": false },
-        { "text": "Vue کاملاً شبیه به Angular است", "isCorrect": false },
-        { "text": "Vue ترکیبی از انعطاف‌پذیری React و جامعیت Angular را ارائه می‌دهد", "isCorrect": true }
+        {
+          "text": "<p><code dir=\"lt\">Vue</code> فقط برای <code dir=\"lt\">UI</code> طراحی شده است</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p><code dir=\"lt\">React</code> به شما کنترل بیشتری می‌دهد و معماری آن به شما اجازه می‌دهد هر ابزار را به دلخواه انتخاب کنید</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p><code dir=\"lt\">Vue</code> کاملاً شبیه به <code dir=\"lt\">Angular</code> است</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p><code dir=\"lt\">Vue</code> ترکیبی از انعطاف‌پذیری <code dir=\"lt\">React</code> و جامعیت <code dir=\"lt\">Angular</code> را ارائه می‌دهد</p>",
+          "isCorrect": true
+        }
       ]
     },
     {
-      "text": "کدام فریم ورک به دلیل استفاده از TypeScript دارای منحنی یادگیری تندتری است؟",
+      "text": "<p>کدام فریم ورک به دلیل استفاده از <code dir=\"lt\">TypeScript</code> دارای منحنی یادگیری تندتری است؟</p>",
       "difficulty": 2,
-      "explanation": "پاسخ صحیح گزینه A است، چون <code dir=\"ltr\">Angular</code> به دلیل استفاده اجباری از TypeScript دارای منحنی یادگیری تندتری است.",
-      "tags": ["react.frameworks-comparison"],
+      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"lt\">A</code> است، چون <code dir=\"lt\">Angular</code> به دلیل استفاده اجباری از <code dir=\"lt\">TypeScript</code> دارای منحنی یادگیری تندتری است.</p>",
+      "tags": [
+        "react.frameworks-comparison"
+      ],
       "answers": [
-        { "text": "Angular", "isCorrect": true },
-        { "text": "React", "isCorrect": false },
-        { "text": "Vue", "isCorrect": false },
-        { "text": "Svelte", "isCorrect": false }
+        {
+          "text": "<p><code dir=\"lt\">Angular</code></p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p><code dir=\"lt\">React</code></p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p><code dir=\"lt\">Vue</code></p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p><code dir=\"lt\">Svelte</code></p>",
+          "isCorrect": false
+        }
       ]
     }
   ]

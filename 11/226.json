@@ -1,63 +1,133 @@
 {
   "questions": [
     {
-      "text": "در منوی واکنش‌گرا، چرا کلاس CSS <code dir=\"ltr\">.show</code> به زیرمنو اضافه می‌شود؟\n\nمثال:\n<pre><code dir=\"ltr\"><ul className={`dropdown ${dropdown ? 'show' : ''}`}>...</code></pre>",
+      "text": "<p>در منوی واکنش‌گرا، چرا کلاس <code dir=\"lt\">CSS</code> <code dir=\"lt\">.show</code> به زیرمنو اضافه می‌شود؟\n\nمثال:</p>\n<pre><code dir=\"lt\"><ul className={`dropdown ${dropdown ? 'show' : ''}`}>...</code></pre>",
       "difficulty": 1,
-      "explanation": "چرا گزینه C صحیح است؟ کلاس <code>.show</code> باعث نمایش زیرمنوها می‌شود و با تغییر state <code>dropdown</code> اضافه یا حذف می‌شود.",
-      "tags": ["react.project.menu.responsive"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">C</code> صحیح است؟ کلاس <code>.show</code> باعث نمایش زیرمنوها می‌شود و با تغییر <code dir=\"lt\">state</code> <code>dropdown</code> اضافه یا حذف می‌شود.</p>",
+      "tags": [
+        "react.project.menu.responsive"
+      ],
       "answers": [
-        { "text": "برای تغییر رنگ پس‌زمینه زیرمنو", "isCorrect": false },
-        { "text": "برای افزودن یک آیتم جدید به زیرمنو", "isCorrect": false },
-        { "text": "برای کنترل نمایش یا پنهان شدن زیرمنو با CSS", "isCorrect": true },
-        { "text": "برای ثبت رویداد کلیک روی زیرمنو", "isCorrect": false }
+        {
+          "text": "<p>برای تغییر رنگ پس‌زمینه زیرمنو</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>برای افزودن یک آیتم جدید به زیرمنو</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>برای کنترل نمایش یا پنهان شدن زیرمنو با <code dir=\"lt\">CSS</code></p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>برای ثبت رویداد کلیک روی زیرمنو</p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "برای نمایش منوی موبایل، چه کاری انجام می‌دهیم تا منو از حالت افقی دسکتاپ به منوی عمودی تغییر کند؟",
+      "text": "<p>برای نمایش منوی موبایل، چه کاری انجام می‌دهیم تا منو از حالت افقی دسکتاپ به منوی عمودی تغییر کند؟</p>",
       "difficulty": 2,
-      "explanation": "چرا گزینه B صحیح است؟ با media query و تغییر <code>flex-direction</code> و کنترل <code>display</code> بر اساس state <code>showMenu</code>، منو به صورت عمودی نمایش داده می‌شود.",
-      "tags": ["react.project.menu.responsive"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ با <code dir=\"lt\">media</code> <code dir=\"lt\">query</code> و تغییر <code>flex-direction</code> و کنترل <code>display</code> بر اساس <code dir=\"lt\">state</code> <code>showMenu</code>، منو به صورت عمودی نمایش داده می‌شود.</p>",
+      "tags": [
+        "react.project.menu.responsive"
+      ],
       "answers": [
-        { "text": "با تغییر رنگ منو", "isCorrect": false },
-        { "text": "استفاده از media query و تغییر flex-direction به column و کنترل display با state", "isCorrect": true },
-        { "text": "با اضافه کردن زیرمنو جدید", "isCorrect": false },
-        { "text": "با استفاده از useEffect برای رندر مجدد منو", "isCorrect": false }
+        {
+          "text": "<p>با تغییر رنگ منو</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>استفاده از <code dir=\"lt\">media</code> <code dir=\"lt\">query</code> و تغییر <code dir=\"lt\">flex-direction</code> به <code dir=\"lt\">column</code> و کنترل <code dir=\"lt\">display</code> با <code dir=\"lt\">state</code></p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>با اضافه کردن زیرمنو جدید</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>با استفاده از <code dir=\"lt\">useEffect</code> برای رندر مجدد منو</p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "در کامپوننت Navbar، state <code>showMenu</code> چه کاربردی دارد؟",
+      "text": "<p>در کامپوننت <code dir=\"lt\">Navbar</code>، <code dir=\"lt\">state</code> <code>showMenu</code> چه کاربردی دارد؟</p>",
       "difficulty": 1,
-      "explanation": "چرا گزینه A صحیح است؟ state <code>showMenu</code> مشخص می‌کند که منوی موبایل باز یا بسته باشد و با کلیک روی دکمه همبرگری toggle می‌شود.",
-      "tags": ["react.project.menu.responsive"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">A</code> صحیح است؟ <code dir=\"lt\">state</code> <code>showMenu</code> مشخص می‌کند که منوی موبایل باز یا بسته باشد و با کلیک روی دکمه همبرگری <code dir=\"lt\">toggle</code> می‌شود.</p>",
+      "tags": [
+        "react.project.menu.responsive"
+      ],
       "answers": [
-        { "text": "کنترل باز یا بسته بودن منوی موبایل", "isCorrect": true },
-        { "text": "تعیین رنگ منو", "isCorrect": false },
-        { "text": "اضافه کردن آیتم به منو", "isCorrect": false },
-        { "text": "ثبت رویداد onClick برای زیرمنوها", "isCorrect": false }
+        {
+          "text": "<p>کنترل باز یا بسته بودن منوی موبایل</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>تعیین رنگ منو</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>اضافه کردن آیتم به منو</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>ثبت رویداد <code dir=\"lt\">onClick</code> برای زیرمنوها</p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "چرا در منوی موبایل از یک دکمه همبرگری استفاده می‌کنیم؟",
+      "text": "<p>چرا در منوی موبایل از یک دکمه همبرگری استفاده می‌کنیم؟</p>",
       "difficulty": 2,
-      "explanation": "چرا گزینه D صحیح است؟ دکمه همبرگری به کاربر اجازه می‌دهد که منوی موبایل را باز و بسته کند، بدون اینکه منوی اصلی همیشه نمایش داده شود.",
-      "tags": ["react.project.menu.responsive"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">D</code> صحیح است؟ دکمه همبرگری به کاربر اجازه می‌دهد که منوی موبایل را باز و بسته کند، بدون اینکه منوی اصلی همیشه نمایش داده شود.</p>",
+      "tags": [
+        "react.project.menu.responsive"
+      ],
       "answers": [
-        { "text": "برای نمایش زیرمنوها دسکتاپی", "isCorrect": false },
-        { "text": "برای استایل‌دهی CSS ساده‌تر", "isCorrect": false },
-        { "text": "برای اضافه کردن آیتم به منو", "isCorrect": false },
-        { "text": "برای باز و بسته کردن منوی موبایل با کلیک کاربر", "isCorrect": true }
+        {
+          "text": "<p>برای نمایش زیرمنوها دسکتاپی</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>برای استایل‌دهی <code dir=\"lt\">CSS</code> ساده‌تر</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>برای اضافه کردن آیتم به منو</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>برای باز و بسته کردن منوی موبایل با کلیک کاربر</p>",
+          "isCorrect": true
+        }
       ]
     },
     {
-      "text": "چه مزیتی در استفاده از state برای کنترل منوی موبایل و زیرمنوها وجود دارد؟",
+      "text": "<p>چه مزیتی در استفاده از <code dir=\"lt\">state</code> برای کنترل منوی موبایل و زیرمنوها وجود دارد؟</p>",
       "difficulty": 3,
-      "explanation": "چرا گزینه B صحیح است؟ استفاده از state اجازه می‌دهد که منوها به صورت تعاملی و بدون تغییر مستقیم DOM کنترل شوند و رندر کامپوننت با تغییرات state انجام شود.",
-      "tags": ["react.project.menu.responsive"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ استفاده از <code dir=\"lt\">state</code> اجازه می‌دهد که منوها به صورت تعاملی و بدون تغییر مستقیم <code dir=\"lt\">DOM</code> کنترل شوند و رندر کامپوننت با تغییرات <code dir=\"lt\">state</code> انجام شود.</p>",
+      "tags": [
+        "react.project.menu.responsive"
+      ],
       "answers": [
-        { "text": "باعث کاهش حجم CSS می‌شود", "isCorrect": false },
-        { "text": "امکان کنترل تعاملی و رندر شرطی بدون دستکاری مستقیم DOM فراهم می‌کند", "isCorrect": true },
-        { "text": "برای اضافه کردن کلاس show به تمام آیتم‌ها به طور همزمان", "isCorrect": false },
-        { "text": "برای اجرای useEffect در منوی موبایل", "isCorrect": false }
+        {
+          "text": "<p>باعث کاهش حجم <code dir=\"lt\">CSS</code> می‌شود</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>امکان کنترل تعاملی و رندر شرطی بدون دستکاری مستقیم <code dir=\"lt\">DOM</code> فراهم می‌کند</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>برای اضافه کردن کلاس <code dir=\"lt\">show</code> به تمام آیتم‌ها به طور همزمان</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>برای اجرای <code dir=\"lt\">useEffect</code> در منوی موبایل</p>",
+          "isCorrect": false
+        }
       ]
     }
   ]

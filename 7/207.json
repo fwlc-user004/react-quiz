@@ -1,75 +1,159 @@
 {
   "questions": [
     {
-      "text": "هوک‌ها در React چه کاربرد اصلی دارند و چرا معرفی شدند؟",
+      "text": "<p>هوک‌ها در <code dir=\"lt\">React</code> چه کاربرد اصلی دارند و چرا معرفی شدند؟</p>",
       "difficulty": 1,
-      "explanation": "چرا گزینه C صحیح است؟ هوک‌ها به کامپوننت‌های تابعی امکان استفاده از قابلیت‌های React مانند state و چرخه حیات را می‌دهند و پیچیدگی کلاس‌ها و this را حذف می‌کنند.",
-      "tags": ["react.hooks"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">C</code> صحیح است؟ هوک‌ها به کامپوننت‌های تابعی امکان استفاده از قابلیت‌های <code dir=\"lt\">React</code> مانند <code dir=\"lt\">state</code> و چرخه حیات را می‌دهند و پیچیدگی کلاس‌ها و <code dir=\"lt\">this</code> را حذف می‌کنند.</p>",
+      "tags": [
+        "react.hooks"
+      ],
       "answers": [
-        { "text": "برای کاهش سرعت رندر کامپوننت‌ها", "isCorrect": false },
-        { "text": "برای اضافه کردن قابلیت CSS به کامپوننت‌ها", "isCorrect": false },
-        { "text": "برای استفاده از state و چرخه حیات در کامپوننت‌های تابعی بدون کلاس‌ها", "isCorrect": true },
-        { "text": "برای مدیریت داده‌های سرور بدون JSX", "isCorrect": false }
+        {
+          "text": "<p>برای کاهش سرعت رندر کامپوننت‌ها</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>برای اضافه کردن قابلیت <code dir=\"lt\">CSS</code> به کامپوننت‌ها</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>برای استفاده از <code dir=\"lt\">state</code> و چرخه حیات در کامپوننت‌های تابعی بدون کلاس‌ها</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>برای مدیریت داده‌های سرور بدون <code dir=\"lt\">JSX</code></p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "هوک useState چه چیزی را برمی‌گرداند و چه کاری انجام می‌دهد؟<code dir=\"ltr\">const [state, setState] = useState(initialState);</code>",
+      "text": "<p>هوک <code dir=\"lt\">useState</code> چه چیزی را برمی‌گرداند و چه کاری انجام می‌دهد؟<code dir=\"lt\">const [state, setState] = useState(initialState);</code></p>",
       "difficulty": 2,
-      "explanation": "چرا گزینه B صحیح است؟ useState یک آرایه شامل مقدار فعلی state و یک تابع setter برای به‌روزرسانی آن برمی‌گرداند و با فراخوانی setter، رندر مجدد کامپوننت انجام می‌شود.",
-      "tags": ["react.hooks"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ <code dir=\"lt\">useState</code> یک آرایه شامل مقدار فعلی <code dir=\"lt\">state</code> و یک تابع <code dir=\"lt\">setter</code> برای به‌روزرسانی آن برمی‌گرداند و با فراخوانی <code dir=\"lt\">setter</code>، رندر مجدد کامپوننت انجام می‌شود.</p>",
+      "tags": [
+        "react.hooks"
+      ],
       "answers": [
-        { "text": "یک مقدار ثابت بدون قابلیت تغییر", "isCorrect": false },
-        { "text": "یک آرایه شامل مقدار فعلی state و تابع setter برای به‌روزرسانی آن", "isCorrect": true },
-        { "text": "فقط یک تابع برای تغییر state", "isCorrect": false },
-        { "text": "یک object با تمام stateهای پروژه", "isCorrect": false }
+        {
+          "text": "<p>یک مقدار ثابت بدون قابلیت تغییر</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>یک آرایه شامل مقدار فعلی <code dir=\"lt\">state</code> و تابع <code dir=\"lt\">setter</code> برای به‌روزرسانی آن</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>فقط یک تابع برای تغییر <code dir=\"lt\">state</code></p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>یک <code dir=\"lt\">object</code> با تمام <code dir=\"lt\">state</code>های پروژه</p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "هوک useEffect چه کاربردی دارد و چه چیزی را کنترل می‌کند؟",
+      "text": "<p>هوک <code dir=\"lt\">useEffect</code> چه کاربردی دارد و چه چیزی را کنترل می‌کند؟</p>",
       "difficulty": 2,
-      "explanation": "چرا گزینه D صحیح است؟ useEffect به کامپوننت‌ها اجازه می‌دهد که عوارض جانبی (Side Effects) مانند تعامل با API یا DOM را مدیریت کرده و اجرای آنها را با آرایه وابستگی‌ها کنترل کنند.",
-      "tags": ["react.hooks"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">D</code> صحیح است؟ <code dir=\"lt\">useEffect</code> به کامپوننت‌ها اجازه می‌دهد که عوارض جانبی (<code dir=\"lt\">Side</code> <code dir=\"lt\">Effects</code>) مانند تعامل با <code dir=\"lt\">API</code> یا <code dir=\"lt\">DOM</code> را مدیریت کرده و اجرای آنها را با آرایه وابستگی‌ها کنترل کنند.</p>",
+      "tags": [
+        "react.hooks"
+      ],
       "answers": [
-        { "text": "افزودن استایل CSS به کامپوننت", "isCorrect": false },
-        { "text": "تعریف متغیرهای state بدون رندر مجدد", "isCorrect": false },
-        { "text": "مدیریت props در کامپوننت‌ها", "isCorrect": false },
-        { "text": "اجرای عوارض جانبی و کنترل اجرای آن با آرایه وابستگی‌ها", "isCorrect": true }
+        {
+          "text": "<p>افزودن استایل <code dir=\"lt\">CSS</code> به کامپوننت</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>تعریف متغیرهای <code dir=\"lt\">state</code> بدون رندر مجدد</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>مدیریت <code dir=\"lt\">props</code> در کامپوننت‌ها</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>اجرای عوارض جانبی و کنترل اجرای آن با آرایه وابستگی‌ها</p>",
+          "isCorrect": true
+        }
       ]
     },
     {
-      "text": "قبل از معرفی هوک‌ها، برای استفاده از state و چرخه حیات، باید از چه نوع کامپوننتی استفاده می‌کردیم؟",
+      "text": "<p>قبل از معرفی هوک‌ها، برای استفاده از <code dir=\"lt\">state</code> و چرخه حیات، باید از چه نوع کامپوننتی استفاده می‌کردیم؟</p>",
       "difficulty": 1,
-      "explanation": "چرا گزینه B صحیح است؟ پیش از React 16.8، تنها کامپوننت‌های کلاس‌محور امکان استفاده از state و متدهای چرخه حیات را داشتند.",
-      "tags": ["react.hooks"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ پیش از <code dir=\"lt\">React</code> <code dir=\"lt\">16</code>.<code dir=\"lt\">8</code>، تنها کامپوننت‌های کلاس‌محور امکان استفاده از <code dir=\"lt\">state</code> و متدهای چرخه حیات را داشتند.</p>",
+      "tags": [
+        "react.hooks"
+      ],
       "answers": [
-        { "text": "کامپوننت‌های تابعی", "isCorrect": false },
-        { "text": "کامپوننت‌های کلاس‌محور", "isCorrect": true },
-        { "text": "هوک‌های سفارشی", "isCorrect": false },
-        { "text": "کامپوننت‌های Pure", "isCorrect": false }
+        {
+          "text": "<p>کامپوننت‌های تابعی</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>کامپوننت‌های کلاس‌محور</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>هوک‌های سفارشی</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>کامپوننت‌های <code dir=\"lt\">Pure</code></p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "چه مزیتی اصلی باعث شد جامعه React به سمت هوک‌ها حرکت کند؟",
+      "text": "<p>چه مزیتی اصلی باعث شد جامعه <code dir=\"lt\">React</code> به سمت هوک‌ها حرکت کند؟</p>",
       "difficulty": 2,
-      "explanation": "چرا گزینه A صحیح است؟ هوک‌ها منطق stateدار و افکت‌ها را قابل استفاده مجدد می‌کنند و کد کامپوننت‌های تابعی را ساده و خوانا نگه می‌دارند.",
-      "tags": ["react.hooks"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">A</code> صحیح است؟ هوک‌ها منطق <code dir=\"lt\">state</code>دار و افکت‌ها را قابل استفاده مجدد می‌کنند و کد کامپوننت‌های تابعی را ساده و خوانا نگه می‌دارند.</p>",
+      "tags": [
+        "react.hooks"
+      ],
       "answers": [
-        { "text": "اشتراک‌گذاری منطق stateدار بین کامپوننت‌ها ساده شد", "isCorrect": true },
-        { "text": "زمان بارگذاری صفحه کاهش یافت", "isCorrect": false },
-        { "text": "هوک‌ها سرعت اجرای DOM را افزایش دادند", "isCorrect": false },
-        { "text": "هوک‌ها جایگزین JSX شدند", "isCorrect": false }
+        {
+          "text": "<p>اشتراک‌گذاری منطق <code dir=\"lt\">state</code>دار بین کامپوننت‌ها ساده شد</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>زمان بارگذاری صفحه کاهش یافت</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>هوک‌ها سرعت اجرای <code dir=\"lt\">DOM</code> را افزایش دادند</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>هوک‌ها جایگزین <code dir=\"lt\">JSX</code> شدند</p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "چه چیزی باعث می‌شود کامپوننت‌های تابعی با هوک‌ها، نسبت به کلاس‌ها ساده‌تر باشند؟",
+      "text": "<p>چه چیزی باعث می‌شود کامپوننت‌های تابعی با هوک‌ها، نسبت به کلاس‌ها ساده‌تر باشند؟</p>",
       "difficulty": 3,
-      "explanation": "چرا گزینه C صحیح است؟ حذف پیچیدگی this و پراکندگی منطق state و افکت‌ها بین متدهای مختلف چرخه حیات باعث می‌شود کامپوننت‌های تابعی خواناتر و قابل نگهداری‌تر باشند.",
-      "tags": ["react.hooks"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">C</code> صحیح است؟ حذف پیچیدگی <code dir=\"lt\">this</code> و پراکندگی منطق <code dir=\"lt\">state</code> و افکت‌ها بین متدهای مختلف چرخه حیات باعث می‌شود کامپوننت‌های تابعی خواناتر و قابل نگهداری‌تر باشند.</p>",
+      "tags": [
+        "react.hooks"
+      ],
       "answers": [
-        { "text": "آنها همیشه سریع‌تر رندر می‌شوند", "isCorrect": false },
-        { "text": "از متدهای چرخه حیات استفاده نمی‌کنند", "isCorrect": false },
-        { "text": "پیچیدگی this حذف شده و منطق state و افکت‌ها متمرکز است", "isCorrect": true },
-        { "text": "کامپوننت‌های تابعی نیازی به JSX ندارند", "isCorrect": false }
+        {
+          "text": "<p>آنها همیشه سریع‌تر رندر می‌شوند</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>از متدهای چرخه حیات استفاده نمی‌کنند</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>پیچیدگی <code dir=\"lt\">this</code> حذف شده و منطق <code dir=\"lt\">state</code> و افکت‌ها متمرکز است</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>کامپوننت‌های تابعی نیازی به <code dir=\"lt\">JSX</code> ندارند</p>",
+          "isCorrect": false
+        }
       ]
     }
   ]

@@ -1,63 +1,133 @@
 {
   "questions": [
     {
-      "text": "چرا در JSX باید نام Event Handlerها را با سبک camelCase بنویسیم؟",
+      "text": "<p>چرا در <code dir=\"lt\">JSX</code> باید نام <code dir=\"lt\">Event</code> <code dir=\"lt\">Handler</code>ها را با سبک <code dir=\"lt\">camelCase</code> بنویسیم؟</p>",
       "difficulty": 2,
-      "explanation": "چرا گزینه B صحیح است؟ React از camelCase برای تطبیق نام propهای رویداد با استاندارد جاوااسکریپت استفاده می‌کند و آن را با DOM سنتی هم‌خوانی می‌دهد. استفاده از حروف کوچک مانند HTML باعث عدم شناسایی صحیح رویداد می‌شود.",
-      "tags": ["react.events"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ <code dir=\"lt\">React</code> از <code dir=\"lt\">camelCase</code> برای تطبیق نام <code dir=\"lt\">prop</code>های رویداد با استاندارد جاوااسکریپت استفاده می‌کند و آن را با <code dir=\"lt\">DOM</code> سنتی هم‌خوانی می‌دهد. استفاده از حروف کوچک مانند <code dir=\"lt\">HTML</code> باعث عدم شناسایی صحیح رویداد می‌شود.</p>",
+      "tags": [
+        "react.events"
+      ],
       "answers": [
-        { "text": "چون مرورگر فقط camelCase را می‌شناسد", "isCorrect": false },
-        { "text": "چون JSX مطابق با استاندارد جاوااسکریپت است و camelCase باعث سازگاری و شناسایی صحیح رویداد می‌شود", "isCorrect": true },
-        { "text": "چون این تنها حالت ممکن در HTML است", "isCorrect": false },
-        { "text": "چون توابع inline فقط با camelCase کار می‌کنند", "isCorrect": false }
+        {
+          "text": "<p>چون مرورگر فقط <code dir=\"lt\">camelCase</code> را می‌شناسد</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>چون <code dir=\"lt\">JSX</code> مطابق با استاندارد جاوااسکریپت است و <code dir=\"lt\">camelCase</code> باعث سازگاری و شناسایی صحیح رویداد می‌شود</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>چون این تنها حالت ممکن در <code dir=\"lt\">HTML</code> است</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>چون توابع <code dir=\"lt\">inline</code> فقط با <code dir=\"lt\">camelCase</code> کار می‌کنند</p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "در JSX، چه چیزی را باید به prop رویداد پاس دهیم؟",
+      "text": "<p>در <code dir=\"lt\">JSX</code>، چه چیزی را باید به <code dir=\"lt\">prop</code> رویداد پاس دهیم؟</p>",
       "difficulty": 1,
-      "explanation": "چرا گزینه C صحیح است؟ در React باید خود تابع event handler را پاس دهیم، نه نتیجه فراخوانی آن. اگر پرانتز بگذاریم، تابع بلافاصله اجرا شده و نه در هنگام رویداد.",
-      "tags": ["react.events"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">C</code> صحیح است؟ در <code dir=\"lt\">React</code> باید خود تابع <code dir=\"lt\">event</code> <code dir=\"lt\">handler</code> را پاس دهیم، نه نتیجه فراخوانی آن. اگر پرانتز بگذاریم، تابع بلافاصله اجرا شده و نه در هنگام رویداد.</p>",
+      "tags": [
+        "react.events"
+      ],
       "answers": [
-        { "text": "نتیجه اجرای تابع", "isCorrect": false },
-        { "text": "نام تابع به صورت رشته", "isCorrect": false },
-        { "text": "خود تابع بدون پرانتز", "isCorrect": true },
-        { "text": "یک آبجکت event", "isCorrect": false }
+        {
+          "text": "<p>نتیجه اجرای تابع</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>نام تابع به صورت رشته</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>خود تابع بدون پرانتز</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>یک آبجکت <code dir=\"lt\">event</code></p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "کدام یک از روش‌های زیر برای تعریف یک Event Handler کوتاه و ساده در JSX مناسب است؟",
+      "text": "<p>کدام یک از روش‌های زیر برای تعریف یک <code dir=\"lt\">Event</code> <code dir=\"lt\">Handler</code> کوتاه و ساده در <code dir=\"lt\">JSX</code> مناسب است؟</p>",
       "difficulty": 2,
-      "explanation": "چرا گزینه A صحیح است؟ استفاده از یک تابع arrow به صورت inline در JSX برای event handlerهای ساده و کوتاه مناسب است و به خوانایی کمک می‌کند.",
-      "tags": ["react.events"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">A</code> صحیح است؟ استفاده از یک تابع <code dir=\"lt\">arrow</code> به صورت <code dir=\"lt\">inline</code> در <code dir=\"lt\">JSX</code> برای <code dir=\"lt\">event</code> <code dir=\"lt\">handler</code>های ساده و کوتاه مناسب است و به خوانایی کمک می‌کند.</p>",
+      "tags": [
+        "react.events"
+      ],
       "answers": [
-        { "text": "<button onClick={() => alert('Clicked!')}>Click me</button>", "isCorrect": true },
-        { "text": "<button onClick='alert(\"Clicked!\")'>Click me</button>", "isCorrect": false },
-        { "text": "<button onclick={alert('Clicked!')}>Click me</button>", "isCorrect": false },
-        { "text": "<button onClick={alert}>Click me</button>", "isCorrect": false }
+        {
+          "text": "<p><code dir=\"lt\">&lt;button onClick={() =&gt; alert('Clicked!')}&gt;Click me&lt;/button&gt;</code></p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p><code dir=\"lt\">&lt;button onClick=&quot;alert('Clicked!')&quot;&gt;Click me&lt;/button&gt;</code></p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p><code dir=\"lt\">&lt;button onclick={alert('Clicked!')}&gt;Click me&lt;/button&gt;</code></p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p><code dir=\"lt\">&lt;button onClick={alert}&gt;Click me&lt;/button&gt;</code></p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "چه خطایی ممکن است رخ دهد اگر پرانتز را هنگام پاس دادن تابع به Event Handler قرار دهیم؟",
+      "text": "<p>چه خطایی ممکن است رخ دهد اگر پرانتز را هنگام پاس دادن تابع به <code dir=\"lt\">Event</code> <code dir=\"lt\">Handler</code> قرار دهیم؟</p>",
       "difficulty": 3,
-      "explanation": "چرا گزینه C صحیح است؟ اضافه کردن پرانتز باعث می‌شود تابع بلافاصله در زمان رندر اجرا شود و نه هنگام وقوع رویداد، که رفتار پیش‌بینی نشده ایجاد می‌کند.",
-      "tags": ["react.events"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">C</code> صحیح است؟ اضافه کردن پرانتز باعث می‌شود تابع بلافاصله در زمان رندر اجرا شود و نه هنگام وقوع رویداد، که رفتار پیش‌بینی نشده ایجاد می‌کند.</p>",
+      "tags": [
+        "react.events"
+      ],
       "answers": [
-        { "text": "هیچ خطایی رخ نمی‌دهد و تابع همانطور که انتظار داریم اجرا می‌شود", "isCorrect": false },
-        { "text": "تابع اجرا نمی‌شود و رویداد کار نمی‌کند", "isCorrect": false },
-        { "text": "تابع بلافاصله اجرا می‌شود و نه در زمان رویداد، که منطق رویداد را مختل می‌کند", "isCorrect": true },
-        { "text": "React از JSX پشتیبانی نمی‌کند", "isCorrect": false }
+        {
+          "text": "<p>هیچ خطایی رخ نمی‌دهد و تابع همانطور که انتظار داریم اجرا می‌شود</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>تابع اجرا نمی‌شود و رویداد کار نمی‌کند</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>تابع بلافاصله اجرا می‌شود و نه در زمان رویداد، که منطق رویداد را مختل می‌کند</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p><code dir=\"lt\">React</code> از <code dir=\"lt\">JSX</code> پشتیبانی نمی‌کند</p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "چرا برای منطق پیچیده Event Handlerها بهتر است تابع را جداگانه تعریف کنیم؟",
+      "text": "<p>چرا برای منطق پیچیده <code dir=\"lt\">Event</code> <code dir=\"lt\">Handler</code>ها بهتر است تابع را جداگانه تعریف کنیم؟</p>",
       "difficulty": 2,
-      "explanation": "چرا گزینه B صحیح است؟ جدا کردن تابع برای منطق پیچیده باعث می‌شود کامپوننت تمیزتر و خواناتر باشد و نگهداری و دیباگ کردن کد آسان‌تر شود.",
-      "tags": ["react.events"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ جدا کردن تابع برای منطق پیچیده باعث می‌شود کامپوننت تمیزتر و خواناتر باشد و نگهداری و دیباگ کردن کد آسان‌تر شود.</p>",
+      "tags": [
+        "react.events"
+      ],
       "answers": [
-        { "text": "چون React تنها توابع جداگانه را می‌پذیرد", "isCorrect": false },
-        { "text": "چون کامپوننت تمیزتر و خواناتر می‌شود و منطق پیچیده از JSX جدا می‌شود", "isCorrect": true },
-        { "text": "چون توابع inline باعث خطای جاوااسکریپت می‌شوند", "isCorrect": false },
-        { "text": "چون تابع inline همیشه حافظه را مصرف می‌کند", "isCorrect": false }
+        {
+          "text": "<p>چون <code dir=\"lt\">React</code> تنها توابع جداگانه را می‌پذیرد</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>چون کامپوننت تمیزتر و خواناتر می‌شود و منطق پیچیده از <code dir=\"lt\">JSX</code> جدا می‌شود</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>چون توابع <code dir=\"lt\">inline</code> باعث خطای جاوااسکریپت می‌شوند</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>چون تابع <code dir=\"lt\">inline</code> همیشه حافظه را مصرف می‌کند</p>",
+          "isCorrect": false
+        }
       ]
     }
   ]

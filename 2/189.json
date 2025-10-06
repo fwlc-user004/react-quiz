@@ -1,63 +1,133 @@
 {
   "questions": [
     {
-      "text": "پوشه <code dir=\"ltr\">node_modules</code> در پروژه <code dir=\"ltr\">React</code> چه کاربردی دارد؟",
+      "text": "<p>پوشه <code dir=\"lt\">node_modules</code> در پروژه <code dir=\"lt\">React</code> چه کاربردی دارد؟</p>",
       "difficulty": 1,
-      "explanation": "پاسخ صحیح گزینه B است، چون پوشه <code dir=\"ltr\">node_modules</code> تمام وابستگی‌ها و پکیج‌های جاوااسکریپت را که پروژه نیاز دارد نگهداری می‌کند.",
-      "tags": ["react.project-structure"],
+      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"lt\">B</code> است، چون پوشه <code dir=\"lt\">node_modules</code> تمام وابستگی‌ها و پکیج‌های جاوااسکریپت را که پروژه نیاز دارد نگهداری می‌کند.</p>",
+      "tags": [
+        "react.project-structure"
+      ],
       "answers": [
-        { "text": "برای نگهداری کدهای جاوااسکریپت نوشته شده توسط تیم توسعه", "isCorrect": false },
-        { "text": "برای نگهداری وابستگی‌ها و پکیج‌های جاوااسکریپت", "isCorrect": true },
-        { "text": "برای ذخیره کردن فایل‌های استاتیک مانند عکس‌ها", "isCorrect": false },
-        { "text": "برای ذخیره کدهای بک‌اند اپلیکیشن", "isCorrect": false }
+        {
+          "text": "<p>برای نگهداری کدهای جاوااسکریپت نوشته شده توسط تیم توسعه</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>برای نگهداری وابستگی‌ها و پکیج‌های جاوااسکریپت</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>برای ذخیره کردن فایل‌های استاتیک مانند عکس‌ها</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>برای ذخیره کدهای بک‌اند اپلیکیشن</p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "فایل <code dir=\"ltr\">package.json</code> در پروژه <code dir=\"ltr\">React</code> چه اطلاعاتی را ذخیره می‌کند؟",
+      "text": "<p>فایل <code dir=\"lt\">package.json</code> در پروژه <code dir=\"lt\">React</code> چه اطلاعاتی را ذخیره می‌کند؟</p>",
       "difficulty": 2,
-      "explanation": "پاسخ صحیح گزینه C است، چون فایل <code dir=\"ltr\">package.json</code> اطلاعاتی از جمله نام پروژه، نسخه، و لیستی از وابستگی‌های پروژه را ذخیره می‌کند.",
-      "tags": ["react.project-structure"],
+      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"lt\">C</code> است، چون فایل <code dir=\"lt\">package.json</code> اطلاعاتی از جمله نام پروژه، نسخه، و لیستی از وابستگی‌های پروژه را ذخیره می‌کند.</p>",
+      "tags": [
+        "react.project-structure"
+      ],
       "answers": [
-        { "text": "فقط نام پروژه", "isCorrect": false },
-        { "text": "فقط وابستگی‌های پروژه", "isCorrect": false },
-        { "text": "نام پروژه، نسخه، و وابستگی‌های پروژه", "isCorrect": true },
-        { "text": "کدهای جاوااسکریپت برای کامپایل پروژه", "isCorrect": false }
+        {
+          "text": "<p>فقط نام پروژه</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>فقط وابستگی‌های پروژه</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>نام پروژه، نسخه، و وابستگی‌های پروژه</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>کدهای جاوااسکریپت برای کامپایل پروژه</p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "چه کاربردی در فایل <code dir=\"ltr\">public/index.html</code> در پروژه <code dir=\"ltr\">React</code> وجود دارد؟",
+      "text": "<p>چه کاربردی در فایل <code dir=\"lt\">public/index.html</code> در پروژه <code dir=\"lt\">React</code> وجود دارد؟</p>",
       "difficulty": 2,
-      "explanation": "پاسخ صحیح گزینه A است، چون فایل <code dir=\"ltr\">index.html</code> نقطه ورودی اپلیکیشن <code dir=\"ltr\">React</code> است که کامپوننت‌ها به صورت پویا در آن رندر می‌شوند.",
-      "tags": ["react.project-structure"],
+      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"lt\">A</code> است، چون فایل <code dir=\"lt\">index.html</code> نقطه ورودی اپلیکیشن <code dir=\"lt\">React</code> است که کامپوننت‌ها به صورت پویا در آن رندر می‌شوند.</p>",
+      "tags": [
+        "react.project-structure"
+      ],
       "answers": [
-        { "text": "نقطه ورودی اپلیکیشن که کامپوننت‌ها در آن رندر می‌شوند", "isCorrect": true },
-        { "text": "برای ذخیره کردن پیکربندی‌های پروژه", "isCorrect": false },
-        { "text": "برای ذخیره تصاویر و فایل‌های استاتیک", "isCorrect": false },
-        { "text": "برای نوشتن کدهای جاوااسکریپت اپلیکیشن", "isCorrect": false }
+        {
+          "text": "<p>نقطه ورودی اپلیکیشن که کامپوننت‌ها در آن رندر می‌شوند</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>برای ذخیره کردن پیکربندی‌های پروژه</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>برای ذخیره تصاویر و فایل‌های استاتیک</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>برای نوشتن کدهای جاوااسکریپت اپلیکیشن</p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "چرا فایل <code dir=\"ltr\">package-lock.json</code> در پروژه‌های <code dir=\"ltr\">React</code> مهم است؟",
+      "text": "<p>چرا فایل <code dir=\"lt\">package-lock.json</code> در پروژه‌های <code dir=\"lt\">React</code> مهم است؟</p>",
       "difficulty": 3,
-      "explanation": "پاسخ صحیح گزینه D است، چون فایل <code dir=\"ltr\">package-lock.json</code> نسخه دقیق پکیج‌های نصب شده را ذخیره می‌کند تا تمامی اعضای تیم و سرور پروداکشن از نسخه‌های یکسان استفاده کنند.",
-      "tags": ["react.project-structure"],
+      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"lt\">D</code> است، چون فایل <code dir=\"lt\">package-lock.json</code> نسخه دقیق پکیج‌های نصب شده را ذخیره می‌کند تا تمامی اعضای تیم و سرور پروداکشن از نسخه‌های یکسان استفاده کنند.</p>",
+      "tags": [
+        "react.project-structure"
+      ],
       "answers": [
-        { "text": "برای ذخیره اطلاعات مربوط به امنیت پکیج‌ها", "isCorrect": false },
-        { "text": "برای کاهش حجم پکیج‌ها", "isCorrect": false },
-        { "text": "برای ذخیره نسخه‌های مختلف پکیج‌ها", "isCorrect": false },
-        { "text": "برای ذخیره نسخه دقیق پکیج‌های نصب شده و اطمینان از استفاده از نسخه‌های یکسان در تیم", "isCorrect": true }
+        {
+          "text": "<p>برای ذخیره اطلاعات مربوط به امنیت پکیج‌ها</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>برای کاهش حجم پکیج‌ها</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>برای ذخیره نسخه‌های مختلف پکیج‌ها</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>برای ذخیره نسخه دقیق پکیج‌های نصب شده و اطمینان از استفاده از نسخه‌های یکسان در تیم</p>",
+          "isCorrect": true
+        }
       ]
     },
     {
-      "text": "فایل <code dir=\"ltr\">src/index.js</code> در پروژه <code dir=\"ltr\">React</code> چه نقشی دارد؟",
+      "text": "<p>فایل <code dir=\"lt\">src/index.js</code> در پروژه <code dir=\"lt\">React</code> چه نقشی دارد؟</p>",
       "difficulty": 2,
-      "explanation": "پاسخ صحیح گزینه C است، چون فایل <code dir=\"ltr\">index.js</code> نقطه ورود اصلی اپلیکیشن است که کامپوننت اصلی را در div با id=\"root\" رندر می‌کند.",
-      "tags": ["react.project-structure"],
+      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"lt\">C</code> است، چون فایل <code dir=\"lt\">index.js</code> نقطه ورود اصلی اپلیکیشن است که کامپوننت اصلی را در <code dir=\"lt\">div</code> با <code dir=\"lt\">id</code>=\"<code dir=\"lt\">root</code>\" رندر می‌کند.</p>",
+      "tags": [
+        "react.project-structure"
+      ],
       "answers": [
-        { "text": "برای رندر کردن فایل‌های HTML در مرورگر", "isCorrect": false },
-        { "text": "برای ذخیره کامپوننت‌های React", "isCorrect": false },
-        { "text": "برای رندر کردن کامپوننت اصلی در div با id=\"root\"", "isCorrect": true },
-        { "text": "برای پیکربندی سرور توسعه", "isCorrect": false }
+        {
+          "text": "<p>برای رندر کردن فایل‌های <code dir=\"lt\">HTML</code> در مرورگر</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>برای ذخیره کامپوننت‌های <code dir=\"lt\">React</code></p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>برای رندر کردن کامپوننت اصلی در <code dir=\"lt\">div</code> با <code dir=\"lt\">id</code>=\"<code dir=\"lt\">root</code>\"</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>برای پیکربندی سرور توسعه</p>",
+          "isCorrect": false
+        }
       ]
     }
   ]

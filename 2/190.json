@@ -1,63 +1,133 @@
 {
   "questions": [
     {
-      "text": "در این درس، چه کاری با فایل <code dir=\"ltr\">src/App.js</code> انجام شد؟",
+      "text": "<p>در این درس، چه کاری با فایل <code dir=\"lt\">src/App.js</code> انجام شد؟</p>",
       "difficulty": 1,
-      "explanation": "چرا گزینه C صحیح است؟ تمام محتوای پیش‌فرض فایل App.js حذف شد و با یک کامپوننت ساده تابعی جایگزین شد که متن 'Hello, React World!' را نمایش می‌دهد.",
-      "tags": ["react.basics"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">C</code> صحیح است؟ تمام محتوای پیش‌فرض فایل <code dir=\"lt\">App</code>.<code dir=\"lt\">js</code> حذف شد و با یک کامپوننت ساده تابعی جایگزین شد که متن '<code dir=\"lt\">Hello</code>, <code dir=\"lt\">React</code> <code dir=\"lt\">World</code>!' را نمایش می‌دهد.</p>",
+      "tags": [
+        "react.basics"
+      ],
       "answers": [
-        { "text": "محتوا حفظ شد و فقط استایل‌ها تغییر کرد", "isCorrect": false },
-        { "text": "تنها لوگوی چرخان React جایگزین شد", "isCorrect": false },
-        { "text": "تمام محتوای پیش‌فرض حذف و یک کامپوننت ساده اضافه شد", "isCorrect": true },
-        { "text": "فایل حذف شد و دوباره ایجاد نشد", "isCorrect": false }
+        {
+          "text": "<p>محتوا حفظ شد و فقط استایل‌ها تغییر کرد</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>تنها لوگوی چرخان <code dir=\"lt\">React</code> جایگزین شد</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>تمام محتوای پیش‌فرض حذف و یک کامپوننت ساده اضافه شد</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>فایل حذف شد و دوباره ایجاد نشد</p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "کامپوننت جدید <code dir=\"ltr\">App</code> چه چیزی را برمی‌گرداند؟",
+      "text": "<p>کامپوننت جدید <code dir=\"lt\">App</code> چه چیزی را برمی‌گرداند؟</p>",
       "difficulty": 2,
-      "explanation": "چرا گزینه A صحیح است؟ کامپوننت App یک عنصر JSX شامل <code dir=\"ltr\">&lt;h1&gt;Hello, React World!&lt;/h1&gt;</code> را برمی‌گرداند که در مرورگر به صورت تیتر بزرگ نمایش داده می‌شود.",
-      "tags": ["react.basics"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">A</code> صحیح است؟ کامپوننت <code dir=\"lt\">App</code> یک عنصر <code dir=\"lt\">JSX</code> شامل <code dir=\"lt\">&lt;h1&gt;Hello, React World!&lt;/h1&gt;</code> را برمی‌گرداند که در مرورگر به صورت تیتر بزرگ نمایش داده می‌شود.</p>",
+      "tags": [
+        "react.basics"
+      ],
       "answers": [
-        { "text": "یک تگ <code dir=\"ltr\">&lt;h1&gt;</code> با متن 'Hello, React World!'", "isCorrect": true },
-        { "text": "یک لوگوی چرخان React", "isCorrect": false },
-        { "text": "یک کامپوننت دیگر به نام Hello", "isCorrect": false },
-        { "text": "هیچ چیزی نمایش داده نمی‌شود", "isCorrect": false }
+        {
+          "text": "<p>یک تگ <code dir=\"lt\">&lt;h1&gt;</code> با متن '<code dir=\"lt\">Hello</code>, <code dir=\"lt\">React</code> <code dir=\"lt\">World</code>!'</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>یک لوگوی چرخان <code dir=\"lt\">React</code></p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>یک کامپوننت دیگر به نام <code dir=\"lt\">Hello</code></p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>هیچ چیزی نمایش داده نمی‌شود</p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "خط <code dir=\"ltr\">export default App;</code> چه نقشی دارد؟",
+      "text": "<p>خط <code dir=\"lt\">export default App;</code> چه نقشی دارد؟</p>",
       "difficulty": 2,
-      "explanation": "چرا گزینه B صحیح است؟ این خط باعث می‌شود که کامپوننت App در سایر فایل‌های پروژه، به خصوص <code dir=\"ltr\">src/index.js</code> قابل استفاده باشد و بتوان آن را رندر کرد.",
-      "tags": ["react.basics"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ این خط باعث می‌شود که کامپوننت <code dir=\"lt\">App</code> در سایر فایل‌های پروژه، به خصوص <code dir=\"lt\">src/index.js</code> قابل استفاده باشد و بتوان آن را رندر کرد.</p>",
+      "tags": [
+        "react.basics"
+      ],
       "answers": [
-        { "text": "باعث اضافه شدن استایل‌ها به App می‌شود", "isCorrect": false },
-        { "text": "App را در دسترس سایر فایل‌ها قرار می‌دهد", "isCorrect": true },
-        { "text": "نام کامپوننت را تغییر می‌دهد", "isCorrect": false },
-        { "text": "باعث حذف محتوای پیش‌فرض می‌شود", "isCorrect": false }
+        {
+          "text": "<p>باعث اضافه شدن استایل‌ها به <code dir=\"lt\">App</code> می‌شود</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p><code dir=\"lt\">App</code> را در دسترس سایر فایل‌ها قرار می‌دهد</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>نام کامپوننت را تغییر می‌دهد</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>باعث حذف محتوای پیش‌فرض می‌شود</p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "پس از ذخیره تغییرات در <code dir=\"ltr\">App.js</code>, چه اتفاقی در مرورگر رخ می‌دهد؟",
+      "text": "<p>پس از ذخیره تغییرات در <code dir=\"lt\">App.js</code>, چه اتفاقی در مرورگر رخ می‌دهد؟</p>",
       "difficulty": 2,
-      "explanation": "چرا گزینه C صحیح است؟ مرورگر به صورت خودکار رفرش می‌شود و صفحه جدید با متن 'Hello, React World!' نمایش داده می‌شود.",
-      "tags": ["react.basics"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">C</code> صحیح است؟ مرورگر به صورت خودکار رفرش می‌شود و صفحه جدید با متن '<code dir=\"lt\">Hello</code>, <code dir=\"lt\">React</code> <code dir=\"lt\">World</code>!' نمایش داده می‌شود.</p>",
+      "tags": [
+        "react.basics"
+      ],
       "answers": [
-        { "text": "مرورگر پیام خطا نشان می‌دهد", "isCorrect": false },
-        { "text": "مرورگر تغییری نمی‌کند", "isCorrect": false },
-        { "text": "مرورگر به صورت خودکار رفرش شده و متن جدید نمایش داده می‌شود", "isCorrect": true },
-        { "text": "صفحه قبلی حفظ می‌شود و تغییرات اعمال نمی‌شوند", "isCorrect": false }
+        {
+          "text": "<p>مرورگر پیام خطا نشان می‌دهد</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>مرورگر تغییری نمی‌کند</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>مرورگر به صورت خودکار رفرش شده و متن جدید نمایش داده می‌شود</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>صفحه قبلی حفظ می‌شود و تغییرات اعمال نمی‌شوند</p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "چه چیزی در این درس نشان‌دهنده هسته اصلی گردش کار توسعه در React است؟",
+      "text": "<p>چه چیزی در این درس نشان‌دهنده هسته اصلی گردش کار توسعه در <code dir=\"lt\">React</code> است؟</p>",
       "difficulty": 3,
-      "explanation": "چرا گزینه A صحیح است؟ ویرایش کامپوننت و مشاهده زنده تغییرات در مرورگر، هسته اصلی توسعه React را نشان می‌دهد و تجربه کار با JSX و state را عملی می‌کند.",
-      "tags": ["react.basics"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">A</code> صحیح است؟ ویرایش کامپوننت و مشاهده زنده تغییرات در مرورگر، هسته اصلی توسعه <code dir=\"lt\">React</code> را نشان می‌دهد و تجربه کار با <code dir=\"lt\">JSX</code> و <code dir=\"lt\">state</code> را عملی می‌کند.</p>",
+      "tags": [
+        "react.basics"
+      ],
       "answers": [
-        { "text": "ویرایش کامپوننت و مشاهده زنده تغییرات", "isCorrect": true },
-        { "text": "نصب Create React App", "isCorrect": false },
-        { "text": "استفاده از CSS پیش‌فرض", "isCorrect": false },
-        { "text": "حذف فایل‌های src", "isCorrect": false }
+        {
+          "text": "<p>ویرایش کامپوننت و مشاهده زنده تغییرات</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>نصب <code dir=\"lt\">Create</code> <code dir=\"lt\">React</code> <code dir=\"lt\">App</code></p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>استفاده از <code dir=\"lt\">CSS</code> پیش‌فرض</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>حذف فایل‌های <code dir=\"lt\">src</code></p>",
+          "isCorrect": false
+        }
       ]
     }
   ]

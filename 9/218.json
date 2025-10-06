@@ -1,63 +1,133 @@
 {
   "questions": [
     {
-      "text": "در فرم <code dir=\"ltr\">ContactForm</code>، چه چیزی مسئول ردیابی وضعیت ارسال فرم (در حال ارسال، موفق یا خطا) است؟",
+      "text": "<p>در فرم <code dir=\"lt\">ContactForm</code>، چه چیزی مسئول ردیابی وضعیت ارسال فرم (در حال ارسال، موفق یا خطا) است؟</p>",
       "difficulty": 2,
-      "explanation": "چرا گزینه A صحیح است؟ متغیر state <code dir=\"ltr\">status</code> وضعیت ارسال را نگهداری کرده و به UI اجازه می‌دهد بازخورد مناسب به کاربر نمایش دهد.",
-      "tags": ["react.forms.submission"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">A</code> صحیح است؟ متغیر <code dir=\"lt\">state</code> <code dir=\"lt\">status</code> وضعیت ارسال را نگهداری کرده و به <code dir=\"lt\">UI</code> اجازه می‌دهد بازخورد مناسب به کاربر نمایش دهد.</p>",
+      "tags": [
+        "react.forms.submission"
+      ],
       "answers": [
-        { "text": "متغیر state <code dir=\"ltr\">status</code>", "isCorrect": true },
-        { "text": "متغیر state <code dir=\"ltr\">formData</code>", "isCorrect": false },
-        { "text": "تابع <code dir=\"ltr\">submitForm</code>", "isCorrect": false },
-        { "text": "رویداد onChange روی inputها", "isCorrect": false }
+        {
+          "text": "<p>متغیر <code dir=\"lt\">state</code> <code dir=\"lt\">status</code></p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>متغیر <code dir=\"lt\">state</code> <code dir=\"lt\">formData</code></p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>تابع <code dir=\"lt\">submitForm</code></p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>رویداد <code dir=\"lt\">onChange</code> روی <code dir=\"lt\">input</code>ها</p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "چه زمانی پیام 'Loading...' در فرم نمایش داده می‌شود؟",
+      "text": "<p>چه زمانی پیام '<code dir=\"lt\">Loading</code>...' در فرم نمایش داده می‌شود؟</p>",
       "difficulty": 1,
-      "explanation": "چرا گزینه B صحیح است؟ پیام 'Loading...' تنها زمانی نمایش داده می‌شود که <code dir=\"ltr\">status === 'submitting'</code> باشد.",
-      "tags": ["react.forms.submission"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ پیام '<code dir=\"lt\">Loading</code>...' تنها زمانی نمایش داده می‌شود که <code dir=\"lt\">status === 'submitting'</code> باشد.</p>",
+      "tags": [
+        "react.forms.submission"
+      ],
       "answers": [
-        { "text": "زمانی که فرم در وضعیت 'typing' است", "isCorrect": false },
-        { "text": "زمانی که فرم در حال ارسال است (status === 'submitting')", "isCorrect": true },
-        { "text": "زمانی که فرم با موفقیت ارسال شده است", "isCorrect": false },
-        { "text": "زمانی که فرم خطا دارد", "isCorrect": false }
+        {
+          "text": "<p>زمانی که فرم در وضعیت '<code dir=\"lt\">typing</code>' است</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>زمانی که فرم در حال ارسال است (<code dir=\"lt\">status</code> === '<code dir=\"lt\">submitting</code>')</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>زمانی که فرم با موفقیت ارسال شده است</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>زمانی که فرم خطا دارد</p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "چرا دکمه ارسال فرم با <code dir=\"ltr\">disabled</code> به وضعیت submitting وابسته است؟",
+      "text": "<p>چرا دکمه ارسال فرم با <code dir=\"lt\">disabled</code> به وضعیت <code dir=\"lt\">submitting</code> وابسته است؟</p>",
       "difficulty": 2,
-      "explanation": "چرا گزینه A صحیح است؟ این کار از ارسال‌های مکرر فرم توسط کاربر جلوگیری کرده و تجربه کاربری روانی ایجاد می‌کند.",
-      "tags": ["react.forms.submission"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">A</code> صحیح است؟ این کار از ارسال‌های مکرر فرم توسط کاربر جلوگیری کرده و تجربه کاربری روانی ایجاد می‌کند.</p>",
+      "tags": [
+        "react.forms.submission"
+      ],
       "answers": [
-        { "text": "برای جلوگیری از ارسال‌های مکرر فرم", "isCorrect": true },
-        { "text": "برای رندر مجدد فرم در هر تایپ کاربر", "isCorrect": false },
-        { "text": "برای فعال کردن پیام خطا", "isCorrect": false },
-        { "text": "برای ریست کردن مقادیر فرم", "isCorrect": false }
+        {
+          "text": "<p>برای جلوگیری از ارسال‌های مکرر فرم</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>برای رندر مجدد فرم در هر تایپ کاربر</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>برای فعال کردن پیام خطا</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>برای ریست کردن مقادیر فرم</p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "اگر <code dir=\"ltr\">submitForm</code> با خطا مواجه شود، چه اتفاقی برای state فرم می‌افتد؟",
+      "text": "<p>اگر <code dir=\"lt\">submitForm</code> با خطا مواجه شود، چه اتفاقی برای <code dir=\"lt\">state</code> فرم می‌افتد؟</p>",
       "difficulty": 1,
-      "explanation": "چرا گزینه C صحیح است؟ در صورت reject شدن Promise، status به 'error' تغییر کرده و پیام خطای مناسب به کاربر نمایش داده می‌شود.",
-      "tags": ["react.forms.submission"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">C</code> صحیح است؟ در صورت <code dir=\"lt\">reject</code> شدن <code dir=\"lt\">Promise</code>، <code dir=\"lt\">status</code> به '<code dir=\"lt\">error</code>' تغییر کرده و پیام خطای مناسب به کاربر نمایش داده می‌شود.</p>",
+      "tags": [
+        "react.forms.submission"
+      ],
       "answers": [
-        { "text": "status به 'success' تغییر می‌کند", "isCorrect": false },
-        { "text": "status پاک می‌شود", "isCorrect": false },
-        { "text": "status به 'error' تغییر می‌کند و پیام خطا نمایش داده می‌شود", "isCorrect": true },
-        { "text": "formData پاک می‌شود", "isCorrect": false }
+        {
+          "text": "<p><code dir=\"lt\">status</code> به '<code dir=\"lt\">success</code>' تغییر می‌کند</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p><code dir=\"lt\">status</code> پاک می‌شود</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p><code dir=\"lt\">status</code> به '<code dir=\"lt\">error</code>' تغییر می‌کند و پیام خطا نمایش داده می‌شود</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p><code dir=\"lt\">formData</code> پاک می‌شود</p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "چرا استفاده از state برای ردیابی وضعیت ارسال فرم بهتر از متغیر عادی است؟",
+      "text": "<p>چرا استفاده از <code dir=\"lt\">state</code> برای ردیابی وضعیت ارسال فرم بهتر از متغیر عادی است؟</p>",
       "difficulty": 3,
-      "explanation": "چرا گزینه B صحیح است؟ استفاده از state باعث می‌شود که تغییر وضعیت ارسال، UI را به صورت پویا و قابل پیش‌بینی رندر کند و بازخورد مناسب به کاربر نمایش داده شود.",
-      "tags": ["react.forms.submission"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ استفاده از <code dir=\"lt\">state</code> باعث می‌شود که تغییر وضعیت ارسال، <code dir=\"lt\">UI</code> را به صورت پویا و قابل پیش‌بینی رندر کند و بازخورد مناسب به کاربر نمایش داده شود.</p>",
+      "tags": [
+        "react.forms.submission"
+      ],
       "answers": [
-        { "text": "چون متغیر عادی باعث رندر مجدد فرم می‌شود", "isCorrect": false },
-        { "text": "چون state باعث رندر پویا و نمایش بازخورد مناسب می‌شود", "isCorrect": true },
-        { "text": "چون متغیر عادی نمی‌تواند داده‌ها را نگه دارد", "isCorrect": false },
-        { "text": "چون state مقدار ورودی فرم را تغییر می‌دهد", "isCorrect": false }
+        {
+          "text": "<p>چون متغیر عادی باعث رندر مجدد فرم می‌شود</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>چون <code dir=\"lt\">state</code> باعث رندر پویا و نمایش بازخورد مناسب می‌شود</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>چون متغیر عادی نمی‌تواند داده‌ها را نگه دارد</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>چون <code dir=\"lt\">state</code> مقدار ورودی فرم را تغییر می‌دهد</p>",
+          "isCorrect": false
+        }
       ]
     }
   ]

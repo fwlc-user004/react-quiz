@@ -1,63 +1,133 @@
 {
   "questions": [
     {
-      "text": "در کامپوننت TodoApp، از چه هوکی برای نگهداری لیست وظایف استفاده شده است؟",
+      "text": "<p>در کامپوننت <code dir=\"lt\">TodoApp</code>، از چه هوکی برای نگهداری لیست وظایف استفاده شده است؟</p>",
       "difficulty": 1,
-      "explanation": "چرا گزینه B صحیح است؟ useState برای نگهداری آرایه‌ای از اشیاء وظیفه استفاده شده تا تغییرات state باعث رندر مجدد کامپوننت شود.",
-      "tags": ["react.project.todo"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ <code dir=\"lt\">useState</code> برای نگهداری آرایه‌ای از اشیاء وظیفه استفاده شده تا تغییرات <code dir=\"lt\">state</code> باعث رندر مجدد کامپوننت شود.</p>",
+      "tags": [
+        "react.project.todo"
+      ],
       "answers": [
-        { "text": "useEffect", "isCorrect": false },
-        { "text": "useState", "isCorrect": true },
-        { "text": "useReducer", "isCorrect": false },
-        { "text": "useContext", "isCorrect": false }
+        {
+          "text": "<p><code dir=\"lt\">useEffect</code></p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p><code dir=\"lt\">useState</code></p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p><code dir=\"lt\">useReducer</code></p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p><code dir=\"lt\">useContext</code></p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "کامپوننت TodoForm چه نوع کامپوننتی است و چه کاری انجام می‌دهد؟",
+      "text": "<p>کامپوننت <code dir=\"lt\">TodoForm</code> چه نوع کامپوننتی است و چه کاری انجام می‌دهد؟</p>",
       "difficulty": 2,
-      "explanation": "چرا گزینه C صحیح است؟ TodoForm یک کامپوننت کنترل‌شده است که مقدار ورودی کاربر را در state نگه می‌دارد و هنگام submit، تابع addTodo را فراخوانی می‌کند.",
-      "tags": ["react.project.todo"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">C</code> صحیح است؟ <code dir=\"lt\">TodoForm</code> یک کامپوننت کنترل‌شده است که مقدار ورودی کاربر را در <code dir=\"lt\">state</code> نگه می‌دارد و هنگام <code dir=\"lt\">submit</code>، تابع <code dir=\"lt\">addTodo</code> را فراخوانی می‌کند.</p>",
+      "tags": [
+        "react.project.todo"
+      ],
       "answers": [
-        { "text": "کامپوننت بدون state که فقط نمایش می‌دهد", "isCorrect": false },
-        { "text": "کامپوننت کلاس‌محور که وظایف را مدیریت می‌کند", "isCorrect": false },
-        { "text": "کامپوننت کنترل‌شده که مقدار ورودی را در state نگه می‌دارد و addTodo را فراخوانی می‌کند", "isCorrect": true },
-        { "text": "کامپوننت با useReducer برای مدیریت state", "isCorrect": false }
+        {
+          "text": "<p>کامپوننت بدون <code dir=\"lt\">state</code> که فقط نمایش می‌دهد</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>کامپوننت کلاس‌محور که وظایف را مدیریت می‌کند</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>کامپوننت کنترل‌شده که مقدار ورودی را در <code dir=\"lt\">state</code> نگه می‌دارد و <code dir=\"lt\">addTodo</code> را فراخوانی می‌کند</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>کامپوننت با <code dir=\"lt\">useReducer</code> برای مدیریت <code dir=\"lt\">state</code></p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "در تابع handleSubmit کامپوننت TodoForm چه عملیاتی انجام می‌شود؟",
+      "text": "<p>در تابع <code dir=\"lt\">handleSubmit</code> کامپوننت <code dir=\"lt\">TodoForm</code> چه عملیاتی انجام می‌شود؟</p>",
       "difficulty": 2,
-      "explanation": "چرا گزینه D صحیح است؟ ابتدا رفتار پیش‌فرض فرم با event.preventDefault() متوقف می‌شود، سپس بررسی می‌شود که ورودی خالی نباشد، بعد addTodo فراخوانی و در نهایت مقدار input پاک می‌شود.",
-      "tags": ["react.project.todo"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">D</code> صحیح است؟ ابتدا رفتار پیش‌فرض فرم با <code dir=\"lt\">event</code>.<code dir=\"lt\">preventDefault</code>() متوقف می‌شود، سپس بررسی می‌شود که ورودی خالی نباشد، بعد <code dir=\"lt\">addTodo</code> فراخوانی و در نهایت مقدار <code dir=\"lt\">input</code> پاک می‌شود.</p>",
+      "tags": [
+        "react.project.todo"
+      ],
       "answers": [
-        { "text": "مقدار input را مستقیم در DOM تغییر می‌دهد", "isCorrect": false },
-        { "text": "state کامپوننت والد را بدون چک کردن ورودی تغییر می‌دهد", "isCorrect": false },
-        { "text": "فقط addTodo را فراخوانی می‌کند", "isCorrect": false },
-        { "text": "event.preventDefault(), بررسی ورودی، فراخوانی addTodo و پاک کردن input", "isCorrect": true }
+        {
+          "text": "<p>مقدار <code dir=\"lt\">input</code> را مستقیم در <code dir=\"lt\">DOM</code> تغییر می‌دهد</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p><code dir=\"lt\">state</code> کامپوننت والد را بدون چک کردن ورودی تغییر می‌دهد</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>فقط <code dir=\"lt\">addTodo</code> را فراخوانی می‌کند</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p><code dir=\"lt\">event</code>.<code dir=\"lt\">preventDefault</code>(), بررسی ورودی، فراخوانی <code dir=\"lt\">addTodo</code> و پاک کردن <code dir=\"lt\">input</code></p>",
+          "isCorrect": true
+        }
       ]
     },
     {
-      "text": "کامپوننت TodoList چه کاری انجام می‌دهد؟",
+      "text": "<p>کامپوننت <code dir=\"lt\">TodoList</code> چه کاری انجام می‌دهد؟</p>",
       "difficulty": 1,
-      "explanation": "چرا گزینه A صحیح است؟ TodoList آرایه todos را به عنوان prop دریافت کرده و هر آیتم را با map رندر می‌کند.",
-      "tags": ["react.project.todo"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">A</code> صحیح است؟ <code dir=\"lt\">TodoList</code> آرایه <code dir=\"lt\">todos</code> را به عنوان <code dir=\"lt\">prop</code> دریافت کرده و هر آیتم را با <code dir=\"lt\">map</code> رندر می‌کند.</p>",
+      "tags": [
+        "react.project.todo"
+      ],
       "answers": [
-        { "text": "نمایش لیست وظایف با map و دریافت todos به عنوان prop", "isCorrect": true },
-        { "text": "مدیریت state لیست وظایف", "isCorrect": false },
-        { "text": "اضافه کردن وظایف جدید به state", "isCorrect": false },
-        { "text": "حذف وظایف از state", "isCorrect": false }
+        {
+          "text": "<p>نمایش لیست وظایف با <code dir=\"lt\">map</code> و دریافت <code dir=\"lt\">todos</code> به عنوان <code dir=\"lt\">prop</code></p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>مدیریت <code dir=\"lt\">state</code> لیست وظایف</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>اضافه کردن وظایف جدید به <code dir=\"lt\">state</code></p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>حذف وظایف از <code dir=\"lt\">state</code></p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "چرا استفاده از کامپوننت کنترل‌شده در فرم TodoForm مفید است؟",
+      "text": "<p>چرا استفاده از کامپوننت کنترل‌شده در فرم <code dir=\"lt\">TodoForm</code> مفید است؟</p>",
       "difficulty": 3,
-      "explanation": "چرا گزینه C صحیح است؟ کنترل کامل بر روی مقدار ورودی، اعتبارسنجی و اتصال به state والد را فراهم می‌کند و باعث هماهنگی بین UI و داده‌های برنامه می‌شود.",
-      "tags": ["react.project.todo"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">C</code> صحیح است؟ کنترل کامل بر روی مقدار ورودی، اعتبارسنجی و اتصال به <code dir=\"lt\">state</code> والد را فراهم می‌کند و باعث هماهنگی بین <code dir=\"lt\">UI</code> و داده‌های برنامه می‌شود.</p>",
+      "tags": [
+        "react.project.todo"
+      ],
       "answers": [
-        { "text": "زیرا باعث کاهش تعداد کامپوننت‌ها می‌شود", "isCorrect": false },
-        { "text": "زیرا از useReducer استفاده می‌کند", "isCorrect": false },
-        { "text": "کنترل کامل بر مقدار ورودی، اعتبارسنجی و اتصال به state والد", "isCorrect": true },
-        { "text": "زیرا DOM مقدار input را مستقیم مدیریت می‌کند", "isCorrect": false }
+        {
+          "text": "<p>زیرا باعث کاهش تعداد کامپوننت‌ها می‌شود</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>زیرا از <code dir=\"lt\">useReducer</code> استفاده می‌کند</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>کنترل کامل بر مقدار ورودی، اعتبارسنجی و اتصال به <code dir=\"lt\">state</code> والد</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>زیرا <code dir=\"lt\">DOM</code> مقدار <code dir=\"lt\">input</code> را مستقیم مدیریت می‌کند</p>",
+          "isCorrect": false
+        }
       ]
     }
   ]

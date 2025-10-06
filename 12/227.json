@@ -1,63 +1,133 @@
 {
   "questions": [
     {
-      "text": "چه مقادیری برای state در کامپوننت Timer تعریف شده‌اند و وظیفه آنها چیست؟",
+      "text": "<p>چه مقادیری برای <code dir=\"lt\">state</code> در کامپوننت <code dir=\"lt\">Timer</code> تعریف شده‌اند و وظیفه آنها چیست؟</p>",
       "difficulty": 1,
-      "explanation": "چرا گزینه A صحیح است؟ state <code>isActive</code> مشخص می‌کند که تایمر فعال یا غیرفعال باشد و state <code>time</code> زمان سپری شده را نگهداری می‌کند.",
-      "tags": ["react.project.timer.state"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">A</code> صحیح است؟ <code dir=\"lt\">state</code> <code>isActive</code> مشخص می‌کند که تایمر فعال یا غیرفعال باشد و <code dir=\"lt\">state</code> <code>time</code> زمان سپری شده را نگهداری می‌کند.</p>",
+      "tags": [
+        "react.project.timer.state"
+      ],
       "answers": [
-        { "text": "isActive برای فعال/غیرفعال بودن تایمر، time برای نگهداری زمان سپری شده", "isCorrect": true },
-        { "text": "isActive برای نمایش فرمت زمان، time برای فعال بودن دکمه‌ها", "isCorrect": false },
-        { "text": "isActive برای ریست کردن تایمر، time برای تعداد کلیک‌ها", "isCorrect": false },
-        { "text": "isActive برای زمان سپری شده، time برای فعال بودن تایمر", "isCorrect": false }
+        {
+          "text": "<p><code dir=\"lt\">isActive</code> برای فعال/غیرفعال بودن تایمر، <code dir=\"lt\">time</code> برای نگهداری زمان سپری شده</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p><code dir=\"lt\">isActive</code> برای نمایش فرمت زمان، <code dir=\"lt\">time</code> برای فعال بودن دکمه‌ها</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p><code dir=\"lt\">isActive</code> برای ریست کردن تایمر، <code dir=\"lt\">time</code> برای تعداد کلیک‌ها</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p><code dir=\"lt\">isActive</code> برای زمان سپری شده، <code dir=\"lt\">time</code> برای فعال بودن تایمر</p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "تابع <code>formatTime(time)</code> چه کاری انجام می‌دهد؟",
+      "text": "<p>تابع <code>formatTime(time)</code> چه کاری انجام می‌دهد؟</p>",
       "difficulty": 2,
-      "explanation": "چرا گزینه B صحیح است؟ این تابع تعداد ثانیه‌ها را به فرمت دقیقه:ثانیه تبدیل می‌کند تا زمان برای کاربر خواناتر شود.",
-      "tags": ["react.project.timer.state"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ این تابع تعداد ثانیه‌ها را به فرمت دقیقه:ثانیه تبدیل می‌کند تا زمان برای کاربر خواناتر شود.</p>",
+      "tags": [
+        "react.project.timer.state"
+      ],
       "answers": [
-        { "text": "ثانیه‌ها را به صورت خام نمایش می‌دهد", "isCorrect": false },
-        { "text": "تعداد ثانیه‌ها را به فرمت دقیقه:ثانیه تبدیل می‌کند", "isCorrect": true },
-        { "text": "زمان را به صورت رشته ساده بازمی‌گرداند", "isCorrect": false },
-        { "text": "تنها دقیقه‌ها را نشان می‌دهد", "isCorrect": false }
+        {
+          "text": "<p>ثانیه‌ها را به صورت خام نمایش می‌دهد</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>تعداد ثانیه‌ها را به فرمت دقیقه:ثانیه تبدیل می‌کند</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>زمان را به صورت رشته ساده بازمی‌گرداند</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>تنها دقیقه‌ها را نشان می‌دهد</p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "چرا استفاده از <code>padStart(2, '0')</code> در تابع <code>formatTime</code> مهم است؟",
+      "text": "<p>چرا استفاده از <code>padStart(2, '0')</code> در تابع <code>formatTime</code> مهم است؟</p>",
       "difficulty": 2,
-      "explanation": "چرا گزینه A صحیح است؟ padStart اطمینان می‌دهد که همه اعداد دو رقمی نمایش داده شوند.",
-      "tags": ["react.project.timer.state"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">A</code> صحیح است؟ <code dir=\"lt\">padStart</code> اطمینان می‌دهد که همه اعداد دو رقمی نمایش داده شوند.</p>",
+      "tags": [
+        "react.project.timer.state"
+      ],
       "answers": [
-        { "text": "برای اطمینان از اینکه همه اعداد دو رقمی نمایش داده شوند", "isCorrect": true },
-        { "text": "برای افزایش سرعت رندر UI", "isCorrect": false },
-        { "text": "برای فعال کردن دکمه‌ها", "isCorrect": false },
-        { "text": "برای شمارش ثانیه‌ها", "isCorrect": false }
+        {
+          "text": "<p>برای اطمینان از اینکه همه اعداد دو رقمی نمایش داده شوند</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>برای افزایش سرعت رندر <code dir=\"lt\">UI</code></p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>برای فعال کردن دکمه‌ها</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>برای شمارش ثانیه‌ها</p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "در کامپوننت Timer، چرا بهتر است state <code>time</code> به جای نمایش مستقیم مقادیر ثابت ثانیه، استفاده شود؟",
+      "text": "<p>در کامپوننت <code dir=\"lt\">Timer</code>، چرا بهتر است <code dir=\"lt\">state</code> <code>time</code> به جای نمایش مستقیم مقادیر ثابت ثانیه، استفاده شود؟</p>",
       "difficulty": 3,
-      "explanation": "چرا گزینه A صحیح است؟ state باعث می‌شود UI با تغییرات زمان به‌روزرسانی شده و نمایش زمان داینامیک شود.",
-      "tags": ["react.project.timer.state"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">A</code> صحیح است؟ <code dir=\"lt\">state</code> باعث می‌شود <code dir=\"lt\">UI</code> با تغییرات زمان به‌روزرسانی شده و نمایش زمان داینامیک شود.</p>",
+      "tags": [
+        "react.project.timer.state"
+      ],
       "answers": [
-        { "text": "چون state باعث می‌شود زمان در UI با تغییرات منظم update شود", "isCorrect": true },
-        { "text": "چون بدون state دکمه‌ها کار نمی‌کنند", "isCorrect": false },
-        { "text": "چون بدون state تابع formatTime کار نمی‌کند", "isCorrect": false },
-        { "text": "چون state باعث می‌شود JSX کمتر شود", "isCorrect": false }
+        {
+          "text": "<p>چون بدون <code dir=\"lt\">state</code> دکمه‌ها کار نمی‌کنند</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>چون <code dir=\"lt\">state</code> باعث می‌شود زمان در <code dir=\"lt\">UI</code> با تغییرات منظم <code dir=\"lt\">update</code> شود</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>چون بدون <code dir=\"lt\">state</code> تابع <code dir=\"lt\">formatTime</code> کار نمی‌کند</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>چون <code dir=\"lt\">state</code> باعث می‌شود <code dir=\"lt\">JSX</code> کمتر شود</p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "در آینده، برای اینکه زمان به صورت خودکار شمارش شود، بهترین روش چیست؟",
+      "text": "<p>در آینده، برای اینکه زمان به صورت خودکار شمارش شود، بهترین روش چیست؟</p>",
       "difficulty": 3,
-      "explanation": "چرا گزینه B صحیح است؟ با استفاده از useEffect می‌توان تایمر را ایجاد و مدیریت کرد و با cleanup از نشت حافظه جلوگیری کرد.",
-      "tags": ["react.project.timer.state"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ با استفاده از <code dir=\"lt\">useEffect</code> می‌توان تایمر را ایجاد و مدیریت کرد و با <code dir=\"lt\">cleanup</code> از نشت حافظه جلوگیری کرد.</p>",
+      "tags": [
+        "react.project.timer.state"
+      ],
       "answers": [
-        { "text": "اضافه کردن setInterval در داخل JSX", "isCorrect": false },
-        { "text": "استفاده از useEffect برای ایجاد و مدیریت تایمر", "isCorrect": true },
-        { "text": "افزایش مقدار time به صورت دستی با دکمه Reset", "isCorrect": false },
-        { "text": "ذخیره مقدار time در localStorage", "isCorrect": false }
+        {
+          "text": "<p>اضافه کردن <code dir=\"lt\">setInterval</code> در داخل <code dir=\"lt\">JSX</code></p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>افزایش مقدار <code dir=\"lt\">time</code> به صورت دستی با دکمه <code dir=\"lt\">Reset</code></p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>استفاده از <code dir=\"lt\">useEffect</code> برای ایجاد و مدیریت تایمر</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>ذخیره مقدار <code dir=\"lt\">time</code> در <code dir=\"lt\">localStorage</code></p>",
+          "isCorrect": false
+        }
       ]
     }
   ]

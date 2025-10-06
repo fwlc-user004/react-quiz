@@ -1,63 +1,133 @@
 {
   "questions": [
     {
-      "text": "چرا در ترکیب useReducer با useContext، اغلب از دو context جداگانه برای state و dispatch استفاده می‌کنیم؟",
+      "text": "<p>چرا در ترکیب <code dir=\"lt\">useReducer</code> با <code dir=\"lt\">useContext</code>، اغلب از دو <code dir=\"lt\">context</code> جداگانه برای <code dir=\"lt\">state</code> و <code dir=\"lt\">dispatch</code> استفاده می‌کنیم؟</p>",
       "difficulty": 1,
-      "explanation": "چرا گزینه A صحیح است؟ با جداسازی context برای state و dispatch، کامپوننت‌هایی که فقط dispatch را مصرف می‌کنند، با تغییر state دوباره رندر نمی‌شوند و عملکرد بهینه‌تر می‌شود.",
-      "tags": ["react.context-reducer"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">A</code> صحیح است؟ با جداسازی <code dir=\"lt\">context</code> برای <code dir=\"lt\">state</code> و <code dir=\"lt\">dispatch</code>، کامپوننت‌هایی که فقط <code dir=\"lt\">dispatch</code> را مصرف می‌کنند، با تغییر <code dir=\"lt\">state</code> دوباره رندر نمی‌شوند و عملکرد بهینه‌تر می‌شود.</p>",
+      "tags": [
+        "react.context-reducer"
+      ],
       "answers": [
-        { "text": "برای اینکه dispatch بدون تغییر state دوباره رندر نشود", "isCorrect": true },
-        { "text": "برای اینکه state بدون dispatch قابل تغییر باشد", "isCorrect": false },
-        { "text": "برای اینکه useReducer دیگر نیاز به reducer نداشته باشد", "isCorrect": false },
-        { "text": "برای اینکه کامپوننت‌های فرزند به state دسترسی نداشته باشند", "isCorrect": false }
+        {
+          "text": "<p>برای اینکه <code dir=\"lt\">dispatch</code> بدون تغییر <code dir=\"lt\">state</code> دوباره رندر نشود</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>برای اینکه <code dir=\"lt\">state</code> بدون <code dir=\"lt\">dispatch</code> قابل تغییر باشد</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>برای اینکه <code dir=\"lt\">useReducer</code> دیگر نیاز به <code dir=\"lt\">reducer</code> نداشته باشد</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>برای اینکه کامپوننت‌های فرزند به <code dir=\"lt\">state</code> دسترسی نداشته باشند</p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "در کد <code dir=\"ltr\">const tasks = useContext(TasksContext);</code> چه عملیاتی انجام می‌دهد؟",
+      "text": "<p>در کد <code dir=\"lt\">const tasks = useContext(TasksContext);</code> چه عملیاتی انجام می‌دهد؟</p>",
       "difficulty": 2,
-      "explanation": "چرا گزینه B صحیح است؟ این هوک مقدار نزدیک‌ترین Provider مربوط به TasksContext را می‌خواند و در tasks قرار می‌دهد.",
-      "tags": ["react.context-reducer"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ این هوک مقدار نزدیک‌ترین <code dir=\"lt\">Provider</code> مربوط به <code dir=\"lt\">TasksContext</code> را می‌خواند و در <code dir=\"lt\">tasks</code> قرار می‌دهد.</p>",
+      "tags": [
+        "react.context-reducer"
+      ],
       "answers": [
-        { "text": "ایجاد یک reducer جدید", "isCorrect": false },
-        { "text": "خواندن state tasks از نزدیک‌ترین TasksContext.Provider", "isCorrect": true },
-        { "text": "ارسال dispatch به Provider", "isCorrect": false },
-        { "text": "مقدار پیش‌فرض context را نادیده می‌گیرد", "isCorrect": false }
+        {
+          "text": "<p>ایجاد یک <code dir=\"lt\">reducer</code> جدید</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>خواندن <code dir=\"lt\">state</code> <code dir=\"lt\">tasks</code> از نزدیک‌ترین <code dir=\"lt\">TasksContext</code>.<code dir=\"lt\">Provider</code></p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>ارسال <code dir=\"lt\">dispatch</code> به <code dir=\"lt\">Provider</code></p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>مقدار پیش‌فرض <code dir=\"lt\">context</code> را نادیده می‌گیرد</p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "کامپوننت <code dir=\"ltr\">Task</code> فقط نیاز به تغییر state دارد و نه خواندن state. بهترین روش دسترسی به dispatch چیست؟",
+      "text": "<p>کامپوننت <code dir=\"lt\">Task</code> فقط نیاز به تغییر <code dir=\"lt\">state</code> دارد و نه خواندن <code dir=\"lt\">state</code>. بهترین روش دسترسی به <code dir=\"lt\">dispatch</code> چیست؟</p>",
       "difficulty": 2,
-      "explanation": "چرا گزینه B صحیح است؟ کامپوننت Task برای تغییر state به dispatch نیاز دارد و مصرف TasksDispatchContext مناسب‌ترین و بهینه‌ترین روش است.",
-      "tags": ["react.context-reducer"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ کامپوننت <code dir=\"lt\">Task</code> برای تغییر <code dir=\"lt\">state</code> به <code dir=\"lt\">dispatch</code> نیاز دارد و مصرف <code dir=\"lt\">TasksDispatchContext</code> مناسب‌ترین و بهینه‌ترین روش است.</p>",
+      "tags": [
+        "react.context-reducer"
+      ],
       "answers": [
-        { "text": "استفاده از TasksContext", "isCorrect": false },
-        { "text": "استفاده از TasksDispatchContext", "isCorrect": true },
-        { "text": "ارسال props از والد به Task", "isCorrect": false },
-        { "text": "ایجاد state محلی در Task", "isCorrect": false }
+        {
+          "text": "<p>استفاده از <code dir=\"lt\">TasksContext</code></p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>ارسال <code dir=\"lt\">props</code> از والد به <code dir=\"lt\">Task</code></p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>استفاده از <code dir=\"lt\">TasksDispatchContext</code></p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>ایجاد <code dir=\"lt\">state</code> محلی در <code dir=\"lt\">Task</code></p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "مزیت اصلی جداسازی Providerهای state و dispatch در یک اپلیکیشن بزرگ React چیست؟",
+      "text": "<p>مزیت اصلی جداسازی <code dir=\"lt\">Provider</code>های <code dir=\"lt\">state</code> و <code dir=\"lt\">dispatch</code> در یک اپلیکیشن بزرگ <code dir=\"lt\">React</code> چیست؟</p>",
       "difficulty": 3,
-      "explanation": "چرا گزینه A صحیح است؟ با جداسازی Providerها، کامپوننت‌هایی که فقط dispatch را مصرف می‌کنند، با تغییر state دوباره رندر نمی‌شوند و این باعث بهبود عملکرد می‌شود.",
-      "tags": ["react.context-reducer"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">A</code> صحیح است؟ با جداسازی <code dir=\"lt\">Provider</code>ها، کامپوننت‌هایی که فقط <code dir=\"lt\">dispatch</code> را مصرف می‌کنند، با تغییر <code dir=\"lt\">state</code> دوباره رندر نمی‌شوند و این باعث بهبود عملکرد می‌شود.</p>",
+      "tags": [
+        "react.context-reducer"
+      ],
       "answers": [
-        { "text": "کاهش تعداد رندرهای غیرضروری و افزایش کارایی", "isCorrect": true },
-        { "text": "ساده‌تر شدن reducer", "isCorrect": false },
-        { "text": "اجبار به استفاده از useState به جای useReducer", "isCorrect": false },
-        { "text": "امکان حذف کامپوننت‌های فرزند از درخت", "isCorrect": false }
+        {
+          "text": "<p>کاهش تعداد رندرهای غیرضروری و افزایش کارایی</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>ساده‌تر شدن <code dir=\"lt\">reducer</code></p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>اجبار به استفاده از <code dir=\"lt\">useState</code> به جای <code dir=\"lt\">useReducer</code></p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>امکان حذف کامپوننت‌های فرزند از درخت</p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "چه چیزی باعث می‌شود که یک کامپوننت فرزند بدون prop drilling، به state و dispatch دسترسی داشته باشد؟",
+      "text": "<p>چه چیزی باعث می‌شود که یک کامپوننت فرزند بدون <code dir=\"lt\">prop</code> <code dir=\"lt\">drilling</code>، به <code dir=\"lt\">state</code> و <code dir=\"lt\">dispatch</code> دسترسی داشته باشد؟</p>",
       "difficulty": 2,
-      "explanation": "چرا گزینه B صحیح است؟ با قرار دادن فرزند داخل Provider و استفاده از useContext، دسترسی مستقیم به state و dispatch فراهم می‌شود بدون عبور دادن props از میانه درخت.",
-      "tags": ["react.context-reducer"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ با قرار دادن فرزند داخل <code dir=\"lt\">Provider</code> و استفاده از <code dir=\"lt\">useContext</code>، دسترسی مستقیم به <code dir=\"lt\">state</code> و <code dir=\"lt\">dispatch</code> فراهم می‌شود بدون عبور دادن <code dir=\"lt\">props</code> از میانه درخت.</p>",
+      "tags": [
+        "react.context-reducer"
+      ],
       "answers": [
-        { "text": "فراخوانی useReducer در فرزند", "isCorrect": false },
-        { "text": "قرار گرفتن فرزند داخل Provider و استفاده از useContext", "isCorrect": true },
-        { "text": "تعریف state محلی در فرزند", "isCorrect": false },
-        { "text": "استفاده از useState به جای useReducer", "isCorrect": false }
+        {
+          "text": "<p>فراخوانی <code dir=\"lt\">useReducer</code> در فرزند</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>قرار گرفتن فرزند داخل <code dir=\"lt\">Provider</code> و استفاده از <code dir=\"lt\">useContext</code></p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>تعریف <code dir=\"lt\">state</code> محلی در فرزند</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>استفاده از <code dir=\"lt\">useState</code> به جای <code dir=\"lt\">useReducer</code></p>",
+          "isCorrect": false
+        }
       ]
     }
   ]

@@ -1,75 +1,159 @@
 {
   "questions": [
     {
-      "text": "در فرم <code dir=\"ltr\">ContactForm</code>، چرا از یک state جداگانه به نام <code dir=\"ltr\">errors</code> استفاده می‌کنیم؟",
+      "text": "<p>در فرم <code dir=\"lt\">ContactForm</code>، چرا از یک <code dir=\"lt\">state</code> جداگانه به نام <code dir=\"lt\">errors</code> استفاده می‌کنیم؟</p>",
       "difficulty": 1,
-      "explanation": "چرا گزینه A صحیح است؟ این state امکان نگهداری پیام‌های خطای هر فیلد را فراهم می‌کند و به ما اجازه می‌دهد بازخورد واضح به کاربر نمایش دهیم.",
-      "tags": ["react.forms.validation"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">A</code> صحیح است؟ این <code dir=\"lt\">state</code> امکان نگهداری پیام‌های خطای هر فیلد را فراهم می‌کند و به ما اجازه می‌دهد بازخورد واضح به کاربر نمایش دهیم.</p>",
+      "tags": [
+        "react.forms.validation"
+      ],
       "answers": [
-        { "text": "برای ذخیره پیام‌های خطا و نمایش شرطی آنها به کاربر", "isCorrect": true },
-        { "text": "برای ذخیره مقادیر ورودی فرم", "isCorrect": false },
-        { "text": "برای رندر کردن مجدد فرم بدون تغییر مقادیر", "isCorrect": false },
-        { "text": "برای جلوگیری از اجرای handleChange", "isCorrect": false }
+        {
+          "text": "<p>برای ذخیره پیام‌های خطا و نمایش شرطی آنها به کاربر</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>برای ذخیره مقادیر ورودی فرم</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>برای رندر کردن مجدد فرم بدون تغییر مقادیر</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>برای جلوگیری از اجرای <code dir=\"lt\">handleChange</code></p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "تابع <code dir=\"ltr\">validate</code> چه کاری انجام می‌دهد؟",
+      "text": "<p>تابع <code dir=\"lt\">validate</code> چه کاری انجام می‌دهد؟</p>",
       "difficulty": 1,
-      "explanation": "چرا گزینه B صحیح است؟ تابع validate داده‌های فرم را بررسی کرده و یک شیء شامل پیام‌های خطا برای فیلدهای معتبر نشده برمی‌گرداند.",
-      "tags": ["react.forms.validation"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ تابع <code dir=\"lt\">validate</code> داده‌های فرم را بررسی کرده و یک شیء شامل پیام‌های خطا برای فیلدهای معتبر نشده برمی‌گرداند.</p>",
+      "tags": [
+        "react.forms.validation"
+      ],
       "answers": [
-        { "text": "مقادیر ورودی فرم را به state اصلی منتقل می‌کند", "isCorrect": false },
-        { "text": "خطاهای فرم را بررسی و یک شیء با پیام‌های خطا برمی‌گرداند", "isCorrect": true },
-        { "text": "فرم را به صورت پیش‌فرض ارسال می‌کند", "isCorrect": false },
-        { "text": "فرم را بازنشانی می‌کند", "isCorrect": false }
+        {
+          "text": "<p>مقادیر ورودی فرم را به <code dir=\"lt\">state</code> اصلی منتقل می‌کند</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>خطاهای فرم را بررسی و یک شیء با پیام‌های خطا برمی‌گرداند</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>فرم را به صورت پیش‌فرض ارسال می‌کند</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>فرم را بازنشانی می‌کند</p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "در <code dir=\"ltr\">handleSubmit</code>، چرا باید <code dir=\"ltr\">event.preventDefault()</code> فراخوانی شود؟",
+      "text": "<p>در <code dir=\"lt\">handleSubmit</code>، چرا باید <code dir=\"lt\">event.preventDefault()</code> فراخوانی شود؟</p>",
       "difficulty": 2,
-      "explanation": "چرا گزینه C صحیح است؟ این کار از رفتار پیش‌فرض مرورگر (رفرش شدن صفحه هنگام ارسال فرم) جلوگیری کرده و امکان کنترل کامل فرم با React را فراهم می‌کند.",
-      "tags": ["react.forms.validation"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">C</code> صحیح است؟ این کار از رفتار پیش‌فرض مرورگر (رفرش شدن صفحه هنگام ارسال فرم) جلوگیری کرده و امکان کنترل کامل فرم با <code dir=\"lt\">React</code> را فراهم می‌کند.</p>",
+      "tags": [
+        "react.forms.validation"
+      ],
       "answers": [
-        { "text": "برای پاک‌سازی state فرم قبل از اعتبارسنجی", "isCorrect": false },
-        { "text": "برای نمایش پیام خطا در console", "isCorrect": false },
-        { "text": "برای جلوگیری از رفرش شدن صفحه و کنترل فرم در React", "isCorrect": true },
-        { "text": "برای اجرای تابع validate فقط یک بار", "isCorrect": false }
+        {
+          "text": "<p>برای پاک‌سازی <code dir=\"lt\">state</code> فرم قبل از اعتبارسنجی</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>برای نمایش پیام خطا در <code dir=\"lt\">console</code></p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>برای جلوگیری از رفرش شدن صفحه و کنترل فرم در <code dir=\"lt\">React</code></p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>برای اجرای تابع <code dir=\"lt\">validate</code> فقط یک بار</p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "چگونه می‌توانیم پیام خطا را به صورت شرطی نمایش دهیم؟",
+      "text": "<p>چگونه می‌توانیم پیام خطا را به صورت شرطی نمایش دهیم؟</p>",
       "difficulty": 2,
-      "explanation": "چرا گزینه A صحیح است؟ با استفاده از شرط وجود مقدار در errors (مثلاً errors.name) و نمایش JSX مربوطه، پیام خطا تنها در صورت وقوع نمایش داده می‌شود.",
-      "tags": ["react.forms.validation"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">A</code> صحیح است؟ با استفاده از شرط وجود مقدار در <code dir=\"lt\">errors</code> (مثلاً <code dir=\"lt\">errors</code>.<code dir=\"lt\">name</code>) و نمایش <code dir=\"lt\">JSX</code> مربوطه، پیام خطا تنها در صورت وقوع نمایش داده می‌شود.</p>",
+      "tags": [
+        "react.forms.validation"
+      ],
       "answers": [
-        { "text": "با استفاده از شرط در JSX و بررسی وجود مقدار در errors", "isCorrect": true },
-        { "text": "با تعریف state جدید برای هر پیام خطا", "isCorrect": false },
-        { "text": "با فراخوانی تابع validate در render بدون شرط", "isCorrect": false },
-        { "text": "با تغییر مقدار value input به متن خطا", "isCorrect": false }
+        {
+          "text": "<p>با استفاده از شرط در <code dir=\"lt\">JSX</code> و بررسی وجود مقدار در <code dir=\"lt\">errors</code></p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>با تعریف <code dir=\"lt\">state</code> جدید برای هر پیام خطا</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>با فراخوانی تابع <code dir=\"lt\">validate</code> در <code dir=\"lt\">render</code> بدون شرط</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>با تغییر مقدار <code dir=\"lt\">value</code> <code dir=\"lt\">input</code> به متن خطا</p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "اگر validate یک شیء خالی برگرداند، چه اتفاقی می‌افتد؟",
+      "text": "<p>اگر <code dir=\"lt\">validate</code> یک شیء خالی برگرداند، چه اتفاقی می‌افتد؟</p>",
       "difficulty": 2,
-      "explanation": "چرا گزینه D صحیح است؟ شیء خالی نشان‌دهنده عدم وجود خطا است، بنابراین فرم معتبر است و state errors باید پاک شود.",
-      "tags": ["react.forms.validation"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">D</code> صحیح است؟ شیء خالی نشان‌دهنده عدم وجود خطا است، بنابراین فرم معتبر است و <code dir=\"lt\">state</code> <code dir=\"lt\">errors</code> باید پاک شود.</p>",
+      "tags": [
+        "react.forms.validation"
+      ],
       "answers": [
-        { "text": "فرم نامعتبر است و پیام خطا نمایش داده می‌شود", "isCorrect": false },
-        { "text": "فرم رندر نمی‌شود", "isCorrect": false },
-        { "text": "تمام فیلدها بازنشانی می‌شوند", "isCorrect": false },
-        { "text": "فرم معتبر است و پیام خطا پاک می‌شود", "isCorrect": true }
+        {
+          "text": "<p>فرم نامعتبر است و پیام خطا نمایش داده می‌شود</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>فرم رندر نمی‌شود</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>تمام فیلدها بازنشانی می‌شوند</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>فرم معتبر است و پیام خطا پاک می‌شود</p>",
+          "isCorrect": true
+        }
       ]
     },
     {
-      "text": "چرا استفاده از یک state مجزا برای مدیریت خطاها نسبت به نگهداری آنها در formData بهتر است؟",
+      "text": "<p>چرا استفاده از یک <code dir=\"lt\">state</code> مجزا برای مدیریت خطاها نسبت به نگهداری آنها در <code dir=\"lt\">formData</code> بهتر است؟</p>",
       "difficulty": 3,
-      "explanation": "چرا گزینه B صحیح است؟ نگهداری خطاها در state جداگانه باعث می‌شود منطق اعتبارسنجی از داده‌های ورودی جدا باشد و رندر مجدد کامپوننت تنها در صورت تغییر خطاها رخ دهد.",
-      "tags": ["react.forms.validation"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ نگهداری خطاها در <code dir=\"lt\">state</code> جداگانه باعث می‌شود منطق اعتبارسنجی از داده‌های ورودی جدا باشد و رندر مجدد کامپوننت تنها در صورت تغییر خطاها رخ دهد.</p>",
+      "tags": [
+        "react.forms.validation"
+      ],
       "answers": [
-        { "text": "چون formData نمی‌تواند مقادیر رشته‌ای داشته باشد", "isCorrect": false },
-        { "text": "چون مدیریت جداگانه خطاها باعث رندر بهینه و کد تمیزتر می‌شود", "isCorrect": true },
-        { "text": "چون فرمData فقط برای مقادیر عددی استفاده می‌شود", "isCorrect": false },
-        { "text": "چون state مجزا امکان استفاده از useEffect را نمی‌دهد", "isCorrect": false }
+        {
+          "text": "<p>چون <code dir=\"lt\">formData</code> نمی‌تواند مقادیر رشته‌ای داشته باشد</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>چون مدیریت جداگانه خطاها باعث رندر بهینه و کد تمیزتر می‌شود</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>چون فرم<code dir=\"lt\">Data</code> فقط برای مقادیر عددی استفاده می‌شود</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>چون <code dir=\"lt\">state</code> مجزا امکان استفاده از <code dir=\"lt\">useEffect</code> را نمی‌دهد</p>",
+          "isCorrect": false
+        }
       ]
     }
   ]

@@ -1,75 +1,159 @@
 {
   "questions": [
     {
-      "text": "در کامپوننتی که از useReducer استفاده می‌کند، تابع <code dir=\"ltr\">dispatch({ type: 'increment' })</code> چه کاری انجام می‌دهد؟",
+      "text": "<p>در کامپوننتی که از <code dir=\"lt\">useReducer</code> استفاده می‌کند، تابع <code dir=\"lt\">dispatch({ type: 'increment' })</code> چه کاری انجام می‌دهد؟</p>",
       "difficulty": 1,
-      "explanation": "چرا گزینه B صحیح است؟ زیرا dispatch یک اکشن به reducer می‌فرستد و reducer تصمیم می‌گیرد state جدید چگونه باشد.",
-      "tags": ["react.state.reducer"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ زیرا <code dir=\"lt\">dispatch</code> یک اکشن به <code dir=\"lt\">reducer</code> می‌فرستد و <code dir=\"lt\">reducer</code> تصمیم می‌گیرد <code dir=\"lt\">state</code> جدید چگونه باشد.</p>",
+      "tags": [
+        "react.state.reducer"
+      ],
       "answers": [
-        { "text": "مستقیماً مقدار state را افزایش می‌دهد", "isCorrect": false },
-        { "text": "یک اکشن به تابع reducer ارسال می‌کند و state جدید را محاسبه می‌کند", "isCorrect": true },
-        { "text": "state را به حالت اولیه برمی‌گرداند", "isCorrect": false },
-        { "text": "باعث رندر مجدد کامپوننت بدون تغییر state می‌شود", "isCorrect": false }
+        {
+          "text": "<p>مستقیماً مقدار <code dir=\"lt\">state</code> را افزایش می‌دهد</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>یک اکشن به تابع <code dir=\"lt\">reducer</code> ارسال می‌کند و <code dir=\"lt\">state</code> جدید را محاسبه می‌کند</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p><code dir=\"lt\">state</code> را به حالت اولیه برمی‌گرداند</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>باعث رندر مجدد کامپوننت بدون تغییر <code dir=\"lt\">state</code> می‌شود</p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "چرا معمولاً تابع reducer را خارج از کامپوننت تعریف می‌کنیم؟",
+      "text": "<p>چرا معمولاً تابع <code dir=\"lt\">reducer</code> را خارج از کامپوننت تعریف می‌کنیم؟</p>",
       "difficulty": 2,
-      "explanation": "چرا گزینه A صحیح است؟ قرار دادن reducer خارج از کامپوننت از ایجاد دوباره تابع در هر رندر جلوگیری می‌کند و به بهینه‌سازی عملکرد کمک می‌کند.",
-      "tags": ["react.state.reducer"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">A</code> صحیح است؟ قرار دادن <code dir=\"lt\">reducer</code> خارج از کامپوننت از ایجاد دوباره تابع در هر رندر جلوگیری می‌کند و به بهینه‌سازی عملکرد کمک می‌کند.</p>",
+      "tags": [
+        "react.state.reducer"
+      ],
       "answers": [
-        { "text": "برای جلوگیری از اجرای مجدد تابع در هر رندر", "isCorrect": true },
-        { "text": "چون در داخل کامپوننت نمی‌توان reducer نوشت", "isCorrect": false },
-        { "text": "برای اینکه React نمی‌تواند reducer داخل کامپوننت را مدیریت کند", "isCorrect": false },
-        { "text": "برای اینکه state به طور خودکار تغییر کند", "isCorrect": false }
+        {
+          "text": "<p>برای جلوگیری از اجرای مجدد تابع در هر رندر</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>چون در داخل کامپوننت نمی‌توان <code dir=\"lt\">reducer</code> نوشت</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>برای اینکه <code dir=\"lt\">React</code> نمی‌تواند <code dir=\"lt\">reducer</code> داخل کامپوننت را مدیریت کند</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>برای اینکه <code dir=\"lt\">state</code> به طور خودکار تغییر کند</p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "چه مزیتی استفاده از useReducer نسبت به useState برای مدیریت state پیچیده دارد؟",
+      "text": "<p>چه مزیتی استفاده از <code dir=\"lt\">useReducer</code> نسبت به <code dir=\"lt\">useState</code> برای مدیریت <code dir=\"lt\">state</code> پیچیده دارد؟</p>",
       "difficulty": 2,
-      "explanation": "چرا گزینه B صحیح است؟ با useReducer، تمام منطق تغییر state در تابع reducer جمع‌آوری می‌شود و خوانایی و نگهداری کد آسان‌تر می‌شود.",
-      "tags": ["react.state.reducer"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ با <code dir=\"lt\">useReducer</code>، تمام منطق تغییر <code dir=\"lt\">state</code> در تابع <code dir=\"lt\">reducer</code> جمع‌آوری می‌شود و خوانایی و نگهداری کد آسان‌تر می‌شود.</p>",
+      "tags": [
+        "react.state.reducer"
+      ],
       "answers": [
-        { "text": "state همیشه به صورت رشته ذخیره می‌شود", "isCorrect": false },
-        { "text": "منطق به‌روزرسانی در یک مکان متمرکز و قابل پیش‌بینی است", "isCorrect": true },
-        { "text": "رندر مجدد کامپوننت‌ها متوقف می‌شود", "isCorrect": false },
-        { "text": "کامپوننت به صورت خودکار مقادیر state را پاک می‌کند", "isCorrect": false }
+        {
+          "text": "<p><code dir=\"lt\">state</code> همیشه به صورت رشته ذخیره می‌شود</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>منطق به‌روزرسانی در یک مکان متمرکز و قابل پیش‌بینی است</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>رندر مجدد کامپوننت‌ها متوقف می‌شود</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>کامپوننت به صورت خودکار مقادیر <code dir=\"lt\">state</code> را پاک می‌کند</p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "در یک کامپوننت Counter که از useReducer استفاده می‌کند، چه چیزی باعث می‌شود state همیشه به روز و قابل پیش‌بینی باقی بماند؟",
+      "text": "<p>در یک کامپوننت <code dir=\"lt\">Counter</code> که از <code dir=\"lt\">useReducer</code> استفاده می‌کند، چه چیزی باعث می‌شود <code dir=\"lt\">state</code> همیشه به روز و قابل پیش‌بینی باقی بماند؟</p>",
       "difficulty": 3,
-      "explanation": "چرا گزینه B صحیح است؟ dispatch با reducer تضمین می‌کند که state تنها از طریق منطق تعریف‌شده تغییر کند و پیش‌بینی‌پذیری حفظ شود.",
-      "tags": ["react.state.reducer"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ <code dir=\"lt\">dispatch</code> با <code dir=\"lt\">reducer</code> تضمین می‌کند که <code dir=\"lt\">state</code> تنها از طریق منطق تعریف‌شده تغییر کند و پیش‌بینی‌پذیری حفظ شود.</p>",
+      "tags": [
+        "react.state.reducer"
+      ],
       "answers": [
-        { "text": "فراخوانی مستقیم setState در handlerها", "isCorrect": false },
-        { "text": "استفاده از dispatch و تابع reducer", "isCorrect": true },
-        { "text": "نگه داشتن state در متغیرهای محلی تابع", "isCorrect": false },
-        { "text": "فراخوانی dispatch با مقادیر ثابت بدون reducer", "isCorrect": false }
+        {
+          "text": "<p>فراخوانی مستقیم <code dir=\"lt\">setState</code> در <code dir=\"lt\">handler</code>ها</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>نگه داشتن <code dir=\"lt\">state</code> در متغیرهای محلی تابع</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>استفاده از <code dir=\"lt\">dispatch</code> و تابع <code dir=\"lt\">reducer</code></p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>فراخوانی <code dir=\"lt\">dispatch</code> با مقادیر ثابت بدون <code dir=\"lt\">reducer</code></p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "در کد زیر، بعد از فراخوانی <code dir=\"ltr\">dispatch({ type: 'reset' })</code> مقدار count چه خواهد شد?\n<pre><code dir=\"ltr\">function reducer(state, action) {\n  switch(action.type) {\n    case 'increment': return { count: state.count + 1 };\n    case 'decrement': return { count: state.count - 1 };\n    case 'reset': return { count: 0 };\n  }\n}</code></pre>",
+      "text": "<p>در کد زیر، بعد از فراخوانی <code dir=\"lt\">dispatch({ type: 'reset' })</code> مقدار <code dir=\"lt\">count</code> چه خواهد شد?</p>\n<pre><code dir=\"lt\">function reducer(state, action) {\n  switch(action.type) {\n    case 'increment': return { count: state.count + 1 };\n    case 'decrement': return { count: state.count - 1 };\n    case 'reset': return { count: 0 };\n  }\n}</code></pre>",
       "difficulty": 1,
-      "explanation": "چرا گزینه B صحیح است؟ reducer هنگام دریافت action با type برابر 'reset'، مقدار count را به 0 برمی‌گرداند.",
-      "tags": ["react.state.reducer"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ <code dir=\"lt\">reducer</code> هنگام دریافت <code dir=\"lt\">action</code> با <code dir=\"lt\">type</code> برابر '<code dir=\"lt\">reset</code>'، مقدار <code dir=\"lt\">count</code> را به <code dir=\"lt\">0</code> برمی‌گرداند.</p>",
+      "tags": [
+        "react.state.reducer"
+      ],
       "answers": [
-        { "text": "مقدار count بدون تغییر باقی می‌ماند", "isCorrect": false },
-        { "text": "count به 0 بازنشانی می‌شود", "isCorrect": true },
-        { "text": "count برابر با 1 می‌شود", "isCorrect": false },
-        { "text": "خطا رخ می‌دهد", "isCorrect": false }
+        {
+          "text": "<p>مقدار <code dir=\"lt\">count</code> بدون تغییر باقی می‌ماند</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p><code dir=\"lt\">count</code> به <code dir=\"lt\">0</code> بازنشانی می‌شود</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p><code dir=\"lt\">count</code> برابر با <code dir=\"lt\">1</code> می‌شود</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>خطا رخ می‌دهد</p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "در یک فرم پیچیده با useReducer، چرا استفاده از dispatch به جای setState توصیه می‌شود؟",
+      "text": "<p>در یک فرم پیچیده با <code dir=\"lt\">useReducer</code>، چرا استفاده از <code dir=\"lt\">dispatch</code> به جای <code dir=\"lt\">setState</code> توصیه می‌شود؟</p>",
       "difficulty": 2,
-      "explanation": "چرا گزینه B صحیح است؟ استفاده از dispatch باعث می‌شود تمام تغییرات state از طریق یک reducer مدیریت شود و خوانایی و نگهداری کد بهتر شود.",
-      "tags": ["react.state.reducer"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ استفاده از <code dir=\"lt\">dispatch</code> باعث می‌شود تمام تغییرات <code dir=\"lt\">state</code> از طریق یک <code dir=\"lt\">reducer</code> مدیریت شود و خوانایی و نگهداری کد بهتر شود.</p>",
+      "tags": [
+        "react.state.reducer"
+      ],
       "answers": [
-        { "text": "چون dispatch سریع‌تر است", "isCorrect": false },
-        { "text": "چون dispatch منطق تغییر state را متمرکز و قابل پیش‌بینی می‌کند", "isCorrect": true },
-        { "text": "چون setState نمی‌تواند stateهای پیچیده را نگه دارد", "isCorrect": false },
-        { "text": "چون dispatch state را مستقیم تغییر می‌دهد بدون رندر مجدد", "isCorrect": false }
+        {
+          "text": "<p>چون <code dir=\"lt\">dispatch</code> سریع‌تر است</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>چون <code dir=\"lt\">setState</code> نمی‌تواند <code dir=\"lt\">state</code>های پیچیده را نگه دارد</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>چون <code dir=\"lt\">dispatch</code> منطق تغییر <code dir=\"lt\">state</code> را متمرکز و قابل پیش‌بینی می‌کند</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>چون <code dir=\"lt\">dispatch</code> <code dir=\"lt\">state</code> را مستقیم تغییر می‌دهد بدون رندر مجدد</p>",
+          "isCorrect": false
+        }
       ]
     }
   ]

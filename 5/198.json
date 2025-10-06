@@ -1,63 +1,133 @@
 {
   "questions": [
     {
-      "text": "چرا از useState در کامپوننت‌های تابعی React استفاده می‌کنیم؟",
+      "text": "<p>چرا از <code dir=\"lt\">useState</code> در کامپوننت‌های تابعی <code dir=\"lt\">React</code> استفاده می‌کنیم؟</p>",
       "difficulty": 1,
-      "explanation": "چرا گزینه B صحیح است؟ useState به کامپوننت‌های تابعی اجازه می‌دهد تا حافظه داخلی (state) داشته باشند و در پاسخ به تعاملات کاربر، UI را پویا و تعاملی نگه دارند.",
-      "tags": ["react.hooks.useState"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ <code dir=\"lt\">useState</code> به کامپوننت‌های تابعی اجازه می‌دهد تا حافظه داخلی (<code dir=\"lt\">state</code>) داشته باشند و در پاسخ به تعاملات کاربر، <code dir=\"lt\">UI</code> را پویا و تعاملی نگه دارند.</p>",
+      "tags": [
+        "react.hooks.useState"
+      ],
       "answers": [
-        { "text": "برای وارد کردن props به کامپوننت", "isCorrect": false },
-        { "text": "برای افزودن حافظه داخلی (state) به کامپوننت‌های تابعی", "isCorrect": true },
-        { "text": "برای استفاده از lifecycle methods کلاس‌ها", "isCorrect": false },
-        { "text": "برای تعریف متغیرهای ثابت داخل JSX", "isCorrect": false }
+        {
+          "text": "<p>برای وارد کردن <code dir=\"lt\">props</code> به کامپوننت</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>برای افزودن حافظه داخلی (<code dir=\"lt\">state</code>) به کامپوننت‌های تابعی</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>برای استفاده از <code dir=\"lt\">lifecycle</code> <code dir=\"lt\">methods</code> کلاس‌ها</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>برای تعریف متغیرهای ثابت داخل <code dir=\"lt\">JSX</code></p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "در سینتکس const [count, setCount] = useState(0)، نقش count و setCount چیست؟",
+      "text": "<p>در سینتکس <code dir=\"lt\">const</code> [<code dir=\"lt\">count</code>, <code dir=\"lt\">setCount</code>] = <code dir=\"lt\">useState</code>(<code dir=\"lt\">0</code>)، نقش <code dir=\"lt\">count</code> و <code dir=\"lt\">setCount</code> چیست؟</p>",
       "difficulty": 2,
-      "explanation": "چرا گزینه C صحیح است؟ count مقدار فعلی state است و setCount تابعی برای به‌روزرسانی آن مقدار است که باعث رندر مجدد کامپوننت می‌شود.",
-      "tags": ["react.hooks.useState"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">C</code> صحیح است؟ <code dir=\"lt\">count</code> مقدار فعلی <code dir=\"lt\">state</code> است و <code dir=\"lt\">setCount</code> تابعی برای به‌روزرسانی آن مقدار است که باعث رندر مجدد کامپوننت می‌شود.</p>",
+      "tags": [
+        "react.hooks.useState"
+      ],
       "answers": [
-        { "text": "count تابعی برای تغییر مقدار و setCount مقدار فعلی است", "isCorrect": false },
-        { "text": "هر دو متغیر state هستند", "isCorrect": false },
-        { "text": "count مقدار فعلی state و setCount تابع به‌روزرسانی آن است", "isCorrect": true },
-        { "text": "count متغیر محلی و setCount یک prop است", "isCorrect": false }
+        {
+          "text": "<p><code dir=\"lt\">count</code> تابعی برای تغییر مقدار و <code dir=\"lt\">setCount</code> مقدار فعلی است</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>هر دو متغیر <code dir=\"lt\">state</code> هستند</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p><code dir=\"lt\">count</code> مقدار فعلی <code dir=\"lt\">state</code> و <code dir=\"lt\">setCount</code> تابع به‌روزرسانی آن است</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p><code dir=\"lt\">count</code> متغیر محلی و <code dir=\"lt\">setCount</code> یک <code dir=\"lt\">prop</code> است</p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "چرا استفاده از destructuring آرایه با useState توصیه می‌شود؟",
+      "text": "<p>چرا استفاده از <code dir=\"lt\">destructuring</code> آرایه با <code dir=\"lt\">useState</code> توصیه می‌شود؟</p>",
       "difficulty": 2,
-      "explanation": "چرا گزینه B صحیح است؟ destructuring به ما امکان می‌دهد که به صورت خواناتر و مستقیم به مقدار state و تابع setter دسترسی داشته باشیم و کد تمیزتر شود.",
-      "tags": ["react.hooks.useState"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ <code dir=\"lt\">destructuring</code> به ما امکان می‌دهد که به صورت خواناتر و مستقیم به مقدار <code dir=\"lt\">state</code> و تابع <code dir=\"lt\">setter</code> دسترسی داشته باشیم و کد تمیزتر شود.</p>",
+      "tags": [
+        "react.hooks.useState"
+      ],
       "answers": [
-        { "text": "برای جلوگیری از ایجاد state جدید", "isCorrect": false },
-        { "text": "برای دسترسی خواناتر به state و تابع setter", "isCorrect": true },
-        { "text": "برای افزایش سرعت رندر کامپوننت", "isCorrect": false },
-        { "text": "برای جایگزینی props در کامپوننت", "isCorrect": false }
+        {
+          "text": "<p>برای جلوگیری از ایجاد <code dir=\"lt\">state</code> جدید</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>برای دسترسی خواناتر به <code dir=\"lt\">state</code> و تابع <code dir=\"lt\">setter</code></p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>برای افزایش سرعت رندر کامپوننت</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>برای جایگزینی <code dir=\"lt\">props</code> در کامپوننت</p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "چه چیزی باعث می‌شود که فراخوانی setCount باعث رندر مجدد کامپوننت شود؟",
+      "text": "<p>چه چیزی باعث می‌شود که فراخوانی <code dir=\"lt\">setCount</code> باعث رندر مجدد کامپوننت شود؟</p>",
       "difficulty": 3,
-      "explanation": "چرا گزینه C صحیح است؟ فراخوانی تابع setter که توسط useState برگردانده می‌شود، React را مطلع می‌کند که state تغییر کرده و کامپوننت باید دوباره رندر شود.",
-      "tags": ["react.hooks.useState"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">C</code> صحیح است؟ فراخوانی تابع <code dir=\"lt\">setter</code> که توسط <code dir=\"lt\">useState</code> برگردانده می‌شود، <code dir=\"lt\">React</code> را مطلع می‌کند که <code dir=\"lt\">state</code> تغییر کرده و کامپوننت باید دوباره رندر شود.</p>",
+      "tags": [
+        "react.hooks.useState"
+      ],
       "answers": [
-        { "text": "تغییر props کامپوننت", "isCorrect": false },
-        { "text": "استفاده از lifecycle methods کلاس‌ها", "isCorrect": false },
-        { "text": "فراخوانی تابع setter بازگردانده شده توسط useState", "isCorrect": true },
-        { "text": "تغییر مقدار متغیر محلی داخل JSX", "isCorrect": false }
+        {
+          "text": "<p>تغییر <code dir=\"lt\">props</code> کامپوننت</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>استفاده از <code dir=\"lt\">lifecycle</code> <code dir=\"lt\">methods</code> کلاس‌ها</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>فراخوانی تابع <code dir=\"lt\">setter</code> بازگردانده شده توسط <code dir=\"lt\">useState</code></p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>تغییر مقدار متغیر محلی داخل <code dir=\"lt\">JSX</code></p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "کدام یک از قوانین استفاده از هوک‌ها باید همیشه رعایت شود؟",
+      "text": "<p>کدام یک از قوانین استفاده از هوک‌ها باید همیشه رعایت شود؟</p>",
       "difficulty": 2,
-      "explanation": "چرا گزینه B صحیح است؟ هوک‌ها باید فقط در سطح بالای کامپوننت‌های تابعی فراخوانی شوند و نباید داخل حلقه‌ها، شرط‌ها یا توابع تو در تو استفاده شوند.",
-      "tags": ["react.hooks.useState"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ هوک‌ها باید فقط در سطح بالای کامپوننت‌های تابعی فراخوانی شوند و نباید داخل حلقه‌ها، شرط‌ها یا توابع تو در تو استفاده شوند.</p>",
+      "tags": [
+        "react.hooks.useState"
+      ],
       "answers": [
-        { "text": "می‌توان آنها را در هر تابع جاوااسکریپت فراخوانی کرد", "isCorrect": false },
-        { "text": "فقط در سطح بالای کامپوننت‌های تابعی فراخوانی شوند", "isCorrect": true },
-        { "text": "می‌توان آنها را در حلقه‌ها و شرط‌ها فراخوانی کرد", "isCorrect": false },
-        { "text": "استفاده از آنها نیاز به کلاس‌های ES6 دارد", "isCorrect": false }
+        {
+          "text": "<p>می‌توان آنها را در هر تابع جاوااسکریپت فراخوانی کرد</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>فقط در سطح بالای کامپوننت‌های تابعی فراخوانی شوند</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>می‌توان آنها را در حلقه‌ها و شرط‌ها فراخوانی کرد</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>استفاده از آنها نیاز به کلاس‌های <code dir=\"lt\">ES6</code> دارد</p>",
+          "isCorrect": false
+        }
       ]
     }
   ]

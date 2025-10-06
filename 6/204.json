@@ -1,75 +1,159 @@
 {
   "questions": [
     {
-      "text": "آرایه وابستگی‌ها (Dependency Array) در useEffect چه کاربردی دارد؟",
+      "text": "<p>آرایه وابستگی‌ها (<code dir=\"lt\">Dependency</code> <code dir=\"lt\">Array</code>) در <code dir=\"lt\">useEffect</code> چه کاربردی دارد؟</p>",
       "difficulty": 2,
-      "explanation": "چرا گزینه B صحیح است؟ آرایه وابستگی‌ها به React می‌گوید که افکت به کدام مقادیر وابسته است و تنها زمانی که این مقادیر تغییر کنند، افکت دوباره اجرا می‌شود، در نتیجه از اجرای غیرضروری جلوگیری می‌کند.",
-      "tags": ["react.hooks.useEffect"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ آرایه وابستگی‌ها به <code dir=\"lt\">React</code> می‌گوید که افکت به کدام مقادیر وابسته است و تنها زمانی که این مقادیر تغییر کنند، افکت دوباره اجرا می‌شود، در نتیجه از اجرای غیرضروری جلوگیری می‌کند.</p>",
+      "tags": [
+        "react.hooks.useEffect"
+      ],
       "answers": [
-        { "text": "برای تعریف state جدید", "isCorrect": false },
-        { "text": "برای کنترل اینکه افکت چه زمانی اجرا شود", "isCorrect": true },
-        { "text": "برای اجرای افکت قبل از رندر", "isCorrect": false },
-        { "text": "برای مدیریت props", "isCorrect": false }
+        {
+          "text": "<p>برای تعریف <code dir=\"lt\">state</code> جدید</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>برای کنترل اینکه افکت چه زمانی اجرا شود</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>برای اجرای افکت قبل از رندر</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>برای مدیریت <code dir=\"lt\">props</code></p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "اگر آرایه وابستگی‌ها خالی باشد، useEffect چه رفتاری دارد؟",
+      "text": "<p>اگر آرایه وابستگی‌ها خالی باشد، <code dir=\"lt\">useEffect</code> چه رفتاری دارد؟</p>",
       "difficulty": 2,
-      "explanation": "چرا گزینه A صحیح است؟ اگر آرایه وابستگی‌ها خالی باشد، افکت تنها یک بار پس از رندر اولیه اجرا می‌شود، مشابه componentDidMount در کامپوننت‌های کلاس‌محور.",
-      "tags": ["react.hooks.useEffect"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">A</code> صحیح است؟ اگر آرایه وابستگی‌ها خالی باشد، افکت تنها یک بار پس از رندر اولیه اجرا می‌شود، مشابه <code dir=\"lt\">componentDidMount</code> در کامپوننت‌های کلاس‌محور.</p>",
+      "tags": [
+        "react.hooks.useEffect"
+      ],
       "answers": [
-        { "text": "افکت تنها یک بار پس از رندر اولیه اجرا می‌شود", "isCorrect": true },
-        { "text": "افکت بعد از هر رندر اجرا می‌شود", "isCorrect": false },
-        { "text": "افکت اجرا نمی‌شود", "isCorrect": false },
-        { "text": "افکت به صورت همزمان با رندر اجرا می‌شود", "isCorrect": false }
+        {
+          "text": "<p>افکت تنها یک بار پس از رندر اولیه اجرا می‌شود</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>افکت بعد از هر رندر اجرا می‌شود</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>افکت اجرا نمی‌شود</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>افکت به صورت همزمان با رندر اجرا می‌شود</p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "در این مثال، useEffect چه زمانی دوباره اجرا می‌شود؟\n<pre><code dir=\"ltr\">useEffect(() => {\n  console.log(`Fetching data for user: ${userId}`);\n}, [userId]);</code></pre>",
+      "text": "<p>در این مثال، <code dir=\"lt\">useEffect</code> چه زمانی دوباره اجرا می‌شود؟</p>\n<pre><code dir=\"lt\">useEffect(() => {\n  console.log(`Fetching data for user: ${userId}`);\n}, [userId]);</code></pre>",
       "difficulty": 3,
-      "explanation": "چرا گزینه B صحیح است؟ افکت تنها زمانی دوباره اجرا می‌شود که مقدار userId تغییر کند، نه در رندرهای غیرمرتبط دیگر.",
-      "tags": ["react.hooks.useEffect"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ افکت تنها زمانی دوباره اجرا می‌شود که مقدار <code dir=\"lt\">userId</code> تغییر کند، نه در رندرهای غیرمرتبط دیگر.</p>",
+      "tags": [
+        "react.hooks.useEffect"
+      ],
       "answers": [
-        { "text": "بعد از هر رندر کامپوننت", "isCorrect": false },
-        { "text": "تنها زمانی که userId تغییر کند", "isCorrect": true },
-        { "text": "هر زمان که state دیگری تغییر کند", "isCorrect": false },
-        { "text": "هرگز اجرا نمی‌شود", "isCorrect": false }
+        {
+          "text": "<p>بعد از هر رندر کامپوننت</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>تنها زمانی که <code dir=\"lt\">userId</code> تغییر کند</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>هر زمان که <code dir=\"lt\">state</code> دیگری تغییر کند</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>هرگز اجرا نمی‌شود</p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "چرا باید تمام props و state مورد استفاده در افکت را در آرایه وابستگی‌ها قرار دهیم؟",
+      "text": "<p>چرا باید تمام <code dir=\"lt\">props</code> و <code dir=\"lt\">state</code> مورد استفاده در افکت را در آرایه وابستگی‌ها قرار دهیم؟</p>",
       "difficulty": 3,
-      "explanation": "چرا گزینه C صحیح است؟ این کار تضمین می‌کند که افکت فقط در زمانی که مقادیر واقعی که استفاده می‌کنیم تغییر کرده‌اند، اجرا شود و از باگ‌ها و اجرای غیرضروری جلوگیری می‌کند.",
-      "tags": ["react.hooks.useEffect"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">C</code> صحیح است؟ این کار تضمین می‌کند که افکت فقط در زمانی که مقادیر واقعی که استفاده می‌کنیم تغییر کرده‌اند، اجرا شود و از باگ‌ها و اجرای غیرضروری جلوگیری می‌کند.</p>",
+      "tags": [
+        "react.hooks.useEffect"
+      ],
       "answers": [
-        { "text": "برای صرفه‌جویی در حافظه", "isCorrect": false },
-        { "text": "برای اجرای افکت قبل از رندر", "isCorrect": false },
-        { "text": "برای جلوگیری از اجرای غیرضروری و حفظ رفتار پیش‌بینی‌پذیر", "isCorrect": true },
-        { "text": "برای هماهنگ کردن useState و props", "isCorrect": false }
+        {
+          "text": "<p>برای صرفه‌جویی در حافظه</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>برای اجرای افکت قبل از رندر</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>برای جلوگیری از اجرای غیرضروری و حفظ رفتار پیش‌بینی‌پذیر</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>برای هماهنگ کردن <code dir=\"lt\">useState</code> و <code dir=\"lt\">props</code></p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "اگر بخواهیم داده‌ها از یک API فقط یک بار دریافت شوند، چه آرایه وابستگی‌ای باید استفاده کنیم؟\n<pre><code dir=\"ltr\">useEffect(() => {\n  fetchData();\n}, ...);</code></pre>",
+      "text": "<p>اگر بخواهیم داده‌ها از یک <code dir=\"lt\">API</code> فقط یک بار دریافت شوند، چه آرایه وابستگی‌ای باید استفاده کنیم؟</p>\n<pre><code dir=\"lt\">useEffect(() => {\n  fetchData();\n}, ...);</code></pre>",
       "difficulty": 2,
-      "explanation": "چرا گزینه D صحیح است؟ آرایه خالی [] باعث می‌شود افکت تنها یک بار پس از رندر اولیه اجرا شود و دوباره اجرا نشود.",
-      "tags": ["react.hooks.useEffect"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">D</code> صحیح است؟ آرایه خالی [] باعث می‌شود افکت تنها یک بار پس از رندر اولیه اجرا شود و دوباره اجرا نشود.</p>",
+      "tags": [
+        "react.hooks.useEffect"
+      ],
       "answers": [
-        { "text": "[fetchData]", "isCorrect": false },
-        { "text": "[userId]", "isCorrect": false },
-        { "text": "[state]", "isCorrect": false },
-        { "text": "[]", "isCorrect": true }
+        {
+          "text": "<p>[<code dir=\"lt\">fetchData</code>]</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>[<code dir=\"lt\">userId</code>]</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>[<code dir=\"lt\">state</code>]</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>[]</p>",
+          "isCorrect": true
+        }
       ]
     },
     {
-      "text": "چگونه useEffect از ایجاد حلقه بی‌نهایت در فراخوانی API جلوگیری می‌کند؟",
+      "text": "<p>چگونه <code dir=\"lt\">useEffect</code> از ایجاد حلقه بی‌نهایت در فراخوانی <code dir=\"lt\">API</code> جلوگیری می‌کند؟</p>",
       "difficulty": 3,
-      "explanation": "چرا گزینه A صحیح است؟ با مشخص کردن مقادیر وابستگی، React افکت را تنها زمانی اجرا می‌کند که این مقادیر تغییر کنند و از اجرای مکرر غیرضروری جلوگیری می‌شود، در نتیجه حلقه بی‌نهایت رخ نمی‌دهد.",
-      "tags": ["react.hooks.useEffect"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">A</code> صحیح است؟ با مشخص کردن مقادیر وابستگی، <code dir=\"lt\">React</code> افکت را تنها زمانی اجرا می‌کند که این مقادیر تغییر کنند و از اجرای مکرر غیرضروری جلوگیری می‌شود، در نتیجه حلقه بی‌نهایت رخ نمی‌دهد.</p>",
+      "tags": [
+        "react.hooks.useEffect"
+      ],
       "answers": [
-        { "text": "با اجرای افکت تنها زمانی که مقادیر وابسته تغییر کنند", "isCorrect": true },
-        { "text": "با توقف رندر مجدد کامپوننت", "isCorrect": false },
-        { "text": "با تغییر state به صورت مستقیم", "isCorrect": false },
-        { "text": "با استفاده از setTimeout برای تاخیر", "isCorrect": false }
+        {
+          "text": "<p>با اجرای افکت تنها زمانی که مقادیر وابسته تغییر کنند</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>با توقف رندر مجدد کامپوننت</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>با تغییر <code dir=\"lt\">state</code> به صورت مستقیم</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>با استفاده از <code dir=\"lt\">setTimeout</code> برای تاخیر</p>",
+          "isCorrect": false
+        }
       ]
     }
   ]

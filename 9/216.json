@@ -1,63 +1,133 @@
 {
   "questions": [
     {
-      "text": "چرا در فرم <code dir=\"ltr\">SignupForm</code> از یک شیء واحد به نام formData برای نگهداری تمام فیلدها استفاده می‌کنیم؟",
+      "text": "<p>چرا در فرم <code dir=\"lt\">SignupForm</code> از یک شیء واحد به نام <code dir=\"lt\">formData</code> برای نگهداری تمام فیلدها استفاده می‌کنیم؟</p>",
       "difficulty": 1,
-      "explanation": "چرا گزینه A صحیح است؟ استفاده از یک شیء واحد، امکان مدیریت ساده‌تر و جلوگیری از تکرار کد برای چندین فیلد را فراهم می‌کند.",
-      "tags": ["react.forms.multiple-fields"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">A</code> صحیح است؟ استفاده از یک شیء واحد، امکان مدیریت ساده‌تر و جلوگیری از تکرار کد برای چندین فیلد را فراهم می‌کند.</p>",
+      "tags": [
+        "react.forms.multiple-fields"
+      ],
       "answers": [
-        { "text": "چون تمام فیلدهای فرم را می‌توان با یک state مدیریت کرد و کد تمیزتر می‌شود", "isCorrect": true },
-        { "text": "چون React تنها یک state در هر کامپوننت پشتیبانی می‌کند", "isCorrect": false },
-        { "text": "چون فرم‌ها در HTML نیز با یک object کار می‌کنند", "isCorrect": false },
-        { "text": "چون هر input نمی‌تواند state جداگانه داشته باشد", "isCorrect": false }
+        {
+          "text": "<p>چون تمام فیلدهای فرم را می‌توان با یک <code dir=\"lt\">state</code> مدیریت کرد و کد تمیزتر می‌شود</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>چون <code dir=\"lt\">React</code> تنها یک <code dir=\"lt\">state</code> در هر کامپوننت پشتیبانی می‌کند</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>چون فرم‌ها در <code dir=\"lt\">HTML</code> نیز با یک <code dir=\"lt\">object</code> کار می‌کنند</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>چون هر <code dir=\"lt\">input</code> نمی‌تواند <code dir=\"lt\">state</code> جداگانه داشته باشد</p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "در تابع handleChange، چرا از prevFormData و سینتکس spread <code dir=\"ltr\">...prevFormData</code> استفاده می‌کنیم؟",
+      "text": "<p>در تابع <code dir=\"lt\">handleChange</code>، چرا از <code dir=\"lt\">prevFormData</code> و سینتکس <code dir=\"lt\">spread</code> <code dir=\"lt\">...prevFormData</code> استفاده می‌کنیم؟</p>",
       "difficulty": 2,
-      "explanation": "چرا گزینه B صحیح است؟ استفاده از prevFormData و spread تضمین می‌کند که سایر مقادیر قبلی state حفظ شوند و تنها کلید مربوط به فیلد تغییر یافته به‌روزرسانی شود.",
-      "tags": ["react.forms.multiple-fields"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ استفاده از <code dir=\"lt\">prevFormData</code> و <code dir=\"lt\">spread</code> تضمین می‌کند که سایر مقادیر قبلی <code dir=\"lt\">state</code> حفظ شوند و تنها کلید مربوط به فیلد تغییر یافته به‌روزرسانی شود.</p>",
+      "tags": [
+        "react.forms.multiple-fields"
+      ],
       "answers": [
-        { "text": "برای اینکه مقادیر قبلی فرم حفظ شوند و تنها فیلد تغییر یافته آپدیت شود", "isCorrect": true },
-        { "text": "برای ایجاد یک آرایه جدید از فرم", "isCorrect": false },
-        { "text": "برای حذف فیلدهای اضافی از state", "isCorrect": false },
-        { "text": "برای همزمان کردن state با props", "isCorrect": false }
+        {
+          "text": "<p>برای ایجاد یک آرایه جدید از فرم</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>برای اینکه مقادیر قبلی فرم حفظ شوند و تنها فیلد تغییر یافته آپدیت شود</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>برای حذف فیلدهای اضافی از <code dir=\"lt\">state</code></p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>برای همزمان کردن <code dir=\"lt\">state</code> با <code dir=\"lt\">props</code></p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "چگونه می‌توانیم یک event handler عمومی برای تمام فیلدهای فرم ایجاد کنیم؟",
+      "text": "<p>چگونه می‌توانیم یک <code dir=\"lt\">event</code> <code dir=\"lt\">handler</code> عمومی برای تمام فیلدهای فرم ایجاد کنیم؟</p>",
       "difficulty": 2,
-      "explanation": "چرا گزینه C صحیح است؟ با استفاده از اتریبیوت name در هر input و خواندن آن از event.target، می‌توان با یک تابع handleChange، هر فیلد را بر اساس نام آن به‌روزرسانی کرد.",
-      "tags": ["react.forms.multiple-fields"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">C</code> صحیح است؟ با استفاده از اتریبیوت <code dir=\"lt\">name</code> در هر <code dir=\"lt\">input</code> و خواندن آن از <code dir=\"lt\">event</code>.<code dir=\"lt\">target</code>، می‌توان با یک تابع <code dir=\"lt\">handleChange</code>، هر فیلد را بر اساس نام آن به‌روزرسانی کرد.</p>",
+      "tags": [
+        "react.forms.multiple-fields"
+      ],
       "answers": [
-        { "text": "با ایجاد یک state برای هر input و تابع جداگانه برای هر کدام", "isCorrect": false },
-        { "text": "با استفاده از useRef برای تمام inputها", "isCorrect": false },
-        { "text": "با خواندن event.target.name و مقدار آن در یک تابع handleChange مشترک", "isCorrect": true },
-        { "text": "با فراخوانی setFormData برای هر input به صورت جداگانه", "isCorrect": false }
+        {
+          "text": "<p>با ایجاد یک <code dir=\"lt\">state</code> برای هر <code dir=\"lt\">input</code> و تابع جداگانه برای هر کدام</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>با استفاده از <code dir=\"lt\">useRef</code> برای تمام <code dir=\"lt\">input</code>ها</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>با خواندن <code dir=\"lt\">event</code>.<code dir=\"lt\">target</code>.<code dir=\"lt\">name</code> و مقدار آن در یک تابع <code dir=\"lt\">handleChange</code> مشترک</p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>با فراخوانی <code dir=\"lt\">setFormData</code> برای هر <code dir=\"lt\">input</code> به صورت جداگانه</p>",
+          "isCorrect": false
+        }
       ]
     },
     {
-      "text": "فرض کنید می‌خواهیم در فرم SignupForm فقط فیلد <code dir=\"ltr\">email</code> را به‌روزرسانی کنیم. کدام روش صحیح است؟",
+      "text": "<p>فرض کنید می‌خواهیم در فرم <code dir=\"lt\">SignupForm</code> فقط فیلد <code dir=\"lt\">email</code> را به‌روزرسانی کنیم. کدام روش صحیح است؟</p>",
       "difficulty": 3,
-      "explanation": "چرا گزینه D صحیح است؟ با استفاده از spread روی prevFormData و بازنویسی کلید مورد نظر [name]: value، تنها فیلد email تغییر کرده و سایر فیلدها دست‌نخورده باقی می‌مانند.",
-      "tags": ["react.forms.multiple-fields"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">D</code> صحیح است؟ با استفاده از <code dir=\"lt\">spread</code> روی <code dir=\"lt\">prevFormData</code> و بازنویسی کلید مورد نظر [<code dir=\"lt\">name</code>]: <code dir=\"lt\">value</code>، تنها فیلد <code dir=\"lt\">email</code> تغییر کرده و سایر فیلدها دست‌نخورده باقی می‌مانند.</p>",
+      "tags": [
+        "react.forms.multiple-fields"
+      ],
       "answers": [
-        { "text": "استفاده از setFormData({ email: value }) بدون spread", "isCorrect": false },
-        { "text": "تغییر مستقیم prevFormData.email = value", "isCorrect": false },
-        { "text": "استفاده از useRef برای فیلد email", "isCorrect": false },
-        { "text": "setFormData(prevFormData => ({ ...prevFormData, email: value }))", "isCorrect": true }
+        {
+          "text": "<p>استفاده از <code dir=\"lt\">setFormData</code>({ <code dir=\"lt\">email</code>: <code dir=\"lt\">value</code> }) بدون <code dir=\"lt\">spread</code></p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>تغییر مستقیم <code dir=\"lt\">prevFormData</code>.<code dir=\"lt\">email</code> = <code dir=\"lt\">value</code></p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>استفاده از <code dir=\"lt\">useRef</code> برای فیلد <code dir=\"lt\">email</code></p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p><code dir=\"lt\">setFormData(prevFormData => ({ ...prevFormData, email: value }))</code></p>",
+          "isCorrect": true
+        }
       ]
     },
     {
-      "text": "مزیت اصلی استفاده از یک تابع به‌روزرسان در setFormData چیست؟",
+      "text": "<p>مزیت اصلی استفاده از یک تابع به‌روزرسان در <code dir=\"lt\">setFormData</code> چیست؟</p>",
       "difficulty": 2,
-      "explanation": "چرا گزینه A صحیح است؟ تابع به‌روزرسان prevFormData را دریافت می‌کند و تضمین می‌کند که آخرین مقدار state مورد استفاده قرار گیرد، حتی اگر چندین بروزرسانی پشت سر هم رخ دهد.",
-      "tags": ["react.forms.multiple-fields"],
+      "explanation": "<p>چرا گزینه <code dir=\"lt\">A</code> صحیح است؟ تابع به‌روزرسان <code dir=\"lt\">prevFormData</code> را دریافت می‌کند و تضمین می‌کند که آخرین مقدار <code dir=\"lt\">state</code> مورد استفاده قرار گیرد، حتی اگر چندین بروزرسانی پشت سر هم رخ دهد.</p>",
+      "tags": [
+        "react.forms.multiple-fields"
+      ],
       "answers": [
-        { "text": "اطمینان از استفاده از آخرین مقدار state و جلوگیری از race condition", "isCorrect": true },
-        { "text": "صرفه‌جویی در حافظه با حذف فیلدهای اضافه", "isCorrect": false },
-        { "text": "فعال کردن callback برای هر input", "isCorrect": false },
-        { "text": "استفاده از spread در JSX", "isCorrect": false }
+        {
+          "text": "<p>اطمینان از استفاده از آخرین مقدار <code dir=\"lt\">state</code> و جلوگیری از <code dir=\"lt\">race</code> <code dir=\"lt\">condition</code></p>",
+          "isCorrect": true
+        },
+        {
+          "text": "<p>صرفه‌جویی در حافظه با حذف فیلدهای اضافه</p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>فعال کردن <code dir=\"lt\">callback</code> برای هر <code dir=\"lt\">input</code></p>",
+          "isCorrect": false
+        },
+        {
+          "text": "<p>استفاده از <code dir=\"lt\">spread</code> در <code dir=\"lt\">JSX</code></p>",
+          "isCorrect": false
+        }
       ]
     }
   ]

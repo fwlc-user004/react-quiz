@@ -1,9 +1,9 @@
 {
   "questions": [
     {
-      "text": "<p>چرا <code dir=\"lt\">React</code> برای ساخت اپلیکیشن‌های تک-صفحه‌ای (<code dir=\"lt\">SPA</code>) مناسب است؟</p>",
+      "text": "<p>چرا <code dir=\"ltr\">React</code> برای ساخت اپلیکیشن‌های تک-صفحه‌ای (<code dir=\"ltr\">SPA</code>) مناسب است؟</p>",
       "difficulty": 1,
-      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"lt\">C</code> است، چون معماری مبتنی بر کامپوننت <code dir=\"lt\">React</code> و استفاده از <code dir=\"lt\">Virtual DOM</code> به بهینه‌سازی به‌روزرسانی‌ها کمک می‌کند و تجربه کاربری روانی ایجاد می‌کند.</p>",
+      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"ltr\">C</code> است، چون معماری مبتنی بر کامپوننت <code dir=\"ltr\">React</code> و استفاده از <code dir=\"ltr\">Virtual DOM</code> به بهینه‌سازی به‌روزرسانی‌ها کمک می‌کند و تجربه کاربری روانی ایجاد می‌کند.</p>",
       "tags": [
         "react.applications"
       ],
@@ -13,37 +13,37 @@
           "isCorrect": false
         },
         {
-          "text": "<p>چون از دوطرفه <code dir=\"lt\">data</code> <code dir=\"lt\">binding</code> استفاده می‌کند</p>",
+          "text": "<p>چون از دوطرفه <code dir=\"ltr\">data</code> <code dir=\"ltr\">binding</code> استفاده می‌کند</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>چون معماری مبتنی بر کامپوننت و استفاده از <code dir=\"lt\">Virtual DOM</code> به بهینه‌سازی به‌روزرسانی‌ها کمک می‌کند</p>",
+          "text": "<p>چون معماری مبتنی بر کامپوننت و استفاده از <code dir=\"ltr\">Virtual DOM</code> به بهینه‌سازی به‌روزرسانی‌ها کمک می‌کند</p>",
           "isCorrect": true
         },
         {
-          "text": "<p>چون همه تغییرات به صورت دستی روی <code dir=\"lt\">DOM</code> اعمال می‌شود</p>",
+          "text": "<p>چون همه تغییرات به صورت دستی روی <code dir=\"ltr\">DOM</code> اعمال می‌شود</p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>چگونه <code dir=\"lt\">React Native</code> برای توسعه اپلیکیشن‌های موبایل استفاده می‌شود؟</p>",
+      "text": "<p>چگونه <code dir=\"ltr\">React Native</code> برای توسعه اپلیکیشن‌های موبایل استفاده می‌شود؟</p>",
       "difficulty": 2,
-      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"lt\">B</code> است، چون <code dir=\"lt\">React Native</code> کامپوننت‌ها را به عناصر <code dir=\"lt\">UI</code> بومی پلتفرم ترجمه می‌کند و امکان توسعه اپلیکیشن‌های بومی برای <code dir=\"lt\">iOS</code> و <code dir=\"lt\">Android</code> را می‌دهد.</p>",
+      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"ltr\">B</code> است، چون <code dir=\"ltr\">React Native</code> کامپوننت‌ها را به عناصر <code dir=\"ltr\">UI</code> بومی پلتفرم ترجمه می‌کند و امکان توسعه اپلیکیشن‌های بومی برای <code dir=\"ltr\">iOS</code> و <code dir=\"ltr\">Android</code> را می‌دهد.</p>",
       "tags": [
         "react.applications"
       ],
       "answers": [
         {
-          "text": "<p>کامپوننت‌ها را به <code dir=\"lt\">DOM</code> وب ترجمه می‌کند</p>",
+          "text": "<p>کامپوننت‌ها را به <code dir=\"ltr\">DOM</code> وب ترجمه می‌کند</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>کامپوننت‌ها را به عناصر <code dir=\"lt\">UI</code> بومی پلتفرم ترجمه می‌کند</p>",
+          "text": "<p>کامپوننت‌ها را به عناصر <code dir=\"ltr\">UI</code> بومی پلتفرم ترجمه می‌کند</p>",
           "isCorrect": true
         },
         {
-          "text": "<p>از <code dir=\"lt\">API</code>‌های مخصوص هر سیستم عامل برای ایجاد رابط کاربری استفاده می‌کند</p>",
+          "text": "<p>از <code dir=\"ltr\">API</code>‌های مخصوص هر سیستم عامل برای ایجاد رابط کاربری استفاده می‌کند</p>",
           "isCorrect": false
         },
         {
@@ -53,9 +53,9 @@
       ]
     },
     {
-      "text": "<p>چه تفاوتی میان اپلیکیشن‌های ساخته شده با <code dir=\"lt\">React</code> و اپلیکیشن‌های ساخته شده با <code dir=\"lt\">React Native</code> وجود دارد؟</p>",
+      "text": "<p>چه تفاوتی میان اپلیکیشن‌های ساخته شده با <code dir=\"ltr\">React</code> و اپلیکیشن‌های ساخته شده با <code dir=\"ltr\">React Native</code> وجود دارد؟</p>",
       "difficulty": 2,
-      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"lt\">D</code> است، چون <code dir=\"lt\">React</code> برای وب استفاده می‌شود در حالی که <code dir=\"lt\">React Native</code> برای توسعه اپلیکیشن‌های موبایل بومی طراحی شده است.</p>",
+      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"ltr\">D</code> است، چون <code dir=\"ltr\">React</code> برای وب استفاده می‌شود در حالی که <code dir=\"ltr\">React Native</code> برای توسعه اپلیکیشن‌های موبایل بومی طراحی شده است.</p>",
       "tags": [
         "react.applications"
       ],
@@ -65,59 +65,59 @@
           "isCorrect": false
         },
         {
-          "text": "<p><code dir=\"lt\">React</code> برای توسعه اپلیکیشن‌های موبایل استفاده می‌شود</p>",
+          "text": "<p><code dir=\"ltr\">React</code> برای توسعه اپلیکیشن‌های موبایل استفاده می‌شود</p>",
           "isCorrect": false
         },
         {
-          "text": "<p><code dir=\"lt\">React</code> <code dir=\"lt\">Native</code> فقط برای توسعه اپلیکیشن‌های وب است</p>",
+          "text": "<p><code dir=\"ltr\">React</code> <code dir=\"ltr\">Native</code> فقط برای توسعه اپلیکیشن‌های وب است</p>",
           "isCorrect": false
         },
         {
-          "text": "<p><code dir=\"lt\">React</code> برای وب و <code dir=\"lt\">React</code> <code dir=\"lt\">Native</code> برای اپلیکیشن‌های موبایل بومی استفاده می‌شود</p>",
+          "text": "<p><code dir=\"ltr\">React</code> برای وب و <code dir=\"ltr\">React</code> <code dir=\"ltr\">Native</code> برای اپلیکیشن‌های موبایل بومی استفاده می‌شود</p>",
           "isCorrect": true
         }
       ]
     },
     {
-      "text": "<p>چه فریم‌ورک‌هایی برای ایجاد وب‌سایت‌های ایستا با <code dir=\"lt\">React</code> استفاده می‌شوند؟</p>",
+      "text": "<p>چه فریم‌ورک‌هایی برای ایجاد وب‌سایت‌های ایستا با <code dir=\"ltr\">React</code> استفاده می‌شوند؟</p>",
       "difficulty": 3,
-      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"lt\">C</code> است، چون فریم‌ورک‌هایی مانند <code dir=\"lt\">Gatsby</code> و <code dir=\"lt\">Next</code>.<code dir=\"lt\">js</code> به شما اجازه می‌دهند تا با استفاده از <code dir=\"lt\">React</code> وب‌سایت‌های ایستا بسازید.</p>",
+      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"ltr\">C</code> است، چون فریم‌ورک‌هایی مانند <code dir=\"ltr\">Gatsby</code> و <code dir=\"ltr\">Next</code>.<code dir=\"ltr\">js</code> به شما اجازه می‌دهند تا با استفاده از <code dir=\"ltr\">React</code> وب‌سایت‌های ایستا بسازید.</p>",
       "tags": [
         "react.applications"
       ],
       "answers": [
         {
-          "text": "<p><code dir=\"lt\">Vue</code>.<code dir=\"lt\">js</code> و <code dir=\"lt\">Angular</code></p>",
+          "text": "<p><code dir=\"ltr\">Vue</code>.<code dir=\"ltr\">js</code> و <code dir=\"ltr\">Angular</code></p>",
           "isCorrect": false
         },
         {
-          "text": "<p><code dir=\"lt\">Express</code>.<code dir=\"lt\">js</code> و <code dir=\"lt\">Django</code></p>",
+          "text": "<p><code dir=\"ltr\">Express</code>.<code dir=\"ltr\">js</code> و <code dir=\"ltr\">Django</code></p>",
           "isCorrect": false
         },
         {
-          "text": "<p><code dir=\"lt\">Gatsby</code> و <code dir=\"lt\">Next</code>.<code dir=\"lt\">js</code></p>",
+          "text": "<p><code dir=\"ltr\">Gatsby</code> و <code dir=\"ltr\">Next</code>.<code dir=\"ltr\">js</code></p>",
           "isCorrect": true
         },
         {
-          "text": "<p><code dir=\"lt\">Ember</code>.<code dir=\"lt\">js</code> و <code dir=\"lt\">Svelte</code></p>",
+          "text": "<p><code dir=\"ltr\">Ember</code>.<code dir=\"ltr\">js</code> و <code dir=\"ltr\">Svelte</code></p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>چرا وب‌سایت‌هایی که محتوای ثابت دارند، از <code dir=\"lt\">Static</code> <code dir=\"lt\">Site</code> <code dir=\"lt\">Generator</code> (<code dir=\"lt\">SSG</code>) استفاده می‌کنند؟</p>",
+      "text": "<p>چرا وب‌سایت‌هایی که محتوای ثابت دارند، از <code dir=\"ltr\">Static</code> <code dir=\"ltr\">Site</code> <code dir=\"ltr\">Generator</code> (<code dir=\"ltr\">SSG</code>) استفاده می‌کنند؟</p>",
       "difficulty": 2,
-      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"lt\">A</code> است، چون <code dir=\"lt\">SSG</code> ها امکان ایجاد وب‌سایت‌های سریع و امن را فراهم می‌کنند و محتوای ایستا را از پیش رندر می‌کنند.</p>",
+      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"ltr\">A</code> است، چون <code dir=\"ltr\">SSG</code> ها امکان ایجاد وب‌سایت‌های سریع و امن را فراهم می‌کنند و محتوای ایستا را از پیش رندر می‌کنند.</p>",
       "tags": [
         "react.applications"
       ],
       "answers": [
         {
-          "text": "<p>چون <code dir=\"lt\">SSG</code> ها امکان ایجاد وب‌سایت‌های سریع و امن را فراهم می‌کنند</p>",
+          "text": "<p>چون <code dir=\"ltr\">SSG</code> ها امکان ایجاد وب‌سایت‌های سریع و امن را فراهم می‌کنند</p>",
           "isCorrect": true
         },
         {
-          "text": "<p>چون آن‌ها امکان استفاده از <code dir=\"lt\">API</code> های مختلف را فراهم می‌کنند</p>",
+          "text": "<p>چون آن‌ها امکان استفاده از <code dir=\"ltr\">API</code> های مختلف را فراهم می‌کنند</p>",
           "isCorrect": false
         },
         {
@@ -125,7 +125,7 @@
           "isCorrect": false
         },
         {
-          "text": "<p>چون <code dir=\"lt\">SSG</code> ها تنها برای وب‌سایت‌های داینامیک مناسب هستند</p>",
+          "text": "<p>چون <code dir=\"ltr\">SSG</code> ها تنها برای وب‌سایت‌های داینامیک مناسب هستند</p>",
           "isCorrect": false
         }
       ]

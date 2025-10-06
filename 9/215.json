@@ -1,23 +1,23 @@
 {
   "questions": [
     {
-      "text": "<p>چرا در یک کامپوننت کنترل‌شده (<code dir=\"lt\">Controlled</code> <code dir=\"lt\">Component</code>) مقدار ورودی همیشه با <code dir=\"lt\">state</code> هماهنگ است؟</p>",
+      "text": "<p>چرا در یک کامپوننت کنترل‌شده (<code dir=\"ltr\">Controlled</code> <code dir=\"ltr\">Component</code>) مقدار ورودی همیشه با <code dir=\"ltr\">state</code> هماهنگ است؟</p>",
       "difficulty": 1,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">A</code> صحیح است؟ زیرا تابع <code dir=\"lt\">onChange</code> با هر تغییر، <code dir=\"lt\">state</code> را به‌روزرسانی می‌کند و مقدار <code dir=\"lt\">input</code> از <code dir=\"lt\">state</code> گرفته می‌شود، بنابراین <code dir=\"lt\">UI</code> و <code dir=\"lt\">state</code> همیشه هماهنگ هستند.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">A</code> صحیح است؟ زیرا تابع <code dir=\"ltr\">onChange</code> با هر تغییر، <code dir=\"ltr\">state</code> را به‌روزرسانی می‌کند و مقدار <code dir=\"ltr\">input</code> از <code dir=\"ltr\">state</code> گرفته می‌شود، بنابراین <code dir=\"ltr\">UI</code> و <code dir=\"ltr\">state</code> همیشه هماهنگ هستند.</p>",
       "tags": [
         "react.forms.controlled"
       ],
       "answers": [
         {
-          "text": "<p>چون هر بار که کاربر تایپ می‌کند، <code dir=\"lt\">onChange</code> مقدار <code dir=\"lt\">state</code> را به‌روزرسانی می‌کند</p>",
+          "text": "<p>چون هر بار که کاربر تایپ می‌کند، <code dir=\"ltr\">onChange</code> مقدار <code dir=\"ltr\">state</code> را به‌روزرسانی می‌کند</p>",
           "isCorrect": true
         },
         {
-          "text": "<p>چون <code dir=\"lt\">React</code> مقدار <code dir=\"lt\">input</code> را به صورت خودکار با <code dir=\"lt\">state</code> همسان می‌کند</p>",
+          "text": "<p>چون <code dir=\"ltr\">React</code> مقدار <code dir=\"ltr\">input</code> را به صورت خودکار با <code dir=\"ltr\">state</code> همسان می‌کند</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>چون <code dir=\"lt\">value</code> عنصر <code dir=\"lt\">input</code> به صورت پیش‌فرض برابر <code dir=\"lt\">state</code> است</p>",
+          "text": "<p>چون <code dir=\"ltr\">value</code> عنصر <code dir=\"ltr\">input</code> به صورت پیش‌فرض برابر <code dir=\"ltr\">state</code> است</p>",
           "isCorrect": false
         },
         {
@@ -27,101 +27,101 @@
       ]
     },
     {
-      "text": "<p>در کامپوننت <code dir=\"lt\">NameForm</code>، چه چیزی باعث می‌شود فرم از رفرش شدن صفحه جلوگیری کند؟</p>",
+      "text": "<p>در کامپوننت <code dir=\"ltr\">NameForm</code>، چه چیزی باعث می‌شود فرم از رفرش شدن صفحه جلوگیری کند؟</p>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ فراخوانی <code dir=\"lt\">event</code>.<code dir=\"lt\">preventDefault</code>() جلوی رفتار پیش‌فرض مرورگر (رفرش شدن فرم) را می‌گیرد و اجازه می‌دهد فرم با <code dir=\"lt\">React</code> مدیریت شود.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">B</code> صحیح است؟ فراخوانی <code dir=\"ltr\">event</code>.<code dir=\"ltr\">preventDefault</code>() جلوی رفتار پیش‌فرض مرورگر (رفرش شدن فرم) را می‌گیرد و اجازه می‌دهد فرم با <code dir=\"ltr\">React</code> مدیریت شود.</p>",
       "tags": [
         "react.forms.controlled"
       ],
       "answers": [
         {
-          "text": "<p>فراخوانی <code dir=\"lt\">alert</code></p>",
+          "text": "<p>فراخوانی <code dir=\"ltr\">alert</code></p>",
           "isCorrect": false
         },
         {
-          "text": "<p>فراخوانی <code dir=\"lt\">event</code>.<code dir=\"lt\">preventDefault</code>()</p>",
+          "text": "<p>فراخوانی <code dir=\"ltr\">event</code>.<code dir=\"ltr\">preventDefault</code>()</p>",
           "isCorrect": true
         },
         {
-          "text": "<p>پاس دادن <code dir=\"lt\">name</code> به <code dir=\"lt\">alert</code></p>",
+          "text": "<p>پاس دادن <code dir=\"ltr\">name</code> به <code dir=\"ltr\">alert</code></p>",
           "isCorrect": false
         },
         {
-          "text": "<p>فراخوانی <code dir=\"lt\">handleChange</code></p>",
+          "text": "<p>فراخوانی <code dir=\"ltr\">handleChange</code></p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>کدام بخش در کامپوننت کنترل‌شده مسئول به‌روزرسانی <code dir=\"lt\">state</code> هنگام تایپ کاربر است؟</p>",
+      "text": "<p>کدام بخش در کامپوننت کنترل‌شده مسئول به‌روزرسانی <code dir=\"ltr\">state</code> هنگام تایپ کاربر است؟</p>",
       "difficulty": 3,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ تابع <code dir=\"lt\">onChange</code> با دریافت <code dir=\"lt\">event</code> مقدار جدید ورودی را می‌خواند و <code dir=\"lt\">state</code> را به‌روزرسانی می‌کند.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">B</code> صحیح است؟ تابع <code dir=\"ltr\">onChange</code> با دریافت <code dir=\"ltr\">event</code> مقدار جدید ورودی را می‌خواند و <code dir=\"ltr\">state</code> را به‌روزرسانی می‌کند.</p>",
       "tags": [
         "react.forms.controlled"
       ],
       "answers": [
         {
-          "text": "<p><code dir=\"lt\">value</code> اتریبیوت <code dir=\"lt\">input</code></p>",
+          "text": "<p><code dir=\"ltr\">value</code> اتریبیوت <code dir=\"ltr\">input</code></p>",
           "isCorrect": false
         },
         {
-          "text": "<p><code dir=\"lt\">submit</code> <code dir=\"lt\">button</code></p>",
+          "text": "<p><code dir=\"ltr\">submit</code> <code dir=\"ltr\">button</code></p>",
           "isCorrect": false
         },
         {
-          "text": "<p><code dir=\"lt\">event</code> <code dir=\"lt\">handler</code> <code dir=\"lt\">onChange</code></p>",
+          "text": "<p><code dir=\"ltr\">event</code> <code dir=\"ltr\">handler</code> <code dir=\"ltr\">onChange</code></p>",
           "isCorrect": true
         },
         {
-          "text": "<p><code dir=\"lt\">JSX</code> <code dir=\"lt\">return</code></p>",
+          "text": "<p><code dir=\"ltr\">JSX</code> <code dir=\"ltr\">return</code></p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>فرض کنید می‌خواهید یک فیلد <code dir=\"lt\">input</code> را کنترل کنید و هنگام تایپ کاربر تمام حروف به حروف بزرگ تبدیل شوند. کدام روش صحیح است؟</p>",
+      "text": "<p>فرض کنید می‌خواهید یک فیلد <code dir=\"ltr\">input</code> را کنترل کنید و هنگام تایپ کاربر تمام حروف به حروف بزرگ تبدیل شوند. کدام روش صحیح است؟</p>",
       "difficulty": 1,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ در کامپوننت کنترل‌شده، <code dir=\"lt\">state</code> تنها منبع حقیقت است. با استفاده از `.<code dir=\"lt\">toUpperCase</code>()` در <code dir=\"lt\">onChange</code>، مقدار <code dir=\"lt\">state</code> به حروف بزرگ تبدیل شده و <code dir=\"lt\">UI</code> هماهنگ می‌شود.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">B</code> صحیح است؟ در کامپوننت کنترل‌شده، <code dir=\"ltr\">state</code> تنها منبع حقیقت است. با استفاده از `.<code dir=\"ltr\">toUpperCase</code>()` در <code dir=\"ltr\">onChange</code>، مقدار <code dir=\"ltr\">state</code> به حروف بزرگ تبدیل شده و <code dir=\"ltr\">UI</code> هماهنگ می‌شود.</p>",
       "tags": [
         "react.forms.controlled"
       ],
       "answers": [
         {
-          "text": "<p>تغییر مستقیم مقدار <code dir=\"lt\">input</code> با <code dir=\"lt\">DOM</code> <code dir=\"lt\">API</code></p>",
+          "text": "<p>تغییر مستقیم مقدار <code dir=\"ltr\">input</code> با <code dir=\"ltr\">DOM</code> <code dir=\"ltr\">API</code></p>",
           "isCorrect": false
         },
         {
-          "text": "<p>در تابع <code dir=\"lt\">onChange</code> مقدار <code dir=\"lt\">state</code> را با `.<code dir=\"lt\">toUpperCase</code>()` به‌روزرسانی کنید</p>",
+          "text": "<p>در تابع <code dir=\"ltr\">onChange</code> مقدار <code dir=\"ltr\">state</code> را با `.<code dir=\"ltr\">toUpperCase</code>()` به‌روزرسانی کنید</p>",
           "isCorrect": true
         },
         {
-          "text": "<p>استفاده از <code dir=\"lt\">setTimeout</code> برای تغییر <code dir=\"lt\">value</code> بعد از تایپ</p>",
+          "text": "<p>استفاده از <code dir=\"ltr\">setTimeout</code> برای تغییر <code dir=\"ltr\">value</code> بعد از تایپ</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>استفاده از <code dir=\"lt\">value</code> بدون <code dir=\"lt\">onChange</code></p>",
+          "text": "<p>استفاده از <code dir=\"ltr\">value</code> بدون <code dir=\"ltr\">onChange</code></p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>کامپوننت کنترل‌شده در <code dir=\"lt\">React</code> چه چیزی را به عنوان منبع حقیقت برای مقدار ورودی‌ها استفاده می‌کند؟</p>",
+      "text": "<p>کامپوننت کنترل‌شده در <code dir=\"ltr\">React</code> چه چیزی را به عنوان منبع حقیقت برای مقدار ورودی‌ها استفاده می‌کند؟</p>",
       "difficulty": 1,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ در <code dir=\"lt\">Controlled</code> <code dir=\"lt\">Component</code>، <code dir=\"lt\">state</code> کامپوننت تنها منبع حقیقت برای مقادیر <code dir=\"lt\">input</code> است و هر تغییر به <code dir=\"lt\">state</code> اعمال می‌شود.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">B</code> صحیح است؟ در <code dir=\"ltr\">Controlled</code> <code dir=\"ltr\">Component</code>، <code dir=\"ltr\">state</code> کامپوننت تنها منبع حقیقت برای مقادیر <code dir=\"ltr\">input</code> است و هر تغییر به <code dir=\"ltr\">state</code> اعمال می‌شود.</p>",
       "tags": [
         "react.forms.controlled"
       ],
       "answers": [
         {
-          "text": "<p><code dir=\"lt\">DOM</code> <code dir=\"lt\">element</code></p>",
+          "text": "<p><code dir=\"ltr\">DOM</code> <code dir=\"ltr\">element</code></p>",
           "isCorrect": false
         },
         {
-          "text": "<p><code dir=\"lt\">props</code></p>",
+          "text": "<p><code dir=\"ltr\">props</code></p>",
           "isCorrect": false
         },
         {
-          "text": "<p><code dir=\"lt\">state</code> کامپوننت</p>",
+          "text": "<p><code dir=\"ltr\">state</code> کامپوننت</p>",
           "isCorrect": true
         },
         {

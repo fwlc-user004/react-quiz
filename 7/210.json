@@ -1,9 +1,9 @@
 {
   "questions": [
     {
-      "text": "<p>چرا نام یک هوک سفارشی باید با <code dir=\"lt\">use</code> شروع شود؟</p>",
+      "text": "<p>چرا نام یک هوک سفارشی باید با <code dir=\"ltr\">use</code> شروع شود؟</p>",
       "difficulty": 1,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">C</code> صحیح است؟ این قرارداد به <code dir=\"lt\">React</code> و <code dir=\"lt\">linter</code>ها اجازه می‌دهد که تابع را به عنوان یک هوک تشخیص دهند و قوانین هوک‌ها را در داخل آن اعمال کنند.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">C</code> صحیح است؟ این قرارداد به <code dir=\"ltr\">React</code> و <code dir=\"ltr\">linter</code>ها اجازه می‌دهد که تابع را به عنوان یک هوک تشخیص دهند و قوانین هوک‌ها را در داخل آن اعمال کنند.</p>",
       "tags": [
         "react.hooks.custom"
       ],
@@ -13,15 +13,15 @@
           "isCorrect": false
         },
         {
-          "text": "<p>برای اینکه تابع قابل <code dir=\"lt\">export</code> شود</p>",
+          "text": "<p>برای اینکه تابع قابل <code dir=\"ltr\">export</code> شود</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>این یک قرارداد است که <code dir=\"lt\">React</code> و <code dir=\"lt\">linter</code>ها تشخیص دهند این تابع یک هوک است</p>",
+          "text": "<p>این یک قرارداد است که <code dir=\"ltr\">React</code> و <code dir=\"ltr\">linter</code>ها تشخیص دهند این تابع یک هوک است</p>",
           "isCorrect": true
         },
         {
-          "text": "<p>برای محدود کردن تعداد دفعات فراخوانی <code dir=\"lt\">useState</code> در آن</p>",
+          "text": "<p>برای محدود کردن تعداد دفعات فراخوانی <code dir=\"ltr\">useState</code> در آن</p>",
           "isCorrect": false
         }
       ]
@@ -29,7 +29,7 @@
     {
       "text": "<p>چه چیزی یک هوک سفارشی را از یک تابع معمولی جاوااسکریپت متمایز می‌کند؟</p>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">A</code> صحیح است؟ هوک سفارشی می‌تواند هوک‌های داخلی <code dir=\"lt\">React</code> مثل <code dir=\"lt\">useState</code> و <code dir=\"lt\">useEffect</code> را فراخوانی کند و منطق <code dir=\"lt\">state</code>دار را بین چند کامپوننت به اشتراک بگذارد، در حالی که توابع عادی این قابلیت را ندارند.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">A</code> صحیح است؟ هوک سفارشی می‌تواند هوک‌های داخلی <code dir=\"ltr\">React</code> مثل <code dir=\"ltr\">useState</code> و <code dir=\"ltr\">useEffect</code> را فراخوانی کند و منطق <code dir=\"ltr\">state</code>دار را بین چند کامپوننت به اشتراک بگذارد، در حالی که توابع عادی این قابلیت را ندارند.</p>",
       "tags": [
         "react.hooks.custom"
       ],
@@ -39,11 +39,11 @@
           "isCorrect": true
         },
         {
-          "text": "<p>می‌تواند <code dir=\"lt\">JSX</code> بیشتری برگرداند</p>",
+          "text": "<p>می‌تواند <code dir=\"ltr\">JSX</code> بیشتری برگرداند</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>همیشه باید مقدار اولیه <code dir=\"lt\">state</code> بگیرد</p>",
+          "text": "<p>همیشه باید مقدار اولیه <code dir=\"ltr\">state</code> بگیرد</p>",
           "isCorrect": false
         },
         {
@@ -53,53 +53,53 @@
       ]
     },
     {
-      "text": "<p>در یک اپلیکیشن، یک هوک سفارشی <code dir=\"lt\">useFormInput</code> تعریف شده است که مقدار ورودی و یک تابع برای به‌روزرسانی آن را مدیریت می‌کند. اگر دو کامپوننت مجزا هر کدام <code dir=\"lt\">useFormInput</code>('') را برای فیلدهای مشابه فراخوانی کنند، چرا تغییر مقدار در یکی از کامپوننت‌ها روی کامپوننت دیگر تأثیری ندارد؟</p>",
+      "text": "<p>در یک اپلیکیشن، یک هوک سفارشی <code dir=\"ltr\">useFormInput</code> تعریف شده است که مقدار ورودی و یک تابع برای به‌روزرسانی آن را مدیریت می‌کند. اگر دو کامپوننت مجزا هر کدام <code dir=\"ltr\">useFormInput</code>('') را برای فیلدهای مشابه فراخوانی کنند، چرا تغییر مقدار در یکی از کامپوننت‌ها روی کامپوننت دیگر تأثیری ندارد؟</p>",
       "difficulty": 3,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ هر فراخوانی <code dir=\"lt\">useFormInput</code> یک جفت [<code dir=\"lt\">state</code>, <code dir=\"lt\">setter</code>] مستقل در <code dir=\"lt\">React</code> ایجاد می‌کند. حتی اگر هر دو کامپوننت از همان تابع هوک استفاده کنند، <code dir=\"lt\">React</code> این <code dir=\"lt\">state</code>ها را در آرایه‌های جداگانه نگه می‌دارد. بنابراین تغییر <code dir=\"lt\">state</code> در یک کامپوننت روی دیگری تأثیری ندارد.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">B</code> صحیح است؟ هر فراخوانی <code dir=\"ltr\">useFormInput</code> یک جفت [<code dir=\"ltr\">state</code>, <code dir=\"ltr\">setter</code>] مستقل در <code dir=\"ltr\">React</code> ایجاد می‌کند. حتی اگر هر دو کامپوننت از همان تابع هوک استفاده کنند، <code dir=\"ltr\">React</code> این <code dir=\"ltr\">state</code>ها را در آرایه‌های جداگانه نگه می‌دارد. بنابراین تغییر <code dir=\"ltr\">state</code> در یک کامپوننت روی دیگری تأثیری ندارد.</p>",
       "tags": [
         "react.hooks.custom"
       ],
       "answers": [
         {
-          "text": "<p>چون <code dir=\"lt\">JSX</code> مقادیر ورودی را به صورت جداگانه رندر می‌کند</p>",
+          "text": "<p>چون <code dir=\"ltr\">JSX</code> مقادیر ورودی را به صورت جداگانه رندر می‌کند</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>چون هر فراخوانی <code dir=\"lt\">useFormInput</code> یک <code dir=\"lt\">state</code> مستقل ایجاد می‌کند و <code dir=\"lt\">React</code> آنها را بر اساس ترتیب فراخوانی در هر کامپوننت مدیریت می‌کند</p>",
+          "text": "<p>چون هر فراخوانی <code dir=\"ltr\">useFormInput</code> یک <code dir=\"ltr\">state</code> مستقل ایجاد می‌کند و <code dir=\"ltr\">React</code> آنها را بر اساس ترتیب فراخوانی در هر کامپوننت مدیریت می‌کند</p>",
           "isCorrect": true
         },
         {
-          "text": "<p>چون <code dir=\"lt\">props</code> بین دو کامپوننت یکسان نیستند</p>",
+          "text": "<p>چون <code dir=\"ltr\">props</code> بین دو کامپوننت یکسان نیستند</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>چون تابع <code dir=\"lt\">handleChange</code> در کامپوننت اول <code dir=\"lt\">override</code> نمی‌شود</p>",
+          "text": "<p>چون تابع <code dir=\"ltr\">handleChange</code> در کامپوننت اول <code dir=\"ltr\">override</code> نمی‌شود</p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>چرا در استفاده از هوک‌های سفارشی از سینتکس <code dir=\"lt\">spread</code> {...<code dir=\"lt\">firstNameProps</code>} در <code dir=\"lt\">input</code> استفاده می‌کنیم؟</p>",
+      "text": "<p>چرا در استفاده از هوک‌های سفارشی از سینتکس <code dir=\"ltr\">spread</code> {...<code dir=\"ltr\">firstNameProps</code>} در <code dir=\"ltr\">input</code> استفاده می‌کنیم؟</p>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">D</code> صحیح است؟ این کار تمام مقادیر و <code dir=\"lt\">handler</code>های بازگشتی هوک را به <code dir=\"lt\">input</code> پاس می‌دهد، بدون اینکه نیاز به نوشتن جداگانه <code dir=\"lt\">value</code> و <code dir=\"lt\">onChange</code> داشته باشیم.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">D</code> صحیح است؟ این کار تمام مقادیر و <code dir=\"ltr\">handler</code>های بازگشتی هوک را به <code dir=\"ltr\">input</code> پاس می‌دهد، بدون اینکه نیاز به نوشتن جداگانه <code dir=\"ltr\">value</code> و <code dir=\"ltr\">onChange</code> داشته باشیم.</p>",
       "tags": [
         "react.hooks.custom"
       ],
       "answers": [
         {
-          "text": "<p>برای ایجاد <code dir=\"lt\">state</code> جدید</p>",
+          "text": "<p>برای ایجاد <code dir=\"ltr\">state</code> جدید</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>برای اجرای <code dir=\"lt\">useEffect</code> خودکار</p>",
+          "text": "<p>برای اجرای <code dir=\"ltr\">useEffect</code> خودکار</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>برای ارسال <code dir=\"lt\">props</code> به والد</p>",
+          "text": "<p>برای ارسال <code dir=\"ltr\">props</code> به والد</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>برای پاس دادن تمام مقدار و <code dir=\"lt\">handler</code>های هوک به <code dir=\"lt\">input</code> به صورت مختصر</p>",
+          "text": "<p>برای پاس دادن تمام مقدار و <code dir=\"ltr\">handler</code>های هوک به <code dir=\"ltr\">input</code> به صورت مختصر</p>",
           "isCorrect": true
         }
       ]
@@ -107,25 +107,25 @@
     {
       "text": "<p>کدام یک از موارد زیر بهترین کاربرد هوک سفارشی است؟</p>",
       "difficulty": 1,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">A</code> صحیح است؟ وقتی چندین کامپوننت منطق مشابه <code dir=\"lt\">state</code>دار دارند، هوک‌های سفارشی به اشتراک‌گذاری کد و جلوگیری از تکرار کمک می‌کنند، مانند مدیریت فیلدهای فرم یا دریافت داده‌ها از <code dir=\"lt\">API</code>.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">A</code> صحیح است؟ وقتی چندین کامپوننت منطق مشابه <code dir=\"ltr\">state</code>دار دارند، هوک‌های سفارشی به اشتراک‌گذاری کد و جلوگیری از تکرار کمک می‌کنند، مانند مدیریت فیلدهای فرم یا دریافت داده‌ها از <code dir=\"ltr\">API</code>.</p>",
       "tags": [
         "react.hooks.custom"
       ],
       "answers": [
         {
-          "text": "<p>اشتراک‌گذاری منطق <code dir=\"lt\">state</code>دار بین چندین کامپوننت مختلف</p>",
+          "text": "<p>اشتراک‌گذاری منطق <code dir=\"ltr\">state</code>دار بین چندین کامپوننت مختلف</p>",
           "isCorrect": true
         },
         {
-          "text": "<p>نمایش <code dir=\"lt\">JSX</code> در داخل یک کامپوننت</p>",
+          "text": "<p>نمایش <code dir=\"ltr\">JSX</code> در داخل یک کامپوننت</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>تعریف <code dir=\"lt\">props</code> جدید برای یک کامپوننت</p>",
+          "text": "<p>تعریف <code dir=\"ltr\">props</code> جدید برای یک کامپوننت</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>تنظیم <code dir=\"lt\">state</code> بدون استفاده از <code dir=\"lt\">useState</code></p>",
+          "text": "<p>تنظیم <code dir=\"ltr\">state</code> بدون استفاده از <code dir=\"ltr\">useState</code></p>",
           "isCorrect": false
         }
       ]

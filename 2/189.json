@@ -1,9 +1,9 @@
 {
   "questions": [
     {
-      "text": "<p>پوشه <code dir=\"lt\">node_modules</code> در پروژه <code dir=\"lt\">React</code> چه کاربردی دارد؟</p>",
+      "text": "<p>پوشه <code dir=\"ltr\">node_modules</code> در پروژه <code dir=\"ltr\">React</code> چه کاربردی دارد؟</p>",
       "difficulty": 1,
-      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"lt\">B</code> است، چون پوشه <code dir=\"lt\">node_modules</code> تمام وابستگی‌ها و پکیج‌های جاوااسکریپت را که پروژه نیاز دارد نگهداری می‌کند.</p>",
+      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"ltr\">B</code> است، چون پوشه <code dir=\"ltr\">node_modules</code> تمام وابستگی‌ها و پکیج‌های جاوااسکریپت را که پروژه نیاز دارد نگهداری می‌کند.</p>",
       "tags": [
         "react.project-structure"
       ],
@@ -27,9 +27,9 @@
       ]
     },
     {
-      "text": "<p>فایل <code dir=\"lt\">package.json</code> در پروژه <code dir=\"lt\">React</code> چه اطلاعاتی را ذخیره می‌کند؟</p>",
+      "text": "<p>فایل <code dir=\"ltr\">package.json</code> در پروژه <code dir=\"ltr\">React</code> چه اطلاعاتی را ذخیره می‌کند؟</p>",
       "difficulty": 2,
-      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"lt\">C</code> است، چون فایل <code dir=\"lt\">package.json</code> اطلاعاتی از جمله نام پروژه، نسخه، و لیستی از وابستگی‌های پروژه را ذخیره می‌کند.</p>",
+      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"ltr\">C</code> است، چون فایل <code dir=\"ltr\">package.json</code> اطلاعاتی از جمله نام پروژه، نسخه، و لیستی از وابستگی‌های پروژه را ذخیره می‌کند.</p>",
       "tags": [
         "react.project-structure"
       ],
@@ -53,9 +53,9 @@
       ]
     },
     {
-      "text": "<p>چه کاربردی در فایل <code dir=\"lt\">public/index.html</code> در پروژه <code dir=\"lt\">React</code> وجود دارد؟</p>",
+      "text": "<p>چه کاربردی در فایل <code dir=\"ltr\">public/index.html</code> در پروژه <code dir=\"ltr\">React</code> وجود دارد؟</p>",
       "difficulty": 2,
-      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"lt\">A</code> است، چون فایل <code dir=\"lt\">index.html</code> نقطه ورودی اپلیکیشن <code dir=\"lt\">React</code> است که کامپوننت‌ها به صورت پویا در آن رندر می‌شوند.</p>",
+      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"ltr\">A</code> است، چون فایل <code dir=\"ltr\">index.html</code> نقطه ورودی اپلیکیشن <code dir=\"ltr\">React</code> است که کامپوننت‌ها به صورت پویا در آن رندر می‌شوند.</p>",
       "tags": [
         "react.project-structure"
       ],
@@ -79,9 +79,9 @@
       ]
     },
     {
-      "text": "<p>چرا فایل <code dir=\"lt\">package-lock.json</code> در پروژه‌های <code dir=\"lt\">React</code> مهم است؟</p>",
+      "text": "<p>چرا فایل <code dir=\"ltr\">package-lock.json</code> در پروژه‌های <code dir=\"ltr\">React</code> مهم است؟</p>",
       "difficulty": 3,
-      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"lt\">D</code> است، چون فایل <code dir=\"lt\">package-lock.json</code> نسخه دقیق پکیج‌های نصب شده را ذخیره می‌کند تا تمامی اعضای تیم و سرور پروداکشن از نسخه‌های یکسان استفاده کنند.</p>",
+      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"ltr\">D</code> است، چون فایل <code dir=\"ltr\">package-lock.json</code> نسخه دقیق پکیج‌های نصب شده را ذخیره می‌کند تا تمامی اعضای تیم و سرور پروداکشن از نسخه‌های یکسان استفاده کنند.</p>",
       "tags": [
         "react.project-structure"
       ],
@@ -105,23 +105,23 @@
       ]
     },
     {
-      "text": "<p>فایل <code dir=\"lt\">src/index.js</code> در پروژه <code dir=\"lt\">React</code> چه نقشی دارد؟</p>",
+      "text": "<p>فایل <code dir=\"ltr\">src/index.js</code> در پروژه <code dir=\"ltr\">React</code> چه نقشی دارد؟</p>",
       "difficulty": 2,
-      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"lt\">C</code> است، چون فایل <code dir=\"lt\">index.js</code> نقطه ورود اصلی اپلیکیشن است که کامپوننت اصلی را در <code dir=\"lt\">div</code> با <code dir=\"lt\">id</code>=\"<code dir=\"lt\">root</code>\" رندر می‌کند.</p>",
+      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"ltr\">C</code> است، چون فایل <code dir=\"ltr\">index.js</code> نقطه ورود اصلی اپلیکیشن است که کامپوننت اصلی را در <code dir=\"ltr\">div</code> با <code dir=\"ltr\">id</code>=\"<code dir=\"ltr\">root</code>\" رندر می‌کند.</p>",
       "tags": [
         "react.project-structure"
       ],
       "answers": [
         {
-          "text": "<p>برای رندر کردن فایل‌های <code dir=\"lt\">HTML</code> در مرورگر</p>",
+          "text": "<p>برای رندر کردن فایل‌های <code dir=\"ltr\">HTML</code> در مرورگر</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>برای ذخیره کامپوننت‌های <code dir=\"lt\">React</code></p>",
+          "text": "<p>برای ذخیره کامپوننت‌های <code dir=\"ltr\">React</code></p>",
           "isCorrect": false
         },
         {
-          "text": "<p>برای رندر کردن کامپوننت اصلی در <code dir=\"lt\">div</code> با <code dir=\"lt\">id</code>=\"<code dir=\"lt\">root</code>\"</p>",
+          "text": "<p>برای رندر کردن کامپوننت اصلی در <code dir=\"ltr\">div</code> با <code dir=\"ltr\">id</code>=\"<code dir=\"ltr\">root</code>\"</p>",
           "isCorrect": true
         },
         {

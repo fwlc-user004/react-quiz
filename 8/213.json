@@ -1,61 +1,61 @@
 {
   "questions": [
     {
-      "text": "<p>در <code dir=\"lt\">React</code>، چرا از <code dir=\"lt\">SyntheticEvent</code> به جای استفاده مستقیم از رویدادهای مرورگر استفاده می‌شود؟</p>",
+      "text": "<p>در <code dir=\"ltr\">React</code>، چرا از <code dir=\"ltr\">SyntheticEvent</code> به جای استفاده مستقیم از رویدادهای مرورگر استفاده می‌شود؟</p>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ <code dir=\"lt\">React</code> از <code dir=\"lt\">SyntheticEvent</code> استفاده می‌کند تا رفتار رویدادها در تمام مرورگرها سازگار باشد و <code dir=\"lt\">API</code> یکنواختی برای مدیریت رویدادها ارائه دهد.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">B</code> صحیح است؟ <code dir=\"ltr\">React</code> از <code dir=\"ltr\">SyntheticEvent</code> استفاده می‌کند تا رفتار رویدادها در تمام مرورگرها سازگار باشد و <code dir=\"ltr\">API</code> یکنواختی برای مدیریت رویدادها ارائه دهد.</p>",
       "tags": [
         "react.events"
       ],
       "answers": [
         {
-          "text": "<p>چون <code dir=\"lt\">SyntheticEvent</code> سریع‌تر است</p>",
+          "text": "<p>چون <code dir=\"ltr\">SyntheticEvent</code> سریع‌تر است</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>چون این <code dir=\"lt\">API</code> سازگاری بین مرورگرها ایجاد می‌کند و مدیریت رویدادها را یکنواخت می‌سازد</p>",
+          "text": "<p>چون این <code dir=\"ltr\">API</code> سازگاری بین مرورگرها ایجاد می‌کند و مدیریت رویدادها را یکنواخت می‌سازد</p>",
           "isCorrect": true
         },
         {
-          "text": "<p>چون مرورگرها از <code dir=\"lt\">onClick</code> پشتیبانی نمی‌کنند</p>",
+          "text": "<p>چون مرورگرها از <code dir=\"ltr\">onClick</code> پشتیبانی نمی‌کنند</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>چون <code dir=\"lt\">useState</code> به <code dir=\"lt\">SyntheticEvent</code> نیاز دارد</p>",
+          "text": "<p>چون <code dir=\"ltr\">useState</code> به <code dir=\"ltr\">SyntheticEvent</code> نیاز دارد</p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>در کامپوننت <code dir=\"lt\">NameInput</code>، چرا از <code dir=\"lt\">event</code>.<code dir=\"lt\">target</code>.<code dir=\"lt\">value</code> برای به‌روزرسانی <code dir=\"lt\">state</code> استفاده می‌کنیم؟</p>",
+      "text": "<p>در کامپوننت <code dir=\"ltr\">NameInput</code>، چرا از <code dir=\"ltr\">event</code>.<code dir=\"ltr\">target</code>.<code dir=\"ltr\">value</code> برای به‌روزرسانی <code dir=\"ltr\">state</code> استفاده می‌کنیم؟</p>",
       "difficulty": 1,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">C</code> صحیح است؟ شیء <code dir=\"lt\">event</code> که به <code dir=\"lt\">event</code> <code dir=\"lt\">handler</code> پاس داده می‌شود، اطلاعات درباره عنصر رخ‌داده را دارد و <code dir=\"lt\">event</code>.<code dir=\"lt\">target</code>.<code dir=\"lt\">value</code> مقدار فعلی <code dir=\"lt\">input</code> را ارائه می‌دهد.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">C</code> صحیح است؟ شیء <code dir=\"ltr\">event</code> که به <code dir=\"ltr\">event</code> <code dir=\"ltr\">handler</code> پاس داده می‌شود، اطلاعات درباره عنصر رخ‌داده را دارد و <code dir=\"ltr\">event</code>.<code dir=\"ltr\">target</code>.<code dir=\"ltr\">value</code> مقدار فعلی <code dir=\"ltr\">input</code> را ارائه می‌دهد.</p>",
       "tags": [
         "react.events"
       ],
       "answers": [
         {
-          "text": "<p>چون مقدار <code dir=\"lt\">input</code> در <code dir=\"lt\">props</code> ذخیره شده است</p>",
+          "text": "<p>چون مقدار <code dir=\"ltr\">input</code> در <code dir=\"ltr\">props</code> ذخیره شده است</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>چون <code dir=\"lt\">event</code>.<code dir=\"lt\">preventDefault</code>() مقدار <code dir=\"lt\">input</code> را ارائه می‌دهد</p>",
+          "text": "<p>چون <code dir=\"ltr\">event</code>.<code dir=\"ltr\">preventDefault</code>() مقدار <code dir=\"ltr\">input</code> را ارائه می‌دهد</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>چون <code dir=\"lt\">event</code>.<code dir=\"lt\">target</code>.<code dir=\"lt\">value</code> مقدار فعلی <code dir=\"lt\">input</code> را در اختیار ما قرار می‌دهد</p>",
+          "text": "<p>چون <code dir=\"ltr\">event</code>.<code dir=\"ltr\">target</code>.<code dir=\"ltr\">value</code> مقدار فعلی <code dir=\"ltr\">input</code> را در اختیار ما قرار می‌دهد</p>",
           "isCorrect": true
         },
         {
-          "text": "<p>چون <code dir=\"lt\">useRef</code> مقدار <code dir=\"lt\">input</code> را فراهم می‌کند</p>",
+          "text": "<p>چون <code dir=\"ltr\">useRef</code> مقدار <code dir=\"ltr\">input</code> را فراهم می‌کند</p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>در فرم <code dir=\"lt\">SearchForm</code>، اگر از <code dir=\"lt\">event</code>.<code dir=\"lt\">preventDefault</code>() استفاده نکنیم، چه اتفاقی می‌افتد؟</p>",
+      "text": "<p>در فرم <code dir=\"ltr\">SearchForm</code>، اگر از <code dir=\"ltr\">event</code>.<code dir=\"ltr\">preventDefault</code>() استفاده نکنیم، چه اتفاقی می‌افتد؟</p>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ بدون جلوگیری از رفتار پیش‌فرض، مرورگر فرم را ارسال کرده و صفحه رفرش می‌شود که تجربه <code dir=\"lt\">SPA</code> را مختل می‌کند.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">B</code> صحیح است؟ بدون جلوگیری از رفتار پیش‌فرض، مرورگر فرم را ارسال کرده و صفحه رفرش می‌شود که تجربه <code dir=\"ltr\">SPA</code> را مختل می‌کند.</p>",
       "tags": [
         "react.events"
       ],
@@ -69,63 +69,63 @@
           "isCorrect": true
         },
         {
-          "text": "<p><code dir=\"lt\">React</code> به صورت خودکار رفتار پیش‌فرض را جلوگیری می‌کند</p>",
+          "text": "<p><code dir=\"ltr\">React</code> به صورت خودکار رفتار پیش‌فرض را جلوگیری می‌کند</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>فقط <code dir=\"lt\">console</code>.<code dir=\"lt\">log</code> اجرا می‌شود</p>",
+          "text": "<p>فقط <code dir=\"ltr\">console</code>.<code dir=\"ltr\">log</code> اجرا می‌شود</p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>کدام یک از گزینه‌ها روش صحیح اتصال یک تابع به <code dir=\"lt\">onClick</code> در <code dir=\"lt\">JSX</code> است؟</p>",
+      "text": "<p>کدام یک از گزینه‌ها روش صحیح اتصال یک تابع به <code dir=\"ltr\">onClick</code> در <code dir=\"ltr\">JSX</code> است؟</p>",
       "difficulty": 1,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">C</code> صحیح است؟ در <code dir=\"lt\">React</code>، باید خود تابع را بدون پرانتز به <code dir=\"lt\">prop</code> رویداد پاس دهیم تا هنگام وقوع رویداد اجرا شود و نه در زمان رندر.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">C</code> صحیح است؟ در <code dir=\"ltr\">React</code>، باید خود تابع را بدون پرانتز به <code dir=\"ltr\">prop</code> رویداد پاس دهیم تا هنگام وقوع رویداد اجرا شود و نه در زمان رندر.</p>",
       "tags": [
         "react.events"
       ],
       "answers": [
         {
-          "text": "<p><button onClick={handleClick()}><code dir=\"lt\">Click</code></button></p>",
+          "text": "<p><button onClick={handleClick()}><code dir=\"ltr\">Click</code></button></p>",
           "isCorrect": false
         },
         {
-          "text": "<p><button onclick={handleClick}><code dir=\"lt\">Click</code></button></p>",
+          "text": "<p><button onclick={handleClick}><code dir=\"ltr\">Click</code></button></p>",
           "isCorrect": false
         },
         {
-          "text": "<p><button onClick={handleClick}><code dir=\"lt\">Click</code></button></p>",
+          "text": "<p><button onClick={handleClick}><code dir=\"ltr\">Click</code></button></p>",
           "isCorrect": true
         },
         {
-          "text": "<p><button onClick='handleClick()'><code dir=\"lt\">Click</code></button></p>",
+          "text": "<p><button onClick='handleClick()'><code dir=\"ltr\">Click</code></button></p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>چرا تعریف منطق پیچیده <code dir=\"lt\">Event</code> <code dir=\"lt\">Handler</code> به صورت تابع جداگانه بهتر است؟</p>",
+      "text": "<p>چرا تعریف منطق پیچیده <code dir=\"ltr\">Event</code> <code dir=\"ltr\">Handler</code> به صورت تابع جداگانه بهتر است؟</p>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ جدا کردن تابع برای منطق پیچیده باعث می‌شود <code dir=\"lt\">JSX</code> تمیزتر باشد و نگهداری و دیباگ کردن کد آسان‌تر شود.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">B</code> صحیح است؟ جدا کردن تابع برای منطق پیچیده باعث می‌شود <code dir=\"ltr\">JSX</code> تمیزتر باشد و نگهداری و دیباگ کردن کد آسان‌تر شود.</p>",
       "tags": [
         "react.events"
       ],
       "answers": [
         {
-          "text": "<p>چون <code dir=\"lt\">React</code> تنها توابع جداگانه را می‌پذیرد</p>",
+          "text": "<p>چون <code dir=\"ltr\">React</code> تنها توابع جداگانه را می‌پذیرد</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>چون <code dir=\"lt\">JSX</code> تمیزتر و خواناتر می‌شود و منطق پیچیده از <code dir=\"lt\">JSX</code> جدا می‌شود</p>",
+          "text": "<p>چون <code dir=\"ltr\">JSX</code> تمیزتر و خواناتر می‌شود و منطق پیچیده از <code dir=\"ltr\">JSX</code> جدا می‌شود</p>",
           "isCorrect": true
         },
         {
-          "text": "<p>چون تابع <code dir=\"lt\">inline</code> همیشه حافظه مصرف می‌کند</p>",
+          "text": "<p>چون تابع <code dir=\"ltr\">inline</code> همیشه حافظه مصرف می‌کند</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>چون بدون تابع جداگانه، <code dir=\"lt\">event</code> اجرا نمی‌شود</p>",
+          "text": "<p>چون بدون تابع جداگانه، <code dir=\"ltr\">event</code> اجرا نمی‌شود</p>",
           "isCorrect": false
         }
       ]

@@ -1,27 +1,27 @@
 {
   "questions": [
     {
-      "text": "<p>چرا در یک کامپوننت <code dir=\"lt\">React</code> می‌توانیم چندین <code dir=\"lt\">useState</code> داشته باشیم؟</p>",
+      "text": "<p>چرا در یک کامپوننت <code dir=\"ltr\">React</code> می‌توانیم چندین <code dir=\"ltr\">useState</code> داشته باشیم؟</p>",
       "difficulty": 1,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">C</code> صحیح است؟ با استفاده از چند <code dir=\"lt\">useState</code> می‌توان <code dir=\"lt\">state</code>های غیرمرتبط را به صورت مستقل مدیریت کرد و خوانایی و نگهداری کد بهتر می‌شود.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">C</code> صحیح است؟ با استفاده از چند <code dir=\"ltr\">useState</code> می‌توان <code dir=\"ltr\">state</code>های غیرمرتبط را به صورت مستقل مدیریت کرد و خوانایی و نگهداری کد بهتر می‌شود.</p>",
       "tags": [
         "react.state.multiple"
       ],
       "answers": [
         {
-          "text": "<p>زیرا <code dir=\"lt\">React</code> اجازه ندارد فقط یک <code dir=\"lt\">state</code> داشته باشد</p>",
+          "text": "<p>زیرا <code dir=\"ltr\">React</code> اجازه ندارد فقط یک <code dir=\"ltr\">state</code> داشته باشد</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>زیرا <code dir=\"lt\">useState</code> محدود به یک متغیر است</p>",
+          "text": "<p>زیرا <code dir=\"ltr\">useState</code> محدود به یک متغیر است</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>برای مدیریت <code dir=\"lt\">state</code>های غیرمرتبط به صورت مستقل و ساده‌تر</p>",
+          "text": "<p>برای مدیریت <code dir=\"ltr\">state</code>های غیرمرتبط به صورت مستقل و ساده‌تر</p>",
           "isCorrect": true
         },
         {
-          "text": "<p>زیرا چند <code dir=\"lt\">useState</code> سرعت اجرای کامپوننت را افزایش می‌دهد</p>",
+          "text": "<p>زیرا چند <code dir=\"ltr\">useState</code> سرعت اجرای کامپوننت را افزایش می‌دهد</p>",
           "isCorrect": false
         }
       ]
@@ -57,45 +57,45 @@
       ]
     },
     {
-      "text": "<p>چرا فراخوانی <code dir=\"lt\">useState</code> در شرط‌ها یا حلقه‌ها ممنوع است؟</p>",
+      "text": "<p>چرا فراخوانی <code dir=\"ltr\">useState</code> در شرط‌ها یا حلقه‌ها ممنوع است؟</p>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">A</code> صحیح است؟ اگر <code dir=\"lt\">useState</code> در شرط یا حلقه فراخوانی شود، ترتیب فراخوانی‌ها در هر رندر تغییر می‌کند و <code dir=\"lt\">React</code> نمی‌تواند <code dir=\"lt\">state</code>های صحیح را به هر فراخوانی اختصاص دهد.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">A</code> صحیح است؟ اگر <code dir=\"ltr\">useState</code> در شرط یا حلقه فراخوانی شود، ترتیب فراخوانی‌ها در هر رندر تغییر می‌کند و <code dir=\"ltr\">React</code> نمی‌تواند <code dir=\"ltr\">state</code>های صحیح را به هر فراخوانی اختصاص دهد.</p>",
       "tags": [
         "react.state.multiple"
       ],
       "answers": [
         {
-          "text": "<p>زیرا تغییر ترتیب فراخوانی باعث باگ در ردیابی <code dir=\"lt\">state</code>ها می‌شود</p>",
+          "text": "<p>زیرا تغییر ترتیب فراخوانی باعث باگ در ردیابی <code dir=\"ltr\">state</code>ها می‌شود</p>",
           "isCorrect": true
         },
         {
-          "text": "<p>زیرا <code dir=\"lt\">React</code> فقط یک <code dir=\"lt\">useState</code> را پشتیبانی می‌کند</p>",
+          "text": "<p>زیرا <code dir=\"ltr\">React</code> فقط یک <code dir=\"ltr\">useState</code> را پشتیبانی می‌کند</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>زیرا تابع <code dir=\"lt\">setter</code> در حلقه‌ها کار نمی‌کند</p>",
+          "text": "<p>زیرا تابع <code dir=\"ltr\">setter</code> در حلقه‌ها کار نمی‌کند</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>زیرا شرط‌ها و حلقه‌ها در <code dir=\"lt\">JSX</code> مجاز نیستند</p>",
+          "text": "<p>زیرا شرط‌ها و حلقه‌ها در <code dir=\"ltr\">JSX</code> مجاز نیستند</p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>در <code dir=\"lt\">React</code>، ترتیب فراخوانی <code dir=\"lt\">useState</code> چه نقشی دارد؟</p>",
+      "text": "<p>در <code dir=\"ltr\">React</code>، ترتیب فراخوانی <code dir=\"ltr\">useState</code> چه نقشی دارد؟</p>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ <code dir=\"lt\">React</code> یک آرایه از زوج‌های <code dir=\"lt\">state</code> را برای هر کامپوننت نگهداری می‌کند و به ترتیب فراخوانی <code dir=\"lt\">useState</code>ها، <code dir=\"lt\">state</code> مربوطه را بازیابی می‌کند.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">B</code> صحیح است؟ <code dir=\"ltr\">React</code> یک آرایه از زوج‌های <code dir=\"ltr\">state</code> را برای هر کامپوننت نگهداری می‌کند و به ترتیب فراخوانی <code dir=\"ltr\">useState</code>ها، <code dir=\"ltr\">state</code> مربوطه را بازیابی می‌کند.</p>",
       "tags": [
         "react.state.multiple"
       ],
       "answers": [
         {
-          "text": "<p>نقش خاصی ندارد و <code dir=\"lt\">state</code>ها به نامشان اختصاص می‌یابند</p>",
+          "text": "<p>نقش خاصی ندارد و <code dir=\"ltr\">state</code>ها به نامشان اختصاص می‌یابند</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>ترتیب فراخوانی تعیین می‌کند که هر <code dir=\"lt\">state</code> به کدام فراخوانی <code dir=\"lt\">useState</code> تعلق دارد</p>",
+          "text": "<p>ترتیب فراخوانی تعیین می‌کند که هر <code dir=\"ltr\">state</code> به کدام فراخوانی <code dir=\"ltr\">useState</code> تعلق دارد</p>",
           "isCorrect": true
         },
         {
@@ -103,59 +103,59 @@
           "isCorrect": false
         },
         {
-          "text": "<p><code dir=\"lt\">React</code> خودکار ترتیب را تشخیص می‌دهد و اهمیتی ندارد</p>",
+          "text": "<p><code dir=\"ltr\">React</code> خودکار ترتیب را تشخیص می‌دهد و اهمیتی ندارد</p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>چرا بهتر است <code dir=\"lt\">state</code>های غیرمرتبط را در <code dir=\"lt\">state</code>های جداگانه نگه داریم؟</p>",
+      "text": "<p>چرا بهتر است <code dir=\"ltr\">state</code>های غیرمرتبط را در <code dir=\"ltr\">state</code>های جداگانه نگه داریم؟</p>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">C</code> صحیح است؟ نگه داشتن <code dir=\"lt\">state</code>های غیرمرتبط در متغیرهای جداگانه، منطق به‌روزرسانی هر <code dir=\"lt\">state</code> را مستقل می‌کند و از پیچیدگی و اشیاء بزرگ <code dir=\"lt\">state</code> جلوگیری می‌کند.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">C</code> صحیح است؟ نگه داشتن <code dir=\"ltr\">state</code>های غیرمرتبط در متغیرهای جداگانه، منطق به‌روزرسانی هر <code dir=\"ltr\">state</code> را مستقل می‌کند و از پیچیدگی و اشیاء بزرگ <code dir=\"ltr\">state</code> جلوگیری می‌کند.</p>",
       "tags": [
         "react.state.multiple"
       ],
       "answers": [
         {
-          "text": "<p>برای اینکه همه <code dir=\"lt\">state</code>ها همزمان تغییر کنند</p>",
+          "text": "<p>برای اینکه همه <code dir=\"ltr\">state</code>ها همزمان تغییر کنند</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>برای اینکه <code dir=\"lt\">useState</code> سرعت بیشتری داشته باشد</p>",
+          "text": "<p>برای اینکه <code dir=\"ltr\">useState</code> سرعت بیشتری داشته باشد</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>برای مدیریت مستقل و ساده‌تر <code dir=\"lt\">state</code>های غیرمرتبط</p>",
+          "text": "<p>برای مدیریت مستقل و ساده‌تر <code dir=\"ltr\">state</code>های غیرمرتبط</p>",
           "isCorrect": true
         },
         {
-          "text": "<p>زیرا <code dir=\"lt\">React</code> اجازه نگهداری چند <code dir=\"lt\">state</code> در یک شیء را نمی‌دهد</p>",
+          "text": "<p>زیرا <code dir=\"ltr\">React</code> اجازه نگهداری چند <code dir=\"ltr\">state</code> در یک شیء را نمی‌دهد</p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>در یک کامپوننت فرم ساده با دو <code dir=\"lt\">state</code> مستقل، <code dir=\"lt\">name</code> و <code dir=\"lt\">age</code>، چه چیزی باعث می‌شود تغییر <code dir=\"lt\">name</code> باعث رندر مجدد <code dir=\"lt\">age</code> نشود؟</p>",
+      "text": "<p>در یک کامپوننت فرم ساده با دو <code dir=\"ltr\">state</code> مستقل، <code dir=\"ltr\">name</code> و <code dir=\"ltr\">age</code>، چه چیزی باعث می‌شود تغییر <code dir=\"ltr\">name</code> باعث رندر مجدد <code dir=\"ltr\">age</code> نشود؟</p>",
       "difficulty": 3,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">A</code> صحیح است؟ هر <code dir=\"lt\">state</code> که با <code dir=\"lt\">useState</code> تعریف می‌شود، مستقل از سایر <code dir=\"lt\">state</code>ها است. <code dir=\"lt\">React</code> فقط بخش‌هایی از کامپوننت را که وابسته به <code dir=\"lt\">state</code> تغییر یافته هستند رندر می‌کند. بنابراین تغییر <code dir=\"lt\">name</code> فقط بخش مربوط به <code dir=\"lt\">name</code> را به‌روز می‌کند و <code dir=\"lt\">age</code> بدون تغییر باقی می‌ماند.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">A</code> صحیح است؟ هر <code dir=\"ltr\">state</code> که با <code dir=\"ltr\">useState</code> تعریف می‌شود، مستقل از سایر <code dir=\"ltr\">state</code>ها است. <code dir=\"ltr\">React</code> فقط بخش‌هایی از کامپوننت را که وابسته به <code dir=\"ltr\">state</code> تغییر یافته هستند رندر می‌کند. بنابراین تغییر <code dir=\"ltr\">name</code> فقط بخش مربوط به <code dir=\"ltr\">name</code> را به‌روز می‌کند و <code dir=\"ltr\">age</code> بدون تغییر باقی می‌ماند.</p>",
       "tags": [
         "react.state.multiple"
       ],
       "answers": [
         {
-          "text": "<p>هر <code dir=\"lt\">state</code> به صورت مستقل مدیریت می‌شود و رندر فقط برای <code dir=\"lt\">state</code> تغییر یافته اعمال می‌شود</p>",
+          "text": "<p>هر <code dir=\"ltr\">state</code> به صورت مستقل مدیریت می‌شود و رندر فقط برای <code dir=\"ltr\">state</code> تغییر یافته اعمال می‌شود</p>",
           "isCorrect": true
         },
         {
-          "text": "<p><code dir=\"lt\">setAge</code> به صورت خودکار با <code dir=\"lt\">setName</code> هماهنگ می‌شود</p>",
+          "text": "<p><code dir=\"ltr\">setAge</code> به صورت خودکار با <code dir=\"ltr\">setName</code> هماهنگ می‌شود</p>",
           "isCorrect": false
         },
         {
-          "text": "<p><code dir=\"lt\">React</code> رندر مجدد همه <code dir=\"lt\">state</code>ها را اعمال می‌کند اما <code dir=\"lt\">effect</code> نمی‌شود</p>",
+          "text": "<p><code dir=\"ltr\">React</code> رندر مجدد همه <code dir=\"ltr\">state</code>ها را اعمال می‌کند اما <code dir=\"ltr\">effect</code> نمی‌شود</p>",
           "isCorrect": false
         },
         {
-          "text": "<p><code dir=\"lt\">useState</code> تنها یک <code dir=\"lt\">state</code> را در هر رندر به‌روزرسانی می‌کند</p>",
+          "text": "<p><code dir=\"ltr\">useState</code> تنها یک <code dir=\"ltr\">state</code> را در هر رندر به‌روزرسانی می‌کند</p>",
           "isCorrect": false
         }
       ]

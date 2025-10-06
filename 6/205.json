@@ -1,15 +1,15 @@
 {
   "questions": [
     {
-      "text": "<p>در <code dir=\"lt\">React</code>، وقتی <code dir=\"lt\">useEffect</code> با آرایه وابستگی خالی [] فراخوانی شود، چه رفتاری دارد؟</p>",
+      "text": "<p>در <code dir=\"ltr\">React</code>، وقتی <code dir=\"ltr\">useEffect</code> با آرایه وابستگی خالی [] فراخوانی شود، چه رفتاری دارد؟</p>",
       "difficulty": 1,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">A</code> صحیح است؟ آرایه وابستگی خالی باعث می‌شود افکت فقط یک بار پس از اولین رندر (<code dir=\"lt\">mount</code>) اجرا شود و در رندرهای بعدی کامپوننت اجرا نشود.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">A</code> صحیح است؟ آرایه وابستگی خالی باعث می‌شود افکت فقط یک بار پس از اولین رندر (<code dir=\"ltr\">mount</code>) اجرا شود و در رندرهای بعدی کامپوننت اجرا نشود.</p>",
       "tags": [
         "react.hooks.useEffect.mount-unmount"
       ],
       "answers": [
         {
-          "text": "<p>افکت فقط یک بار پس از <code dir=\"lt\">mount</code> اجرا می‌شود</p>",
+          "text": "<p>افکت فقط یک بار پس از <code dir=\"ltr\">mount</code> اجرا می‌شود</p>",
           "isCorrect": true
         },
         {
@@ -21,15 +21,15 @@
           "isCorrect": false
         },
         {
-          "text": "<p>افکت فقط هنگام <code dir=\"lt\">unmount</code> اجرا می‌شود</p>",
+          "text": "<p>افکت فقط هنگام <code dir=\"ltr\">unmount</code> اجرا می‌شود</p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>در مثال <code dir=\"lt\">Timer</code>، چرا مقدار <code dir=\"lt\">setInterval</code> داخل <code dir=\"lt\">useEffect</code> قرار گرفته است؟<code dir=\"lt\">\nuseEffect(() => {\n  const timerId = setInterval(() => setTime(t => t + 1), 1000);\n  return () => clearInterval(timerId);\n}, []);\n</code></p>",
+      "text": "<p>در مثال <code dir=\"ltr\">Timer</code>، چرا مقدار <code dir=\"ltr\">setInterval</code> داخل <code dir=\"ltr\">useEffect</code> قرار گرفته است؟<code dir=\"ltr\">\nuseEffect(() => {\n  const timerId = setInterval(() => setTime(t => t + 1), 1000);\n  return () => clearInterval(timerId);\n}, []);\n</code></p>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ چون ایجاد تایمر یک افکت جانبی است که باید پس از رندر اجرا شود و نه در زمان تعریف کامپوننت، بنابراین داخل <code dir=\"lt\">useEffect</code> قرار داده شده است.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">B</code> صحیح است؟ چون ایجاد تایمر یک افکت جانبی است که باید پس از رندر اجرا شود و نه در زمان تعریف کامپوننت، بنابراین داخل <code dir=\"ltr\">useEffect</code> قرار داده شده است.</p>",
       "tags": [
         "react.hooks.useEffect.mount-unmount"
       ],
@@ -43,45 +43,45 @@
           "isCorrect": true
         },
         {
-          "text": "<p>چون استفاده از <code dir=\"lt\">setInterval</code> در خارج از <code dir=\"lt\">useEffect</code> باعث خطا نمی‌شود</p>",
+          "text": "<p>چون استفاده از <code dir=\"ltr\">setInterval</code> در خارج از <code dir=\"ltr\">useEffect</code> باعث خطا نمی‌شود</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>چون <code dir=\"lt\">useState</code> بدون <code dir=\"lt\">useEffect</code> کار نمی‌کند</p>",
+          "text": "<p>چون <code dir=\"ltr\">useState</code> بدون <code dir=\"ltr\">useEffect</code> کار نمی‌کند</p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>در تابع بازگشتی <code dir=\"lt\">useEffect</code>، بازگرداندن یک تابع چه کاربردی دارد؟</p>",
+      "text": "<p>در تابع بازگشتی <code dir=\"ltr\">useEffect</code>، بازگرداندن یک تابع چه کاربردی دارد؟</p>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">C</code> صحیح است؟ تابع بازگشتی به عنوان <code dir=\"lt\">cleanup</code> عمل می‌کند و قبل از <code dir=\"lt\">unmount</code> یا قبل از اجرای مجدد افکت برای پاک‌سازی منابع مانند تایمر یا <code dir=\"lt\">subscription</code> اجرا می‌شود.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">C</code> صحیح است؟ تابع بازگشتی به عنوان <code dir=\"ltr\">cleanup</code> عمل می‌کند و قبل از <code dir=\"ltr\">unmount</code> یا قبل از اجرای مجدد افکت برای پاک‌سازی منابع مانند تایمر یا <code dir=\"ltr\">subscription</code> اجرا می‌شود.</p>",
       "tags": [
         "react.hooks.useEffect.mount-unmount"
       ],
       "answers": [
         {
-          "text": "<p>برای اجرای افکت یک بار دیگر بعد از <code dir=\"lt\">mount</code></p>",
+          "text": "<p>برای اجرای افکت یک بار دیگر بعد از <code dir=\"ltr\">mount</code></p>",
           "isCorrect": false
         },
         {
-          "text": "<p>برای فراخوانی <code dir=\"lt\">state</code> جدید</p>",
+          "text": "<p>برای فراخوانی <code dir=\"ltr\">state</code> جدید</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>برای پاک‌سازی منابع هنگام <code dir=\"lt\">unmount</code> یا قبل از اجرای مجدد افکت</p>",
+          "text": "<p>برای پاک‌سازی منابع هنگام <code dir=\"ltr\">unmount</code> یا قبل از اجرای مجدد افکت</p>",
           "isCorrect": true
         },
         {
-          "text": "<p>برای جلوگیری از اجرای <code dir=\"lt\">useState</code></p>",
+          "text": "<p>برای جلوگیری از اجرای <code dir=\"ltr\">useState</code></p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>اگر آرایه وابستگی‌ها را به <code dir=\"lt\">useEffect</code> پاس ندهیم، چه اتفاقی می‌افتد؟</p>",
+      "text": "<p>اگر آرایه وابستگی‌ها را به <code dir=\"ltr\">useEffect</code> پاس ندهیم، چه اتفاقی می‌افتد؟</p>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ در صورت عدم ارائه آرایه وابستگی‌ها، افکت پس از هر رندر کامپوننت اجرا می‌شود، که ممکن است باعث اجرای مکرر و غیرضروری شود.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">B</code> صحیح است؟ در صورت عدم ارائه آرایه وابستگی‌ها، افکت پس از هر رندر کامپوننت اجرا می‌شود، که ممکن است باعث اجرای مکرر و غیرضروری شود.</p>",
       "tags": [
         "react.hooks.useEffect.mount-unmount"
       ],
@@ -99,15 +99,15 @@
           "isCorrect": false
         },
         {
-          "text": "<p><code dir=\"lt\">React</code> خطا می‌دهد</p>",
+          "text": "<p><code dir=\"ltr\">React</code> خطا می‌دهد</p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>در مثال <code dir=\"lt\">PostList</code>، چرا پیام '<code dir=\"lt\">Component</code> <code dir=\"lt\">mounted</code>, <code dir=\"lt\">fetching</code> <code dir=\"lt\">data</code>...' تنها یک بار چاپ می‌شود؟<code dir=\"lt\">\nuseEffect(() => {\n  console.log('Component mounted, fetching data...');\n}, []);\n</code></p>",
+      "text": "<p>در مثال <code dir=\"ltr\">PostList</code>، چرا پیام '<code dir=\"ltr\">Component</code> <code dir=\"ltr\">mounted</code>, <code dir=\"ltr\">fetching</code> <code dir=\"ltr\">data</code>...' تنها یک بار چاپ می‌شود؟<code dir=\"ltr\">\nuseEffect(() => {\n  console.log('Component mounted, fetching data...');\n}, []);\n</code></p>",
       "difficulty": 1,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">A</code> صحیح است؟ آرایه وابستگی خالی باعث می‌شود این افکت فقط پس از اولین <code dir=\"lt\">mount</code> اجرا شود و نه در رندرهای بعدی.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">A</code> صحیح است؟ آرایه وابستگی خالی باعث می‌شود این افکت فقط پس از اولین <code dir=\"ltr\">mount</code> اجرا شود و نه در رندرهای بعدی.</p>",
       "tags": [
         "react.hooks.useEffect.mount-unmount"
       ],
@@ -117,23 +117,23 @@
           "isCorrect": true
         },
         {
-          "text": "<p>چون <code dir=\"lt\">useState</code> در کامپوننت استفاده نشده است</p>",
+          "text": "<p>چون <code dir=\"ltr\">useState</code> در کامپوننت استفاده نشده است</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>چون <code dir=\"lt\">fetch</code> داده‌ها همزمان اجرا نمی‌شود</p>",
+          "text": "<p>چون <code dir=\"ltr\">fetch</code> داده‌ها همزمان اجرا نمی‌شود</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>چون <code dir=\"lt\">console</code>.<code dir=\"lt\">log</code> همیشه یک بار اجرا می‌شود</p>",
+          "text": "<p>چون <code dir=\"ltr\">console</code>.<code dir=\"ltr\">log</code> همیشه یک بار اجرا می‌شود</p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>چرا در کامپوننت <code dir=\"lt\">Timer</code>، وقتی کامپوننت از <code dir=\"lt\">DOM</code> حذف می‌شود، <code dir=\"lt\">clearInterval</code> فراخوانی می‌شود؟<code dir=\"lt\">\nreturn () => { clearInterval(timerId); };\n</code></p>",
+      "text": "<p>چرا در کامپوننت <code dir=\"ltr\">Timer</code>، وقتی کامپوننت از <code dir=\"ltr\">DOM</code> حذف می‌شود، <code dir=\"ltr\">clearInterval</code> فراخوانی می‌شود؟<code dir=\"ltr\">\nreturn () => { clearInterval(timerId); };\n</code></p>",
       "difficulty": 3,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">C</code> صحیح است؟ این کار از ادامه اجرای تایمر در پس‌زمینه جلوگیری می‌کند و نشت حافظه (<code dir=\"lt\">memory</code> <code dir=\"lt\">leak</code>) را حذف می‌کند. اجرای <code dir=\"lt\">cleanup</code> تضمین می‌کند منابع غیرضروری آزاد شوند.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">C</code> صحیح است؟ این کار از ادامه اجرای تایمر در پس‌زمینه جلوگیری می‌کند و نشت حافظه (<code dir=\"ltr\">memory</code> <code dir=\"ltr\">leak</code>) را حذف می‌کند. اجرای <code dir=\"ltr\">cleanup</code> تضمین می‌کند منابع غیرضروری آزاد شوند.</p>",
       "tags": [
         "react.hooks.useEffect.mount-unmount"
       ],
@@ -143,15 +143,15 @@
           "isCorrect": false
         },
         {
-          "text": "<p>چون <code dir=\"lt\">useState</code> مقدار تایمر را بازنشانی می‌کند</p>",
+          "text": "<p>چون <code dir=\"ltr\">useState</code> مقدار تایمر را بازنشانی می‌کند</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>برای جلوگیری از نشت حافظه و آزاد کردن منابع هنگام <code dir=\"lt\">unmount</code></p>",
+          "text": "<p>برای جلوگیری از نشت حافظه و آزاد کردن منابع هنگام <code dir=\"ltr\">unmount</code></p>",
           "isCorrect": true
         },
         {
-          "text": "<p>چون <code dir=\"lt\">React</code> فقط در <code dir=\"lt\">mount</code> افکت‌ها را اجرا می‌کند</p>",
+          "text": "<p>چون <code dir=\"ltr\">React</code> فقط در <code dir=\"ltr\">mount</code> افکت‌ها را اجرا می‌کند</p>",
           "isCorrect": false
         }
       ]

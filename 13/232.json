@@ -1,15 +1,15 @@
 {
   "questions": [
     {
-      "text": "<p>چرا از <code>localStorage</code> در اپلیکیشن <code dir=\"lt\">TodoApp</code> استفاده می‌کنیم؟</p>",
+      "text": "<p>چرا از <code>localStorage</code> در اپلیکیشن <code dir=\"ltr\">TodoApp</code> استفاده می‌کنیم؟</p>",
       "difficulty": 1,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">C</code> صحیح است؟ <code dir=\"lt\">localStorage</code> امکان ذخیره دائمی داده‌ها در مرورگر را فراهم می‌کند، بنابراین پس از رفرش یا بستن مرورگر، وظایف کاربر حفظ می‌شوند.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">C</code> صحیح است؟ <code dir=\"ltr\">localStorage</code> امکان ذخیره دائمی داده‌ها در مرورگر را فراهم می‌کند، بنابراین پس از رفرش یا بستن مرورگر، وظایف کاربر حفظ می‌شوند.</p>",
       "tags": [
         "react.project.todo.localstorage"
       ],
       "answers": [
         {
-          "text": "<p>برای افزایش سرعت رندر <code dir=\"lt\">UI</code></p>",
+          "text": "<p>برای افزایش سرعت رندر <code dir=\"ltr\">UI</code></p>",
           "isCorrect": false
         },
         {
@@ -21,15 +21,15 @@
           "isCorrect": true
         },
         {
-          "text": "<p>برای جلوگیری از استفاده از <code dir=\"lt\">useState</code></p>",
+          "text": "<p>برای جلوگیری از استفاده از <code dir=\"ltr\">useState</code></p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>برای ذخیره آرایه <code dir=\"lt\">todos</code> در <code dir=\"lt\">localStorage</code> چرا از <code>JSON.stringify()</code> استفاده می‌کنیم؟</p>",
+      "text": "<p>برای ذخیره آرایه <code dir=\"ltr\">todos</code> در <code dir=\"ltr\">localStorage</code> چرا از <code>JSON.stringify()</code> استفاده می‌کنیم؟</p>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ <code dir=\"lt\">localStorage</code> تنها توانایی ذخیره رشته‌ها را دارد، بنابراین آرایه <code dir=\"lt\">todos</code> را ابتدا به رشته <code dir=\"lt\">JSON</code> تبدیل می‌کنیم.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">B</code> صحیح است؟ <code dir=\"ltr\">localStorage</code> تنها توانایی ذخیره رشته‌ها را دارد، بنابراین آرایه <code dir=\"ltr\">todos</code> را ابتدا به رشته <code dir=\"ltr\">JSON</code> تبدیل می‌کنیم.</p>",
       "tags": [
         "react.project.todo.localstorage"
       ],
@@ -39,7 +39,7 @@
           "isCorrect": false
         },
         {
-          "text": "<p>برای تبدیل آرایه به رشته <code dir=\"lt\">JSON</code> قابل ذخیره در <code dir=\"lt\">localStorage</code></p>",
+          "text": "<p>برای تبدیل آرایه به رشته <code dir=\"ltr\">JSON</code> قابل ذخیره در <code dir=\"ltr\">localStorage</code></p>",
           "isCorrect": true
         },
         {
@@ -53,35 +53,35 @@
       ]
     },
     {
-      "text": "<p>چرا مقدار اولیه <code dir=\"lt\">state</code> <code dir=\"lt\">todos</code> با یک تابع به <code dir=\"lt\">useState</code> پاس داده می‌شود؟</p>",
+      "text": "<p>چرا مقدار اولیه <code dir=\"ltr\">state</code> <code dir=\"ltr\">todos</code> با یک تابع به <code dir=\"ltr\">useState</code> پاس داده می‌شود؟</p>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">A</code> صحیح است؟ پاس دادن یک تابع به <code dir=\"lt\">useState</code> باعث می‌شود که <code dir=\"lt\">localStorage</code> فقط در رندر اولیه خوانده شود و عملیات تنبلی (<code dir=\"lt\">lazy</code> <code dir=\"lt\">initialization</code>) انجام گیرد.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">A</code> صحیح است؟ پاس دادن یک تابع به <code dir=\"ltr\">useState</code> باعث می‌شود که <code dir=\"ltr\">localStorage</code> فقط در رندر اولیه خوانده شود و عملیات تنبلی (<code dir=\"ltr\">lazy</code> <code dir=\"ltr\">initialization</code>) انجام گیرد.</p>",
       "tags": [
         "react.project.todo.localstorage"
       ],
       "answers": [
         {
-          "text": "<p>برای اجرای فقط یک بار خواندن از <code dir=\"lt\">localStorage</code> هنگام بارگذاری اولیه</p>",
+          "text": "<p>برای اجرای فقط یک بار خواندن از <code dir=\"ltr\">localStorage</code> هنگام بارگذاری اولیه</p>",
           "isCorrect": true
         },
         {
-          "text": "<p>برای اینکه هر رندر کامپوننت <code dir=\"lt\">localStorage</code> خوانده شود</p>",
+          "text": "<p>برای اینکه هر رندر کامپوننت <code dir=\"ltr\">localStorage</code> خوانده شود</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>برای اینکه آرایه <code dir=\"lt\">todos</code> به صورت رشته ذخیره شود</p>",
+          "text": "<p>برای اینکه آرایه <code dir=\"ltr\">todos</code> به صورت رشته ذخیره شود</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>برای جلوگیری از رندر <code dir=\"lt\">JSX</code></p>",
+          "text": "<p>برای جلوگیری از رندر <code dir=\"ltr\">JSX</code></p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>چه زمانی <code dir=\"lt\">useEffect</code> مربوط به <code dir=\"lt\">todos</code> اجرا می‌شود؟</p>",
+      "text": "<p>چه زمانی <code dir=\"ltr\">useEffect</code> مربوط به <code dir=\"ltr\">todos</code> اجرا می‌شود؟</p>",
       "difficulty": 1,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ <code dir=\"lt\">useEffect</code> وابسته به <code dir=\"lt\">todos</code> است و هر بار که آرایه <code dir=\"lt\">todos</code> تغییر کند، داده‌ها به <code dir=\"lt\">localStorage</code> ذخیره می‌شوند.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">B</code> صحیح است؟ <code dir=\"ltr\">useEffect</code> وابسته به <code dir=\"ltr\">todos</code> است و هر بار که آرایه <code dir=\"ltr\">todos</code> تغییر کند، داده‌ها به <code dir=\"ltr\">localStorage</code> ذخیره می‌شوند.</p>",
       "tags": [
         "react.project.todo.localstorage"
       ],
@@ -91,7 +91,7 @@
           "isCorrect": false
         },
         {
-          "text": "<p>هر بار که آرایه <code dir=\"lt\">todos</code> تغییر کند</p>",
+          "text": "<p>هر بار که آرایه <code dir=\"ltr\">todos</code> تغییر کند</p>",
           "isCorrect": true
         },
         {
@@ -99,21 +99,21 @@
           "isCorrect": false
         },
         {
-          "text": "<p>هر بار که کاربر روی دکمه <code dir=\"lt\">Reset</code> کلیک کند</p>",
+          "text": "<p>هر بار که کاربر روی دکمه <code dir=\"ltr\">Reset</code> کلیک کند</p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>چرا <code dir=\"lt\">JSON</code>.<code dir=\"lt\">parse</code> در مقداردهی اولیه <code dir=\"lt\">useState</code> استفاده می‌شود؟</p>",
+      "text": "<p>چرا <code dir=\"ltr\">JSON</code>.<code dir=\"ltr\">parse</code> در مقداردهی اولیه <code dir=\"ltr\">useState</code> استفاده می‌شود؟</p>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">A</code> صحیح است؟ داده‌ها در <code dir=\"lt\">localStorage</code> به صورت رشته <code dir=\"lt\">JSON</code> ذخیره شده‌اند و برای استفاده به عنوان آرایه، باید آن‌ها را دوباره تبدیل به آرایه کنیم.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">A</code> صحیح است؟ داده‌ها در <code dir=\"ltr\">localStorage</code> به صورت رشته <code dir=\"ltr\">JSON</code> ذخیره شده‌اند و برای استفاده به عنوان آرایه، باید آن‌ها را دوباره تبدیل به آرایه کنیم.</p>",
       "tags": [
         "react.project.todo.localstorage"
       ],
       "answers": [
         {
-          "text": "<p>برای تبدیل رشته <code dir=\"lt\">JSON</code> خوانده شده از <code dir=\"lt\">localStorage</code> به آرایه قابل استفاده در <code dir=\"lt\">state</code></p>",
+          "text": "<p>برای تبدیل رشته <code dir=\"ltr\">JSON</code> خوانده شده از <code dir=\"ltr\">localStorage</code> به آرایه قابل استفاده در <code dir=\"ltr\">state</code></p>",
           "isCorrect": true
         },
         {
@@ -121,11 +121,11 @@
           "isCorrect": false
         },
         {
-          "text": "<p>برای تولید <code dir=\"lt\">id</code> یکتا برای هر وظیفه</p>",
+          "text": "<p>برای تولید <code dir=\"ltr\">id</code> یکتا برای هر وظیفه</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>برای جلوگیری از استفاده از <code dir=\"lt\">useEffect</code></p>",
+          "text": "<p>برای جلوگیری از استفاده از <code dir=\"ltr\">useEffect</code></p>",
           "isCorrect": false
         }
       ]

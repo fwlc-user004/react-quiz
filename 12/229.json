@@ -1,19 +1,19 @@
 {
   "questions": [
     {
-      "text": "<p>در کامپوننت <code dir=\"lt\">Timer</code>، استفاده از <code>useRef</code> برای <code>countRef</code> چه مزیتی نسبت به ذخیره <code dir=\"lt\">ID</code> تایمر در یک متغیر محلی داخل <code dir=\"lt\">useEffect</code> دارد؟</p>",
+      "text": "<p>در کامپوننت <code dir=\"ltr\">Timer</code>، استفاده از <code>useRef</code> برای <code>countRef</code> چه مزیتی نسبت به ذخیره <code dir=\"ltr\">ID</code> تایمر در یک متغیر محلی داخل <code dir=\"ltr\">useEffect</code> دارد؟</p>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">A</code> صحیح است؟ <code dir=\"lt\">useRef</code> اجازه می‌دهد که <code dir=\"lt\">ID</code> تایمر در طول تمام رندرهای کامپوننت پایدار باقی بماند بدون اینکه باعث رندر مجدد شود، بنابراین می‌توانیم به راحتی <code dir=\"lt\">interval</code> را در هر <code dir=\"lt\">handler</code> یا در تابع <code dir=\"lt\">cleanup</code> مدیریت کنیم.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">A</code> صحیح است؟ <code dir=\"ltr\">useRef</code> اجازه می‌دهد که <code dir=\"ltr\">ID</code> تایمر در طول تمام رندرهای کامپوننت پایدار باقی بماند بدون اینکه باعث رندر مجدد شود، بنابراین می‌توانیم به راحتی <code dir=\"ltr\">interval</code> را در هر <code dir=\"ltr\">handler</code> یا در تابع <code dir=\"ltr\">cleanup</code> مدیریت کنیم.</p>",
       "tags": [
         "react.project.timer.handlers"
       ],
       "answers": [
         {
-          "text": "<p><code dir=\"lt\">ID</code> تایمر را در طول رندرها پایدار نگه می‌دارد و تغییر آن باعث رندر مجدد نمی‌شود</p>",
+          "text": "<p><code dir=\"ltr\">ID</code> تایمر را در طول رندرها پایدار نگه می‌دارد و تغییر آن باعث رندر مجدد نمی‌شود</p>",
           "isCorrect": true
         },
         {
-          "text": "<p>به صورت خودکار <code dir=\"lt\">interval</code> را متوقف می‌کند</p>",
+          "text": "<p>به صورت خودکار <code dir=\"ltr\">interval</code> را متوقف می‌کند</p>",
           "isCorrect": false
         },
         {
@@ -21,15 +21,15 @@
           "isCorrect": false
         },
         {
-          "text": "<p><code dir=\"lt\">isActive</code> را به صورت اتوماتیک <code dir=\"lt\">true</code> یا <code dir=\"lt\">false</code> می‌کند</p>",
+          "text": "<p><code dir=\"ltr\">isActive</code> را به صورت اتوماتیک <code dir=\"ltr\">true</code> یا <code dir=\"ltr\">false</code> می‌کند</p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>چه کاری تابع <code>handleReset</code> در کامپوننت <code dir=\"lt\">Timer</code> انجام می‌دهد؟</p>",
+      "text": "<p>چه کاری تابع <code>handleReset</code> در کامپوننت <code dir=\"ltr\">Timer</code> انجام می‌دهد؟</p>",
       "difficulty": 1,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">C</code> صحیح است؟ <code dir=\"lt\">handleReset</code> تایمر را متوقف کرده، <code dir=\"lt\">interval</code> فعال را پاک می‌کند و مقدار <code dir=\"lt\">time</code> را به صفر بازمی‌گرداند تا تایمر کاملاً ریست شود.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">C</code> صحیح است؟ <code dir=\"ltr\">handleReset</code> تایمر را متوقف کرده، <code dir=\"ltr\">interval</code> فعال را پاک می‌کند و مقدار <code dir=\"ltr\">time</code> را به صفر بازمی‌گرداند تا تایمر کاملاً ریست شود.</p>",
       "tags": [
         "react.project.timer.handlers"
       ],
@@ -39,23 +39,23 @@
           "isCorrect": false
         },
         {
-          "text": "<p>مقدار <code dir=\"lt\">time</code> را صفر می‌کند اما تایمر ادامه می‌یابد</p>",
+          "text": "<p>مقدار <code dir=\"ltr\">time</code> را صفر می‌کند اما تایمر ادامه می‌یابد</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>تایمر را متوقف می‌کند، <code dir=\"lt\">interval</code> را پاک می‌کند و <code dir=\"lt\">time</code> را صفر می‌کند</p>",
+          "text": "<p>تایمر را متوقف می‌کند، <code dir=\"ltr\">interval</code> را پاک می‌کند و <code dir=\"ltr\">time</code> را صفر می‌کند</p>",
           "isCorrect": true
         },
         {
-          "text": "<p>فقط <code dir=\"lt\">isActive</code> را <code dir=\"lt\">true</code> می‌کند</p>",
+          "text": "<p>فقط <code dir=\"ltr\">isActive</code> را <code dir=\"ltr\">true</code> می‌کند</p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>چرا به دکمه‌های <code dir=\"lt\">Start</code> و <code dir=\"lt\">Stop</code> در کامپوننت <code dir=\"lt\">Timer</code> اتریبیوت <code>disabled</code> اضافه شده است؟</p>",
+      "text": "<p>چرا به دکمه‌های <code dir=\"ltr\">Start</code> و <code dir=\"ltr\">Stop</code> در کامپوننت <code dir=\"ltr\">Timer</code> اتریبیوت <code>disabled</code> اضافه شده است؟</p>",
       "difficulty": 1,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ با افزودن <code dir=\"lt\">disabled</code>، از کلیک‌های نابجا توسط کاربر جلوگیری می‌شود، مثلاً جلوگیری از اجرای دوباره <code dir=\"lt\">Start</code> زمانی که تایمر در حال اجراست.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">B</code> صحیح است؟ با افزودن <code dir=\"ltr\">disabled</code>، از کلیک‌های نابجا توسط کاربر جلوگیری می‌شود، مثلاً جلوگیری از اجرای دوباره <code dir=\"ltr\">Start</code> زمانی که تایمر در حال اجراست.</p>",
       "tags": [
         "react.project.timer.handlers"
       ],
@@ -69,59 +69,59 @@
           "isCorrect": true
         },
         {
-          "text": "<p>برای تبدیل مقدار <code dir=\"lt\">time</code> به دقیقه و ثانیه</p>",
+          "text": "<p>برای تبدیل مقدار <code dir=\"ltr\">time</code> به دقیقه و ثانیه</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>برای فعال کردن <code dir=\"lt\">setInterval</code> خودکار</p>",
+          "text": "<p>برای فعال کردن <code dir=\"ltr\">setInterval</code> خودکار</p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>در کامپوننت <code dir=\"lt\">Timer</code>، تابع پاک‌سازی <code dir=\"lt\">useEffect</code> چه کاری انجام می‌دهد؟</p>",
+      "text": "<p>در کامپوننت <code dir=\"ltr\">Timer</code>، تابع پاک‌سازی <code dir=\"ltr\">useEffect</code> چه کاری انجام می‌دهد؟</p>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">D</code> صحیح است؟ تابع <code dir=\"lt\">cleanup</code> با استفاده از <code dir=\"lt\">clearInterval</code> مطمئن می‌شود که هر <code dir=\"lt\">interval</code> قبلی قبل از اجرای مجدد افکت یا هنگام <code dir=\"lt\">unmount</code> شدن کامپوننت پاک شود، جلوگیری از نشت حافظه و رفتارهای ناخواسته.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">D</code> صحیح است؟ تابع <code dir=\"ltr\">cleanup</code> با استفاده از <code dir=\"ltr\">clearInterval</code> مطمئن می‌شود که هر <code dir=\"ltr\">interval</code> قبلی قبل از اجرای مجدد افکت یا هنگام <code dir=\"ltr\">unmount</code> شدن کامپوننت پاک شود، جلوگیری از نشت حافظه و رفتارهای ناخواسته.</p>",
       "tags": [
         "react.project.timer.handlers"
       ],
       "answers": [
         {
-          "text": "<p><code dir=\"lt\">isActive</code> را به <code dir=\"lt\">true</code> یا <code dir=\"lt\">false</code> تغییر می‌دهد</p>",
+          "text": "<p><code dir=\"ltr\">isActive</code> را به <code dir=\"ltr\">true</code> یا <code dir=\"ltr\">false</code> تغییر می‌دهد</p>",
           "isCorrect": false
         },
         {
-          "text": "<p><code dir=\"lt\">time</code> را به صفر بازمی‌گرداند</p>",
+          "text": "<p><code dir=\"ltr\">time</code> را به صفر بازمی‌گرداند</p>",
           "isCorrect": false
         },
         {
-          "text": "<p><code dir=\"lt\">countRef</code> را به <code dir=\"lt\">null</code> تنظیم می‌کند</p>",
+          "text": "<p><code dir=\"ltr\">countRef</code> را به <code dir=\"ltr\">null</code> تنظیم می‌کند</p>",
           "isCorrect": false
         },
         {
-          "text": "<p><code dir=\"lt\">interval</code> فعال را پاک می‌کند تا از نشت حافظه جلوگیری شود</p>",
+          "text": "<p><code dir=\"ltr\">interval</code> فعال را پاک می‌کند تا از نشت حافظه جلوگیری شود</p>",
           "isCorrect": true
         }
       ]
     },
     {
-      "text": "<p>چرا از فرم تابع در <code dir=\"lt\">setTime</code> یعنی <code>setTime(time => time + 1)</code> استفاده شده است؟</p>",
+      "text": "<p>چرا از فرم تابع در <code dir=\"ltr\">setTime</code> یعنی <code>setTime(time => time + 1)</code> استفاده شده است؟</p>",
       "difficulty": 3,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">C</code> صحیح است؟ با استفاده از فرم تابع، مقدار جدید <code dir=\"lt\">time</code> همیشه بر اساس آخرین <code dir=\"lt\">state</code> محاسبه می‌شود و از مشکلات مربوط به <code dir=\"lt\">stale</code> <code dir=\"lt\">state</code> در <code dir=\"lt\">closure</code>ها جلوگیری می‌کند، مخصوصاً هنگام اجرای <code dir=\"lt\">interval</code>.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">C</code> صحیح است؟ با استفاده از فرم تابع، مقدار جدید <code dir=\"ltr\">time</code> همیشه بر اساس آخرین <code dir=\"ltr\">state</code> محاسبه می‌شود و از مشکلات مربوط به <code dir=\"ltr\">stale</code> <code dir=\"ltr\">state</code> در <code dir=\"ltr\">closure</code>ها جلوگیری می‌کند، مخصوصاً هنگام اجرای <code dir=\"ltr\">interval</code>.</p>",
       "tags": [
         "react.project.timer.handlers"
       ],
       "answers": [
         {
-          "text": "<p>برای اینکه <code dir=\"lt\">time</code> هر بار صفر شود</p>",
+          "text": "<p>برای اینکه <code dir=\"ltr\">time</code> هر بار صفر شود</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>برای اینکه <code dir=\"lt\">interval</code> سریع‌تر اجرا شود</p>",
+          "text": "<p>برای اینکه <code dir=\"ltr\">interval</code> سریع‌تر اجرا شود</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>برای اطمینان از استفاده از آخرین مقدار <code dir=\"lt\">state</code> و جلوگیری از <code dir=\"lt\">stale</code> <code dir=\"lt\">state</code></p>",
+          "text": "<p>برای اطمینان از استفاده از آخرین مقدار <code dir=\"ltr\">state</code> و جلوگیری از <code dir=\"ltr\">stale</code> <code dir=\"ltr\">state</code></p>",
           "isCorrect": true
         },
         {

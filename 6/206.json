@@ -1,19 +1,19 @@
 {
   "questions": [
     {
-      "text": "<p>چرا در کامپوننت‌هایی که از <code dir=\"lt\">useEffect</code> برای اتصال به سرویس خارجی استفاده می‌کنند، باید تابع <code dir=\"lt\">cleanup</code> داشته باشیم؟</p>",
+      "text": "<p>چرا در کامپوننت‌هایی که از <code dir=\"ltr\">useEffect</code> برای اتصال به سرویس خارجی استفاده می‌کنند، باید تابع <code dir=\"ltr\">cleanup</code> داشته باشیم؟</p>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">A</code> صحیح است؟ تابع <code dir=\"lt\">cleanup</code> منابع را هنگام <code dir=\"lt\">unmount</code> یا قبل از اجرای مجدد افکت آزاد می‌کند تا از نشت حافظه و ایجاد چندین اتصال همزمان جلوگیری شود.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">A</code> صحیح است؟ تابع <code dir=\"ltr\">cleanup</code> منابع را هنگام <code dir=\"ltr\">unmount</code> یا قبل از اجرای مجدد افکت آزاد می‌کند تا از نشت حافظه و ایجاد چندین اتصال همزمان جلوگیری شود.</p>",
       "tags": [
         "react.hooks.useEffect.cleanup"
       ],
       "answers": [
         {
-          "text": "<p>برای جلوگیری از نشت حافظه و آزادسازی منابع هنگام <code dir=\"lt\">unmount</code></p>",
+          "text": "<p>برای جلوگیری از نشت حافظه و آزادسازی منابع هنگام <code dir=\"ltr\">unmount</code></p>",
           "isCorrect": true
         },
         {
-          "text": "<p>برای اینکه <code dir=\"lt\">useEffect</code> همیشه دوباره اجرا شود</p>",
+          "text": "<p>برای اینکه <code dir=\"ltr\">useEffect</code> همیشه دوباره اجرا شود</p>",
           "isCorrect": false
         },
         {
@@ -21,15 +21,15 @@
           "isCorrect": false
         },
         {
-          "text": "<p>برای اینکه <code dir=\"lt\">state</code> به‌روزرسانی نشود</p>",
+          "text": "<p>برای اینکه <code dir=\"ltr\">state</code> به‌روزرسانی نشود</p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>در مثال <code dir=\"lt\">ChatRoom</code>، اگر <code dir=\"lt\">prop</code> مربوط به <code dir=\"lt\">roomId</code> تغییر کند، چه اتفاقی برای افکت قبلی می‌افتد؟<code dir=\"lt\">\nuseEffect(() => {\n  connection = createConnection(roomId);\n  connection.connect();\n  return () => connection.disconnect();\n}, [roomId]);\n</code></p>",
+      "text": "<p>در مثال <code dir=\"ltr\">ChatRoom</code>، اگر <code dir=\"ltr\">prop</code> مربوط به <code dir=\"ltr\">roomId</code> تغییر کند، چه اتفاقی برای افکت قبلی می‌افتد؟<code dir=\"ltr\">\nuseEffect(() => {\n  connection = createConnection(roomId);\n  connection.connect();\n  return () => connection.disconnect();\n}, [roomId]);\n</code></p>",
       "difficulty": 3,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">C</code> صحیح است؟ قبل از اجرای افکت جدید برای <code dir=\"lt\">roomId</code> جدید، <code dir=\"lt\">React</code> تابع <code dir=\"lt\">cleanup</code> افکت قبلی را فراخوانی می‌کند تا اتصال به اتاق قدیمی قطع شود و از اتصال همزمان جلوگیری شود.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">C</code> صحیح است؟ قبل از اجرای افکت جدید برای <code dir=\"ltr\">roomId</code> جدید، <code dir=\"ltr\">React</code> تابع <code dir=\"ltr\">cleanup</code> افکت قبلی را فراخوانی می‌کند تا اتصال به اتاق قدیمی قطع شود و از اتصال همزمان جلوگیری شود.</p>",
       "tags": [
         "react.hooks.useEffect.cleanup"
       ],
@@ -43,29 +43,29 @@
           "isCorrect": false
         },
         {
-          "text": "<p>تابع <code dir=\"lt\">cleanup</code> اجرا شده و افکت جدید اجرا می‌شود</p>",
+          "text": "<p>تابع <code dir=\"ltr\">cleanup</code> اجرا شده و افکت جدید اجرا می‌شود</p>",
           "isCorrect": true
         },
         {
-          "text": "<p><code dir=\"lt\">React</code> خطا می‌دهد</p>",
+          "text": "<p><code dir=\"ltr\">React</code> خطا می‌دهد</p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>در کد <code dir=\"lt\">Timer</code>، چه زمانی تابع <code dir=\"lt\">clearInterval</code> فراخوانی می‌شود؟<code dir=\"lt\">\nreturn () => clearInterval(timerId);\n</code></p>",
+      "text": "<p>در کد <code dir=\"ltr\">Timer</code>، چه زمانی تابع <code dir=\"ltr\">clearInterval</code> فراخوانی می‌شود؟<code dir=\"ltr\">\nreturn () => clearInterval(timerId);\n</code></p>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ تابع <code dir=\"lt\">cleanup</code> درست قبل از <code dir=\"lt\">unmount</code> اجرا می‌شود تا تایمر متوقف شود و منابع آزاد شوند.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">B</code> صحیح است؟ تابع <code dir=\"ltr\">cleanup</code> درست قبل از <code dir=\"ltr\">unmount</code> اجرا می‌شود تا تایمر متوقف شود و منابع آزاد شوند.</p>",
       "tags": [
         "react.hooks.useEffect.cleanup"
       ],
       "answers": [
         {
-          "text": "<p>قبل از <code dir=\"lt\">mount</code> کامپوننت</p>",
+          "text": "<p>قبل از <code dir=\"ltr\">mount</code> کامپوننت</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>قبل از <code dir=\"lt\">unmount</code> کامپوننت یا قبل از اجرای مجدد افکت</p>",
+          "text": "<p>قبل از <code dir=\"ltr\">unmount</code> کامپوننت یا قبل از اجرای مجدد افکت</p>",
           "isCorrect": true
         },
         {
@@ -79,9 +79,9 @@
       ]
     },
     {
-      "text": "<p>چه مزیتی استفاده از تابع <code dir=\"lt\">cleanup</code> در <code dir=\"lt\">useEffect</code> دارد؟</p>",
+      "text": "<p>چه مزیتی استفاده از تابع <code dir=\"ltr\">cleanup</code> در <code dir=\"ltr\">useEffect</code> دارد؟</p>",
       "difficulty": 1,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">A</code> صحیح است؟ این کار باعث می‌شود منابع غیرضروری مانند تایمرها یا <code dir=\"lt\">subscription</code>ها پس از پایان کار آزاد شوند و از نشت حافظه جلوگیری شود.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">A</code> صحیح است؟ این کار باعث می‌شود منابع غیرضروری مانند تایمرها یا <code dir=\"ltr\">subscription</code>ها پس از پایان کار آزاد شوند و از نشت حافظه جلوگیری شود.</p>",
       "tags": [
         "react.hooks.useEffect.cleanup"
       ],
@@ -95,29 +95,29 @@
           "isCorrect": false
         },
         {
-          "text": "<p>جلوگیری از <code dir=\"lt\">mount</code> کامپوننت</p>",
+          "text": "<p>جلوگیری از <code dir=\"ltr\">mount</code> کامپوننت</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>افزایش سرعت <code dir=\"lt\">setState</code></p>",
+          "text": "<p>افزایش سرعت <code dir=\"ltr\">setState</code></p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>اگر آرایه وابستگی‌ها را در <code dir=\"lt\">useEffect</code> وارد کنیم، چه تأثیری بر تابع <code dir=\"lt\">cleanup</code> دارد؟</p>",
+      "text": "<p>اگر آرایه وابستگی‌ها را در <code dir=\"ltr\">useEffect</code> وارد کنیم، چه تأثیری بر تابع <code dir=\"ltr\">cleanup</code> دارد؟</p>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">C</code> صحیح است؟ تابع <code dir=\"lt\">cleanup</code> قبل از اجرای افکت بعدی برای هر تغییر در آرایه وابستگی اجرا می‌شود تا محیط قبلی پاک شود.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">C</code> صحیح است؟ تابع <code dir=\"ltr\">cleanup</code> قبل از اجرای افکت بعدی برای هر تغییر در آرایه وابستگی اجرا می‌شود تا محیط قبلی پاک شود.</p>",
       "tags": [
         "react.hooks.useEffect.cleanup"
       ],
       "answers": [
         {
-          "text": "<p>هیچ تأثیری ندارد، تابع <code dir=\"lt\">cleanup</code> همیشه اجرا نمی‌شود</p>",
+          "text": "<p>هیچ تأثیری ندارد، تابع <code dir=\"ltr\">cleanup</code> همیشه اجرا نمی‌شود</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>تابع <code dir=\"lt\">cleanup</code> بعد از رندر بعدی اجرا می‌شود</p>",
+          "text": "<p>تابع <code dir=\"ltr\">cleanup</code> بعد از رندر بعدی اجرا می‌شود</p>",
           "isCorrect": false
         },
         {
@@ -125,21 +125,21 @@
           "isCorrect": true
         },
         {
-          "text": "<p>تنها در <code dir=\"lt\">mount</code> اجرا می‌شود</p>",
+          "text": "<p>تنها در <code dir=\"ltr\">mount</code> اجرا می‌شود</p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>چرا عدم استفاده از تابع <code dir=\"lt\">cleanup</code> در افکت‌های حاوی <code dir=\"lt\">subscription</code> یا تایمر مشکل‌ساز است؟</p>",
+      "text": "<p>چرا عدم استفاده از تابع <code dir=\"ltr\">cleanup</code> در افکت‌های حاوی <code dir=\"ltr\">subscription</code> یا تایمر مشکل‌ساز است؟</p>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ بدون <code dir=\"lt\">cleanup</code>، منابع رزرو شده آزاد نمی‌شوند، ممکن است چندین اتصال یا تایمر فعال باقی بماند و باعث نشت حافظه و باگ‌های منطقی شود.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">B</code> صحیح است؟ بدون <code dir=\"ltr\">cleanup</code>، منابع رزرو شده آزاد نمی‌شوند، ممکن است چندین اتصال یا تایمر فعال باقی بماند و باعث نشت حافظه و باگ‌های منطقی شود.</p>",
       "tags": [
         "react.hooks.useEffect.cleanup"
       ],
       "answers": [
         {
-          "text": "<p>چون <code dir=\"lt\">React</code> <code dir=\"lt\">cleanup</code> را خودش انجام می‌دهد</p>",
+          "text": "<p>چون <code dir=\"ltr\">React</code> <code dir=\"ltr\">cleanup</code> را خودش انجام می‌دهد</p>",
           "isCorrect": false
         },
         {
@@ -147,7 +147,7 @@
           "isCorrect": true
         },
         {
-          "text": "<p>چون <code dir=\"lt\">useState</code> درست کار نمی‌کند</p>",
+          "text": "<p>چون <code dir=\"ltr\">useState</code> درست کار نمی‌کند</p>",
           "isCorrect": false
         },
         {

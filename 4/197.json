@@ -1,15 +1,15 @@
 {
   "questions": [
     {
-      "text": "<p>چرا بهتر است تمام کامپوننت‌ها را در یک پوشه اختصاصی مانند <code dir=\"lt\">components</code> قرار دهیم؟</p>",
+      "text": "<p>چرا بهتر است تمام کامپوننت‌ها را در یک پوشه اختصاصی مانند <code dir=\"ltr\">components</code> قرار دهیم؟</p>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ این کار باعث سازمان‌دهی بهتر، مدیریت آسان‌تر و یافتن سریع‌تر کامپوننت‌ها می‌شود و ساختار پروژه خواناتر خواهد بود.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">B</code> صحیح است؟ این کار باعث سازمان‌دهی بهتر، مدیریت آسان‌تر و یافتن سریع‌تر کامپوننت‌ها می‌شود و ساختار پروژه خواناتر خواهد بود.</p>",
       "tags": [
         "react.components.organization"
       ],
       "answers": [
         {
-          "text": "<p>چون <code dir=\"lt\">React</code> به این کار نیاز دارد</p>",
+          "text": "<p>چون <code dir=\"ltr\">React</code> به این کار نیاز دارد</p>",
           "isCorrect": false
         },
         {
@@ -21,15 +21,15 @@
           "isCorrect": false
         },
         {
-          "text": "<p>چون تنها در این حالت <code dir=\"lt\">props</code> کار می‌کنند</p>",
+          "text": "<p>چون تنها در این حالت <code dir=\"ltr\">props</code> کار می‌کنند</p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>چرا هر کامپوننت باید در فایل جداگانه با نام <code dir=\"lt\">PascalCase</code> قرار گیرد؟</p>",
+      "text": "<p>چرا هر کامپوننت باید در فایل جداگانه با نام <code dir=\"ltr\">PascalCase</code> قرار گیرد؟</p>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">C</code> صحیح است؟ تطابق نام فایل با نام کامپوننت و استفاده از <code dir=\"lt\">PascalCase</code> استاندارد <code dir=\"lt\">React</code> است و تشخیص آسان کامپوننت‌ها را ممکن می‌کند.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">C</code> صحیح است؟ تطابق نام فایل با نام کامپوننت و استفاده از <code dir=\"ltr\">PascalCase</code> استاندارد <code dir=\"ltr\">React</code> است و تشخیص آسان کامپوننت‌ها را ممکن می‌کند.</p>",
       "tags": [
         "react.components.organization"
       ],
@@ -39,7 +39,7 @@
           "isCorrect": false
         },
         {
-          "text": "<p>برای محدود کردن تعداد <code dir=\"lt\">props</code> قابل ارسال</p>",
+          "text": "<p>برای محدود کردن تعداد <code dir=\"ltr\">props</code> قابل ارسال</p>",
           "isCorrect": false
         },
         {
@@ -47,25 +47,25 @@
           "isCorrect": true
         },
         {
-          "text": "<p>برای استفاده از <code dir=\"lt\">CSS</code> داخلی هر کامپوننت</p>",
+          "text": "<p>برای استفاده از <code dir=\"ltr\">CSS</code> داخلی هر کامپوننت</p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>در مثال انتقال کامپوننت <code dir=\"lt\">Greeting</code> به پوشه <code dir=\"lt\">components</code>، مزیت اصلی این کار چیست؟</p>",
+      "text": "<p>در مثال انتقال کامپوننت <code dir=\"ltr\">Greeting</code> به پوشه <code dir=\"ltr\">components</code>، مزیت اصلی این کار چیست؟</p>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ فایل <code dir=\"lt\">App</code>.<code dir=\"lt\">js</code> تمیزتر شده و تنها مسئولیت چیدمان کلی صفحه را بر عهده دارد، در حالی که جزئیات کامپوننت در فایل خودش کپسوله شده است.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">B</code> صحیح است؟ فایل <code dir=\"ltr\">App</code>.<code dir=\"ltr\">js</code> تمیزتر شده و تنها مسئولیت چیدمان کلی صفحه را بر عهده دارد، در حالی که جزئیات کامپوننت در فایل خودش کپسوله شده است.</p>",
       "tags": [
         "react.components.organization"
       ],
       "answers": [
         {
-          "text": "<p>کامپوننت دیگر <code dir=\"lt\">props</code> دریافت نمی‌کند</p>",
+          "text": "<p>کامپوننت دیگر <code dir=\"ltr\">props</code> دریافت نمی‌کند</p>",
           "isCorrect": false
         },
         {
-          "text": "<p><code dir=\"lt\">App</code>.<code dir=\"lt\">js</code> تمیزتر شده و جزئیات هر کامپوننت کپسوله می‌شوند</p>",
+          "text": "<p><code dir=\"ltr\">App</code>.<code dir=\"ltr\">js</code> تمیزتر شده و جزئیات هر کامپوننت کپسوله می‌شوند</p>",
           "isCorrect": true
         },
         {
@@ -79,9 +79,9 @@
       ]
     },
     {
-      "text": "<p>چه چیزی باعث می‌شود پروژه <code dir=\"lt\">React</code> مقیاس‌پذیر و قابل نگهداری باشد؟</p>",
+      "text": "<p>چه چیزی باعث می‌شود پروژه <code dir=\"ltr\">React</code> مقیاس‌پذیر و قابل نگهداری باشد؟</p>",
       "difficulty": 3,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ ساختار منطقی فایل‌ها و پوشه‌ها، قرار دادن هر کامپوننت در فایل مخصوص خودش و استفاده از <code dir=\"lt\">props</code> باعث می‌شود پروژه بزرگ و پیچیده نیز قابل مدیریت باشد.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">B</code> صحیح است؟ ساختار منطقی فایل‌ها و پوشه‌ها، قرار دادن هر کامپوننت در فایل مخصوص خودش و استفاده از <code dir=\"ltr\">props</code> باعث می‌شود پروژه بزرگ و پیچیده نیز قابل مدیریت باشد.</p>",
       "tags": [
         "react.components.organization"
       ],
@@ -91,11 +91,11 @@
           "isCorrect": false
         },
         {
-          "text": "<p>عدم استفاده از <code dir=\"lt\">JSX</code></p>",
+          "text": "<p>عدم استفاده از <code dir=\"ltr\">JSX</code></p>",
           "isCorrect": false
         },
         {
-          "text": "<p>ساختار منطقی فایل‌ها و پوشه‌ها و استفاده از <code dir=\"lt\">props</code></p>",
+          "text": "<p>ساختار منطقی فایل‌ها و پوشه‌ها و استفاده از <code dir=\"ltr\">props</code></p>",
           "isCorrect": true
         },
         {
@@ -105,27 +105,27 @@
       ]
     },
     {
-      "text": "<p>چرا فایل <code dir=\"lt\">App</code>.<code dir=\"lt\">js</code> پس از سازمان‌دهی کامپوننت‌ها در پوشه <code dir=\"lt\">components</code> ساده‌تر می‌شود؟</p>",
+      "text": "<p>چرا فایل <code dir=\"ltr\">App</code>.<code dir=\"ltr\">js</code> پس از سازمان‌دهی کامپوننت‌ها در پوشه <code dir=\"ltr\">components</code> ساده‌تر می‌شود؟</p>",
       "difficulty": 1,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">C</code> صحیح است؟ چون <code dir=\"lt\">App</code>.<code dir=\"lt\">js</code> اکنون فقط وظیفه چیدمان کلی صفحه را دارد و منطق هر کامپوننت در فایل جداگانه کپسوله شده است.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">C</code> صحیح است؟ چون <code dir=\"ltr\">App</code>.<code dir=\"ltr\">js</code> اکنون فقط وظیفه چیدمان کلی صفحه را دارد و منطق هر کامپوننت در فایل جداگانه کپسوله شده است.</p>",
       "tags": [
         "react.components.organization"
       ],
       "answers": [
         {
-          "text": "<p>چون دیگر نیاز به <code dir=\"lt\">JSX</code> ندارد</p>",
+          "text": "<p>چون دیگر نیاز به <code dir=\"ltr\">JSX</code> ندارد</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>چون <code dir=\"lt\">props</code> در <code dir=\"lt\">App</code>.<code dir=\"lt\">js</code> حذف شده‌اند</p>",
+          "text": "<p>چون <code dir=\"ltr\">props</code> در <code dir=\"ltr\">App</code>.<code dir=\"ltr\">js</code> حذف شده‌اند</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>چون <code dir=\"lt\">App</code>.<code dir=\"lt\">js</code> دیگر <code dir=\"lt\">import</code> نمی‌شود</p>",
+          "text": "<p>چون <code dir=\"ltr\">App</code>.<code dir=\"ltr\">js</code> دیگر <code dir=\"ltr\">import</code> نمی‌شود</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>چون <code dir=\"lt\">App</code>.<code dir=\"lt\">js</code> فقط مسئول چیدمان کلی است و جزئیات در کامپوننت‌ها هستند</p>",
+          "text": "<p>چون <code dir=\"ltr\">App</code>.<code dir=\"ltr\">js</code> فقط مسئول چیدمان کلی است و جزئیات در کامپوننت‌ها هستند</p>",
           "isCorrect": true
         }
       ]

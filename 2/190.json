@@ -1,9 +1,9 @@
 {
   "questions": [
     {
-      "text": "<p>در این درس، چه کاری با فایل <code dir=\"lt\">src/App.js</code> انجام شد؟</p>",
+      "text": "<p>در این درس، چه کاری با فایل <code dir=\"ltr\">src/App.js</code> انجام شد؟</p>",
       "difficulty": 1,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">C</code> صحیح است؟ تمام محتوای پیش‌فرض فایل <code dir=\"lt\">App</code>.<code dir=\"lt\">js</code> حذف شد و با یک کامپوننت ساده تابعی جایگزین شد که متن '<code dir=\"lt\">Hello</code>, <code dir=\"lt\">React</code> <code dir=\"lt\">World</code>!' را نمایش می‌دهد.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">C</code> صحیح است؟ تمام محتوای پیش‌فرض فایل <code dir=\"ltr\">App</code>.<code dir=\"ltr\">js</code> حذف شد و با یک کامپوننت ساده تابعی جایگزین شد که متن '<code dir=\"ltr\">Hello</code>, <code dir=\"ltr\">React</code> <code dir=\"ltr\">World</code>!' را نمایش می‌دهد.</p>",
       "tags": [
         "react.basics"
       ],
@@ -13,7 +13,7 @@
           "isCorrect": false
         },
         {
-          "text": "<p>تنها لوگوی چرخان <code dir=\"lt\">React</code> جایگزین شد</p>",
+          "text": "<p>تنها لوگوی چرخان <code dir=\"ltr\">React</code> جایگزین شد</p>",
           "isCorrect": false
         },
         {
@@ -27,23 +27,23 @@
       ]
     },
     {
-      "text": "<p>کامپوننت جدید <code dir=\"lt\">App</code> چه چیزی را برمی‌گرداند؟</p>",
+      "text": "<p>کامپوننت جدید <code dir=\"ltr\">App</code> چه چیزی را برمی‌گرداند؟</p>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">A</code> صحیح است؟ کامپوننت <code dir=\"lt\">App</code> یک عنصر <code dir=\"lt\">JSX</code> شامل <code dir=\"lt\">&lt;h1&gt;Hello, React World!&lt;/h1&gt;</code> را برمی‌گرداند که در مرورگر به صورت تیتر بزرگ نمایش داده می‌شود.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">A</code> صحیح است؟ کامپوننت <code dir=\"ltr\">App</code> یک عنصر <code dir=\"ltr\">JSX</code> شامل <code dir=\"ltr\">&lt;h1&gt;Hello, React World!&lt;/h1&gt;</code> را برمی‌گرداند که در مرورگر به صورت تیتر بزرگ نمایش داده می‌شود.</p>",
       "tags": [
         "react.basics"
       ],
       "answers": [
         {
-          "text": "<p>یک تگ <code dir=\"lt\">&lt;h1&gt;</code> با متن '<code dir=\"lt\">Hello</code>, <code dir=\"lt\">React</code> <code dir=\"lt\">World</code>!'</p>",
+          "text": "<p>یک تگ <code dir=\"ltr\">&lt;h1&gt;</code> با متن '<code dir=\"ltr\">Hello</code>, <code dir=\"ltr\">React</code> <code dir=\"ltr\">World</code>!'</p>",
           "isCorrect": true
         },
         {
-          "text": "<p>یک لوگوی چرخان <code dir=\"lt\">React</code></p>",
+          "text": "<p>یک لوگوی چرخان <code dir=\"ltr\">React</code></p>",
           "isCorrect": false
         },
         {
-          "text": "<p>یک کامپوننت دیگر به نام <code dir=\"lt\">Hello</code></p>",
+          "text": "<p>یک کامپوننت دیگر به نام <code dir=\"ltr\">Hello</code></p>",
           "isCorrect": false
         },
         {
@@ -53,19 +53,19 @@
       ]
     },
     {
-      "text": "<p>خط <code dir=\"lt\">export default App;</code> چه نقشی دارد؟</p>",
+      "text": "<p>خط <code dir=\"ltr\">export default App;</code> چه نقشی دارد؟</p>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ این خط باعث می‌شود که کامپوننت <code dir=\"lt\">App</code> در سایر فایل‌های پروژه، به خصوص <code dir=\"lt\">src/index.js</code> قابل استفاده باشد و بتوان آن را رندر کرد.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">B</code> صحیح است؟ این خط باعث می‌شود که کامپوننت <code dir=\"ltr\">App</code> در سایر فایل‌های پروژه، به خصوص <code dir=\"ltr\">src/index.js</code> قابل استفاده باشد و بتوان آن را رندر کرد.</p>",
       "tags": [
         "react.basics"
       ],
       "answers": [
         {
-          "text": "<p>باعث اضافه شدن استایل‌ها به <code dir=\"lt\">App</code> می‌شود</p>",
+          "text": "<p>باعث اضافه شدن استایل‌ها به <code dir=\"ltr\">App</code> می‌شود</p>",
           "isCorrect": false
         },
         {
-          "text": "<p><code dir=\"lt\">App</code> را در دسترس سایر فایل‌ها قرار می‌دهد</p>",
+          "text": "<p><code dir=\"ltr\">App</code> را در دسترس سایر فایل‌ها قرار می‌دهد</p>",
           "isCorrect": true
         },
         {
@@ -79,9 +79,9 @@
       ]
     },
     {
-      "text": "<p>پس از ذخیره تغییرات در <code dir=\"lt\">App.js</code>, چه اتفاقی در مرورگر رخ می‌دهد؟</p>",
+      "text": "<p>پس از ذخیره تغییرات در <code dir=\"ltr\">App.js</code>, چه اتفاقی در مرورگر رخ می‌دهد؟</p>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">C</code> صحیح است؟ مرورگر به صورت خودکار رفرش می‌شود و صفحه جدید با متن '<code dir=\"lt\">Hello</code>, <code dir=\"lt\">React</code> <code dir=\"lt\">World</code>!' نمایش داده می‌شود.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">C</code> صحیح است؟ مرورگر به صورت خودکار رفرش می‌شود و صفحه جدید با متن '<code dir=\"ltr\">Hello</code>, <code dir=\"ltr\">React</code> <code dir=\"ltr\">World</code>!' نمایش داده می‌شود.</p>",
       "tags": [
         "react.basics"
       ],
@@ -105,9 +105,9 @@
       ]
     },
     {
-      "text": "<p>چه چیزی در این درس نشان‌دهنده هسته اصلی گردش کار توسعه در <code dir=\"lt\">React</code> است؟</p>",
+      "text": "<p>چه چیزی در این درس نشان‌دهنده هسته اصلی گردش کار توسعه در <code dir=\"ltr\">React</code> است؟</p>",
       "difficulty": 3,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">A</code> صحیح است؟ ویرایش کامپوننت و مشاهده زنده تغییرات در مرورگر، هسته اصلی توسعه <code dir=\"lt\">React</code> را نشان می‌دهد و تجربه کار با <code dir=\"lt\">JSX</code> و <code dir=\"lt\">state</code> را عملی می‌کند.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">A</code> صحیح است؟ ویرایش کامپوننت و مشاهده زنده تغییرات در مرورگر، هسته اصلی توسعه <code dir=\"ltr\">React</code> را نشان می‌دهد و تجربه کار با <code dir=\"ltr\">JSX</code> و <code dir=\"ltr\">state</code> را عملی می‌کند.</p>",
       "tags": [
         "react.basics"
       ],
@@ -117,15 +117,15 @@
           "isCorrect": true
         },
         {
-          "text": "<p>نصب <code dir=\"lt\">Create</code> <code dir=\"lt\">React</code> <code dir=\"lt\">App</code></p>",
+          "text": "<p>نصب <code dir=\"ltr\">Create</code> <code dir=\"ltr\">React</code> <code dir=\"ltr\">App</code></p>",
           "isCorrect": false
         },
         {
-          "text": "<p>استفاده از <code dir=\"lt\">CSS</code> پیش‌فرض</p>",
+          "text": "<p>استفاده از <code dir=\"ltr\">CSS</code> پیش‌فرض</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>حذف فایل‌های <code dir=\"lt\">src</code></p>",
+          "text": "<p>حذف فایل‌های <code dir=\"ltr\">src</code></p>",
           "isCorrect": false
         }
       ]

@@ -1,15 +1,15 @@
 {
   "questions": [
     {
-      "text": "<p>چرا در <code dir=\"lt\">React</code> مدرن، تقریباً همیشه از کامپوننت‌های تابعی به جای کلاس‌محور استفاده می‌کنیم؟</p>",
+      "text": "<p>چرا در <code dir=\"ltr\">React</code> مدرن، تقریباً همیشه از کامپوننت‌های تابعی به جای کلاس‌محور استفاده می‌کنیم؟</p>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">C</code> صحیح است؟ کامپوننت‌های تابعی با هوک‌ها کوتاه‌تر، خواناتر و مدیریت <code dir=\"lt\">state</code> و منطق چرخه حیات را ساده‌تر می‌کنند و کد کمتری نیاز دارند.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">C</code> صحیح است؟ کامپوننت‌های تابعی با هوک‌ها کوتاه‌تر، خواناتر و مدیریت <code dir=\"ltr\">state</code> و منطق چرخه حیات را ساده‌تر می‌کنند و کد کمتری نیاز دارند.</p>",
       "tags": [
         "react.components.functional-vs-class"
       ],
       "answers": [
         {
-          "text": "<p>چون کلاس‌ها در <code dir=\"lt\">React</code> دیگر پشتیبانی نمی‌شوند</p>",
+          "text": "<p>چون کلاس‌ها در <code dir=\"ltr\">React</code> دیگر پشتیبانی نمی‌شوند</p>",
           "isCorrect": false
         },
         {
@@ -17,7 +17,7 @@
           "isCorrect": false
         },
         {
-          "text": "<p>چون استفاده از هوک‌ها باعث خوانایی و سادگی مدیریت <code dir=\"lt\">state</code> می‌شود</p>",
+          "text": "<p>چون استفاده از هوک‌ها باعث خوانایی و سادگی مدیریت <code dir=\"ltr\">state</code> می‌شود</p>",
           "isCorrect": true
         },
         {
@@ -27,27 +27,27 @@
       ]
     },
     {
-      "text": "<p>در یک کامپوننت کلاس‌محور، چه چیزی برای دسترسی به <code dir=\"lt\">state</code> و <code dir=\"lt\">props</code> استفاده می‌شود؟</p>",
+      "text": "<p>در یک کامپوننت کلاس‌محور، چه چیزی برای دسترسی به <code dir=\"ltr\">state</code> و <code dir=\"ltr\">props</code> استفاده می‌شود؟</p>",
       "difficulty": 1,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ <code dir=\"lt\">state</code> داخلی با <code dir=\"lt\">this</code>.<code dir=\"lt\">state</code> و <code dir=\"lt\">props</code> با <code dir=\"lt\">this</code>.<code dir=\"lt\">props</code> قابل دسترسی هستند و برای به‌روزرسانی <code dir=\"lt\">state</code> از <code dir=\"lt\">this</code>.<code dir=\"lt\">setState</code>() استفاده می‌شود.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">B</code> صحیح است؟ <code dir=\"ltr\">state</code> داخلی با <code dir=\"ltr\">this</code>.<code dir=\"ltr\">state</code> و <code dir=\"ltr\">props</code> با <code dir=\"ltr\">this</code>.<code dir=\"ltr\">props</code> قابل دسترسی هستند و برای به‌روزرسانی <code dir=\"ltr\">state</code> از <code dir=\"ltr\">this</code>.<code dir=\"ltr\">setState</code>() استفاده می‌شود.</p>",
       "tags": [
         "react.components.functional-vs-class"
       ],
       "answers": [
         {
-          "text": "<p><code dir=\"lt\">props</code> با <code dir=\"lt\">useProps</code> و <code dir=\"lt\">state</code> با <code dir=\"lt\">useState</code></p>",
+          "text": "<p><code dir=\"ltr\">props</code> با <code dir=\"ltr\">useProps</code> و <code dir=\"ltr\">state</code> با <code dir=\"ltr\">useState</code></p>",
           "isCorrect": false
         },
         {
-          "text": "<p><code dir=\"lt\">state</code> با <code dir=\"lt\">this</code>.<code dir=\"lt\">state</code> و <code dir=\"lt\">props</code> با <code dir=\"lt\">this</code>.<code dir=\"lt\">props</code></p>",
+          "text": "<p><code dir=\"ltr\">state</code> با <code dir=\"ltr\">this</code>.<code dir=\"ltr\">state</code> و <code dir=\"ltr\">props</code> با <code dir=\"ltr\">this</code>.<code dir=\"ltr\">props</code></p>",
           "isCorrect": true
         },
         {
-          "text": "<p><code dir=\"lt\">state</code> و <code dir=\"lt\">props</code> مستقیم بدون <code dir=\"lt\">this</code></p>",
+          "text": "<p><code dir=\"ltr\">state</code> و <code dir=\"ltr\">props</code> مستقیم بدون <code dir=\"ltr\">this</code></p>",
           "isCorrect": false
         },
         {
-          "text": "<p><code dir=\"lt\">state</code> با <code dir=\"lt\">props</code> و <code dir=\"lt\">props</code> با <code dir=\"lt\">state</code></p>",
+          "text": "<p><code dir=\"ltr\">state</code> با <code dir=\"ltr\">props</code> و <code dir=\"ltr\">props</code> با <code dir=\"ltr\">state</code></p>",
           "isCorrect": false
         }
       ]
@@ -55,7 +55,7 @@
     {
       "text": "<p>در مثال یک شمارنده ساده، تفاوت اصلی بین کلاس‌محور و تابعی چیست؟</p>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">C</code> صحیح است؟ در کامپوننت تابعی با <code dir=\"lt\">useState</code>، مقدار <code dir=\"lt\">state</code> و تابع به‌روزرسانی آن مستقیماً در اختیار است و نیازی به <code dir=\"lt\">constructor</code>، <code dir=\"lt\">super</code> یا <code dir=\"lt\">this</code>.<code dir=\"lt\">setState</code> نیست، که کد را کوتاه‌تر و خواناتر می‌کند.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">C</code> صحیح است؟ در کامپوننت تابعی با <code dir=\"ltr\">useState</code>، مقدار <code dir=\"ltr\">state</code> و تابع به‌روزرسانی آن مستقیماً در اختیار است و نیازی به <code dir=\"ltr\">constructor</code>، <code dir=\"ltr\">super</code> یا <code dir=\"ltr\">this</code>.<code dir=\"ltr\">setState</code> نیست، که کد را کوتاه‌تر و خواناتر می‌کند.</p>",
       "tags": [
         "react.components.functional-vs-class"
       ],
@@ -65,33 +65,33 @@
           "isCorrect": false
         },
         {
-          "text": "<p>تابعی‌ها نمی‌توانند <code dir=\"lt\">state</code> داشته باشند</p>",
+          "text": "<p>تابعی‌ها نمی‌توانند <code dir=\"ltr\">state</code> داشته باشند</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>تابعی‌ها با <code dir=\"lt\">useState</code> کد کوتاه‌تر و مدیریت <code dir=\"lt\">state</code> ساده‌تر دارند</p>",
+          "text": "<p>تابعی‌ها با <code dir=\"ltr\">useState</code> کد کوتاه‌تر و مدیریت <code dir=\"ltr\">state</code> ساده‌تر دارند</p>",
           "isCorrect": true
         },
         {
-          "text": "<p>تابعی‌ها نیاز به متد <code dir=\"lt\">render</code>() دارند</p>",
+          "text": "<p>تابعی‌ها نیاز به متد <code dir=\"ltr\">render</code>() دارند</p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>چرا جامعه <code dir=\"lt\">React</code> به سمت استفاده از هوک‌ها حرکت کرد؟</p>",
+      "text": "<p>چرا جامعه <code dir=\"ltr\">React</code> به سمت استفاده از هوک‌ها حرکت کرد؟</p>",
       "difficulty": 3,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ هوک‌ها مانند <code dir=\"lt\">useEffect</code> امکان گروه‌بندی منطق‌های مرتبط، اشتراک‌گذاری بین کامپوننت‌ها و مدیریت بهتر <code dir=\"lt\">state</code> و چرخه حیات را فراهم می‌کنند و باعث کاهش پیچیدگی می‌شوند.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">B</code> صحیح است؟ هوک‌ها مانند <code dir=\"ltr\">useEffect</code> امکان گروه‌بندی منطق‌های مرتبط، اشتراک‌گذاری بین کامپوننت‌ها و مدیریت بهتر <code dir=\"ltr\">state</code> و چرخه حیات را فراهم می‌کنند و باعث کاهش پیچیدگی می‌شوند.</p>",
       "tags": [
         "react.components.functional-vs-class"
       ],
       "answers": [
         {
-          "text": "<p>چون کلاس‌ها در <code dir=\"lt\">ES6</code> دیگر معتبر نیستند</p>",
+          "text": "<p>چون کلاس‌ها در <code dir=\"ltr\">ES6</code> دیگر معتبر نیستند</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>چون هوک‌ها مدیریت <code dir=\"lt\">state</code> پیچیده و منطق چرخه حیات را ساده می‌کنند</p>",
+          "text": "<p>چون هوک‌ها مدیریت <code dir=\"ltr\">state</code> پیچیده و منطق چرخه حیات را ساده می‌کنند</p>",
           "isCorrect": true
         },
         {
@@ -105,23 +105,23 @@
       ]
     },
     {
-      "text": "<p>در <code dir=\"lt\">React</code>، <code dir=\"lt\">this</code>.<code dir=\"lt\">setState</code>() چه کاربردی دارد؟</p>",
+      "text": "<p>در <code dir=\"ltr\">React</code>، <code dir=\"ltr\">this</code>.<code dir=\"ltr\">setState</code>() چه کاربردی دارد؟</p>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">C</code> صحیح است؟ <code dir=\"lt\">this</code>.<code dir=\"lt\">setState</code>() در کامپوننت‌های کلاس‌محور برای به‌روزرسانی <code dir=\"lt\">state</code> استفاده می‌شود و باعث رندر مجدد کامپوننت می‌شود.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">C</code> صحیح است؟ <code dir=\"ltr\">this</code>.<code dir=\"ltr\">setState</code>() در کامپوننت‌های کلاس‌محور برای به‌روزرسانی <code dir=\"ltr\">state</code> استفاده می‌شود و باعث رندر مجدد کامپوننت می‌شود.</p>",
       "tags": [
         "react.components.functional-vs-class"
       ],
       "answers": [
         {
-          "text": "<p>برای تعریف <code dir=\"lt\">props</code> جدید</p>",
+          "text": "<p>برای تعریف <code dir=\"ltr\">props</code> جدید</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>برای تغییر <code dir=\"lt\">props</code> ارسالی به کامپوننت</p>",
+          "text": "<p>برای تغییر <code dir=\"ltr\">props</code> ارسالی به کامپوننت</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>برای به‌روزرسانی <code dir=\"lt\">state</code> و رندر مجدد کامپوننت</p>",
+          "text": "<p>برای به‌روزرسانی <code dir=\"ltr\">state</code> و رندر مجدد کامپوننت</p>",
           "isCorrect": true
         },
         {

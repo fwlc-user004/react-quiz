@@ -1,15 +1,15 @@
 {
   "questions": [
     {
-      "text": "<p><code dir=\"lt\">useEffect</code> در <code dir=\"lt\">React</code> چه کاربردی دارد؟</p>",
+      "text": "<p><code dir=\"ltr\">useEffect</code> در <code dir=\"ltr\">React</code> چه کاربردی دارد؟</p>",
       "difficulty": 1,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ <code dir=\"lt\">useEffect</code> به ما اجازه می‌دهد کدهایی که با دنیای خارج از <code dir=\"lt\">React</code> تعامل دارند (مانند <code dir=\"lt\">DOM</code> یا <code dir=\"lt\">API</code>ها) را بعد از رندر کامپوننت اجرا کنیم، بدون اینکه رندر اصلی مسدود شود.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">B</code> صحیح است؟ <code dir=\"ltr\">useEffect</code> به ما اجازه می‌دهد کدهایی که با دنیای خارج از <code dir=\"ltr\">React</code> تعامل دارند (مانند <code dir=\"ltr\">DOM</code> یا <code dir=\"ltr\">API</code>ها) را بعد از رندر کامپوننت اجرا کنیم، بدون اینکه رندر اصلی مسدود شود.</p>",
       "tags": [
         "react.hooks.useEffect"
       ],
       "answers": [
         {
-          "text": "<p>برای ایجاد <code dir=\"lt\">state</code> جدید در کامپوننت</p>",
+          "text": "<p>برای ایجاد <code dir=\"ltr\">state</code> جدید در کامپوننت</p>",
           "isCorrect": false
         },
         {
@@ -17,19 +17,19 @@
           "isCorrect": true
         },
         {
-          "text": "<p>برای تعریف <code dir=\"lt\">props</code> کامپوننت</p>",
+          "text": "<p>برای تعریف <code dir=\"ltr\">props</code> کامپوننت</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>برای بهینه‌سازی <code dir=\"lt\">CSS</code></p>",
+          "text": "<p>برای بهینه‌سازی <code dir=\"ltr\">CSS</code></p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>چه چیزی باعث می‌شود <code dir=\"lt\">useEffect</code> بعد از هر رندر اجرا شود؟</p>",
+      "text": "<p>چه چیزی باعث می‌شود <code dir=\"ltr\">useEffect</code> بعد از هر رندر اجرا شود؟</p>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">C</code> صحیح است؟ اگر آرایه وابستگی‌ها ارائه نشود، <code dir=\"lt\">useEffect</code> بعد از هر بار رندر اجرا می‌شود، چه رندر اولیه و چه رندرهای مجدد ناشی از تغییر <code dir=\"lt\">state</code>.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">C</code> صحیح است؟ اگر آرایه وابستگی‌ها ارائه نشود، <code dir=\"ltr\">useEffect</code> بعد از هر بار رندر اجرا می‌شود، چه رندر اولیه و چه رندرهای مجدد ناشی از تغییر <code dir=\"ltr\">state</code>.</p>",
       "tags": [
         "react.hooks.useEffect"
       ],
@@ -39,7 +39,7 @@
           "isCorrect": false
         },
         {
-          "text": "<p>تعریف <code dir=\"lt\">state</code> در <code dir=\"lt\">useEffect</code></p>",
+          "text": "<p>تعریف <code dir=\"ltr\">state</code> در <code dir=\"ltr\">useEffect</code></p>",
           "isCorrect": false
         },
         {
@@ -47,47 +47,47 @@
           "isCorrect": true
         },
         {
-          "text": "<p>استفاده از تابع <code dir=\"lt\">setter</code></p>",
+          "text": "<p>استفاده از تابع <code dir=\"ltr\">setter</code></p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>در این مثال، چه عملی یک «عوارض جانبی» محسوب می‌شود؟</p>\n<pre><code dir=\"lt\">useEffect(() => {\n  document.title = `You clicked ${count} times`;\n});</code></pre>",
+      "text": "<p>در این مثال، چه عملی یک «عوارض جانبی» محسوب می‌شود؟</p>\n<pre><code dir=\"ltr\">useEffect(() => {\n  document.title = `You clicked ${count} times`;\n});</code></pre>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ تغییر <code dir=\"lt\">document</code>.<code dir=\"lt\">title</code> عملی است که خارج از دنیای <code dir=\"lt\">React</code> رخ می‌دهد و به <code dir=\"lt\">DOM</code> مرورگر وابسته است، بنابراین یک عارضه جانبی است.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">B</code> صحیح است؟ تغییر <code dir=\"ltr\">document</code>.<code dir=\"ltr\">title</code> عملی است که خارج از دنیای <code dir=\"ltr\">React</code> رخ می‌دهد و به <code dir=\"ltr\">DOM</code> مرورگر وابسته است، بنابراین یک عارضه جانبی است.</p>",
       "tags": [
         "react.hooks.useEffect"
       ],
       "answers": [
         {
-          "text": "<p>فراخوانی <code dir=\"lt\">setCount</code></p>",
+          "text": "<p>فراخوانی <code dir=\"ltr\">setCount</code></p>",
           "isCorrect": false
         },
         {
-          "text": "<p>تغییر <code dir=\"lt\">document</code>.<code dir=\"lt\">title</code></p>",
+          "text": "<p>تغییر <code dir=\"ltr\">document</code>.<code dir=\"ltr\">title</code></p>",
           "isCorrect": true
         },
         {
-          "text": "<p>بازگشت <code dir=\"lt\">JSX</code></p>",
+          "text": "<p>بازگشت <code dir=\"ltr\">JSX</code></p>",
           "isCorrect": false
         },
         {
-          "text": "<p>تعریف متغیر <code dir=\"lt\">count</code></p>",
+          "text": "<p>تعریف متغیر <code dir=\"ltr\">count</code></p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>چرا باید تابع <code dir=\"lt\">useEffect</code> در سطح بالای کامپوننت فراخوانی شود؟</p>",
+      "text": "<p>چرا باید تابع <code dir=\"ltr\">useEffect</code> در سطح بالای کامپوننت فراخوانی شود؟</p>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">C</code> صحیح است؟ فراخوانی <code dir=\"lt\">useEffect</code> در سطح بالا باعث می‌شود ترتیب اجرای افکت‌ها ثابت بماند و <code dir=\"lt\">React</code> بتواند آنها را به درستی مدیریت کند، مشابه قوانین سایر هوک‌ها.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">C</code> صحیح است؟ فراخوانی <code dir=\"ltr\">useEffect</code> در سطح بالا باعث می‌شود ترتیب اجرای افکت‌ها ثابت بماند و <code dir=\"ltr\">React</code> بتواند آنها را به درستی مدیریت کند، مشابه قوانین سایر هوک‌ها.</p>",
       "tags": [
         "react.hooks.useEffect"
       ],
       "answers": [
         {
-          "text": "<p>چون <code dir=\"lt\">useEffect</code> تنها یک بار اجرا می‌شود</p>",
+          "text": "<p>چون <code dir=\"ltr\">useEffect</code> تنها یک بار اجرا می‌شود</p>",
           "isCorrect": false
         },
         {
@@ -95,7 +95,7 @@
           "isCorrect": false
         },
         {
-          "text": "<p>چون <code dir=\"lt\">React</code> نیاز دارد ترتیب اجرای افکت‌ها ثابت باشد</p>",
+          "text": "<p>چون <code dir=\"ltr\">React</code> نیاز دارد ترتیب اجرای افکت‌ها ثابت باشد</p>",
           "isCorrect": true
         },
         {
@@ -105,15 +105,15 @@
       ]
     },
     {
-      "text": "<p>چه تفاوتی بین اجرای افکت در <code dir=\"lt\">useEffect</code> و اجرای مستقیم کد در بدنه کامپوننت وجود دارد؟</p>",
+      "text": "<p>چه تفاوتی بین اجرای افکت در <code dir=\"ltr\">useEffect</code> و اجرای مستقیم کد در بدنه کامپوننت وجود دارد؟</p>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">A</code> صحیح است؟ کدهای داخل <code dir=\"lt\">useEffect</code> بعد از اعمال تغییرات در <code dir=\"lt\">DOM</code> اجرا می‌شوند و رندر اصلی را مسدود نمی‌کنند، در حالی که کد داخل بدنه کامپوننت در زمان رندر اجرا می‌شود.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">A</code> صحیح است؟ کدهای داخل <code dir=\"ltr\">useEffect</code> بعد از اعمال تغییرات در <code dir=\"ltr\">DOM</code> اجرا می‌شوند و رندر اصلی را مسدود نمی‌کنند، در حالی که کد داخل بدنه کامپوننت در زمان رندر اجرا می‌شود.</p>",
       "tags": [
         "react.hooks.useEffect"
       ],
       "answers": [
         {
-          "text": "<p><code dir=\"lt\">useEffect</code> بعد از رندر اجرا می‌شود</p>",
+          "text": "<p><code dir=\"ltr\">useEffect</code> بعد از رندر اجرا می‌شود</p>",
           "isCorrect": true
         },
         {
@@ -121,7 +121,7 @@
           "isCorrect": false
         },
         {
-          "text": "<p><code dir=\"lt\">useEffect</code> برای تعریف <code dir=\"lt\">state</code> است</p>",
+          "text": "<p><code dir=\"ltr\">useEffect</code> برای تعریف <code dir=\"ltr\">state</code> است</p>",
           "isCorrect": false
         },
         {
@@ -131,27 +131,27 @@
       ]
     },
     {
-      "text": "<p>کدام مثال باعث اجرای غیرضروری <code dir=\"lt\">useEffect</code> می‌شود؟</p>",
+      "text": "<p>کدام مثال باعث اجرای غیرضروری <code dir=\"ltr\">useEffect</code> می‌شود؟</p>",
       "difficulty": 3,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">A</code> صحیح است؟ اگر آرایه وابستگی‌ها ارائه نشود، افکت بعد از هر رندر اجرا می‌شود حتی اگر نیاز نباشد و باعث اجرای غیرضروری می‌شود.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">A</code> صحیح است؟ اگر آرایه وابستگی‌ها ارائه نشود، افکت بعد از هر رندر اجرا می‌شود حتی اگر نیاز نباشد و باعث اجرای غیرضروری می‌شود.</p>",
       "tags": [
         "react.hooks.useEffect"
       ],
       "answers": [
         {
-          "text": "<p><code dir=\"lt\">useEffect(() => { console.log(count); }, [count]);</code></p>",
+          "text": "<p><code dir=\"ltr\">useEffect(() => { console.log(count); }, [count]);</code></p>",
           "isCorrect": false
         },
         {
-          "text": "<p><code dir=\"lt\">useEffect(() => { console.log(count); });</code></p>",
+          "text": "<p><code dir=\"ltr\">useEffect(() => { console.log(count); });</code></p>",
           "isCorrect": true
         },
         {
-          "text": "<p><code dir=\"lt\">useEffect(() => { console.log(count); }, []);</code></p>",
+          "text": "<p><code dir=\"ltr\">useEffect(() => { console.log(count); }, []);</code></p>",
           "isCorrect": false
         },
         {
-          "text": "<p><code dir=\"lt\">useEffect(() => { console.log('hello'); }, []);</code></p>",
+          "text": "<p><code dir=\"ltr\">useEffect(() => { console.log('hello'); }, []);</code></p>",
           "isCorrect": false
         }
       ]

@@ -1,15 +1,15 @@
 {
   "questions": [
     {
-      "text": "<p>در منوی چندسطحی تعاملی که با <code dir=\"lt\">useState</code> پیاده‌سازی شده، متغیر <code dir=\"lt\">state</code> <code dir=\"lt\">dropdown</code> چه نقشی دارد؟\n\nمثال:</p>\n<pre><code dir=\"lt\">const [dropdown, setDropdown] = useState(false);\n<button onClick={() => setDropdown(prev => !prev)}>{items.title}</button></code></pre>",
+      "text": "<p>در منوی چندسطحی تعاملی که با <code dir=\"ltr\">useState</code> پیاده‌سازی شده، متغیر <code dir=\"ltr\">state</code> <code dir=\"ltr\">dropdown</code> چه نقشی دارد؟\n\nمثال:</p>\n<pre><code dir=\"ltr\">const [dropdown, setDropdown] = useState(false);\n<button onClick={() => setDropdown(prev => !prev)}>{items.title}</button></code></pre>",
       "difficulty": 1,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ زیرا <code dir=\"lt\">state</code> <code>dropdown</code> تعیین می‌کند که زیرمنو نمایش داده شود یا مخفی باشد و با کلیک کاربر <code dir=\"lt\">toggle</code> می‌شود.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">B</code> صحیح است؟ زیرا <code dir=\"ltr\">state</code> <code>dropdown</code> تعیین می‌کند که زیرمنو نمایش داده شود یا مخفی باشد و با کلیک کاربر <code dir=\"ltr\">toggle</code> می‌شود.</p>",
       "tags": [
         "react.components.menu.dropdown"
       ],
       "answers": [
         {
-          "text": "<p>مقدار <code dir=\"lt\">URL</code> آیتم منو را نگهداری می‌کند</p>",
+          "text": "<p>مقدار <code dir=\"ltr\">URL</code> آیتم منو را نگهداری می‌کند</p>",
           "isCorrect": false
         },
         {
@@ -27,19 +27,19 @@
       ]
     },
     {
-      "text": "<p>در کامپوننت <code dir=\"lt\">MenuItems</code>، چرا برای آیتم‌های دارای زیرمنو از یک <code dir=\"lt\">button</code> به جای <code dir=\"lt\">a</code> استفاده شده است؟</p>",
+      "text": "<p>در کامپوننت <code dir=\"ltr\">MenuItems</code>، چرا برای آیتم‌های دارای زیرمنو از یک <code dir=\"ltr\">button</code> به جای <code dir=\"ltr\">a</code> استفاده شده است؟</p>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">A</code> صحیح است؟ دکمه به جای لینک، امکان ثبت رویداد <code dir=\"lt\">onClick</code> برای باز/بسته کردن زیرمنو را فراهم می‌کند و به طور منطقی عملکرد <code dir=\"lt\">toggle</code> را انجام می‌دهد.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">A</code> صحیح است؟ دکمه به جای لینک، امکان ثبت رویداد <code dir=\"ltr\">onClick</code> برای باز/بسته کردن زیرمنو را فراهم می‌کند و به طور منطقی عملکرد <code dir=\"ltr\">toggle</code> را انجام می‌دهد.</p>",
       "tags": [
         "react.components.menu.dropdown"
       ],
       "answers": [
         {
-          "text": "<p>برای ثبت رویداد <code dir=\"lt\">onClick</code> و <code dir=\"lt\">toggle</code> زیرمنو</p>",
+          "text": "<p>برای ثبت رویداد <code dir=\"ltr\">onClick</code> و <code dir=\"ltr\">toggle</code> زیرمنو</p>",
           "isCorrect": true
         },
         {
-          "text": "<p>برای هدایت به <code dir=\"lt\">URL</code> آیتم</p>",
+          "text": "<p>برای هدایت به <code dir=\"ltr\">URL</code> آیتم</p>",
           "isCorrect": false
         },
         {
@@ -53,9 +53,9 @@
       ]
     },
     {
-      "text": "<p>در مثال زیر، چرا کلاس <code dir=\"lt\">CSS</code> <code dir=\"lt\">show</code> به <code dir=\"lt\">ul</code> اضافه می‌شود؟</p>\n<pre><code dir=\"lt\"><ul className={`dropdown ${dropdown ? 'show' : ''}`}>\n  {submenus.map((submenu, index) => (\n    <MenuItems items={submenu} key={index} />\n  ))}\n</code></pre>",
+      "text": "<p>در مثال زیر، چرا کلاس <code dir=\"ltr\">CSS</code> <code dir=\"ltr\">show</code> به <code dir=\"ltr\">ul</code> اضافه می‌شود؟</p>\n<pre><code dir=\"ltr\"><ul className={`dropdown ${dropdown ? 'show' : ''}`}>\n  {submenus.map((submenu, index) => (\n    <MenuItems items={submenu} key={index} />\n  ))}\n</code></pre>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">C</code> صحیح است؟ کلاس <code>show</code> باعث می‌شود که زیرمنو به صورت بصری نمایش داده شود و با تغییر <code dir=\"lt\">state</code> <code>dropdown</code> اضافه یا حذف می‌شود.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">C</code> صحیح است؟ کلاس <code>show</code> باعث می‌شود که زیرمنو به صورت بصری نمایش داده شود و با تغییر <code dir=\"ltr\">state</code> <code>dropdown</code> اضافه یا حذف می‌شود.</p>",
       "tags": [
         "react.components.menu.dropdown"
       ],
@@ -69,7 +69,7 @@
           "isCorrect": false
         },
         {
-          "text": "<p>برای کنترل نمایش یا پنهان شدن زیرمنو با <code dir=\"lt\">CSS</code></p>",
+          "text": "<p>برای کنترل نمایش یا پنهان شدن زیرمنو با <code dir=\"ltr\">CSS</code></p>",
           "isCorrect": true
         },
         {
@@ -79,9 +79,9 @@
       ]
     },
     {
-      "text": "<p>چه مزیتی در استفاده از <code dir=\"lt\">state</code> <code dir=\"lt\">dropdown</code> در هر <code dir=\"lt\">MenuItems</code> وجود دارد نسبت به یک <code dir=\"lt\">state</code> سراسری برای تمام زیرمنوها؟</p>",
+      "text": "<p>چه مزیتی در استفاده از <code dir=\"ltr\">state</code> <code dir=\"ltr\">dropdown</code> در هر <code dir=\"ltr\">MenuItems</code> وجود دارد نسبت به یک <code dir=\"ltr\">state</code> سراسری برای تمام زیرمنوها؟</p>",
       "difficulty": 3,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">D</code> صحیح است؟ داشتن <code dir=\"lt\">state</code> مجزا برای هر آیتم اجازه می‌دهد که زیرمنوها به صورت مستقل <code dir=\"lt\">toggle</code> شوند و رندر فقط برای آیتم تغییر یافته انجام شود.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">D</code> صحیح است؟ داشتن <code dir=\"ltr\">state</code> مجزا برای هر آیتم اجازه می‌دهد که زیرمنوها به صورت مستقل <code dir=\"ltr\">toggle</code> شوند و رندر فقط برای آیتم تغییر یافته انجام شود.</p>",
       "tags": [
         "react.components.menu.dropdown"
       ],
@@ -95,19 +95,19 @@
           "isCorrect": false
         },
         {
-          "text": "<p>برای استفاده از <code dir=\"lt\">useReducer</code> الزامی است</p>",
+          "text": "<p>برای استفاده از <code dir=\"ltr\">useReducer</code> الزامی است</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>زیرمنوها به صورت مستقل <code dir=\"lt\">toggle</code> می‌شوند و رندر بهینه انجام می‌شود</p>",
+          "text": "<p>زیرمنوها به صورت مستقل <code dir=\"ltr\">toggle</code> می‌شوند و رندر بهینه انجام می‌شود</p>",
           "isCorrect": true
         }
       ]
     },
     {
-      "text": "<p>در <code dir=\"lt\">Dropdown</code> <code dir=\"lt\">component</code>، استفاده از <code dir=\"lt\">map</code> برای رندر زیرمنوها چه کاربردی دارد؟</p>\n<pre><code dir=\"lt\">{submenus.map((submenu, index) => (\n  <MenuItems items={submenu} key={index} />\n))}</code></pre>",
+      "text": "<p>در <code dir=\"ltr\">Dropdown</code> <code dir=\"ltr\">component</code>، استفاده از <code dir=\"ltr\">map</code> برای رندر زیرمنوها چه کاربردی دارد؟</p>\n<pre><code dir=\"ltr\">{submenus.map((submenu, index) => (\n  <MenuItems items={submenu} key={index} />\n))}</code></pre>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ <code dir=\"lt\">map</code> برای پیمایش آرایه <code dir=\"lt\">submenus</code> و ایجاد یک <code dir=\"lt\">MenuItems</code> برای هر آیتم استفاده می‌شود و امکان رندر داینامیک زیرمنوها را فراهم می‌کند.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">B</code> صحیح است؟ <code dir=\"ltr\">map</code> برای پیمایش آرایه <code dir=\"ltr\">submenus</code> و ایجاد یک <code dir=\"ltr\">MenuItems</code> برای هر آیتم استفاده می‌شود و امکان رندر داینامیک زیرمنوها را فراهم می‌کند.</p>",
       "tags": [
         "react.components.menu.dropdown"
       ],
@@ -117,11 +117,11 @@
           "isCorrect": false
         },
         {
-          "text": "<p>برای رندر داینامیک هر آیتم زیرمنو با <code dir=\"lt\">key</code> منحصر به فرد</p>",
+          "text": "<p>برای رندر داینامیک هر آیتم زیرمنو با <code dir=\"ltr\">key</code> منحصر به فرد</p>",
           "isCorrect": true
         },
         {
-          "text": "<p>برای تغییر <code dir=\"lt\">CSS</code> کلاس زیرمنو</p>",
+          "text": "<p>برای تغییر <code dir=\"ltr\">CSS</code> کلاس زیرمنو</p>",
           "isCorrect": false
         },
         {

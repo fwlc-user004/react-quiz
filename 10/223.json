@@ -1,15 +1,15 @@
 {
   "questions": [
     {
-      "text": "<p>چرا استفاده از <code dir=\"lt\">useReducer</code> + <code dir=\"lt\">useContext</code> در اپلیکیشن‌های کوچک تا متوسط توصیه می‌شود؟</p>",
+      "text": "<p>چرا استفاده از <code dir=\"ltr\">useReducer</code> + <code dir=\"ltr\">useContext</code> در اپلیکیشن‌های کوچک تا متوسط توصیه می‌شود؟</p>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">A</code> صحیح است؟ این الگو کاملاً بومی <code dir=\"lt\">React</code> بوده و نیازی به نصب کتابخانه‌های خارجی ندارد و برای اپلیکیشن‌های کوچک تا متوسط بسیار مناسب است.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">A</code> صحیح است؟ این الگو کاملاً بومی <code dir=\"ltr\">React</code> بوده و نیازی به نصب کتابخانه‌های خارجی ندارد و برای اپلیکیشن‌های کوچک تا متوسط بسیار مناسب است.</p>",
       "tags": [
         "react.state-management"
       ],
       "answers": [
         {
-          "text": "<p>چون وابستگی خارجی ندارد و بومی <code dir=\"lt\">React</code> است</p>",
+          "text": "<p>چون وابستگی خارجی ندارد و بومی <code dir=\"ltr\">React</code> است</p>",
           "isCorrect": true
         },
         {
@@ -17,7 +17,7 @@
           "isCorrect": false
         },
         {
-          "text": "<p>چون نیاز به <code dir=\"lt\">reducer</code> ندارد</p>",
+          "text": "<p>چون نیاز به <code dir=\"ltr\">reducer</code> ندارد</p>",
           "isCorrect": false
         },
         {
@@ -27,71 +27,71 @@
       ]
     },
     {
-      "text": "<p>یکی از محدودیت‌های اصلی استفاده از <code dir=\"lt\">Context</code> در اپلیکیشن‌های بزرگ چیست؟</p>",
+      "text": "<p>یکی از محدودیت‌های اصلی استفاده از <code dir=\"ltr\">Context</code> در اپلیکیشن‌های بزرگ چیست؟</p>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">A</code> صحیح است؟ هر کامپوننتی که <code dir=\"lt\">Context</code> را مصرف می‌کند، با تغییر <code dir=\"lt\">value</code> دوباره رندر می‌شود و این ممکن است در اپلیکیشن‌های بزرگ باعث رندرهای غیرضروری شود.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">A</code> صحیح است؟ هر کامپوننتی که <code dir=\"ltr\">Context</code> را مصرف می‌کند، با تغییر <code dir=\"ltr\">value</code> دوباره رندر می‌شود و این ممکن است در اپلیکیشن‌های بزرگ باعث رندرهای غیرضروری شود.</p>",
       "tags": [
         "react.state-management"
       ],
       "answers": [
         {
-          "text": "<p><code dir=\"lt\">Context</code> اجازه استفاده از <code dir=\"lt\">useReducer</code> را نمی‌دهد</p>",
+          "text": "<p><code dir=\"ltr\">Context</code> اجازه استفاده از <code dir=\"ltr\">useReducer</code> را نمی‌دهد</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>هر تغییر در <code dir=\"lt\">value</code> <code dir=\"lt\">context</code> باعث رندر مجدد تمام مصرف‌کنندگان آن می‌شود</p>",
+          "text": "<p>هر تغییر در <code dir=\"ltr\">value</code> <code dir=\"ltr\">context</code> باعث رندر مجدد تمام مصرف‌کنندگان آن می‌شود</p>",
           "isCorrect": true
         },
         {
-          "text": "<p><code dir=\"lt\">Context</code> نمی‌تواند داده‌های سراسری را مدیریت کند</p>",
+          "text": "<p><code dir=\"ltr\">Context</code> نمی‌تواند داده‌های سراسری را مدیریت کند</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>استفاده از <code dir=\"lt\">Context</code> همیشه منجر به خطا در <code dir=\"lt\">runtime</code> می‌شود</p>",
+          "text": "<p>استفاده از <code dir=\"ltr\">Context</code> همیشه منجر به خطا در <code dir=\"ltr\">runtime</code> می‌شود</p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p><code dir=\"lt\">Redux</code> در مقایسه با الگوی <code dir=\"lt\">useReducer</code> + <code dir=\"lt\">useContext</code> چه مزیتی دارد؟</p>",
+      "text": "<p><code dir=\"ltr\">Redux</code> در مقایسه با الگوی <code dir=\"ltr\">useReducer</code> + <code dir=\"ltr\">useContext</code> چه مزیتی دارد؟</p>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">C</code> صحیح است؟ <code dir=\"lt\">Redux</code> دارای ابزارهای توسعه قدرتمند است که امکان مشاهده تغییرات <code dir=\"lt\">state</code> در طول زمان و <code dir=\"lt\">time-travel</code> <code dir=\"lt\">debugging</code> را فراهم می‌کند.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">C</code> صحیح است؟ <code dir=\"ltr\">Redux</code> دارای ابزارهای توسعه قدرتمند است که امکان مشاهده تغییرات <code dir=\"ltr\">state</code> در طول زمان و <code dir=\"ltr\">time-travel</code> <code dir=\"ltr\">debugging</code> را فراهم می‌کند.</p>",
       "tags": [
         "react.state-management"
       ],
       "answers": [
         {
-          "text": "<p>نیازی به <code dir=\"lt\">reducer</code> ندارد</p>",
+          "text": "<p>نیازی به <code dir=\"ltr\">reducer</code> ندارد</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>وابستگی به <code dir=\"lt\">Context</code> ندارد</p>",
+          "text": "<p>وابستگی به <code dir=\"ltr\">Context</code> ندارد</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>ابزارهای دیباگینگ پیشرفته مانند <code dir=\"lt\">Redux</code> <code dir=\"lt\">DevTools</code></p>",
+          "text": "<p>ابزارهای دیباگینگ پیشرفته مانند <code dir=\"ltr\">Redux</code> <code dir=\"ltr\">DevTools</code></p>",
           "isCorrect": true
         },
         {
-          "text": "<p>همیشه ساده‌تر از <code dir=\"lt\">useReducer</code> + <code dir=\"lt\">useContext</code> است</p>",
+          "text": "<p>همیشه ساده‌تر از <code dir=\"ltr\">useReducer</code> + <code dir=\"ltr\">useContext</code> است</p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p><code dir=\"lt\">Zustand</code> یا <code dir=\"lt\">Jotai</code> چه مزیتی نسبت به <code dir=\"lt\">useReducer</code> + <code dir=\"lt\">useContext</code> ارائه می‌دهند؟</p>",
+      "text": "<p><code dir=\"ltr\">Zustand</code> یا <code dir=\"ltr\">Jotai</code> چه مزیتی نسبت به <code dir=\"ltr\">useReducer</code> + <code dir=\"ltr\">useContext</code> ارائه می‌دهند؟</p>",
       "difficulty": 1,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ این کتابخانه‌ها با استفاده از هوک‌های سفارشی، ایجاد <code dir=\"lt\">store</code> و مصرف آن را بسیار ساده می‌کنند و نیازی به <code dir=\"lt\">Provider</code> یا <code dir=\"lt\">reducer</code>های پیچیده ندارند.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">B</code> صحیح است؟ این کتابخانه‌ها با استفاده از هوک‌های سفارشی، ایجاد <code dir=\"ltr\">store</code> و مصرف آن را بسیار ساده می‌کنند و نیازی به <code dir=\"ltr\">Provider</code> یا <code dir=\"ltr\">reducer</code>های پیچیده ندارند.</p>",
       "tags": [
         "react.state-management"
       ],
       "answers": [
         {
-          "text": "<p>بدون نیاز به هوک‌های <code dir=\"lt\">React</code></p>",
+          "text": "<p>بدون نیاز به هوک‌های <code dir=\"ltr\">React</code></p>",
           "isCorrect": false
         },
         {
-          "text": "<p><code dir=\"lt\">API</code> بسیار ساده و بدون نیاز به <code dir=\"lt\">Provider</code> یا <code dir=\"lt\">reducer</code></p>",
+          "text": "<p><code dir=\"ltr\">API</code> بسیار ساده و بدون نیاز به <code dir=\"ltr\">Provider</code> یا <code dir=\"ltr\">reducer</code></p>",
           "isCorrect": true
         },
         {
@@ -105,27 +105,27 @@
       ]
     },
     {
-      "text": "<p>در یک اپلیکیشن بزرگ که <code dir=\"lt\">state</code> سراسری پیچیده و چندین اکشن همزمان دارد، چه رویکردی بهترین انتخاب است و چرا؟</p>",
+      "text": "<p>در یک اپلیکیشن بزرگ که <code dir=\"ltr\">state</code> سراسری پیچیده و چندین اکشن همزمان دارد، چه رویکردی بهترین انتخاب است و چرا؟</p>",
       "difficulty": 3,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">D</code> صحیح است؟ در اپلیکیشن‌های بزرگ، کتابخانه‌های اختصاصی مانند <code dir=\"lt\">Redux</code> یا <code dir=\"lt\">Zustand</code> ابزارهای بهینه‌سازی، دیباگینگ و مدیریت <code dir=\"lt\">state</code> پیچیده را به صورت مقیاس‌پذیر ارائه می‌دهند و استفاده از الگوهای بومی ممکن است ناکارآمد باشد.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">D</code> صحیح است؟ در اپلیکیشن‌های بزرگ، کتابخانه‌های اختصاصی مانند <code dir=\"ltr\">Redux</code> یا <code dir=\"ltr\">Zustand</code> ابزارهای بهینه‌سازی، دیباگینگ و مدیریت <code dir=\"ltr\">state</code> پیچیده را به صورت مقیاس‌پذیر ارائه می‌دهند و استفاده از الگوهای بومی ممکن است ناکارآمد باشد.</p>",
       "tags": [
         "react.state-management"
       ],
       "answers": [
         {
-          "text": "<p>صرفاً <code dir=\"lt\">useState</code> در هر کامپوننت</p>",
+          "text": "<p>صرفاً <code dir=\"ltr\">useState</code> در هر کامپوننت</p>",
           "isCorrect": false
         },
         {
-          "text": "<p><code dir=\"lt\">useReducer</code> + <code dir=\"lt\">useContext</code> بدون جداسازی <code dir=\"lt\">state</code></p>",
+          "text": "<p><code dir=\"ltr\">useReducer</code> + <code dir=\"ltr\">useContext</code> بدون جداسازی <code dir=\"ltr\">state</code></p>",
           "isCorrect": false
         },
         {
-          "text": "<p>نگهداری <code dir=\"lt\">state</code> در متغیرهای محلی جاوااسکریپت</p>",
+          "text": "<p>نگهداری <code dir=\"ltr\">state</code> در متغیرهای محلی جاوااسکریپت</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>استفاده از <code dir=\"lt\">Redux</code> یا <code dir=\"lt\">Zustand</code></p>",
+          "text": "<p>استفاده از <code dir=\"ltr\">Redux</code> یا <code dir=\"ltr\">Zustand</code></p>",
           "isCorrect": true
         }
       ]

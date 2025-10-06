@@ -1,9 +1,9 @@
 {
   "questions": [
     {
-      "text": "<p>چرا از <code dir=\"lt\">props</code> در <code dir=\"lt\">React</code> استفاده می‌کنیم؟</p>",
+      "text": "<p>چرا از <code dir=\"ltr\">props</code> در <code dir=\"ltr\">React</code> استفاده می‌کنیم؟</p>",
       "difficulty": 1,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ <code dir=\"lt\">props</code> به ما اجازه می‌دهد داده‌ها را از یک کامپوننت والد به فرزند منتقل کنیم تا خروجی کامپوننت‌ها بر اساس داده‌های ورودی پویا و قابل استفاده مجدد باشد.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">B</code> صحیح است؟ <code dir=\"ltr\">props</code> به ما اجازه می‌دهد داده‌ها را از یک کامپوننت والد به فرزند منتقل کنیم تا خروجی کامپوننت‌ها بر اساس داده‌های ورودی پویا و قابل استفاده مجدد باشد.</p>",
       "tags": [
         "react.components.props"
       ],
@@ -21,15 +21,15 @@
           "isCorrect": false
         },
         {
-          "text": "<p>برای اعمال استایل‌ها به عناصر <code dir=\"lt\">JSX</code></p>",
+          "text": "<p>برای اعمال استایل‌ها به عناصر <code dir=\"ltr\">JSX</code></p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>در کد زیر، خروجی کامپوننت <code dir=\"lt\">Greeting</code> چه خواهد بود؟</p>\n<pre><code dir=\"lt\">function Greeting(props) {\n  return (\n    &lt;div&gt;\n      &lt;h2&gt;{props.message}&lt;/h2&gt;\n      &lt;p&gt;This is a message for {props.name}.&lt;/p&gt;\n    &lt;/div&gt;\n  );\n}</code></pre>",
+      "text": "<p>در کد زیر، خروجی کامپوننت <code dir=\"ltr\">Greeting</code> چه خواهد بود؟</p>\n<pre><code dir=\"ltr\">function Greeting(props) {\n  return (\n    &lt;div&gt;\n      &lt;h2&gt;{props.message}&lt;/h2&gt;\n      &lt;p&gt;This is a message for {props.name}.&lt;/p&gt;\n    &lt;/div&gt;\n  );\n}</code></pre>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">C</code> صحیح است؟ مقدار <code dir=\"lt\">props</code>.<code dir=\"lt\">name</code> و <code dir=\"lt\">props</code>.<code dir=\"lt\">message</code> از کامپوننت والد ارسال شده و در <code dir=\"lt\">JSX</code> رندر می‌شود؛ بنابراین متن پیام بر اساس داده‌های ورودی متفاوت خواهد بود.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">C</code> صحیح است؟ مقدار <code dir=\"ltr\">props</code>.<code dir=\"ltr\">name</code> و <code dir=\"ltr\">props</code>.<code dir=\"ltr\">message</code> از کامپوننت والد ارسال شده و در <code dir=\"ltr\">JSX</code> رندر می‌شود؛ بنابراین متن پیام بر اساس داده‌های ورودی متفاوت خواهد بود.</p>",
       "tags": [
         "react.components.props"
       ],
@@ -43,29 +43,29 @@
           "isCorrect": false
         },
         {
-          "text": "<p>خروجی متن پیام را با مقادیر <code dir=\"lt\">props</code> نشان می‌دهد</p>",
+          "text": "<p>خروجی متن پیام را با مقادیر <code dir=\"ltr\">props</code> نشان می‌دهد</p>",
           "isCorrect": true
         },
         {
-          "text": "<p><code dir=\"lt\">JSX</code> خطا می‌دهد چون <code dir=\"lt\">props</code> <code dir=\"lt\">undefined</code> هستند</p>",
+          "text": "<p><code dir=\"ltr\">JSX</code> خطا می‌دهد چون <code dir=\"ltr\">props</code> <code dir=\"ltr\">undefined</code> هستند</p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>چه تفاوتی بین استفاده از <code dir=\"lt\">props</code> و <code dir=\"lt\">state</code> در <code dir=\"lt\">React</code> وجود دارد؟</p>",
+      "text": "<p>چه تفاوتی بین استفاده از <code dir=\"ltr\">props</code> و <code dir=\"ltr\">state</code> در <code dir=\"ltr\">React</code> وجود دارد؟</p>",
       "difficulty": 3,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">A</code> صحیح است؟ <code dir=\"lt\">props</code> توسط والد ارسال می‌شوند و تغییرناپذیر هستند، در حالی که <code dir=\"lt\">state</code> داده‌هایی هستند که می‌توانند در طول عمر کامپوننت تغییر کنند و باعث رندر مجدد آن شوند.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">A</code> صحیح است؟ <code dir=\"ltr\">props</code> توسط والد ارسال می‌شوند و تغییرناپذیر هستند، در حالی که <code dir=\"ltr\">state</code> داده‌هایی هستند که می‌توانند در طول عمر کامپوننت تغییر کنند و باعث رندر مجدد آن شوند.</p>",
       "tags": [
         "react.components.props"
       ],
       "answers": [
         {
-          "text": "<p><code dir=\"lt\">props</code> از والد می‌آیند و تغییرناپذیر هستند؛ <code dir=\"lt\">state</code> قابل تغییر است و باعث رندر مجدد می‌شود</p>",
+          "text": "<p><code dir=\"ltr\">props</code> از والد می‌آیند و تغییرناپذیر هستند؛ <code dir=\"ltr\">state</code> قابل تغییر است و باعث رندر مجدد می‌شود</p>",
           "isCorrect": true
         },
         {
-          "text": "<p><code dir=\"lt\">state</code> از والد می‌آید و <code dir=\"lt\">props</code> قابل تغییر هستند</p>",
+          "text": "<p><code dir=\"ltr\">state</code> از والد می‌آید و <code dir=\"ltr\">props</code> قابل تغییر هستند</p>",
           "isCorrect": false
         },
         {
@@ -73,15 +73,15 @@
           "isCorrect": false
         },
         {
-          "text": "<p><code dir=\"lt\">props</code> برای <code dir=\"lt\">CSS</code> و <code dir=\"lt\">state</code> برای <code dir=\"lt\">JavaScript</code> استفاده می‌شوند</p>",
+          "text": "<p><code dir=\"ltr\">props</code> برای <code dir=\"ltr\">CSS</code> و <code dir=\"ltr\">state</code> برای <code dir=\"ltr\">JavaScript</code> استفاده می‌شوند</p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>چگونه می‌توانیم کد خواناتر و مختصرتر هنگام کار با <code dir=\"lt\">props</code> داشته باشیم؟</p>",
+      "text": "<p>چگونه می‌توانیم کد خواناتر و مختصرتر هنگام کار با <code dir=\"ltr\">props</code> داشته باشیم؟</p>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">C</code> صحیح است؟ با استفاده از <code dir=\"lt\">destructuring</code> می‌توانیم <code dir=\"lt\">props</code> را در امضای تابع باز کنیم و به جای <code dir=\"lt\">props</code>.<code dir=\"lt\">name</code> یا <code dir=\"lt\">props</code>.<code dir=\"lt\">message</code> مستقیماً به <code dir=\"lt\">name</code> و <code dir=\"lt\">message</code> دسترسی داشته باشیم.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">C</code> صحیح است؟ با استفاده از <code dir=\"ltr\">destructuring</code> می‌توانیم <code dir=\"ltr\">props</code> را در امضای تابع باز کنیم و به جای <code dir=\"ltr\">props</code>.<code dir=\"ltr\">name</code> یا <code dir=\"ltr\">props</code>.<code dir=\"ltr\">message</code> مستقیماً به <code dir=\"ltr\">name</code> و <code dir=\"ltr\">message</code> دسترسی داشته باشیم.</p>",
       "tags": [
         "react.components.props"
       ],
@@ -91,23 +91,23 @@
           "isCorrect": false
         },
         {
-          "text": "<p>با استفاده از <code dir=\"lt\">defaultProps</code></p>",
+          "text": "<p>با استفاده از <code dir=\"ltr\">defaultProps</code></p>",
           "isCorrect": false
         },
         {
-          "text": "<p>با استفاده از <code dir=\"lt\">destructuring</code> در امضای تابع</p>",
+          "text": "<p>با استفاده از <code dir=\"ltr\">destructuring</code> در امضای تابع</p>",
           "isCorrect": true
         },
         {
-          "text": "<p>با قرار دادن <code dir=\"lt\">props</code> در <code dir=\"lt\">useState</code></p>",
+          "text": "<p>با قرار دادن <code dir=\"ltr\">props</code> در <code dir=\"ltr\">useState</code></p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>چرا <code dir=\"lt\">props</code>ها در <code dir=\"lt\">React</code> تغییرناپذیر (<code dir=\"lt\">immutable</code>) هستند؟</p>",
+      "text": "<p>چرا <code dir=\"ltr\">props</code>ها در <code dir=\"ltr\">React</code> تغییرناپذیر (<code dir=\"ltr\">immutable</code>) هستند؟</p>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ چون <code dir=\"lt\">props</code> داده‌هایی هستند که از والد به فرزند منتقل می‌شوند و کامپوننت‌های <code dir=\"lt\">React</code> باید مانند توابع خالص رفتار کنند تا پیش‌بینی خروجی آسان باشد و باگ‌ها کاهش یابد.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">B</code> صحیح است؟ چون <code dir=\"ltr\">props</code> داده‌هایی هستند که از والد به فرزند منتقل می‌شوند و کامپوننت‌های <code dir=\"ltr\">React</code> باید مانند توابع خالص رفتار کنند تا پیش‌بینی خروجی آسان باشد و باگ‌ها کاهش یابد.</p>",
       "tags": [
         "react.components.props"
       ],
@@ -121,11 +121,11 @@
           "isCorrect": true
         },
         {
-          "text": "<p>چون <code dir=\"lt\">props</code> برای استایل دادن به عناصر هستند</p>",
+          "text": "<p>چون <code dir=\"ltr\">props</code> برای استایل دادن به عناصر هستند</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>چون <code dir=\"lt\">React</code> از <code dir=\"lt\">state</code> برای همه داده‌ها استفاده می‌کند</p>",
+          "text": "<p>چون <code dir=\"ltr\">React</code> از <code dir=\"ltr\">state</code> برای همه داده‌ها استفاده می‌کند</p>",
           "isCorrect": false
         }
       ]

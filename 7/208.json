@@ -1,15 +1,15 @@
 {
   "questions": [
     {
-      "text": "<p>هوک <code dir=\"lt\">useRef</code> چه چیزی را در کامپوننت‌های <code dir=\"lt\">React</code> مدیریت می‌کند و چرا تغییر آن باعث رندر مجدد نمی‌شود؟</p>",
+      "text": "<p>هوک <code dir=\"ltr\">useRef</code> چه چیزی را در کامپوننت‌های <code dir=\"ltr\">React</code> مدیریت می‌کند و چرا تغییر آن باعث رندر مجدد نمی‌شود؟</p>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">A</code> صحیح است؟ شیء برگشتی <code dir=\"lt\">useRef</code> دارای پراپرتی .<code dir=\"lt\">current</code> است و تغییر مقدار آن باعث رندر مجدد نمی‌شود، زیرا این مقدار برای نگهداری داده‌های داخلی یا دسترسی به <code dir=\"lt\">DOM</code> استفاده می‌شود، نه برای نمایش مستقیم در <code dir=\"lt\">UI</code>.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">A</code> صحیح است؟ شیء برگشتی <code dir=\"ltr\">useRef</code> دارای پراپرتی .<code dir=\"ltr\">current</code> است و تغییر مقدار آن باعث رندر مجدد نمی‌شود، زیرا این مقدار برای نگهداری داده‌های داخلی یا دسترسی به <code dir=\"ltr\">DOM</code> استفاده می‌شود، نه برای نمایش مستقیم در <code dir=\"ltr\">UI</code>.</p>",
       "tags": [
         "react.hooks.refs"
       ],
       "answers": [
         {
-          "text": "<p>شیء <code dir=\"lt\">mutable</code> با پراپرتی .<code dir=\"lt\">current</code> که تغییر آن رندر را تریگر نمی‌کند</p>",
+          "text": "<p>شیء <code dir=\"ltr\">mutable</code> با پراپرتی .<code dir=\"ltr\">current</code> که تغییر آن رندر را تریگر نمی‌کند</p>",
           "isCorrect": true
         },
         {
@@ -21,119 +21,119 @@
           "isCorrect": false
         },
         {
-          "text": "<p>مقداری که تنها برای <code dir=\"lt\">state</code>های <code dir=\"lt\">UI</code> استفاده می‌شود</p>",
+          "text": "<p>مقداری که تنها برای <code dir=\"ltr\">state</code>های <code dir=\"ltr\">UI</code> استفاده می‌شود</p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>در مثال زیر، چه چیزی باعث می‌شود <code dir=\"lt\">input</code> پس از رندر خودکار فوکوس شود؟<code dir=\"lt\">\nfunction FocusInput() {\n  const inputRef = useRef(null);\n\n  useEffect(() => {\n    inputRef.current.focus();\n  }, []);\n\n  return <input ref={inputRef} type=\"text\" />;\n}</code></p>",
+      "text": "<p>در مثال زیر، چه چیزی باعث می‌شود <code dir=\"ltr\">input</code> پس از رندر خودکار فوکوس شود؟<code dir=\"ltr\">\nfunction FocusInput() {\n  const inputRef = useRef(null);\n\n  useEffect(() => {\n    inputRef.current.focus();\n  }, []);\n\n  return <input ref={inputRef} type=\"text\" />;\n}</code></p>",
       "difficulty": 1,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ <code dir=\"lt\">useEffect</code> با آرایه وابستگی خالی باعث می‌شود افکت پس از رندر اولیه اجرا شود و <code dir=\"lt\">inputRef</code>.<code dir=\"lt\">current</code> به عنصر <code dir=\"lt\">DOM</code> واقعی اشاره کرده و متد <code dir=\"lt\">focus</code>() را فراخوانی می‌کند.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">B</code> صحیح است؟ <code dir=\"ltr\">useEffect</code> با آرایه وابستگی خالی باعث می‌شود افکت پس از رندر اولیه اجرا شود و <code dir=\"ltr\">inputRef</code>.<code dir=\"ltr\">current</code> به عنصر <code dir=\"ltr\">DOM</code> واقعی اشاره کرده و متد <code dir=\"ltr\">focus</code>() را فراخوانی می‌کند.</p>",
       "tags": [
         "react.hooks.refs"
       ],
       "answers": [
         {
-          "text": "<p><code dir=\"lt\">JSX</code> خودکار فوکوس را اعمال می‌کند</p>",
+          "text": "<p><code dir=\"ltr\">JSX</code> خودکار فوکوس را اعمال می‌کند</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>استفاده از <code dir=\"lt\">inputRef.current.focus()</code> در <code dir=\"lt\">useEffect</code> پس از <code dir=\"lt\">mount</code></p>",
+          "text": "<p>استفاده از <code dir=\"ltr\">inputRef.current.focus()</code> در <code dir=\"ltr\">useEffect</code> پس از <code dir=\"ltr\">mount</code></p>",
           "isCorrect": true
         },
         {
-          "text": "<p><code dir=\"lt\">React</code> به صورت پیش‌فرض همه <code dir=\"lt\">input</code>ها را فوکوس می‌کند</p>",
+          "text": "<p><code dir=\"ltr\">React</code> به صورت پیش‌فرض همه <code dir=\"ltr\">input</code>ها را فوکوس می‌کند</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>تابع <code dir=\"lt\">render</code>() عنصر را فوکوس می‌کند</p>",
+          "text": "<p>تابع <code dir=\"ltr\">render</code>() عنصر را فوکوس می‌کند</p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>چرا باید تابع <code dir=\"lt\">handle</code> یا <code dir=\"lt\">event</code> <code dir=\"lt\">handler</code> را بدون () به <code dir=\"lt\">onClick</code> پاس دهیم؟</p>",
+      "text": "<p>چرا باید تابع <code dir=\"ltr\">handle</code> یا <code dir=\"ltr\">event</code> <code dir=\"ltr\">handler</code> را بدون () به <code dir=\"ltr\">onClick</code> پاس دهیم؟</p>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">C</code> صحیح است؟ اگر تابع را با () فراخوانی کنیم، در همان لحظه رندر اجرا می‌شود. بدون ()، <code dir=\"lt\">React</code> آن را ذخیره کرده و تنها هنگام وقوع رویداد اجرا می‌کند.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">C</code> صحیح است؟ اگر تابع را با () فراخوانی کنیم، در همان لحظه رندر اجرا می‌شود. بدون ()، <code dir=\"ltr\">React</code> آن را ذخیره کرده و تنها هنگام وقوع رویداد اجرا می‌کند.</p>",
       "tags": [
         "react.hooks.refs"
       ],
       "answers": [
         {
-          "text": "<p>چون <code dir=\"lt\">JSX</code> تنها توابع بدون () را می‌پذیرد</p>",
+          "text": "<p>چون <code dir=\"ltr\">JSX</code> تنها توابع بدون () را می‌پذیرد</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>چون این یک <code dir=\"lt\">convention</code> اختیاری است</p>",
+          "text": "<p>چون این یک <code dir=\"ltr\">convention</code> اختیاری است</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>چون <code dir=\"lt\">React</code> باید تابع را ذخیره کرده و هنگام رخداد رویداد اجرا کند</p>",
+          "text": "<p>چون <code dir=\"ltr\">React</code> باید تابع را ذخیره کرده و هنگام رخداد رویداد اجرا کند</p>",
           "isCorrect": true
         },
         {
-          "text": "<p>چون تابع با () باعث ایجاد <code dir=\"lt\">state</code> جدید می‌شود</p>",
+          "text": "<p>چون تابع با () باعث ایجاد <code dir=\"ltr\">state</code> جدید می‌شود</p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p><code dir=\"lt\">useRef</code> چه مزیتی نسبت به <code dir=\"lt\">useState</code> دارد زمانی که نیاز داریم داده‌ای را بدون رندر مجدد نگهداری کنیم؟</p>",
+      "text": "<p><code dir=\"ltr\">useRef</code> چه مزیتی نسبت به <code dir=\"ltr\">useState</code> دارد زمانی که نیاز داریم داده‌ای را بدون رندر مجدد نگهداری کنیم؟</p>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">A</code> صحیح است؟ <code dir=\"lt\">useRef</code> مقدار <code dir=\"lt\">mutable</code> خود را بدون ایجاد رندر مجدد نگه می‌دارد و مناسب برای مقادیری است که نیاز به رندر <code dir=\"lt\">UI</code> ندارند.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">A</code> صحیح است؟ <code dir=\"ltr\">useRef</code> مقدار <code dir=\"ltr\">mutable</code> خود را بدون ایجاد رندر مجدد نگه می‌دارد و مناسب برای مقادیری است که نیاز به رندر <code dir=\"ltr\">UI</code> ندارند.</p>",
       "tags": [
         "react.hooks.refs"
       ],
       "answers": [
         {
-          "text": "<p>نگهداری مقدار <code dir=\"lt\">mutable</code> بدون رندر مجدد</p>",
+          "text": "<p>نگهداری مقدار <code dir=\"ltr\">mutable</code> بدون رندر مجدد</p>",
           "isCorrect": true
         },
         {
-          "text": "<p>نگهداری <code dir=\"lt\">state</code> و رندر همزمان</p>",
+          "text": "<p>نگهداری <code dir=\"ltr\">state</code> و رندر همزمان</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>تنها برای دسترسی به <code dir=\"lt\">props</code></p>",
+          "text": "<p>تنها برای دسترسی به <code dir=\"ltr\">props</code></p>",
           "isCorrect": false
         },
         {
-          "text": "<p>ایجاد <code dir=\"lt\">snapshot</code> از <code dir=\"lt\">DOM</code> در هر رندر</p>",
+          "text": "<p>ایجاد <code dir=\"ltr\">snapshot</code> از <code dir=\"ltr\">DOM</code> در هر رندر</p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>کدام یک از موارد زیر بهترین کاربرد <code dir=\"lt\">useRef</code> برای دسترسی مستقیم به <code dir=\"lt\">DOM</code> است؟</p>",
+      "text": "<p>کدام یک از موارد زیر بهترین کاربرد <code dir=\"ltr\">useRef</code> برای دسترسی مستقیم به <code dir=\"ltr\">DOM</code> است؟</p>",
       "difficulty": 3,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ فوکوس خودکار روی یک <code dir=\"lt\">input</code> یک مثال کلاسیک است که نیاز به دسترسی مستقیم به <code dir=\"lt\">DOM</code> دارد و <code dir=\"lt\">useRef</code> این امکان را فراهم می‌کند.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">B</code> صحیح است؟ فوکوس خودکار روی یک <code dir=\"ltr\">input</code> یک مثال کلاسیک است که نیاز به دسترسی مستقیم به <code dir=\"ltr\">DOM</code> دارد و <code dir=\"ltr\">useRef</code> این امکان را فراهم می‌کند.</p>",
       "tags": [
         "react.hooks.refs"
       ],
       "answers": [
         {
-          "text": "<p>مدیریت <code dir=\"lt\">state</code> پیچیده بین کامپوننت‌ها</p>",
+          "text": "<p>مدیریت <code dir=\"ltr\">state</code> پیچیده بین کامپوننت‌ها</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>قرار دادن فوکوس خودکار روی <code dir=\"lt\">input</code> پس از <code dir=\"lt\">mount</code></p>",
+          "text": "<p>قرار دادن فوکوس خودکار روی <code dir=\"ltr\">input</code> پس از <code dir=\"ltr\">mount</code></p>",
           "isCorrect": true
         },
         {
-          "text": "<p>ارسال <code dir=\"lt\">props</code> به کامپوننت فرزند</p>",
+          "text": "<p>ارسال <code dir=\"ltr\">props</code> به کامپوننت فرزند</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>محاسبات داخلی بدون تغییر <code dir=\"lt\">DOM</code></p>",
+          "text": "<p>محاسبات داخلی بدون تغییر <code dir=\"ltr\">DOM</code></p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>در یک کامپوننت <code dir=\"lt\">Timer</code> که از <code dir=\"lt\">setInterval</code> استفاده می‌کند، چرا باید تابع پاک‌سازی (<code dir=\"lt\">cleanup</code>) برگردانده شود؟<code dir=\"lt\">\nuseEffect(() => {\n  const timerId = setInterval(() => setTime(t => t + 1), 1000);\n  return () => clearInterval(timerId);\n}, []);</code></p>",
+      "text": "<p>در یک کامپوننت <code dir=\"ltr\">Timer</code> که از <code dir=\"ltr\">setInterval</code> استفاده می‌کند، چرا باید تابع پاک‌سازی (<code dir=\"ltr\">cleanup</code>) برگردانده شود؟<code dir=\"ltr\">\nuseEffect(() => {\n  const timerId = setInterval(() => setTime(t => t + 1), 1000);\n  return () => clearInterval(timerId);\n}, []);</code></p>",
       "difficulty": 3,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">A</code> صحیح است؟ تابع <code dir=\"lt\">cleanup</code> قبل از <code dir=\"lt\">unmount</code> یا قبل از اجرای افکت جدید اجرا می‌شود و از ادامه کار تایمر در پس‌زمینه جلوگیری کرده و از نشت حافظه جلوگیری می‌کند.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">A</code> صحیح است؟ تابع <code dir=\"ltr\">cleanup</code> قبل از <code dir=\"ltr\">unmount</code> یا قبل از اجرای افکت جدید اجرا می‌شود و از ادامه کار تایمر در پس‌زمینه جلوگیری کرده و از نشت حافظه جلوگیری می‌کند.</p>",
       "tags": [
         "react.hooks.refs"
       ],
@@ -143,7 +143,7 @@
           "isCorrect": true
         },
         {
-          "text": "<p>برای افزایش سرعت <code dir=\"lt\">setInterval</code></p>",
+          "text": "<p>برای افزایش سرعت <code dir=\"ltr\">setInterval</code></p>",
           "isCorrect": false
         },
         {
@@ -151,7 +151,7 @@
           "isCorrect": false
         },
         {
-          "text": "<p>برای ذخیره <code dir=\"lt\">state</code> در متغیرهای داخلی</p>",
+          "text": "<p>برای ذخیره <code dir=\"ltr\">state</code> در متغیرهای داخلی</p>",
           "isCorrect": false
         }
       ]

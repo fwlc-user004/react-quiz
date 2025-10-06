@@ -3,7 +3,7 @@
     {
       "text": "<p>چرا هوک‌ها باید همیشه در سطح بالای کامپوننت فراخوانی شوند و نباید داخل شرط یا حلقه قرار گیرند؟</p>",
       "difficulty": 1,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ زیرا <code dir=\"lt\">React</code> برای ردیابی <code dir=\"lt\">state</code> هر هوک، به ترتیب فراخوانی آنها متکی است. اگر ترتیب فراخوانی در رندرهای مختلف تغییر کند، <code dir=\"lt\">React</code> نمی‌تواند <code dir=\"lt\">state</code> صحیح را اختصاص دهد و باگ رخ می‌دهد.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">B</code> صحیح است؟ زیرا <code dir=\"ltr\">React</code> برای ردیابی <code dir=\"ltr\">state</code> هر هوک، به ترتیب فراخوانی آنها متکی است. اگر ترتیب فراخوانی در رندرهای مختلف تغییر کند، <code dir=\"ltr\">React</code> نمی‌تواند <code dir=\"ltr\">state</code> صحیح را اختصاص دهد و باگ رخ می‌دهد.</p>",
       "tags": [
         "react.hooks.rules"
       ],
@@ -13,7 +13,7 @@
           "isCorrect": false
         },
         {
-          "text": "<p>چون ترتیب فراخوانی هوک‌ها باید ثابت باشد تا <code dir=\"lt\">React</code> بتواند <code dir=\"lt\">state</code> مربوطه را مدیریت کند</p>",
+          "text": "<p>چون ترتیب فراخوانی هوک‌ها باید ثابت باشد تا <code dir=\"ltr\">React</code> بتواند <code dir=\"ltr\">state</code> مربوطه را مدیریت کند</p>",
           "isCorrect": true
         },
         {
@@ -21,7 +21,7 @@
           "isCorrect": false
         },
         {
-          "text": "<p>چون شرط‌ها و حلقه‌ها با <code dir=\"lt\">JSX</code> سازگار نیستند</p>",
+          "text": "<p>چون شرط‌ها و حلقه‌ها با <code dir=\"ltr\">JSX</code> سازگار نیستند</p>",
           "isCorrect": false
         }
       ]
@@ -29,7 +29,7 @@
     {
       "text": "<p>هوک‌ها را از کجا می‌توان فراخوانی کرد؟</p>",
       "difficulty": 1,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">C</code> صحیح است؟ هوک‌ها تنها از داخل کامپوننت‌های تابعی <code dir=\"lt\">React</code> یا از داخل هوک‌های سفارشی دیگر قابل فراخوانی هستند. فراخوانی در توابع معمولی جاوااسکریپت باعث خطا می‌شود.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">C</code> صحیح است؟ هوک‌ها تنها از داخل کامپوننت‌های تابعی <code dir=\"ltr\">React</code> یا از داخل هوک‌های سفارشی دیگر قابل فراخوانی هستند. فراخوانی در توابع معمولی جاوااسکریپت باعث خطا می‌شود.</p>",
       "tags": [
         "react.hooks.rules"
       ],
@@ -43,45 +43,45 @@
           "isCorrect": false
         },
         {
-          "text": "<p>از داخل کامپوننت‌های تابعی <code dir=\"lt\">React</code> یا هوک‌های سفارشی دیگر</p>",
+          "text": "<p>از داخل کامپوننت‌های تابعی <code dir=\"ltr\">React</code> یا هوک‌های سفارشی دیگر</p>",
           "isCorrect": true
         },
         {
-          "text": "<p>فقط در فایل <code dir=\"lt\">index</code>.<code dir=\"lt\">js</code></p>",
+          "text": "<p>فقط در فایل <code dir=\"ltr\">index</code>.<code dir=\"ltr\">js</code></p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>در کد زیر چه خطایی رخ می‌دهد و چرا؟<code dir=\"lt\">\nfunction logState() {\n  const [value, setValue] = useState('');\n  console.log(value);\n}</code></p>",
+      "text": "<p>در کد زیر چه خطایی رخ می‌دهد و چرا؟<code dir=\"ltr\">\nfunction logState() {\n  const [value, setValue] = useState('');\n  console.log(value);\n}</code></p>",
       "difficulty": 3,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">A</code> صحیح است؟ هوک <code dir=\"lt\">useState</code> نمی‌تواند در یک تابع معمولی جاوااسکریپت فراخوانی شود. <code dir=\"lt\">React</code> انتظار دارد هوک‌ها از داخل کامپوننت‌های تابعی یا هوک‌های سفارشی فراخوانی شوند. این کد منجر به خطا می‌شود.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">A</code> صحیح است؟ هوک <code dir=\"ltr\">useState</code> نمی‌تواند در یک تابع معمولی جاوااسکریپت فراخوانی شود. <code dir=\"ltr\">React</code> انتظار دارد هوک‌ها از داخل کامپوننت‌های تابعی یا هوک‌های سفارشی فراخوانی شوند. این کد منجر به خطا می‌شود.</p>",
       "tags": [
         "react.hooks.rules"
       ],
       "answers": [
         {
-          "text": "<p><code dir=\"lt\">React</code> خطا می‌دهد زیرا <code dir=\"lt\">useState</code> در تابع معمولی جاوااسکریپت استفاده شده است</p>",
+          "text": "<p><code dir=\"ltr\">React</code> خطا می‌دهد زیرا <code dir=\"ltr\">useState</code> در تابع معمولی جاوااسکریپت استفاده شده است</p>",
           "isCorrect": true
         },
         {
-          "text": "<p>کد بدون مشکل اجرا می‌شود اما <code dir=\"lt\">state</code> به روز نمی‌شود</p>",
+          "text": "<p>کد بدون مشکل اجرا می‌شود اما <code dir=\"ltr\">state</code> به روز نمی‌شود</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>فقط <code dir=\"lt\">console</code>.<code dir=\"lt\">log</code> اجرا می‌شود ولی <code dir=\"lt\">state</code> اختصاص داده نمی‌شود</p>",
+          "text": "<p>فقط <code dir=\"ltr\">console</code>.<code dir=\"ltr\">log</code> اجرا می‌شود ولی <code dir=\"ltr\">state</code> اختصاص داده نمی‌شود</p>",
           "isCorrect": false
         },
         {
-          "text": "<p><code dir=\"lt\">useState</code> به صورت خودکار <code dir=\"lt\">state</code> را مدیریت می‌کند</p>",
+          "text": "<p><code dir=\"ltr\">useState</code> به صورت خودکار <code dir=\"ltr\">state</code> را مدیریت می‌کند</p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>اگر هوک <code dir=\"lt\">useEffect</code> را داخل یک شرط فراخوانی کنیم، چه اتفاقی می‌افتد؟</p>",
+      "text": "<p>اگر هوک <code dir=\"ltr\">useEffect</code> را داخل یک شرط فراخوانی کنیم، چه اتفاقی می‌افتد؟</p>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">C</code> صحیح است؟ فراخوانی هوک‌ها داخل شرط ترتیب ثابت فراخوانی آنها را به هم می‌زند. <code dir=\"lt\">React</code> نمی‌تواند <code dir=\"lt\">state</code> و افکت‌ها را به درستی مدیریت کند و ممکن است باگ رخ دهد.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">C</code> صحیح است؟ فراخوانی هوک‌ها داخل شرط ترتیب ثابت فراخوانی آنها را به هم می‌زند. <code dir=\"ltr\">React</code> نمی‌تواند <code dir=\"ltr\">state</code> و افکت‌ها را به درستی مدیریت کند و ممکن است باگ رخ دهد.</p>",
       "tags": [
         "react.hooks.rules"
       ],
@@ -91,11 +91,11 @@
           "isCorrect": false
         },
         {
-          "text": "<p><code dir=\"lt\">React</code> این رفتار را نادیده می‌گیرد</p>",
+          "text": "<p><code dir=\"ltr\">React</code> این رفتار را نادیده می‌گیرد</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>ترتیب فراخوانی هوک‌ها به هم می‌خورد و <code dir=\"lt\">React</code> نمی‌تواند <code dir=\"lt\">state</code> را درست اختصاص دهد</p>",
+          "text": "<p>ترتیب فراخوانی هوک‌ها به هم می‌خورد و <code dir=\"ltr\">React</code> نمی‌تواند <code dir=\"ltr\">state</code> را درست اختصاص دهد</p>",
           "isCorrect": true
         },
         {
@@ -107,7 +107,7 @@
     {
       "text": "<p>چرا رعایت قوانین هوک‌ها برای توسعه‌دهندگان اهمیت دارد؟</p>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ رعایت قوانین هوک‌ها باعث می‌شود <code dir=\"lt\">React</code> بتواند <code dir=\"lt\">state</code> و افکت‌ها را به درستی مدیریت کند، از بروز باگ‌های پیچیده جلوگیری شود و کد قابل پیش‌بینی و پایدار باشد.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">B</code> صحیح است؟ رعایت قوانین هوک‌ها باعث می‌شود <code dir=\"ltr\">React</code> بتواند <code dir=\"ltr\">state</code> و افکت‌ها را به درستی مدیریت کند، از بروز باگ‌های پیچیده جلوگیری شود و کد قابل پیش‌بینی و پایدار باشد.</p>",
       "tags": [
         "react.hooks.rules"
       ],
@@ -117,15 +117,15 @@
           "isCorrect": false
         },
         {
-          "text": "<p>چون مدیریت درست <code dir=\"lt\">state</code> و افکت‌ها بدون آن غیرممکن است و باگ‌های پیچیده رخ می‌دهد</p>",
+          "text": "<p>چون مدیریت درست <code dir=\"ltr\">state</code> و افکت‌ها بدون آن غیرممکن است و باگ‌های پیچیده رخ می‌دهد</p>",
           "isCorrect": true
         },
         {
-          "text": "<p>زیرا <code dir=\"lt\">JSX</code> تنها در این شرایط معتبر است</p>",
+          "text": "<p>زیرا <code dir=\"ltr\">JSX</code> تنها در این شرایط معتبر است</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>زیرا <code dir=\"lt\">ESLint</code> بدون این قوانین کار نمی‌کند</p>",
+          "text": "<p>زیرا <code dir=\"ltr\">ESLint</code> بدون این قوانین کار نمی‌کند</p>",
           "isCorrect": false
         }
       ]

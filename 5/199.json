@@ -1,19 +1,19 @@
 {
   "questions": [
     {
-      "text": "<p>چه عاملی باعث می‌شود <code dir=\"lt\">React</code> برای یک کامپوننت تابعی رندر مجدد انجام دهد؟</p>",
+      "text": "<p>چه عاملی باعث می‌شود <code dir=\"ltr\">React</code> برای یک کامپوننت تابعی رندر مجدد انجام دهد؟</p>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ فراخوانی تابع <code dir=\"lt\">setter</code> که <code dir=\"lt\">state</code> را به‌روزرسانی می‌کند باعث می‌شود <code dir=\"lt\">React</code> آن کامپوننت و فرزندانش را برای رندر مجدد صف‌بندی کند.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">B</code> صحیح است؟ فراخوانی تابع <code dir=\"ltr\">setter</code> که <code dir=\"ltr\">state</code> را به‌روزرسانی می‌کند باعث می‌شود <code dir=\"ltr\">React</code> آن کامپوننت و فرزندانش را برای رندر مجدد صف‌بندی کند.</p>",
       "tags": [
         "react.state.rerender"
       ],
       "answers": [
         {
-          "text": "<p>فقط وقتی <code dir=\"lt\">props</code> تغییر کنند</p>",
+          "text": "<p>فقط وقتی <code dir=\"ltr\">props</code> تغییر کنند</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>هر بار که تابع <code dir=\"lt\">setter</code> برای <code dir=\"lt\">state</code> فراخوانی شود</p>",
+          "text": "<p>هر بار که تابع <code dir=\"ltr\">setter</code> برای <code dir=\"ltr\">state</code> فراخوانی شود</p>",
           "isCorrect": true
         },
         {
@@ -21,47 +21,47 @@
           "isCorrect": false
         },
         {
-          "text": "<p>هر بار که <code dir=\"lt\">DOM</code> واقعی تغییر کند</p>",
+          "text": "<p>هر بار که <code dir=\"ltr\">DOM</code> واقعی تغییر کند</p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>چرا <code dir=\"lt\">state</code> در طول یک رندر به صورت <code dir=\"lt\">snapshot</code> عمل می‌کند؟</p>",
+      "text": "<p>چرا <code dir=\"ltr\">state</code> در طول یک رندر به صورت <code dir=\"ltr\">snapshot</code> عمل می‌کند؟</p>",
       "difficulty": 1,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">C</code> صحیح است؟ مقدار <code dir=\"lt\">state</code> در طول یک رندر ثابت است و تغییرات توسط <code dir=\"lt\">setter</code> فقط برای رندر بعدی اعمال می‌شوند. بنابراین در همان رندر فعلی، مقدار ثابت باقی می‌ماند.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">C</code> صحیح است؟ مقدار <code dir=\"ltr\">state</code> در طول یک رندر ثابت است و تغییرات توسط <code dir=\"ltr\">setter</code> فقط برای رندر بعدی اعمال می‌شوند. بنابراین در همان رندر فعلی، مقدار ثابت باقی می‌ماند.</p>",
       "tags": [
         "react.state.rerender"
       ],
       "answers": [
         {
-          "text": "<p>زیرا <code dir=\"lt\">state</code> همیشه به عنوان <code dir=\"lt\">prop</code> ارسال می‌شود</p>",
+          "text": "<p>زیرا <code dir=\"ltr\">state</code> همیشه به عنوان <code dir=\"ltr\">prop</code> ارسال می‌شود</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>زیرا فراخوانی <code dir=\"lt\">setter</code> فوراً مقدار جدید را اعمال می‌کند</p>",
+          "text": "<p>زیرا فراخوانی <code dir=\"ltr\">setter</code> فوراً مقدار جدید را اعمال می‌کند</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>زیرا <code dir=\"lt\">state</code> در طول رندر ثابت است و تغییرات فقط در رندر بعدی اعمال می‌شوند</p>",
+          "text": "<p>زیرا <code dir=\"ltr\">state</code> در طول رندر ثابت است و تغییرات فقط در رندر بعدی اعمال می‌شوند</p>",
           "isCorrect": true
         },
         {
-          "text": "<p>زیرا <code dir=\"lt\">React</code> مقدار <code dir=\"lt\">state</code> را کپی کرده و جداگانه ذخیره می‌کند</p>",
+          "text": "<p>زیرا <code dir=\"ltr\">React</code> مقدار <code dir=\"ltr\">state</code> را کپی کرده و جداگانه ذخیره می‌کند</p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p><code dir=\"lt\">React</code> چگونه تغییرات <code dir=\"lt\">JSX</code> را بعد از رندر مجدد اعمال می‌کند؟</p>",
+      "text": "<p><code dir=\"ltr\">React</code> چگونه تغییرات <code dir=\"ltr\">JSX</code> را بعد از رندر مجدد اعمال می‌کند؟</p>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">C</code> صحیح است؟ <code dir=\"lt\">React</code> <code dir=\"lt\">Virtual</code> <code dir=\"lt\">DOM</code> جدید را با نسخه قبلی مقایسه کرده و تنها بخش‌هایی از <code dir=\"lt\">DOM</code> واقعی که تغییر کرده‌اند را به‌روزرسانی می‌کند.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">C</code> صحیح است؟ <code dir=\"ltr\">React</code> <code dir=\"ltr\">Virtual</code> <code dir=\"ltr\">DOM</code> جدید را با نسخه قبلی مقایسه کرده و تنها بخش‌هایی از <code dir=\"ltr\">DOM</code> واقعی که تغییر کرده‌اند را به‌روزرسانی می‌کند.</p>",
       "tags": [
         "react.state.rerender"
       ],
       "answers": [
         {
-          "text": "<p>تمام <code dir=\"lt\">DOM</code> را دوباره می‌سازد</p>",
+          "text": "<p>تمام <code dir=\"ltr\">DOM</code> را دوباره می‌سازد</p>",
           "isCorrect": false
         },
         {
@@ -69,55 +69,55 @@
           "isCorrect": false
         },
         {
-          "text": "<p><code dir=\"lt\">DOM</code> واقعی را نادیده می‌گیرد و فقط <code dir=\"lt\">console</code> را به‌روزرسانی می‌کند</p>",
+          "text": "<p><code dir=\"ltr\">DOM</code> واقعی را نادیده می‌گیرد و فقط <code dir=\"ltr\">console</code> را به‌روزرسانی می‌کند</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>با مقایسه <code dir=\"lt\">Virtual</code> <code dir=\"lt\">DOM</code> جدید و قدیم، تنها بخش‌های تغییر یافته را آپدیت می‌کند</p>",
+          "text": "<p>با مقایسه <code dir=\"ltr\">Virtual</code> <code dir=\"ltr\">DOM</code> جدید و قدیم، تنها بخش‌های تغییر یافته را آپدیت می‌کند</p>",
           "isCorrect": true
         }
       ]
     },
     {
-      "text": "<p>چرا فراخوانی <code dir=\"lt\">setCount(count + 1)</code> چند بار پشت سر هم در یک رندر باعث افزایش چندگانه <code dir=\"lt\">count</code> نمی‌شود؟</p>",
+      "text": "<p>چرا فراخوانی <code dir=\"ltr\">setCount(count + 1)</code> چند بار پشت سر هم در یک رندر باعث افزایش چندگانه <code dir=\"ltr\">count</code> نمی‌شود؟</p>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">A</code> صحیح است؟ مقدار <code dir=\"lt\">state</code> در طول رندر ثابت است (<code dir=\"lt\">snapshot</code>) و هر فراخوانی <code dir=\"lt\">setCount</code> به <code dir=\"lt\">React</code> می‌گوید که <code dir=\"lt\">state</code> جدید با همان مقدار <code dir=\"lt\">snapshot</code> اعمال شود. بنابراین چند فراخوانی پشت سر هم با مقدار مشابه، تنها یک رندر ایجاد می‌کنند و <code dir=\"lt\">count</code> فقط یک واحد افزایش می‌یابد.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">A</code> صحیح است؟ مقدار <code dir=\"ltr\">state</code> در طول رندر ثابت است (<code dir=\"ltr\">snapshot</code>) و هر فراخوانی <code dir=\"ltr\">setCount</code> به <code dir=\"ltr\">React</code> می‌گوید که <code dir=\"ltr\">state</code> جدید با همان مقدار <code dir=\"ltr\">snapshot</code> اعمال شود. بنابراین چند فراخوانی پشت سر هم با مقدار مشابه، تنها یک رندر ایجاد می‌کنند و <code dir=\"ltr\">count</code> فقط یک واحد افزایش می‌یابد.</p>",
       "tags": [
         "react.state.rerender"
       ],
       "answers": [
         {
-          "text": "<p>زیرا <code dir=\"lt\">state</code> در طول رندر ثابت است و فراخوانی‌های متوالی با همان <code dir=\"lt\">snapshot</code> ادغام می‌شوند</p>",
+          "text": "<p>زیرا <code dir=\"ltr\">state</code> در طول رندر ثابت است و فراخوانی‌های متوالی با همان <code dir=\"ltr\">snapshot</code> ادغام می‌شوند</p>",
           "isCorrect": true
         },
         {
-          "text": "<p>زیرا <code dir=\"lt\">setCount</code> مقدار قبلی را نادیده می‌گیرد</p>",
+          "text": "<p>زیرا <code dir=\"ltr\">setCount</code> مقدار قبلی را نادیده می‌گیرد</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>زیرا <code dir=\"lt\">console</code>.<code dir=\"lt\">log</code> مقدار <code dir=\"lt\">count</code> را قبل از رندر نشان می‌دهد</p>",
+          "text": "<p>زیرا <code dir=\"ltr\">console</code>.<code dir=\"ltr\">log</code> مقدار <code dir=\"ltr\">count</code> را قبل از رندر نشان می‌دهد</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>زیرا <code dir=\"lt\">React</code> از <code dir=\"lt\">throttle</code> برای فراخوانی <code dir=\"lt\">setter</code> استفاده می‌کند</p>",
+          "text": "<p>زیرا <code dir=\"ltr\">React</code> از <code dir=\"ltr\">throttle</code> برای فراخوانی <code dir=\"ltr\">setter</code> استفاده می‌کند</p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>چه چیزی باعث می‌شود یک کامپوننت فرزند هنگام تغییر <code dir=\"lt\">state</code> در والد دوباره رندر شود؟</p>",
+      "text": "<p>چه چیزی باعث می‌شود یک کامپوننت فرزند هنگام تغییر <code dir=\"ltr\">state</code> در والد دوباره رندر شود؟</p>",
       "difficulty": 3,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ اگر <code dir=\"lt\">props</code>ی که به یک کامپوننت فرزند ارسال می‌شوند تغییر کنند، آن کامپوننت فرزند نیز رندر مجدد خواهد شد. این مکانیسم، همگام‌سازی <code dir=\"lt\">UI</code> با داده‌ها را تضمین می‌کند.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">B</code> صحیح است؟ اگر <code dir=\"ltr\">props</code>ی که به یک کامپوننت فرزند ارسال می‌شوند تغییر کنند، آن کامپوننت فرزند نیز رندر مجدد خواهد شد. این مکانیسم، همگام‌سازی <code dir=\"ltr\">UI</code> با داده‌ها را تضمین می‌کند.</p>",
       "tags": [
         "react.state.rerender"
       ],
       "answers": [
         {
-          "text": "<p>فقط زمانی که تابع <code dir=\"lt\">setter</code> در فرزند فراخوانی شود</p>",
+          "text": "<p>فقط زمانی که تابع <code dir=\"ltr\">setter</code> در فرزند فراخوانی شود</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>زمانی که <code dir=\"lt\">props</code> ارسال شده از والد تغییر کنند</p>",
+          "text": "<p>زمانی که <code dir=\"ltr\">props</code> ارسال شده از والد تغییر کنند</p>",
           "isCorrect": true
         },
         {
@@ -125,7 +125,7 @@
           "isCorrect": false
         },
         {
-          "text": "<p>هر بار که <code dir=\"lt\">DOM</code> واقعی در والد تغییر کند</p>",
+          "text": "<p>هر بار که <code dir=\"ltr\">DOM</code> واقعی در والد تغییر کند</p>",
           "isCorrect": false
         }
       ]

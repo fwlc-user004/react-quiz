@@ -1,9 +1,9 @@
 {
   "questions": [
     {
-      "text": "<p><code dir=\"lt\">Create</code> <code dir=\"lt\">React</code> <code dir=\"lt\">App</code> چیست و چه کارهایی انجام می‌دهد؟</p>",
+      "text": "<p><code dir=\"ltr\">Create</code> <code dir=\"ltr\">React</code> <code dir=\"ltr\">App</code> چیست و چه کارهایی انجام می‌دهد؟</p>",
       "difficulty": 1,
-      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"lt\">C</code> است، چون <code dir=\"lt\">Create</code> <code dir=\"lt\">React</code> <code dir=\"lt\">App</code> تمام پیکربندی‌های پیچیده برای ایجاد یک پروژه <code dir=\"lt\">React</code> را به صورت خودکار انجام می‌دهد.</p>",
+      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"ltr\">C</code> است، چون <code dir=\"ltr\">Create</code> <code dir=\"ltr\">React</code> <code dir=\"ltr\">App</code> تمام پیکربندی‌های پیچیده برای ایجاد یک پروژه <code dir=\"ltr\">React</code> را به صورت خودکار انجام می‌دهد.</p>",
       "tags": [
         "react.create-app"
       ],
@@ -13,119 +13,119 @@
           "isCorrect": false
         },
         {
-          "text": "<p>یک ابزار برای نوشتن کدهای <code dir=\"lt\">React</code> به صورت دستی</p>",
+          "text": "<p>یک ابزار برای نوشتن کدهای <code dir=\"ltr\">React</code> به صورت دستی</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>ابزاری که پیکربندی‌های پیچیده پروژه <code dir=\"lt\">React</code> را به صورت خودکار انجام می‌دهد</p>",
+          "text": "<p>ابزاری که پیکربندی‌های پیچیده پروژه <code dir=\"ltr\">React</code> را به صورت خودکار انجام می‌دهد</p>",
           "isCorrect": true
         },
         {
-          "text": "<p>ابزاری برای ایجاد اپلیکیشن‌های دسکتاپ با <code dir=\"lt\">React</code></p>",
+          "text": "<p>ابزاری برای ایجاد اپلیکیشن‌های دسکتاپ با <code dir=\"ltr\">React</code></p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>چگونه می‌توان یک پروژه <code dir=\"lt\">React</code> جدید با استفاده از <code dir=\"lt\">Create</code> <code dir=\"lt\">React</code> <code dir=\"lt\">App</code> ایجاد کرد؟</p>",
+      "text": "<p>چگونه می‌توان یک پروژه <code dir=\"ltr\">React</code> جدید با استفاده از <code dir=\"ltr\">Create</code> <code dir=\"ltr\">React</code> <code dir=\"ltr\">App</code> ایجاد کرد؟</p>",
       "difficulty": 2,
-      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"lt\">B</code> است، چون برای ایجاد یک پروژه جدید از دستور <code dir=\"lt\">npx create-react-app &lt;project-name&gt;</code> استفاده می‌کنیم.</p>",
+      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"ltr\">B</code> است، چون برای ایجاد یک پروژه جدید از دستور <code dir=\"ltr\">npx create-react-app &lt;project-name&gt;</code> استفاده می‌کنیم.</p>",
       "tags": [
         "react.create-app"
       ],
       "answers": [
         {
-          "text": "<p>با استفاده از دستور <code dir=\"lt\">npm init react-app &lt;project-name&gt;</code></p>",
+          "text": "<p>با استفاده از دستور <code dir=\"ltr\">npm init react-app &lt;project-name&gt;</code></p>",
           "isCorrect": false
         },
         {
-          "text": "<p>با استفاده از دستور <code dir=\"lt\">npx create-react-app &lt;project-name&gt;</code></p>",
+          "text": "<p>با استفاده از دستور <code dir=\"ltr\">npx create-react-app &lt;project-name&gt;</code></p>",
           "isCorrect": true
         },
         {
-          "text": "<p>با استفاده از دستور <code dir=\"lt\">npx create-app-react &lt;project-name&gt;</code></p>",
+          "text": "<p>با استفاده از دستور <code dir=\"ltr\">npx create-app-react &lt;project-name&gt;</code></p>",
           "isCorrect": false
         },
         {
-          "text": "<p>با استفاده از دستور `<code dir=\"lt\">create-react-app</code> <code dir=\"lt\">new-project</code>`</p>",
+          "text": "<p>با استفاده از دستور `<code dir=\"ltr\">create-react-app</code> <code dir=\"ltr\">new-project</code>`</p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>آیا برای اجرای یک پروژه <code dir=\"lt\">React</code> باید به صورت دستی پیکربندی‌های <code dir=\"lt\">Webpack</code> و <code dir=\"lt\">Babel</code> را انجام داد؟</p>",
+      "text": "<p>آیا برای اجرای یک پروژه <code dir=\"ltr\">React</code> باید به صورت دستی پیکربندی‌های <code dir=\"ltr\">Webpack</code> و <code dir=\"ltr\">Babel</code> را انجام داد؟</p>",
       "difficulty": 2,
-      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"lt\">B</code> است، چون با استفاده از <code dir=\"lt\">Create</code> <code dir=\"lt\">React</code> <code dir=\"lt\">App</code> این پیکربندی‌ها به صورت خودکار انجام می‌شود.</p>",
+      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"ltr\">B</code> است، چون با استفاده از <code dir=\"ltr\">Create</code> <code dir=\"ltr\">React</code> <code dir=\"ltr\">App</code> این پیکربندی‌ها به صورت خودکار انجام می‌شود.</p>",
       "tags": [
         "react.create-app"
       ],
       "answers": [
         {
-          "text": "<p>بله، باید پیکربندی <code dir=\"lt\">Webpack</code> و <code dir=\"lt\">Babel</code> را به صورت دستی انجام داد</p>",
+          "text": "<p>بله، باید پیکربندی <code dir=\"ltr\">Webpack</code> و <code dir=\"ltr\">Babel</code> را به صورت دستی انجام داد</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>فقط پیکربندی <code dir=\"lt\">Babel</code> به صورت خودکار انجام می‌شود</p>",
+          "text": "<p>فقط پیکربندی <code dir=\"ltr\">Babel</code> به صورت خودکار انجام می‌شود</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>خیر، <code dir=\"lt\">Create</code> <code dir=\"lt\">React</code> <code dir=\"lt\">App</code> این پیکربندی‌ها را به صورت خودکار انجام می‌دهد</p>",
+          "text": "<p>خیر، <code dir=\"ltr\">Create</code> <code dir=\"ltr\">React</code> <code dir=\"ltr\">App</code> این پیکربندی‌ها را به صورت خودکار انجام می‌دهد</p>",
           "isCorrect": true
         },
         {
-          "text": "<p>فقط پیکربندی <code dir=\"lt\">Webpack</code> به صورت خودکار انجام می‌شود</p>",
+          "text": "<p>فقط پیکربندی <code dir=\"ltr\">Webpack</code> به صورت خودکار انجام می‌شود</p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>چه ویژگی‌ای در <code dir=\"lt\">Create</code> <code dir=\"lt\">React</code> <code dir=\"lt\">App</code> باعث می‌شود تا تغییرات به طور خودکار در مرورگر رفرش شود؟</p>",
+      "text": "<p>چه ویژگی‌ای در <code dir=\"ltr\">Create</code> <code dir=\"ltr\">React</code> <code dir=\"ltr\">App</code> باعث می‌شود تا تغییرات به طور خودکار در مرورگر رفرش شود؟</p>",
       "difficulty": 3,
-      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"lt\">A</code> است، چون ویژگی <code dir=\"lt\">Hot</code> <code dir=\"lt\">Reloading</code> باعث می‌شود که تغییرات در فایل‌ها به صورت خودکار در مرورگر نمایش داده شوند.</p>",
+      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"ltr\">A</code> است، چون ویژگی <code dir=\"ltr\">Hot</code> <code dir=\"ltr\">Reloading</code> باعث می‌شود که تغییرات در فایل‌ها به صورت خودکار در مرورگر نمایش داده شوند.</p>",
       "tags": [
         "react.create-app"
       ],
       "answers": [
         {
-          "text": "<p><code dir=\"lt\">Hot</code> <code dir=\"lt\">Reloading</code></p>",
+          "text": "<p><code dir=\"ltr\">Hot</code> <code dir=\"ltr\">Reloading</code></p>",
           "isCorrect": true
         },
         {
-          "text": "<p><code dir=\"lt\">Live</code> <code dir=\"lt\">Server</code></p>",
+          "text": "<p><code dir=\"ltr\">Live</code> <code dir=\"ltr\">Server</code></p>",
           "isCorrect": false
         },
         {
-          "text": "<p><code dir=\"lt\">Auto</code> <code dir=\"lt\">Refresh</code></p>",
+          "text": "<p><code dir=\"ltr\">Auto</code> <code dir=\"ltr\">Refresh</code></p>",
           "isCorrect": false
         },
         {
-          "text": "<p><code dir=\"lt\">Server</code> <code dir=\"lt\">Watch</code></p>",
+          "text": "<p><code dir=\"ltr\">Server</code> <code dir=\"ltr\">Watch</code></p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>کدام دستور برای راه‌اندازی سرور توسعه محلی در پروژه <code dir=\"lt\">React</code> استفاده می‌شود؟</p>",
+      "text": "<p>کدام دستور برای راه‌اندازی سرور توسعه محلی در پروژه <code dir=\"ltr\">React</code> استفاده می‌شود؟</p>",
       "difficulty": 2,
-      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"lt\">B</code> است، چون دستور `<code dir=\"lt\">npm</code> <code dir=\"lt\">start</code>` برای راه‌اندازی سرور توسعه محلی استفاده می‌شود.</p>",
+      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"ltr\">B</code> است، چون دستور `<code dir=\"ltr\">npm</code> <code dir=\"ltr\">start</code>` برای راه‌اندازی سرور توسعه محلی استفاده می‌شود.</p>",
       "tags": [
         "react.create-app"
       ],
       "answers": [
         {
-          "text": "<p><code dir=\"lt\">npm</code> <code dir=\"lt\">run</code> <code dir=\"lt\">dev</code></p>",
+          "text": "<p><code dir=\"ltr\">npm</code> <code dir=\"ltr\">run</code> <code dir=\"ltr\">dev</code></p>",
           "isCorrect": false
         },
         {
-          "text": "<p><code dir=\"lt\">npm</code> <code dir=\"lt\">start</code></p>",
+          "text": "<p><code dir=\"ltr\">npm</code> <code dir=\"ltr\">start</code></p>",
           "isCorrect": true
         },
         {
-          "text": "<p><code dir=\"lt\">node</code> <code dir=\"lt\">start</code></p>",
+          "text": "<p><code dir=\"ltr\">node</code> <code dir=\"ltr\">start</code></p>",
           "isCorrect": false
         },
         {
-          "text": "<p><code dir=\"lt\">create-react-app</code> <code dir=\"lt\">start</code></p>",
+          "text": "<p><code dir=\"ltr\">create-react-app</code> <code dir=\"ltr\">start</code></p>",
           "isCorrect": false
         }
       ]

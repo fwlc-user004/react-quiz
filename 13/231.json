@@ -1,9 +1,9 @@
 {
   "questions": [
     {
-      "text": "<p>در کامپوننت <code dir=\"lt\">TodoApp</code>، تابع <code>addTodo</code> چه کاری انجام می‌دهد؟</p>",
+      "text": "<p>در کامپوننت <code dir=\"ltr\">TodoApp</code>، تابع <code>addTodo</code> چه کاری انجام می‌دهد؟</p>",
       "difficulty": 1,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ <code dir=\"lt\">addTodo</code> یک شیء وظیفه جدید با <code dir=\"lt\">id</code> و متن مشخص می‌سازد و آن را به انتهای آرایه <code dir=\"lt\">todos</code> اضافه می‌کند.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">B</code> صحیح است؟ <code dir=\"ltr\">addTodo</code> یک شیء وظیفه جدید با <code dir=\"ltr\">id</code> و متن مشخص می‌سازد و آن را به انتهای آرایه <code dir=\"ltr\">todos</code> اضافه می‌کند.</p>",
       "tags": [
         "react.project.todo.crud"
       ],
@@ -13,15 +13,15 @@
           "isCorrect": false
         },
         {
-          "text": "<p>یک وظیفه جدید می‌سازد و به آرایه <code dir=\"lt\">todos</code> اضافه می‌کند</p>",
+          "text": "<p>یک وظیفه جدید می‌سازد و به آرایه <code dir=\"ltr\">todos</code> اضافه می‌کند</p>",
           "isCorrect": true
         },
         {
-          "text": "<p>وضعیت <code dir=\"lt\">completed</code> وظیفه را معکوس می‌کند</p>",
+          "text": "<p>وضعیت <code dir=\"ltr\">completed</code> وظیفه را معکوس می‌کند</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>یک وظیفه را از آرایه <code dir=\"lt\">todos</code> حذف می‌کند</p>",
+          "text": "<p>یک وظیفه را از آرایه <code dir=\"ltr\">todos</code> حذف می‌کند</p>",
           "isCorrect": false
         }
       ]
@@ -29,7 +29,7 @@
     {
       "text": "<p>تابع <code>toggleTodo</code> چه کاری انجام می‌دهد؟</p>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">C</code> صحیح است؟ <code dir=\"lt\">toggleTodo</code> با دریافت <code dir=\"lt\">id</code> یک وظیفه، وضعیت <code dir=\"lt\">completed</code> آن را معکوس کرده و آرایه جدید <code dir=\"lt\">todos</code> را با <code dir=\"lt\">setTodos</code> به‌روزرسانی می‌کند.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">C</code> صحیح است؟ <code dir=\"ltr\">toggleTodo</code> با دریافت <code dir=\"ltr\">id</code> یک وظیفه، وضعیت <code dir=\"ltr\">completed</code> آن را معکوس کرده و آرایه جدید <code dir=\"ltr\">todos</code> را با <code dir=\"ltr\">setTodos</code> به‌روزرسانی می‌کند.</p>",
       "tags": [
         "react.project.todo.crud"
       ],
@@ -43,7 +43,7 @@
           "isCorrect": false
         },
         {
-          "text": "<p>وضعیت <code dir=\"lt\">completed</code> وظیفه مشخصی را معکوس می‌کند</p>",
+          "text": "<p>وضعیت <code dir=\"ltr\">completed</code> وظیفه مشخصی را معکوس می‌کند</p>",
           "isCorrect": true
         },
         {
@@ -55,13 +55,13 @@
     {
       "text": "<p>تابع <code>deleteTodo</code> چه کاری انجام می‌دهد؟</p>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">A</code> صحیح است؟ <code dir=\"lt\">deleteTodo</code> با دریافت <code dir=\"lt\">id</code> یک وظیفه، آرایه <code dir=\"lt\">todos</code> را فیلتر می‌کند و آن وظیفه را حذف می‌کند.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">A</code> صحیح است؟ <code dir=\"ltr\">deleteTodo</code> با دریافت <code dir=\"ltr\">id</code> یک وظیفه، آرایه <code dir=\"ltr\">todos</code> را فیلتر می‌کند و آن وظیفه را حذف می‌کند.</p>",
       "tags": [
         "react.project.todo.crud"
       ],
       "answers": [
         {
-          "text": "<p>وظیفه مشخصی را از آرایه <code dir=\"lt\">todos</code> حذف می‌کند</p>",
+          "text": "<p>وظیفه مشخصی را از آرایه <code dir=\"ltr\">todos</code> حذف می‌کند</p>",
           "isCorrect": true
         },
         {
@@ -73,25 +73,25 @@
           "isCorrect": false
         },
         {
-          "text": "<p>آرایه <code dir=\"lt\">todos</code> را مرتب می‌کند</p>",
+          "text": "<p>آرایه <code dir=\"ltr\">todos</code> را مرتب می‌کند</p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>چرا توابع <code dir=\"lt\">handler</code> در کامپوننت والد تعریف می‌شوند و به فرزندان پاس داده می‌شوند؟</p>",
+      "text": "<p>چرا توابع <code dir=\"ltr\">handler</code> در کامپوننت والد تعریف می‌شوند و به فرزندان پاس داده می‌شوند؟</p>",
       "difficulty": 3,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">D</code> صحیح است؟ این روش امکان تغییر <code dir=\"lt\">state</code> اصلی برنامه از کامپوننت‌های فرزند را فراهم می‌کند و مسئولیت مدیریت منطق <code dir=\"lt\">CRUD</code> در یک مکان متمرکز می‌ماند.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">D</code> صحیح است؟ این روش امکان تغییر <code dir=\"ltr\">state</code> اصلی برنامه از کامپوننت‌های فرزند را فراهم می‌کند و مسئولیت مدیریت منطق <code dir=\"ltr\">CRUD</code> در یک مکان متمرکز می‌ماند.</p>",
       "tags": [
         "react.project.todo.crud"
       ],
       "answers": [
         {
-          "text": "<p>برای اجرای <code dir=\"lt\">useEffect</code> در فرزند</p>",
+          "text": "<p>برای اجرای <code dir=\"ltr\">useEffect</code> در فرزند</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>برای رندر کردن <code dir=\"lt\">JSX</code> در والد</p>",
+          "text": "<p>برای رندر کردن <code dir=\"ltr\">JSX</code> در والد</p>",
           "isCorrect": false
         },
         {
@@ -99,33 +99,33 @@
           "isCorrect": false
         },
         {
-          "text": "<p>برای امکان تغییر <code dir=\"lt\">state</code> والد از فرزند و مدیریت متمرکز منطق <code dir=\"lt\">CRUD</code></p>",
+          "text": "<p>برای امکان تغییر <code dir=\"ltr\">state</code> والد از فرزند و مدیریت متمرکز منطق <code dir=\"ltr\">CRUD</code></p>",
           "isCorrect": true
         }
       ]
     },
     {
-      "text": "<p>برای تولید <code dir=\"lt\">id</code> منحصر به فرد در <code dir=\"lt\">addTodo</code> از چه روشی استفاده شده است؟</p>",
+      "text": "<p>برای تولید <code dir=\"ltr\">id</code> منحصر به فرد در <code dir=\"ltr\">addTodo</code> از چه روشی استفاده شده است؟</p>",
       "difficulty": 1,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ از <code dir=\"lt\">Date</code>.<code dir=\"lt\">now</code>() استفاده شده تا هر وظیفه جدید یک شناسه یکتا داشته باشد.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">B</code> صحیح است؟ از <code dir=\"ltr\">Date</code>.<code dir=\"ltr\">now</code>() استفاده شده تا هر وظیفه جدید یک شناسه یکتا داشته باشد.</p>",
       "tags": [
         "react.project.todo.crud"
       ],
       "answers": [
         {
-          "text": "<p>از یک شمارنده ساده با <code dir=\"lt\">useState</code></p>",
+          "text": "<p>از یک شمارنده ساده با <code dir=\"ltr\">useState</code></p>",
           "isCorrect": false
         },
         {
-          "text": "<p>از <code dir=\"lt\">Date</code>.<code dir=\"lt\">now</code>() برای تولید شناسه یکتا</p>",
+          "text": "<p>از <code dir=\"ltr\">Date</code>.<code dir=\"ltr\">now</code>() برای تولید شناسه یکتا</p>",
           "isCorrect": true
         },
         {
-          "text": "<p>از <code dir=\"lt\">uuid</code>.<code dir=\"lt\">random</code>()</p>",
+          "text": "<p>از <code dir=\"ltr\">uuid</code>.<code dir=\"ltr\">random</code>()</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>از <code dir=\"lt\">index</code> آرایه <code dir=\"lt\">todos</code></p>",
+          "text": "<p>از <code dir=\"ltr\">index</code> آرایه <code dir=\"ltr\">todos</code></p>",
           "isCorrect": false
         }
       ]

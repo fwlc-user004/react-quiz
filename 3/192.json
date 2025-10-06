@@ -1,9 +1,9 @@
 {
   "questions": [
     {
-      "text": "<p>چرا یک کامپوننت <code dir=\"lt\">React</code> تنها می‌تواند یک عنصر ریشه (<code dir=\"lt\">root</code> <code dir=\"lt\">element</code>) را برگرداند؟</p>",
+      "text": "<p>چرا یک کامپوننت <code dir=\"ltr\">React</code> تنها می‌تواند یک عنصر ریشه (<code dir=\"ltr\">root</code> <code dir=\"ltr\">element</code>) را برگرداند؟</p>",
       "difficulty": 1,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">C</code> صحیح است؟ در <code dir=\"lt\">JSX</code>، یک کامپوننت تنها می‌تواند یک عنصر ریشه بازگرداند. برای گروه‌بندی چندین عنصر، باید از یک تگ والد یا <code dir=\"lt\">Fragment</code> استفاده کرد.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">C</code> صحیح است؟ در <code dir=\"ltr\">JSX</code>، یک کامپوننت تنها می‌تواند یک عنصر ریشه بازگرداند. برای گروه‌بندی چندین عنصر، باید از یک تگ والد یا <code dir=\"ltr\">Fragment</code> استفاده کرد.</p>",
       "tags": [
         "react.jsx.syntax"
       ],
@@ -17,51 +17,51 @@
           "isCorrect": false
         },
         {
-          "text": "<p>چون <code dir=\"lt\">JSX</code> نیاز به یک عنصر ریشه برای هر کامپوننت دارد</p>",
+          "text": "<p>چون <code dir=\"ltr\">JSX</code> نیاز به یک عنصر ریشه برای هر کامپوننت دارد</p>",
           "isCorrect": true
         },
         {
-          "text": "<p>چون <code dir=\"lt\">React</code> تنها یک تگ <code dir=\"lt\">HTML</code> را می‌پذیرد</p>",
+          "text": "<p>چون <code dir=\"ltr\">React</code> تنها یک تگ <code dir=\"ltr\">HTML</code> را می‌پذیرد</p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>چگونه می‌توان چندین عنصر را بدون ایجاد یک <code dir=\"lt\">div</code> اضافی در <code dir=\"lt\">DOM</code> گروه‌بندی کرد؟</p>",
+      "text": "<p>چگونه می‌توان چندین عنصر را بدون ایجاد یک <code dir=\"ltr\">div</code> اضافی در <code dir=\"ltr\">DOM</code> گروه‌بندی کرد؟</p>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ می‌توان از <code dir=\"lt\">React</code> <code dir=\"lt\">Fragment</code> با سینتکس خالی <> ... </> استفاده کرد تا عناصر را بدون اضافه کردن تگ اضافی به <code dir=\"lt\">DOM</code> گروه‌بندی کرد.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">B</code> صحیح است؟ می‌توان از <code dir=\"ltr\">React</code> <code dir=\"ltr\">Fragment</code> با سینتکس خالی <> ... </> استفاده کرد تا عناصر را بدون اضافه کردن تگ اضافی به <code dir=\"ltr\">DOM</code> گروه‌بندی کرد.</p>",
       "tags": [
         "react.jsx.syntax"
       ],
       "answers": [
         {
-          "text": "<p>با استفاده از یک <code dir=\"lt\">div</code> اضافی</p>",
+          "text": "<p>با استفاده از یک <code dir=\"ltr\">div</code> اضافی</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>با استفاده از <code dir=\"lt\">React</code> <code dir=\"lt\">Fragment</code></p>",
+          "text": "<p>با استفاده از <code dir=\"ltr\">React</code> <code dir=\"ltr\">Fragment</code></p>",
           "isCorrect": true
         },
         {
-          "text": "<p>با استفاده از تگ <code dir=\"lt\">span</code></p>",
+          "text": "<p>با استفاده از تگ <code dir=\"ltr\">span</code></p>",
           "isCorrect": false
         },
         {
-          "text": "<p>با استفاده از تگ <code dir=\"lt\">section</code></p>",
+          "text": "<p>با استفاده از تگ <code dir=\"ltr\">section</code></p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>چه مشکلی ممکن است اگر در <code dir=\"lt\">JSX</code> تگ‌های <code dir=\"lt\">self-closing</code> مانند <img> یا <br> را نبندیم؟</p>",
+      "text": "<p>چه مشکلی ممکن است اگر در <code dir=\"ltr\">JSX</code> تگ‌های <code dir=\"ltr\">self-closing</code> مانند <img> یا <br> را نبندیم؟</p>",
       "difficulty": 3,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">C</code> صحیح است؟ در <code dir=\"lt\">JSX</code> برخلاف <code dir=\"lt\">HTML</code>، همه تگ‌ها باید بسته شوند. تگ‌های <code dir=\"lt\">self-closing</code> باید با <code dir=\"lt\">/&gt;</code> بسته شوند و در غیر این صورت <code dir=\"lt\">React</code> خطا تولید می‌کند.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">C</code> صحیح است؟ در <code dir=\"ltr\">JSX</code> برخلاف <code dir=\"ltr\">HTML</code>، همه تگ‌ها باید بسته شوند. تگ‌های <code dir=\"ltr\">self-closing</code> باید با <code dir=\"ltr\">/&gt;</code> بسته شوند و در غیر این صورت <code dir=\"ltr\">React</code> خطا تولید می‌کند.</p>",
       "tags": [
         "react.jsx.syntax"
       ],
       "answers": [
         {
-          "text": "<p><code dir=\"lt\">React</code> آن‌ها را خودکار اصلاح می‌کند</p>",
+          "text": "<p><code dir=\"ltr\">React</code> آن‌ها را خودکار اصلاح می‌کند</p>",
           "isCorrect": false
         },
         {
@@ -69,7 +69,7 @@
           "isCorrect": false
         },
         {
-          "text": "<p><code dir=\"lt\">JSX</code> خطا تولید می‌کند و کامپایل نمی‌شود</p>",
+          "text": "<p><code dir=\"ltr\">JSX</code> خطا تولید می‌کند و کامپایل نمی‌شود</p>",
           "isCorrect": true
         },
         {
@@ -79,41 +79,41 @@
       ]
     },
     {
-      "text": "<p>در <code dir=\"lt\">JSX</code>، چگونه باید کلاس <code dir=\"lt\">CSS</code> را به یک عنصر اختصاص دهیم؟</p>",
+      "text": "<p>در <code dir=\"ltr\">JSX</code>، چگونه باید کلاس <code dir=\"ltr\">CSS</code> را به یک عنصر اختصاص دهیم؟</p>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ در <code dir=\"lt\">JSX</code> به جای استفاده از <code dir=\"lt\">class</code> که کلمه رزرو شده جاوااسکریپت است، باید از <code dir=\"lt\">className</code> استفاده کرد.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">B</code> صحیح است؟ در <code dir=\"ltr\">JSX</code> به جای استفاده از <code dir=\"ltr\">class</code> که کلمه رزرو شده جاوااسکریپت است، باید از <code dir=\"ltr\">className</code> استفاده کرد.</p>",
       "tags": [
         "react.jsx.syntax"
       ],
       "answers": [
         {
-          "text": "<p>با استفاده از <code dir=\"lt\">class</code></p>",
+          "text": "<p>با استفاده از <code dir=\"ltr\">class</code></p>",
           "isCorrect": false
         },
         {
-          "text": "<p>با استفاده از <code dir=\"lt\">className</code></p>",
+          "text": "<p>با استفاده از <code dir=\"ltr\">className</code></p>",
           "isCorrect": true
         },
         {
-          "text": "<p>با استفاده از <code dir=\"lt\">style</code></p>",
+          "text": "<p>با استفاده از <code dir=\"ltr\">style</code></p>",
           "isCorrect": false
         },
         {
-          "text": "<p>با استفاده از <code dir=\"lt\">id</code></p>",
+          "text": "<p>با استفاده از <code dir=\"ltr\">id</code></p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>چگونه باید نام اتریبیوت‌های چندکلمه‌ای <code dir=\"lt\">HTML</code> (مانند <code dir=\"lt\">onclick</code>) را در <code dir=\"lt\">JSX</code> بنویسیم؟</p>",
+      "text": "<p>چگونه باید نام اتریبیوت‌های چندکلمه‌ای <code dir=\"ltr\">HTML</code> (مانند <code dir=\"ltr\">onclick</code>) را در <code dir=\"ltr\">JSX</code> بنویسیم؟</p>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">C</code> صحیح است؟ در <code dir=\"lt\">JSX</code>، اتریبیوت‌های <code dir=\"lt\">HTML</code> چندکلمه‌ای باید با <code dir=\"lt\">camelCase</code> نوشته شوند؛ برای مثال <code dir=\"lt\">htmlFor</code> به جای <code dir=\"lt\">for</code> و <code dir=\"lt\">onClick</code> به جای <code dir=\"lt\">onclick</code>.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">C</code> صحیح است؟ در <code dir=\"ltr\">JSX</code>، اتریبیوت‌های <code dir=\"ltr\">HTML</code> چندکلمه‌ای باید با <code dir=\"ltr\">camelCase</code> نوشته شوند؛ برای مثال <code dir=\"ltr\">htmlFor</code> به جای <code dir=\"ltr\">for</code> و <code dir=\"ltr\">onClick</code> به جای <code dir=\"ltr\">onclick</code>.</p>",
       "tags": [
         "react.jsx.syntax"
       ],
       "answers": [
         {
-          "text": "<p>به همان شکل <code dir=\"lt\">HTML</code></p>",
+          "text": "<p>به همان شکل <code dir=\"ltr\">HTML</code></p>",
           "isCorrect": false
         },
         {
@@ -121,11 +121,11 @@
           "isCorrect": false
         },
         {
-          "text": "<p>با <code dir=\"lt\">camelCase</code></p>",
+          "text": "<p>با <code dir=\"ltr\">camelCase</code></p>",
           "isCorrect": true
         },
         {
-          "text": "<p>با <code dir=\"lt\">underscore</code> بین کلمات</p>",
+          "text": "<p>با <code dir=\"ltr\">underscore</code> بین کلمات</p>",
           "isCorrect": false
         }
       ]

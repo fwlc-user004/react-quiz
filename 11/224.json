@@ -1,9 +1,9 @@
 {
   "questions": [
     {
-      "text": "<p>برای ساخت یک منوی چندسطحی در <code dir=\"lt\">React</code> که هر آیتم می‌تواند زیرمنو داشته باشد، چه نوع داده‌ای مناسب است؟\n\nمثال:</p>\n<pre><code dir=\"lt\">const menuItems = [\n  { title: 'Home', url: '/' },\n  { title: 'Services', url: '/services', submenu: [\n      { title: 'Web', url: '/services/web' },\n      { title: 'SEO', url: '/services/seo' }\n    ]\n  },\n  { title: 'About', url: '/about' }\n];</code></pre>",
+      "text": "<p>برای ساخت یک منوی چندسطحی در <code dir=\"ltr\">React</code> که هر آیتم می‌تواند زیرمنو داشته باشد، چه نوع داده‌ای مناسب است؟\n\nمثال:</p>\n<pre><code dir=\"ltr\">const menuItems = [\n  { title: 'Home', url: '/' },\n  { title: 'Services', url: '/services', submenu: [\n      { title: 'Web', url: '/services/web' },\n      { title: 'SEO', url: '/services/seo' }\n    ]\n  },\n  { title: 'About', url: '/about' }\n];</code></pre>",
       "difficulty": 1,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ زیرا هر آیتم منو یک شیء است و استفاده از آرایه‌ای از اشیاء اجازه می‌دهد منوهای چندسطحی به راحتی مدیریت شوند.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">B</code> صحیح است؟ زیرا هر آیتم منو یک شیء است و استفاده از آرایه‌ای از اشیاء اجازه می‌دهد منوهای چندسطحی به راحتی مدیریت شوند.</p>",
       "tags": [
         "react.components.menu"
       ],
@@ -21,15 +21,15 @@
           "isCorrect": false
         },
         {
-          "text": "<p><code dir=\"lt\">Set</code></p>",
+          "text": "<p><code dir=\"ltr\">Set</code></p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>کامپوننت <code dir=\"lt\">MenuItems</code> در مثال زیر چه کاری انجام می‌دهد؟</p>\n<pre><code dir=\"lt\">const MenuItems = ({ items }) => {\n  return (\n    <li>\n      <a href={items.url}>{items.title}</a>\n    </li>\n  );\n};</code></pre>",
+      "text": "<p>کامپوننت <code dir=\"ltr\">MenuItems</code> در مثال زیر چه کاری انجام می‌دهد؟</p>\n<pre><code dir=\"ltr\">const MenuItems = ({ items }) => {\n  return (\n    <li>\n      <a href={items.url}>{items.title}</a>\n    </li>\n  );\n};</code></pre>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">A</code> صحیح است؟ این کامپوننت یک آیتم منفرد از منو را دریافت کرده و آن را به صورت یک <li> با لینک مربوطه رندر می‌کند.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">A</code> صحیح است؟ این کامپوننت یک آیتم منفرد از منو را دریافت کرده و آن را به صورت یک <li> با لینک مربوطه رندر می‌کند.</p>",
       "tags": [
         "react.components.menu"
       ],
@@ -53,9 +53,9 @@
       ]
     },
     {
-      "text": "<p>در کامپوننت <code dir=\"lt\">Navbar</code> زیر، چرا از <code dir=\"lt\">key</code> در <code dir=\"lt\">map</code> استفاده شده است؟</p>\n<pre><code dir=\"lt\">const Navbar = () => {\n  return (\n    <nav>\n      <ul className=\"menus\">\n        {menuItems.map((menu, index) => (\n          <MenuItems items={menu} key={index} />\n        ))}\n      </ul>\n    </nav>\n  );\n};</code></pre>",
+      "text": "<p>در کامپوننت <code dir=\"ltr\">Navbar</code> زیر، چرا از <code dir=\"ltr\">key</code> در <code dir=\"ltr\">map</code> استفاده شده است؟</p>\n<pre><code dir=\"ltr\">const Navbar = () => {\n  return (\n    <nav>\n      <ul className=\"menus\">\n        {menuItems.map((menu, index) => (\n          <MenuItems items={menu} key={index} />\n        ))}\n      </ul>\n    </nav>\n  );\n};</code></pre>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">C</code> صحیح است؟ استفاده از <code dir=\"lt\">key</code> به <code dir=\"lt\">React</code> کمک می‌کند تا تغییرات لیست را ردیابی کرده و رندر مؤثر انجام دهد و از هشدارهای مرتبط با عناصر تکراری جلوگیری شود.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">C</code> صحیح است؟ استفاده از <code dir=\"ltr\">key</code> به <code dir=\"ltr\">React</code> کمک می‌کند تا تغییرات لیست را ردیابی کرده و رندر مؤثر انجام دهد و از هشدارهای مرتبط با عناصر تکراری جلوگیری شود.</p>",
       "tags": [
         "react.components.menu"
       ],
@@ -65,11 +65,11 @@
           "isCorrect": false
         },
         {
-          "text": "<p>برای اتصال <code dir=\"lt\">Event</code> <code dir=\"lt\">Handler</code></p>",
+          "text": "<p>برای اتصال <code dir=\"ltr\">Event</code> <code dir=\"ltr\">Handler</code></p>",
           "isCorrect": false
         },
         {
-          "text": "<p>برای کمک به <code dir=\"lt\">React</code> در رندر مؤثر لیست‌ها</p>",
+          "text": "<p>برای کمک به <code dir=\"ltr\">React</code> در رندر مؤثر لیست‌ها</p>",
           "isCorrect": true
         },
         {
@@ -79,35 +79,35 @@
       ]
     },
     {
-      "text": "<p>در منوی چندسطحی، اگر بخواهیم زیرمنوها با کلیک کاربر نمایش داده شوند، کدام هوک <code dir=\"lt\">React</code> مناسب است؟</p>",
+      "text": "<p>در منوی چندسطحی، اگر بخواهیم زیرمنوها با کلیک کاربر نمایش داده شوند، کدام هوک <code dir=\"ltr\">React</code> مناسب است؟</p>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ <code dir=\"lt\">useState</code> به ما اجازه می‌دهد که وضعیت باز یا بسته بودن هر زیرمنو را نگه داریم و با تغییر آن، رندر مجدد برای نمایش یا مخفی کردن زیرمنو انجام شود.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">B</code> صحیح است؟ <code dir=\"ltr\">useState</code> به ما اجازه می‌دهد که وضعیت باز یا بسته بودن هر زیرمنو را نگه داریم و با تغییر آن، رندر مجدد برای نمایش یا مخفی کردن زیرمنو انجام شود.</p>",
       "tags": [
         "react.components.menu"
       ],
       "answers": [
         {
-          "text": "<p><code dir=\"lt\">useEffect</code></p>",
+          "text": "<p><code dir=\"ltr\">useEffect</code></p>",
           "isCorrect": false
         },
         {
-          "text": "<p><code dir=\"lt\">useState</code></p>",
+          "text": "<p><code dir=\"ltr\">useState</code></p>",
           "isCorrect": true
         },
         {
-          "text": "<p><code dir=\"lt\">useContext</code></p>",
+          "text": "<p><code dir=\"ltr\">useContext</code></p>",
           "isCorrect": false
         },
         {
-          "text": "<p><code dir=\"lt\">useReducer</code></p>",
+          "text": "<p><code dir=\"ltr\">useReducer</code></p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>چه مزیتی در استفاده از کامپوننت <code dir=\"lt\">MenuItems</code> برای هر آیتم منو وجود دارد؟\n\nفرض کنید می‌خواهیم منوهای سطح بالا و زیرمنوها را به صورت جداگانه مدیریت کنیم.</p>",
+      "text": "<p>چه مزیتی در استفاده از کامپوننت <code dir=\"ltr\">MenuItems</code> برای هر آیتم منو وجود دارد؟\n\nفرض کنید می‌خواهیم منوهای سطح بالا و زیرمنوها را به صورت جداگانه مدیریت کنیم.</p>",
       "difficulty": 3,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">D</code> صحیح است؟ ایجاد کامپوننت مجزا باعث می‌شود منطق رندر هر آیتم جدا شود، کد تمیزتر شود و رندر تودرتو و مدیریت زیرمنوها ساده‌تر گردد.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">D</code> صحیح است؟ ایجاد کامپوننت مجزا باعث می‌شود منطق رندر هر آیتم جدا شود، کد تمیزتر شود و رندر تودرتو و مدیریت زیرمنوها ساده‌تر گردد.</p>",
       "tags": [
         "react.components.menu"
       ],
@@ -121,7 +121,7 @@
           "isCorrect": false
         },
         {
-          "text": "<p>صرفاً برای افزودن <code dir=\"lt\">Event</code> <code dir=\"lt\">Handler</code>ها است</p>",
+          "text": "<p>صرفاً برای افزودن <code dir=\"ltr\">Event</code> <code dir=\"ltr\">Handler</code>ها است</p>",
           "isCorrect": false
         },
         {

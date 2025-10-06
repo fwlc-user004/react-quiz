@@ -1,15 +1,15 @@
 {
   "questions": [
     {
-      "text": "<p>دوران <code dir=\"lt\">jQuery</code> چه مشکلاتی در توسعه وب ایجاد کرد؟</p>",
+      "text": "<p>دوران <code dir=\"ltr\">jQuery</code> چه مشکلاتی در توسعه وب ایجاد کرد؟</p>",
       "difficulty": 1,
-      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"lt\">C</code> است، چون <code dir=\"lt\">jQuery</code> به طور مستقیم با <code dir=\"lt\">DOM</code> دستکاری می‌کند که باعث پیچیدگی و مشکلات مدیریت وضعیت <code dir=\"lt\">UI</code> می‌شود.</p>",
+      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"ltr\">C</code> است، چون <code dir=\"ltr\">jQuery</code> به طور مستقیم با <code dir=\"ltr\">DOM</code> دستکاری می‌کند که باعث پیچیدگی و مشکلات مدیریت وضعیت <code dir=\"ltr\">UI</code> می‌شود.</p>",
       "tags": [
         "react.history"
       ],
       "answers": [
         {
-          "text": "<p>عدم پشتیبانی از دستکاری <code dir=\"lt\">DOM</code></p>",
+          "text": "<p>عدم پشتیبانی از دستکاری <code dir=\"ltr\">DOM</code></p>",
           "isCorrect": false
         },
         {
@@ -17,7 +17,7 @@
           "isCorrect": false
         },
         {
-          "text": "<p>دستکاری مستقیم <code dir=\"lt\">DOM</code> که منجر به پیچیدگی و کدهای مستعد خطا می‌شود</p>",
+          "text": "<p>دستکاری مستقیم <code dir=\"ltr\">DOM</code> که منجر به پیچیدگی و کدهای مستعد خطا می‌شود</p>",
           "isCorrect": true
         },
         {
@@ -27,41 +27,41 @@
       ]
     },
     {
-      "text": "<p>چه تفاوتی میان <code dir=\"lt\">Virtual DOM</code> در <code dir=\"lt\">React</code> و دستکاری مستقیم <code dir=\"lt\">DOM</code> در <code dir=\"lt\">jQuery</code> وجود دارد؟</p>",
+      "text": "<p>چه تفاوتی میان <code dir=\"ltr\">Virtual DOM</code> در <code dir=\"ltr\">React</code> و دستکاری مستقیم <code dir=\"ltr\">DOM</code> در <code dir=\"ltr\">jQuery</code> وجود دارد؟</p>",
       "difficulty": 2,
-      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"lt\">A</code> است، چون <code dir=\"lt\">React</code> از <code dir=\"lt\">Virtual DOM</code> استفاده می‌کند تا تغییرات به صورت بهینه و دسته‌ای بر روی <code dir=\"lt\">DOM</code> واقعی اعمال شود.</p>",
+      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"ltr\">A</code> است، چون <code dir=\"ltr\">React</code> از <code dir=\"ltr\">Virtual DOM</code> استفاده می‌کند تا تغییرات به صورت بهینه و دسته‌ای بر روی <code dir=\"ltr\">DOM</code> واقعی اعمال شود.</p>",
       "tags": [
         "react.history"
       ],
       "answers": [
         {
-          "text": "<p><code dir=\"lt\">React</code> از <code dir=\"lt\">Virtual</code> <code dir=\"lt\">DOM</code> برای بهینه سازی اعمال تغییرات استفاده می‌کند</p>",
+          "text": "<p><code dir=\"ltr\">React</code> از <code dir=\"ltr\">Virtual</code> <code dir=\"ltr\">DOM</code> برای بهینه سازی اعمال تغییرات استفاده می‌کند</p>",
           "isCorrect": true
         },
         {
-          "text": "<p><code dir=\"lt\">jQuery</code> از <code dir=\"lt\">Virtual</code> <code dir=\"lt\">DOM</code> استفاده می‌کند</p>",
+          "text": "<p><code dir=\"ltr\">jQuery</code> از <code dir=\"ltr\">Virtual</code> <code dir=\"ltr\">DOM</code> استفاده می‌کند</p>",
           "isCorrect": false
         },
         {
-          "text": "<p><code dir=\"lt\">React</code> دستکاری مستقیم <code dir=\"lt\">DOM</code> را انجام می‌دهد</p>",
+          "text": "<p><code dir=\"ltr\">React</code> دستکاری مستقیم <code dir=\"ltr\">DOM</code> را انجام می‌دهد</p>",
           "isCorrect": false
         },
         {
-          "text": "<p><code dir=\"lt\">jQuery</code> تغییرات را به صورت دسته‌ای بر روی <code dir=\"lt\">DOM</code> اعمال می‌کند</p>",
+          "text": "<p><code dir=\"ltr\">jQuery</code> تغییرات را به صورت دسته‌ای بر روی <code dir=\"ltr\">DOM</code> اعمال می‌کند</p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>کدام یک از ویژگی‌های کلیدی <code dir=\"lt\">React</code> باعث بهبود عملکرد و سادگی نگهداری اپلیکیشن‌های وب شد؟</p>",
+      "text": "<p>کدام یک از ویژگی‌های کلیدی <code dir=\"ltr\">React</code> باعث بهبود عملکرد و سادگی نگهداری اپلیکیشن‌های وب شد؟</p>",
       "difficulty": 2,
-      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"lt\">B</code> است، چون معماری مبتنی بر کامپوننت در <code dir=\"lt\">React</code>، امکان توسعه و نگهداری ساده‌تر اپلیکیشن‌ها را فراهم می‌کند.</p>",
+      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"ltr\">B</code> است، چون معماری مبتنی بر کامپوننت در <code dir=\"ltr\">React</code>، امکان توسعه و نگهداری ساده‌تر اپلیکیشن‌ها را فراهم می‌کند.</p>",
       "tags": [
         "react.history"
       ],
       "answers": [
         {
-          "text": "<p>استفاده از یک معماری <code dir=\"lt\">MVC</code></p>",
+          "text": "<p>استفاده از یک معماری <code dir=\"ltr\">MVC</code></p>",
           "isCorrect": false
         },
         {
@@ -69,7 +69,7 @@
           "isCorrect": true
         },
         {
-          "text": "<p>استفاده از دوطرفه <code dir=\"lt\">data</code> <code dir=\"lt\">binding</code></p>",
+          "text": "<p>استفاده از دوطرفه <code dir=\"ltr\">data</code> <code dir=\"ltr\">binding</code></p>",
           "isCorrect": false
         },
         {
@@ -79,9 +79,9 @@
       ]
     },
     {
-      "text": "<p>چرا <code dir=\"lt\">React</code> برای ساخت رابط‌های کاربری پیچیده و با عملکرد بالا مناسب است؟</p>",
+      "text": "<p>چرا <code dir=\"ltr\">React</code> برای ساخت رابط‌های کاربری پیچیده و با عملکرد بالا مناسب است؟</p>",
       "difficulty": 3,
-      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"lt\">D</code> است، چون <code dir=\"lt\">React</code> با استفاده از <code dir=\"lt\">Virtual</code> <code dir=\"lt\">DOM</code> و <code dir=\"lt\">Diffing</code>، تغییرات را بهینه و به صورت دسته‌ای اعمال می‌کند که عملکرد را بهبود می‌بخشد.</p>",
+      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"ltr\">D</code> است، چون <code dir=\"ltr\">React</code> با استفاده از <code dir=\"ltr\">Virtual</code> <code dir=\"ltr\">DOM</code> و <code dir=\"ltr\">Diffing</code>، تغییرات را بهینه و به صورت دسته‌ای اعمال می‌کند که عملکرد را بهبود می‌بخشد.</p>",
       "tags": [
         "react.history"
       ],
@@ -91,23 +91,23 @@
           "isCorrect": false
         },
         {
-          "text": "<p>چون از دوطرفه <code dir=\"lt\">data</code> <code dir=\"lt\">binding</code> استفاده می‌کند</p>",
+          "text": "<p>چون از دوطرفه <code dir=\"ltr\">data</code> <code dir=\"ltr\">binding</code> استفاده می‌کند</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>چون از <code dir=\"lt\">Virtual</code> <code dir=\"lt\">DOM</code> برای افزایش سرعت استفاده می‌کند</p>",
+          "text": "<p>چون از <code dir=\"ltr\">Virtual</code> <code dir=\"ltr\">DOM</code> برای افزایش سرعت استفاده می‌کند</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>چون از <code dir=\"lt\">Virtual</code> <code dir=\"lt\">DOM</code> و <code dir=\"lt\">Diffing</code> برای بهینه سازی استفاده می‌کند</p>",
+          "text": "<p>چون از <code dir=\"ltr\">Virtual</code> <code dir=\"ltr\">DOM</code> و <code dir=\"ltr\">Diffing</code> برای بهینه سازی استفاده می‌کند</p>",
           "isCorrect": true
         }
       ]
     },
     {
-      "text": "<p>جریان داده یک طرفه در <code dir=\"lt\">React</code> چیست؟</p>",
+      "text": "<p>جریان داده یک طرفه در <code dir=\"ltr\">React</code> چیست؟</p>",
       "difficulty": 2,
-      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"lt\">C</code> است، چون در <code dir=\"lt\">React</code> داده‌ها همیشه از کامپوننت والد به فرزند جریان می‌یابند که این مدل باعث پیش‌بینی‌پذیری بیشتر و آسانی دیباگ می‌شود.</p>",
+      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"ltr\">C</code> است، چون در <code dir=\"ltr\">React</code> داده‌ها همیشه از کامپوننت والد به فرزند جریان می‌یابند که این مدل باعث پیش‌بینی‌پذیری بیشتر و آسانی دیباگ می‌شود.</p>",
       "tags": [
         "react.history"
       ],

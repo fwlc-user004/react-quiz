@@ -1,19 +1,19 @@
 {
   "questions": [
     {
-      "text": "<p><code dir=\"lt\">Virtual</code> <code dir=\"lt\">DOM</code> در <code dir=\"lt\">React</code> چیست و چرا به آن نیاز داریم؟</p>",
+      "text": "<p><code dir=\"ltr\">Virtual</code> <code dir=\"ltr\">DOM</code> در <code dir=\"ltr\">React</code> چیست و چرا به آن نیاز داریم؟</p>",
       "difficulty": 1,
-      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"lt\">B</code> است، چون <code dir=\"lt\">Virtual DOM</code> یک کپی سبک از <code dir=\"lt\">DOM</code> واقعی است که در حافظه نگهداری می‌شود و به روز رسانی‌های بهینه‌تری را امکان‌پذیر می‌کند.</p>",
+      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"ltr\">B</code> است، چون <code dir=\"ltr\">Virtual DOM</code> یک کپی سبک از <code dir=\"ltr\">DOM</code> واقعی است که در حافظه نگهداری می‌شود و به روز رسانی‌های بهینه‌تری را امکان‌پذیر می‌کند.</p>",
       "tags": [
         "react.virtual-dom"
       ],
       "answers": [
         {
-          "text": "<p>یک نسخه کامل از <code dir=\"lt\">DOM</code> واقعی که به صورت جداگانه اعمال می‌شود</p>",
+          "text": "<p>یک نسخه کامل از <code dir=\"ltr\">DOM</code> واقعی که به صورت جداگانه اعمال می‌شود</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>یک نمایش مجازی از <code dir=\"lt\">DOM</code> که در حافظه نگهداری می‌شود</p>",
+          "text": "<p>یک نمایش مجازی از <code dir=\"ltr\">DOM</code> که در حافظه نگهداری می‌شود</p>",
           "isCorrect": true
         },
         {
@@ -21,41 +21,41 @@
           "isCorrect": false
         },
         {
-          "text": "<p>یک سیستم مدیریت <code dir=\"lt\">state</code> داخلی برای <code dir=\"lt\">React</code></p>",
+          "text": "<p>یک سیستم مدیریت <code dir=\"ltr\">state</code> داخلی برای <code dir=\"ltr\">React</code></p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>چه فرآیندی در <code dir=\"lt\">React</code> برای به‌روزرسانی <code dir=\"lt\">DOM</code> واقعی استفاده می‌شود؟</p>",
+      "text": "<p>چه فرآیندی در <code dir=\"ltr\">React</code> برای به‌روزرسانی <code dir=\"ltr\">DOM</code> واقعی استفاده می‌شود؟</p>",
       "difficulty": 2,
-      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"lt\">B</code> است، چون <code dir=\"lt\">React</code> از الگوریتم <code dir=\"lt\">Diffing</code> برای مقایسه درخت جدید <code dir=\"lt\">Virtual DOM</code> با نسخه قبلی و اعمال تغییرات به صورت دسته‌ای استفاده می‌کند.</p>",
+      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"ltr\">B</code> است، چون <code dir=\"ltr\">React</code> از الگوریتم <code dir=\"ltr\">Diffing</code> برای مقایسه درخت جدید <code dir=\"ltr\">Virtual DOM</code> با نسخه قبلی و اعمال تغییرات به صورت دسته‌ای استفاده می‌کند.</p>",
       "tags": [
         "react.virtual-dom"
       ],
       "answers": [
         {
-          "text": "<p>استفاده از <code dir=\"lt\">useEffect</code> برای هر تغییر <code dir=\"lt\">state</code></p>",
+          "text": "<p>استفاده از <code dir=\"ltr\">useEffect</code> برای هر تغییر <code dir=\"ltr\">state</code></p>",
           "isCorrect": false
         },
         {
-          "text": "<p>به‌روزرسانی <code dir=\"lt\">DOM</code> به صورت تک به تک</p>",
+          "text": "<p>به‌روزرسانی <code dir=\"ltr\">DOM</code> به صورت تک به تک</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>استفاده از الگوریتم <code dir=\"lt\">Diffing</code> برای مقایسه و به‌روزرسانی دسته‌ای</p>",
+          "text": "<p>استفاده از الگوریتم <code dir=\"ltr\">Diffing</code> برای مقایسه و به‌روزرسانی دسته‌ای</p>",
           "isCorrect": true
         },
         {
-          "text": "<p>استفاده از <code dir=\"lt\">Virtual</code> <code dir=\"lt\">DOM</code> برای مدیریت <code dir=\"lt\">state</code></p>",
+          "text": "<p>استفاده از <code dir=\"ltr\">Virtual</code> <code dir=\"ltr\">DOM</code> برای مدیریت <code dir=\"ltr\">state</code></p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>کامپوننت‌های <code dir=\"lt\">React</code> چیستند و چه ویژگی‌هایی دارند؟</p>",
+      "text": "<p>کامپوننت‌های <code dir=\"ltr\">React</code> چیستند و چه ویژگی‌هایی دارند؟</p>",
       "difficulty": 2,
-      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"lt\">A</code> است، چون کامپوننت‌ها بلوک‌های سازنده اصلی در <code dir=\"lt\">React</code> هستند که می‌توانند مستقل و قابل استفاده مجدد باشند.</p>",
+      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"ltr\">A</code> است، چون کامپوننت‌ها بلوک‌های سازنده اصلی در <code dir=\"ltr\">React</code> هستند که می‌توانند مستقل و قابل استفاده مجدد باشند.</p>",
       "tags": [
         "react.virtual-dom"
       ],
@@ -69,19 +69,19 @@
           "isCorrect": false
         },
         {
-          "text": "<p>توابعی برای اعمال تغییرات مستقیم بر روی <code dir=\"lt\">DOM</code></p>",
+          "text": "<p>توابعی برای اعمال تغییرات مستقیم بر روی <code dir=\"ltr\">DOM</code></p>",
           "isCorrect": false
         },
         {
-          "text": "<p>فریم ورک‌هایی برای مدیریت وضعیت <code dir=\"lt\">state</code></p>",
+          "text": "<p>فریم ورک‌هایی برای مدیریت وضعیت <code dir=\"ltr\">state</code></p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>چه تفاوتی میان پراپ‌ها (<code dir=\"lt\">props</code>) و وضعیت (<code dir=\"lt\">state</code>) در <code dir=\"lt\">React</code> وجود دارد؟</p>",
+      "text": "<p>چه تفاوتی میان پراپ‌ها (<code dir=\"ltr\">props</code>) و وضعیت (<code dir=\"ltr\">state</code>) در <code dir=\"ltr\">React</code> وجود دارد؟</p>",
       "difficulty": 3,
-      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"lt\">D</code> است، چون <code dir=\"lt\">props</code> داده‌هایی هستند که از کامپوننت والد به فرزند ارسال می‌شوند و تغییرناپذیرند، در حالی که <code dir=\"lt\">state</code> داده‌هایی هستند که در داخل کامپوننت مدیریت می‌شوند و می‌توانند تغییر کنند.</p>",
+      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"ltr\">D</code> است، چون <code dir=\"ltr\">props</code> داده‌هایی هستند که از کامپوننت والد به فرزند ارسال می‌شوند و تغییرناپذیرند، در حالی که <code dir=\"ltr\">state</code> داده‌هایی هستند که در داخل کامپوننت مدیریت می‌شوند و می‌توانند تغییر کنند.</p>",
       "tags": [
         "react.virtual-dom"
       ],
@@ -91,23 +91,23 @@
           "isCorrect": false
         },
         {
-          "text": "<p><code dir=\"lt\">State</code> داده‌هایی است که از کامپوننت والد به فرزند ارسال می‌شود</p>",
+          "text": "<p><code dir=\"ltr\">State</code> داده‌هایی است که از کامپوننت والد به فرزند ارسال می‌شود</p>",
           "isCorrect": false
         },
         {
-          "text": "<p><code dir=\"lt\">Props</code> تغییرناپذیرند، در حالی که <code dir=\"lt\">state</code> داده‌هایی هستند که در کامپوننت مدیریت می‌شوند</p>",
+          "text": "<p><code dir=\"ltr\">Props</code> تغییرناپذیرند، در حالی که <code dir=\"ltr\">state</code> داده‌هایی هستند که در کامپوننت مدیریت می‌شوند</p>",
           "isCorrect": false
         },
         {
-          "text": "<p><code dir=\"lt\">Props</code> داده‌هایی هستند که از کامپوننت والد به فرزند منتقل می‌شوند و تغییرناپذیرند، در حالی که <code dir=\"lt\">state</code> داده‌هایی هستند که در داخل کامپوننت مدیریت می‌شوند و می‌توانند تغییر کنند</p>",
+          "text": "<p><code dir=\"ltr\">Props</code> داده‌هایی هستند که از کامپوننت والد به فرزند منتقل می‌شوند و تغییرناپذیرند، در حالی که <code dir=\"ltr\">state</code> داده‌هایی هستند که در داخل کامپوننت مدیریت می‌شوند و می‌توانند تغییر کنند</p>",
           "isCorrect": true
         }
       ]
     },
     {
-      "text": "<p>چه زمانی در <code dir=\"lt\">React</code> باید از <code dir=\"lt\">useState</code> برای مدیریت وضعیت (<code dir=\"lt\">state</code>) استفاده کنیم؟</p>",
+      "text": "<p>چه زمانی در <code dir=\"ltr\">React</code> باید از <code dir=\"ltr\">useState</code> برای مدیریت وضعیت (<code dir=\"ltr\">state</code>) استفاده کنیم؟</p>",
       "difficulty": 2,
-      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"lt\">C</code> است، چون <code dir=\"lt\">useState</code> برای مدیریت وضعیت در کامپوننت‌های تابعی استفاده می‌شود.</p>",
+      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"ltr\">C</code> است، چون <code dir=\"ltr\">useState</code> برای مدیریت وضعیت در کامپوننت‌های تابعی استفاده می‌شود.</p>",
       "tags": [
         "react.virtual-dom"
       ],

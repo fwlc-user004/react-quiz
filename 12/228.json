@@ -1,9 +1,9 @@
 {
   "questions": [
     {
-      "text": "<p>در تایمر، <code dir=\"lt\">state</code> <code>isActive</code> چه کاربردی دارد؟</p>",
+      "text": "<p>در تایمر، <code dir=\"ltr\">state</code> <code>isActive</code> چه کاربردی دارد؟</p>",
       "difficulty": 1,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">A</code> صحیح است؟ <code dir=\"lt\">state</code> <code>isActive</code> مشخص می‌کند که تایمر فعال است یا متوقف و با تغییر آن، <code dir=\"lt\">useEffect</code> اجرا شده و <code dir=\"lt\">setInterval</code> مدیریت می‌شود.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">A</code> صحیح است؟ <code dir=\"ltr\">state</code> <code>isActive</code> مشخص می‌کند که تایمر فعال است یا متوقف و با تغییر آن، <code dir=\"ltr\">useEffect</code> اجرا شده و <code dir=\"ltr\">setInterval</code> مدیریت می‌شود.</p>",
       "tags": [
         "react.project.timer.useEffect"
       ],
@@ -29,7 +29,7 @@
     {
       "text": "<p>چرا در <code>setTime</code> از فرم تابعی <code>setTime(time => time + 1)</code> استفاده می‌کنیم؟</p>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">A</code> صحیح است؟ فرم تابعی تضمین می‌کند که آخرین مقدار <code dir=\"lt\">state</code> استفاده شود و از <code dir=\"lt\">stale</code> <code dir=\"lt\">state</code> جلوگیری می‌کند.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">A</code> صحیح است؟ فرم تابعی تضمین می‌کند که آخرین مقدار <code dir=\"ltr\">state</code> استفاده شود و از <code dir=\"ltr\">stale</code> <code dir=\"ltr\">state</code> جلوگیری می‌کند.</p>",
       "tags": [
         "react.project.timer.useEffect"
       ],
@@ -39,7 +39,7 @@
           "isCorrect": false
         },
         {
-          "text": "<p>برای جلوگیری از <code dir=\"lt\">stale</code> <code dir=\"lt\">state</code> و اطمینان از استفاده از آخرین مقدار <code dir=\"lt\">state</code></p>",
+          "text": "<p>برای جلوگیری از <code dir=\"ltr\">stale</code> <code dir=\"ltr\">state</code> و اطمینان از استفاده از آخرین مقدار <code dir=\"ltr\">state</code></p>",
           "isCorrect": true
         },
         {
@@ -55,21 +55,21 @@
     {
       "text": "<p>چه چیزی باعث جلوگیری از نشت حافظه در تایمر می‌شود؟</p>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ بازگشت یک تابع پاک‌سازی در <code dir=\"lt\">useEffect</code> که <code dir=\"lt\">clearInterval</code> فراخوانی می‌کند، <code dir=\"lt\">interval</code> قدیمی را پاک می‌کند و از نشت حافظه جلوگیری می‌کند.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">B</code> صحیح است؟ بازگشت یک تابع پاک‌سازی در <code dir=\"ltr\">useEffect</code> که <code dir=\"ltr\">clearInterval</code> فراخوانی می‌کند، <code dir=\"ltr\">interval</code> قدیمی را پاک می‌کند و از نشت حافظه جلوگیری می‌کند.</p>",
       "tags": [
         "react.project.timer.useEffect"
       ],
       "answers": [
         {
-          "text": "<p>تعریف <code dir=\"lt\">state</code> با <code dir=\"lt\">useState</code></p>",
+          "text": "<p>تعریف <code dir=\"ltr\">state</code> با <code dir=\"ltr\">useState</code></p>",
           "isCorrect": false
         },
         {
-          "text": "<p>استفاده از تابع <code dir=\"lt\">handleStart</code></p>",
+          "text": "<p>استفاده از تابع <code dir=\"ltr\">handleStart</code></p>",
           "isCorrect": false
         },
         {
-          "text": "<p>بازگشت یک تابع پاک‌سازی در <code dir=\"lt\">useEffect</code> که <code dir=\"lt\">clearInterval</code> را فراخوانی می‌کند</p>",
+          "text": "<p>بازگشت یک تابع پاک‌سازی در <code dir=\"ltr\">useEffect</code> که <code dir=\"ltr\">clearInterval</code> را فراخوانی می‌کند</p>",
           "isCorrect": true
         },
         {
@@ -79,35 +79,35 @@
       ]
     },
     {
-      "text": "<p>اگر <code>isActive</code> برابر <code dir=\"lt\">false</code> شود، چه اتفاقی برای <code dir=\"lt\">interval</code> رخ می‌دهد؟</p>",
+      "text": "<p>اگر <code>isActive</code> برابر <code dir=\"ltr\">false</code> شود، چه اتفاقی برای <code dir=\"ltr\">interval</code> رخ می‌دهد؟</p>",
       "difficulty": 3,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ اگر تایمر غیرفعال شود، <code dir=\"lt\">interval</code> پاک شده و شمارش متوقف می‌گردد.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">B</code> صحیح است؟ اگر تایمر غیرفعال شود، <code dir=\"ltr\">interval</code> پاک شده و شمارش متوقف می‌گردد.</p>",
       "tags": [
         "react.project.timer.useEffect"
       ],
       "answers": [
         {
-          "text": "<p><code dir=\"lt\">interval</code> فعال باقی می‌ماند و زمان همچنان افزایش می‌یابد</p>",
+          "text": "<p><code dir=\"ltr\">interval</code> فعال باقی می‌ماند و زمان همچنان افزایش می‌یابد</p>",
           "isCorrect": false
         },
         {
-          "text": "<p><code dir=\"lt\">interval</code> پاک می‌شود و شمارش متوقف می‌گردد</p>",
+          "text": "<p><code dir=\"ltr\">interval</code> پاک می‌شود و شمارش متوقف می‌گردد</p>",
           "isCorrect": true
         },
         {
-          "text": "<p>تایمر <code dir=\"lt\">reset</code> می‌شود و زمان صفر می‌شود</p>",
+          "text": "<p>تایمر <code dir=\"ltr\">reset</code> می‌شود و زمان صفر می‌شود</p>",
           "isCorrect": false
         },
         {
-          "text": "<p><code dir=\"lt\">useEffect</code> خطا می‌دهد و کامپوننت رندر نمی‌شود</p>",
+          "text": "<p><code dir=\"ltr\">useEffect</code> خطا می‌دهد و کامپوننت رندر نمی‌شود</p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>در تایمر، فرض کنید که در <code dir=\"lt\">useEffect</code> آرایه وابستگی <code>[isActive, time]</code> قرار داده شود و فرم تابع <code>setTime(time => time + 1)</code> نیز استفاده شود. چه رفتاری مشاهده می‌کنیم؟</p>",
+      "text": "<p>در تایمر، فرض کنید که در <code dir=\"ltr\">useEffect</code> آرایه وابستگی <code>[isActive, time]</code> قرار داده شود و فرم تابع <code>setTime(time => time + 1)</code> نیز استفاده شود. چه رفتاری مشاهده می‌کنیم؟</p>",
       "difficulty": 3,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ افزودن <code>time</code> به آرایه وابستگی باعث می‌شود که هر بار <code dir=\"lt\">state</code> <code>time</code> تغییر کند، <code dir=\"lt\">useEffect</code> دوباره اجرا شده و یک <code dir=\"lt\">interval</code> جدید ساخته شود. این منجر به چندین <code dir=\"lt\">interval</code> همزمان و افزایش غیرمنتظره زمان می‌شود. برای جلوگیری از این مشکل، کافی است تنها <code>isActive</code> را به آرایه وابستگی اضافه کنیم و از فرم تابع <code>setTime(time => time + 1)</code> استفاده شود.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">B</code> صحیح است؟ افزودن <code>time</code> به آرایه وابستگی باعث می‌شود که هر بار <code dir=\"ltr\">state</code> <code>time</code> تغییر کند، <code dir=\"ltr\">useEffect</code> دوباره اجرا شده و یک <code dir=\"ltr\">interval</code> جدید ساخته شود. این منجر به چندین <code dir=\"ltr\">interval</code> همزمان و افزایش غیرمنتظره زمان می‌شود. برای جلوگیری از این مشکل، کافی است تنها <code>isActive</code> را به آرایه وابستگی اضافه کنیم و از فرم تابع <code>setTime(time => time + 1)</code> استفاده شود.</p>",
       "tags": [
         "react.project.timer.useEffect"
       ],
@@ -121,7 +121,7 @@
           "isCorrect": false
         },
         {
-          "text": "<p><code dir=\"lt\">setInterval</code> هر بار که <code dir=\"lt\">time</code> تغییر می‌کند دوباره ساخته شده و منجر به چندین <code dir=\"lt\">interval</code> همزمان می‌شود</p>",
+          "text": "<p><code dir=\"ltr\">setInterval</code> هر بار که <code dir=\"ltr\">time</code> تغییر می‌کند دوباره ساخته شده و منجر به چندین <code dir=\"ltr\">interval</code> همزمان می‌شود</p>",
           "isCorrect": true
         },
         {

@@ -1,15 +1,15 @@
 {
   "questions": [
     {
-      "text": "<p>چرا نمی‌توانیم یک <code dir=\"lt\">event</code> <code dir=\"lt\">handler</code> را مستقیماً با پرانتز فراخوانی کنیم، مانند <code dir=\"lt\">handleAddToCart</code>(<code dir=\"lt\">productId</code>) در <code dir=\"lt\">JSX</code>؟</p>",
+      "text": "<p>چرا نمی‌توانیم یک <code dir=\"ltr\">event</code> <code dir=\"ltr\">handler</code> را مستقیماً با پرانتز فراخوانی کنیم، مانند <code dir=\"ltr\">handleAddToCart</code>(<code dir=\"ltr\">productId</code>) در <code dir=\"ltr\">JSX</code>؟</p>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ زیرا فراخوانی مستقیم تابع باعث اجرای آن در زمان رندر می‌شود. استفاده از یک تابع لامبدا <code dir=\"lt\">(() => handleAddToCart(...))</code> تضمین می‌کند که تابع تنها در هنگام وقوع رویداد اجرا شود.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">B</code> صحیح است؟ زیرا فراخوانی مستقیم تابع باعث اجرای آن در زمان رندر می‌شود. استفاده از یک تابع لامبدا <code dir=\"ltr\">(() => handleAddToCart(...))</code> تضمین می‌کند که تابع تنها در هنگام وقوع رویداد اجرا شود.</p>",
       "tags": [
         "react.events.advanced"
       ],
       "answers": [
         {
-          "text": "<p>چون <code dir=\"lt\">React</code> اجازه فراخوانی توابع با پارامتر را نمی‌دهد</p>",
+          "text": "<p>چون <code dir=\"ltr\">React</code> اجازه فراخوانی توابع با پارامتر را نمی‌دهد</p>",
           "isCorrect": false
         },
         {
@@ -17,19 +17,19 @@
           "isCorrect": true
         },
         {
-          "text": "<p>چون توابع <code dir=\"lt\">event</code> <code dir=\"lt\">handler</code> باید حتماً <code dir=\"lt\">async</code> باشند</p>",
+          "text": "<p>چون توابع <code dir=\"ltr\">event</code> <code dir=\"ltr\">handler</code> باید حتماً <code dir=\"ltr\">async</code> باشند</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>چون <code dir=\"lt\">JSX</code> تنها توابع بدون آرگومان را می‌پذیرد</p>",
+          "text": "<p>چون <code dir=\"ltr\">JSX</code> تنها توابع بدون آرگومان را می‌پذیرد</p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>در کامپوننت <code dir=\"lt\">SignupForm</code>، چرا فراخوانی <code dir=\"lt\"><code dir=\"lt\">event</code>.<code dir=\"lt\">preventDefault</code>()</code> ضروری است؟</p>",
+      "text": "<p>در کامپوننت <code dir=\"ltr\">SignupForm</code>، چرا فراخوانی <code dir=\"ltr\"><code dir=\"ltr\">event</code>.<code dir=\"ltr\">preventDefault</code>()</code> ضروری است؟</p>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">A</code> صحیح است؟ زیرا رفتار پیش‌فرض مرورگر هنگام ارسال فرم، رفرش کردن صفحه است. فراخوانی <code dir=\"lt\">preventDefault</code>() این رفتار را متوقف کرده و کنترل ارسال فرم را به ما می‌دهد.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">A</code> صحیح است؟ زیرا رفتار پیش‌فرض مرورگر هنگام ارسال فرم، رفرش کردن صفحه است. فراخوانی <code dir=\"ltr\">preventDefault</code>() این رفتار را متوقف کرده و کنترل ارسال فرم را به ما می‌دهد.</p>",
       "tags": [
         "react.events.advanced"
       ],
@@ -39,23 +39,23 @@
           "isCorrect": true
         },
         {
-          "text": "<p>برای جلوگیری از اجرای توابع <code dir=\"lt\">useEffect</code> در فرم</p>",
+          "text": "<p>برای جلوگیری از اجرای توابع <code dir=\"ltr\">useEffect</code> در فرم</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>برای جلوگیری از اجرای <code dir=\"lt\">onClick</code> در دکمه</p>",
+          "text": "<p>برای جلوگیری از اجرای <code dir=\"ltr\">onClick</code> در دکمه</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>برای متوقف کردن <code dir=\"lt\">render</code> مجدد کامپوننت</p>",
+          "text": "<p>برای متوقف کردن <code dir=\"ltr\">render</code> مجدد کامپوننت</p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>در مثال <code dir=\"lt\">ProductList</code>، استفاده از تابع لامبدا <code dir=\"lt\">(() => <code dir=\"lt\">handleAddToCart</code>(...))</code>چه مزیتی دارد؟</p>",
+      "text": "<p>در مثال <code dir=\"ltr\">ProductList</code>، استفاده از تابع لامبدا <code dir=\"ltr\">(() => <code dir=\"ltr\">handleAddToCart</code>(...))</code>چه مزیتی دارد؟</p>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">C</code> صحیح است؟ زیرا این روش تضمین می‌کند که تابع اصلی <code dir=\"lt\">handleAddToCart</code> تنها زمانی اجرا شود که کاربر روی دکمه کلیک کند و همچنین امکان ارسال پارامترهای متفاوت برای هر محصول فراهم می‌کند.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">C</code> صحیح است؟ زیرا این روش تضمین می‌کند که تابع اصلی <code dir=\"ltr\">handleAddToCart</code> تنها زمانی اجرا شود که کاربر روی دکمه کلیک کند و همچنین امکان ارسال پارامترهای متفاوت برای هر محصول فراهم می‌کند.</p>",
       "tags": [
         "react.events.advanced"
       ],
@@ -65,7 +65,7 @@
           "isCorrect": false
         },
         {
-          "text": "<p>باعث می‌شود همه محصولات به صورت همزمان به <code dir=\"lt\">cart</code> اضافه شوند</p>",
+          "text": "<p>باعث می‌شود همه محصولات به صورت همزمان به <code dir=\"ltr\">cart</code> اضافه شوند</p>",
           "isCorrect": false
         },
         {
@@ -73,59 +73,59 @@
           "isCorrect": true
         },
         {
-          "text": "<p>باعث بهینه‌سازی <code dir=\"lt\">useEffect</code> می‌شود</p>",
+          "text": "<p>باعث بهینه‌سازی <code dir=\"ltr\">useEffect</code> می‌شود</p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>فرض کنید شما یک لیست از آیتم‌ها دارید و برای هر آیتم یک دکمه “<code dir=\"lt\">Remove</code>” دارید. اگر برای <code dir=\"lt\">onClick</code> دکمه، مستقیم <code dir=\"lt\">removeItem</code>(<code dir=\"lt\">item</code>.<code dir=\"lt\">id</code>) را بنویسید و از تابع لامبدا استفاده نکنید، چه مشکلی پیش می‌آید؟</p>",
+      "text": "<p>فرض کنید شما یک لیست از آیتم‌ها دارید و برای هر آیتم یک دکمه “<code dir=\"ltr\">Remove</code>” دارید. اگر برای <code dir=\"ltr\">onClick</code> دکمه، مستقیم <code dir=\"ltr\">removeItem</code>(<code dir=\"ltr\">item</code>.<code dir=\"ltr\">id</code>) را بنویسید و از تابع لامبدا استفاده نکنید، چه مشکلی پیش می‌آید؟</p>",
       "difficulty": 3,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ اگر تابع را مستقیماً با پرانتز فراخوانی کنید، تابع هنگام رندر اولیه اجرا می‌شود و نه هنگام وقوع رویداد کلیک. استفاده از تابع لامبدا (() => <code dir=\"lt\">removeItem</code>(<code dir=\"lt\">item</code>.<code dir=\"lt\">id</code>)) تضمین می‌کند که تابع تنها زمانی اجرا شود که کاربر روی دکمه کلیک کند و برای هر آیتم پارامتر مناسب ارسال شود.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">B</code> صحیح است؟ اگر تابع را مستقیماً با پرانتز فراخوانی کنید، تابع هنگام رندر اولیه اجرا می‌شود و نه هنگام وقوع رویداد کلیک. استفاده از تابع لامبدا (() => <code dir=\"ltr\">removeItem</code>(<code dir=\"ltr\">item</code>.<code dir=\"ltr\">id</code>)) تضمین می‌کند که تابع تنها زمانی اجرا شود که کاربر روی دکمه کلیک کند و برای هر آیتم پارامتر مناسب ارسال شود.</p>",
       "tags": [
         "react.events.advanced"
       ],
       "answers": [
         {
-          "text": "<p>تابع <code dir=\"lt\">removeItem</code> هیچ وقت اجرا نمی‌شود</p>",
+          "text": "<p>تابع <code dir=\"ltr\">removeItem</code> هیچ وقت اجرا نمی‌شود</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>تابع <code dir=\"lt\">removeItem</code> هنگام رندر اولیه همه آیتم‌ها اجرا می‌شود و نه فقط وقتی روی دکمه کلیک شود</p>",
+          "text": "<p>تابع <code dir=\"ltr\">removeItem</code> هنگام رندر اولیه همه آیتم‌ها اجرا می‌شود و نه فقط وقتی روی دکمه کلیک شود</p>",
           "isCorrect": true
         },
         {
-          "text": "<p><code dir=\"lt\">React</code> خطا می‌دهد و کامپوننت رندر نمی‌شود</p>",
+          "text": "<p><code dir=\"ltr\">React</code> خطا می‌دهد و کامپوننت رندر نمی‌شود</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>تابع <code dir=\"lt\">removeItem</code> تنها روی اولین آیتم کار می‌کند</p>",
+          "text": "<p>تابع <code dir=\"ltr\">removeItem</code> تنها روی اولین آیتم کار می‌کند</p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>در <code dir=\"lt\">React</code>، چگونه یک تابع <code dir=\"lt\">handleClick</code> را به یک دکمه متصل می‌کنیم تا فقط هنگام کلیک اجرا شود؟</p>",
+      "text": "<p>در <code dir=\"ltr\">React</code>، چگونه یک تابع <code dir=\"ltr\">handleClick</code> را به یک دکمه متصل می‌کنیم تا فقط هنگام کلیک اجرا شود؟</p>",
       "difficulty": 1,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ ما خود تابع را به <code dir=\"lt\">prop</code> <code dir=\"lt\">onClick</code> می‌دهیم، نه نتیجه فراخوانی آن. با نوشتن <code dir=\"lt\">onClick</code>={<code dir=\"lt\">handleClick</code>} تابع تنها هنگام کلیک اجرا می‌شود و نه هنگام رندر.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">B</code> صحیح است؟ ما خود تابع را به <code dir=\"ltr\">prop</code> <code dir=\"ltr\">onClick</code> می‌دهیم، نه نتیجه فراخوانی آن. با نوشتن <code dir=\"ltr\">onClick</code>={<code dir=\"ltr\">handleClick</code>} تابع تنها هنگام کلیک اجرا می‌شود و نه هنگام رندر.</p>",
       "tags": [
         "react.events.advanced"
       ],
       "answers": [
         {
-          "text": "<p><code dir=\"lt\">onClick</code>={<code dir=\"lt\">handleClick</code>()}</p>",
+          "text": "<p><code dir=\"ltr\">onClick</code>={<code dir=\"ltr\">handleClick</code>()}</p>",
           "isCorrect": false
         },
         {
-          "text": "<p><code dir=\"lt\">onclick</code>=\"<code dir=\"lt\">handleClick</code>()\"</p>",
+          "text": "<p><code dir=\"ltr\">onclick</code>=\"<code dir=\"ltr\">handleClick</code>()\"</p>",
           "isCorrect": false
         },
         {
-          "text": "<p><code dir=\"lt\">onClick</code>={<code dir=\"lt\">handleClick</code>}</p>",
+          "text": "<p><code dir=\"ltr\">onClick</code>={<code dir=\"ltr\">handleClick</code>}</p>",
           "isCorrect": true
         },
         {
-          "text": "<p><code dir=\"lt\">onClick={() => handleClick()}</code></p>",
+          "text": "<p><code dir=\"ltr\">onClick={() => handleClick()}</code></p>",
           "isCorrect": false
         }
       ]

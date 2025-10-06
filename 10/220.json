@@ -1,9 +1,9 @@
 {
   "questions": [
     {
-      "text": "<p>در کامپوننتی که از <code dir=\"lt\">useReducer</code> برای مدیریت لیست کارها استفاده می‌کند، ارسال اکشن <code dir=\"lt\">dispatch({ type: 'added', id: 3, text: 'Learn Hooks' })</code> چه کاری انجام می‌دهد؟</p>",
+      "text": "<p>در کامپوننتی که از <code dir=\"ltr\">useReducer</code> برای مدیریت لیست کارها استفاده می‌کند، ارسال اکشن <code dir=\"ltr\">dispatch({ type: 'added', id: 3, text: 'Learn Hooks' })</code> چه کاری انجام می‌دهد؟</p>",
       "difficulty": 1,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ این اکشن یک کار جدید با <code dir=\"lt\">id</code> و متن مشخص شده به آرایه <code dir=\"lt\">tasks</code> اضافه می‌کند و <code dir=\"lt\">state</code> جدید را تولید می‌کند.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">B</code> صحیح است؟ این اکشن یک کار جدید با <code dir=\"ltr\">id</code> و متن مشخص شده به آرایه <code dir=\"ltr\">tasks</code> اضافه می‌کند و <code dir=\"ltr\">state</code> جدید را تولید می‌کند.</p>",
       "tags": [
         "react.state.reducer.payload"
       ],
@@ -13,7 +13,7 @@
           "isCorrect": false
         },
         {
-          "text": "<p>یک کار جدید به آرایه <code dir=\"lt\">tasks</code> اضافه می‌کند</p>",
+          "text": "<p>یک کار جدید به آرایه <code dir=\"ltr\">tasks</code> اضافه می‌کند</p>",
           "isCorrect": true
         },
         {
@@ -27,9 +27,9 @@
       ]
     },
     {
-      "text": "<p>در <code dir=\"lt\">reducer</code> زیر، چرا از <code dir=\"lt\">map</code> برای اکشن '<code dir=\"lt\">changed</code>' استفاده شده است؟</p>\n<pre><code dir=\"lt\">case 'changed': {\n  return todos.map(t => {\n    if (t.id === action.task.id) return action.task;\n    else return t;\n  });\n}</code></pre>",
+      "text": "<p>در <code dir=\"ltr\">reducer</code> زیر، چرا از <code dir=\"ltr\">map</code> برای اکشن '<code dir=\"ltr\">changed</code>' استفاده شده است؟</p>\n<pre><code dir=\"ltr\">case 'changed': {\n  return todos.map(t => {\n    if (t.id === action.task.id) return action.task;\n    else return t;\n  });\n}</code></pre>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">A</code> صحیح است؟ <code dir=\"lt\">map</code> یک آرایه جدید برمی‌گرداند و تنها آیتمی که <code dir=\"lt\">id</code> آن با <code dir=\"lt\">task</code>.<code dir=\"lt\">id</code> مطابقت دارد جایگزین می‌شود، در حالی که سایر آیتم‌ها بدون تغییر باقی می‌مانند.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">A</code> صحیح است؟ <code dir=\"ltr\">map</code> یک آرایه جدید برمی‌گرداند و تنها آیتمی که <code dir=\"ltr\">id</code> آن با <code dir=\"ltr\">task</code>.<code dir=\"ltr\">id</code> مطابقت دارد جایگزین می‌شود، در حالی که سایر آیتم‌ها بدون تغییر باقی می‌مانند.</p>",
       "tags": [
         "react.state.reducer.payload"
       ],
@@ -53,19 +53,19 @@
       ]
     },
     {
-      "text": "<p>چرا در اکشن‌ها اغلب داده‌های اضافی را در پراپرتی <code dir=\"lt\">payload</code> یا مشابه آن قرار می‌دهیم؟</p>",
+      "text": "<p>چرا در اکشن‌ها اغلب داده‌های اضافی را در پراپرتی <code dir=\"ltr\">payload</code> یا مشابه آن قرار می‌دهیم؟</p>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ این کار به <code dir=\"lt\">reducer</code> اجازه می‌دهد بر اساس داده‌های اضافی، <code dir=\"lt\">state</code> را به‌روزرسانی کند و منطق را قابل پیش‌بینی و مقیاس‌پذیر نگه دارد.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">B</code> صحیح است؟ این کار به <code dir=\"ltr\">reducer</code> اجازه می‌دهد بر اساس داده‌های اضافی، <code dir=\"ltr\">state</code> را به‌روزرسانی کند و منطق را قابل پیش‌بینی و مقیاس‌پذیر نگه دارد.</p>",
       "tags": [
         "react.state.reducer.payload"
       ],
       "answers": [
         {
-          "text": "<p>برای اینکه <code dir=\"lt\">React</code> خودکار <code dir=\"lt\">state</code> را مدیریت کند</p>",
+          "text": "<p>برای اینکه <code dir=\"ltr\">React</code> خودکار <code dir=\"ltr\">state</code> را مدیریت کند</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>برای ارسال داده‌های لازم به <code dir=\"lt\">reducer</code> و تصمیم‌گیری درباره <code dir=\"lt\">state</code> جدید</p>",
+          "text": "<p>برای ارسال داده‌های لازم به <code dir=\"ltr\">reducer</code> و تصمیم‌گیری درباره <code dir=\"ltr\">state</code> جدید</p>",
           "isCorrect": true
         },
         {
@@ -73,59 +73,59 @@
           "isCorrect": false
         },
         {
-          "text": "<p>چون <code dir=\"lt\">type</code> اکشن نمی‌تواند حاوی اطلاعات باشد</p>",
+          "text": "<p>چون <code dir=\"ltr\">type</code> اکشن نمی‌تواند حاوی اطلاعات باشد</p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>در کامپوننت <code dir=\"lt\">TaskApp</code>، اگر بخواهیم یک کار را حذف کنیم، کدام روش درست است؟</p>",
+      "text": "<p>در کامپوننت <code dir=\"ltr\">TaskApp</code>، اگر بخواهیم یک کار را حذف کنیم، کدام روش درست است؟</p>",
       "difficulty": 1,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">C</code> صحیح است؟ اکشن '<code dir=\"lt\">deleted</code>' با <code dir=\"lt\">id</code> کار ارسال می‌شود و <code dir=\"lt\">reducer</code> با <code dir=\"lt\">filter</code> آن کار را از آرایه حذف می‌کند.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">C</code> صحیح است؟ اکشن '<code dir=\"ltr\">deleted</code>' با <code dir=\"ltr\">id</code> کار ارسال می‌شود و <code dir=\"ltr\">reducer</code> با <code dir=\"ltr\">filter</code> آن کار را از آرایه حذف می‌کند.</p>",
       "tags": [
         "react.state.reducer.payload"
       ],
       "answers": [
         {
-          "text": "<p>تغییر مستقیم آرایه <code dir=\"lt\">tasks</code> بدون <code dir=\"lt\">dispatch</code></p>",
+          "text": "<p>تغییر مستقیم آرایه <code dir=\"ltr\">tasks</code> بدون <code dir=\"ltr\">dispatch</code></p>",
           "isCorrect": false
         },
         {
-          "text": "<p><code dir=\"lt\">setTasks</code>(<code dir=\"lt\">tasks</code>.<code dir=\"lt\">filter</code>(...)) بدون <code dir=\"lt\">reducer</code></p>",
+          "text": "<p><code dir=\"ltr\">setTasks</code>(<code dir=\"ltr\">tasks</code>.<code dir=\"ltr\">filter</code>(...)) بدون <code dir=\"ltr\">reducer</code></p>",
           "isCorrect": false
         },
         {
-          "text": "<p><code dir=\"lt\">dispatch</code>({ <code dir=\"lt\">type</code>: '<code dir=\"lt\">deleted</code>', <code dir=\"lt\">id</code>: <code dir=\"lt\">taskId</code> }) و استفاده از <code dir=\"lt\">filter</code> در <code dir=\"lt\">reducer</code></p>",
+          "text": "<p><code dir=\"ltr\">dispatch</code>({ <code dir=\"ltr\">type</code>: '<code dir=\"ltr\">deleted</code>', <code dir=\"ltr\">id</code>: <code dir=\"ltr\">taskId</code> }) و استفاده از <code dir=\"ltr\">filter</code> در <code dir=\"ltr\">reducer</code></p>",
           "isCorrect": true
         },
         {
-          "text": "<p>تغییر مقدار <code dir=\"lt\">state</code> در <code dir=\"lt\">handleDeleteTask</code> بدون <code dir=\"lt\">dispatch</code></p>",
+          "text": "<p>تغییر مقدار <code dir=\"ltr\">state</code> در <code dir=\"ltr\">handleDeleteTask</code> بدون <code dir=\"ltr\">dispatch</code></p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>چرا استفاده از <code dir=\"lt\">reducer</code> و <code dir=\"lt\">dispatch</code> با <code dir=\"lt\">payload</code> در فرم‌ها یا لیست‌های پیچیده توصیه می‌شود؟</p>",
+      "text": "<p>چرا استفاده از <code dir=\"ltr\">reducer</code> و <code dir=\"ltr\">dispatch</code> با <code dir=\"ltr\">payload</code> در فرم‌ها یا لیست‌های پیچیده توصیه می‌شود؟</p>",
       "difficulty": 3,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ زیرا تمام منطق به‌روزرسانی <code dir=\"lt\">state</code> در <code dir=\"lt\">reducer</code> متمرکز می‌شود و قابلیت اشتراک‌گذاری و نگهداری کد بسیار بهتر می‌شود.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">B</code> صحیح است؟ زیرا تمام منطق به‌روزرسانی <code dir=\"ltr\">state</code> در <code dir=\"ltr\">reducer</code> متمرکز می‌شود و قابلیت اشتراک‌گذاری و نگهداری کد بسیار بهتر می‌شود.</p>",
       "tags": [
         "react.state.reducer.payload"
       ],
       "answers": [
         {
-          "text": "<p>چون <code dir=\"lt\">state</code> به طور خودکار در تمام کامپوننت‌ها رندر نمی‌شود</p>",
+          "text": "<p>چون <code dir=\"ltr\">state</code> به طور خودکار در تمام کامپوننت‌ها رندر نمی‌شود</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>چون منطق تغییر <code dir=\"lt\">state</code> متمرکز، پیش‌بینی‌پذیر و قابل نگهداری می‌شود</p>",
+          "text": "<p>چون منطق تغییر <code dir=\"ltr\">state</code> متمرکز، پیش‌بینی‌پذیر و قابل نگهداری می‌شود</p>",
           "isCorrect": true
         },
         {
-          "text": "<p>چون <code dir=\"lt\">dispatch</code> از رندر مجدد کامپوننت جلوگیری می‌کند</p>",
+          "text": "<p>چون <code dir=\"ltr\">dispatch</code> از رندر مجدد کامپوننت جلوگیری می‌کند</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>چون <code dir=\"lt\">payload</code> باعث می‌شود <code dir=\"lt\">state</code> مستقل از <code dir=\"lt\">reducer</code> شود</p>",
+          "text": "<p>چون <code dir=\"ltr\">payload</code> باعث می‌شود <code dir=\"ltr\">state</code> مستقل از <code dir=\"ltr\">reducer</code> شود</p>",
           "isCorrect": false
         }
       ]

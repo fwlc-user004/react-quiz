@@ -1,45 +1,45 @@
 {
   "questions": [
     {
-      "text": "<p><code dir=\"lt\">JSX</code> در <code dir=\"lt\">React</code> چیست و چه نقشی دارد؟</p>",
+      "text": "<p><code dir=\"ltr\">JSX</code> در <code dir=\"ltr\">React</code> چیست و چه نقشی دارد؟</p>",
       "difficulty": 1,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ <code dir=\"lt\">JSX</code> یک افزونه سینتکسی برای جاوااسکریپت است که به ما اجازه می‌دهد المنت‌های <code dir=\"lt\">React</code> را با سینتکس شبیه <code dir=\"lt\">HTML</code> در داخل کد جاوااسکریپت بنویسیم و <code dir=\"lt\">UI</code> خواناتر و قابل نگهداری ایجاد کنیم.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">B</code> صحیح است؟ <code dir=\"ltr\">JSX</code> یک افزونه سینتکسی برای جاوااسکریپت است که به ما اجازه می‌دهد المنت‌های <code dir=\"ltr\">React</code> را با سینتکس شبیه <code dir=\"ltr\">HTML</code> در داخل کد جاوااسکریپت بنویسیم و <code dir=\"ltr\">UI</code> خواناتر و قابل نگهداری ایجاد کنیم.</p>",
       "tags": [
         "react.jsx"
       ],
       "answers": [
         {
-          "text": "<p>یک زبان جدید جدا از جاوااسکریپت برای <code dir=\"lt\">React</code></p>",
+          "text": "<p>یک زبان جدید جدا از جاوااسکریپت برای <code dir=\"ltr\">React</code></p>",
           "isCorrect": false
         },
         {
-          "text": "<p>یک افزونه سینتکسی برای نوشتن المنت‌های <code dir=\"lt\">React</code> با ساختار شبیه <code dir=\"lt\">HTML</code></p>",
+          "text": "<p>یک افزونه سینتکسی برای نوشتن المنت‌های <code dir=\"ltr\">React</code> با ساختار شبیه <code dir=\"ltr\">HTML</code></p>",
           "isCorrect": true
         },
         {
-          "text": "<p>یک کتابخانه جانبی برای مدیریت <code dir=\"lt\">state</code> در <code dir=\"lt\">React</code></p>",
+          "text": "<p>یک کتابخانه جانبی برای مدیریت <code dir=\"ltr\">state</code> در <code dir=\"ltr\">React</code></p>",
           "isCorrect": false
         },
         {
-          "text": "<p>ابزاری برای تبدیل <code dir=\"lt\">HTML</code> به <code dir=\"lt\">CSS</code></p>",
+          "text": "<p>ابزاری برای تبدیل <code dir=\"ltr\">HTML</code> به <code dir=\"ltr\">CSS</code></p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>چرا استفاده از <code dir=\"lt\">JSX</code> در <code dir=\"lt\">React</code> توصیه می‌شود؟</p>",
+      "text": "<p>چرا استفاده از <code dir=\"ltr\">JSX</code> در <code dir=\"ltr\">React</code> توصیه می‌شود؟</p>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">C</code> صحیح است؟ استفاده از <code dir=\"lt\">JSX</code> باعث خواناتر شدن کد، ترکیب منطق جاوااسکریپت و ساختار <code dir=\"lt\">UI</code> و نگهداری آسان‌تر کامپوننت‌ها می‌شود.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">C</code> صحیح است؟ استفاده از <code dir=\"ltr\">JSX</code> باعث خواناتر شدن کد، ترکیب منطق جاوااسکریپت و ساختار <code dir=\"ltr\">UI</code> و نگهداری آسان‌تر کامپوننت‌ها می‌شود.</p>",
       "tags": [
         "react.jsx"
       ],
       "answers": [
         {
-          "text": "<p>چون برای عملکرد <code dir=\"lt\">React</code> ضروری است</p>",
+          "text": "<p>چون برای عملکرد <code dir=\"ltr\">React</code> ضروری است</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>چون بدون آن نمی‌توان <code dir=\"lt\">React</code> را اجرا کرد</p>",
+          "text": "<p>چون بدون آن نمی‌توان <code dir=\"ltr\">React</code> را اجرا کرد</p>",
           "isCorrect": false
         },
         {
@@ -47,85 +47,85 @@
           "isCorrect": true
         },
         {
-          "text": "<p>چون مرورگر بدون <code dir=\"lt\">JSX</code> نمی‌تواند <code dir=\"lt\">JSX</code> را درک کند</p>",
+          "text": "<p>چون مرورگر بدون <code dir=\"ltr\">JSX</code> نمی‌تواند <code dir=\"ltr\">JSX</code> را درک کند</p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>کد <code dir=\"lt\">JSX</code> در پشت صحنه به چه چیزی تبدیل می‌شود؟</p>",
+      "text": "<p>کد <code dir=\"ltr\">JSX</code> در پشت صحنه به چه چیزی تبدیل می‌شود؟</p>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ ابزارهایی مانند <code dir=\"lt\">Babel</code> کد <code dir=\"lt\">JSX</code> را به فراخوانی‌های معادل <code dir=\"lt\">React.createElement()</code> ترجمه می‌کنند تا مرورگر بتواند آن را اجرا کند.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">B</code> صحیح است؟ ابزارهایی مانند <code dir=\"ltr\">Babel</code> کد <code dir=\"ltr\">JSX</code> را به فراخوانی‌های معادل <code dir=\"ltr\">React.createElement()</code> ترجمه می‌کنند تا مرورگر بتواند آن را اجرا کند.</p>",
       "tags": [
         "react.jsx"
       ],
       "answers": [
         {
-          "text": "<p>به <code dir=\"lt\">HTML</code> خالص تبدیل می‌شود</p>",
+          "text": "<p>به <code dir=\"ltr\">HTML</code> خالص تبدیل می‌شود</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>به فراخوانی‌های <code dir=\"lt\">React.createElement()</code> تبدیل می‌شود</p>",
+          "text": "<p>به فراخوانی‌های <code dir=\"ltr\">React.createElement()</code> تبدیل می‌شود</p>",
           "isCorrect": true
         },
         {
-          "text": "<p>به فایل <code dir=\"lt\">CSS</code> جداگانه تبدیل می‌شود</p>",
+          "text": "<p>به فایل <code dir=\"ltr\">CSS</code> جداگانه تبدیل می‌شود</p>",
           "isCorrect": false
         },
         {
-          "text": "<p>به یک کامپوننت مستقل <code dir=\"lt\">React</code> <code dir=\"lt\">Native</code> تبدیل می‌شود</p>",
+          "text": "<p>به یک کامپوننت مستقل <code dir=\"ltr\">React</code> <code dir=\"ltr\">Native</code> تبدیل می‌شود</p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>کدام جمله درست است درباره <code dir=\"lt\">JSX</code>؟</p>",
+      "text": "<p>کدام جمله درست است درباره <code dir=\"ltr\">JSX</code>؟</p>",
       "difficulty": 3,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">C</code> صحیح است؟ <code dir=\"lt\">JSX</code> یک شکر سینتکسی برای <code dir=\"lt\">React</code>.<code dir=\"lt\">createElement</code>() است و خود زبان جدیدی نیست؛ بلکه به نوشتن کد خواناتر کمک می‌کند.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">C</code> صحیح است؟ <code dir=\"ltr\">JSX</code> یک شکر سینتکسی برای <code dir=\"ltr\">React</code>.<code dir=\"ltr\">createElement</code>() است و خود زبان جدیدی نیست؛ بلکه به نوشتن کد خواناتر کمک می‌کند.</p>",
       "tags": [
         "react.jsx"
       ],
       "answers": [
         {
-          "text": "<p><code dir=\"lt\">JSX</code> یک زبان برنامه‌نویسی کاملاً مستقل است</p>",
+          "text": "<p><code dir=\"ltr\">JSX</code> یک زبان برنامه‌نویسی کاملاً مستقل است</p>",
           "isCorrect": false
         },
         {
-          "text": "<p><code dir=\"lt\">JSX</code> باعث کاهش عملکرد <code dir=\"lt\">React</code> می‌شود</p>",
+          "text": "<p><code dir=\"ltr\">JSX</code> باعث کاهش عملکرد <code dir=\"ltr\">React</code> می‌شود</p>",
           "isCorrect": false
         },
         {
-          "text": "<p><code dir=\"lt\">JSX</code> یک <code dir=\"lt\">syntactic</code> <code dir=\"lt\">sugar</code> برای <code dir=\"lt\">React.createElement()</code> است</p>",
+          "text": "<p><code dir=\"ltr\">JSX</code> یک <code dir=\"ltr\">syntactic</code> <code dir=\"ltr\">sugar</code> برای <code dir=\"ltr\">React.createElement()</code> است</p>",
           "isCorrect": true
         },
         {
-          "text": "<p><code dir=\"lt\">JSX</code> تنها برای استایل‌دهی استفاده می‌شود</p>",
+          "text": "<p><code dir=\"ltr\">JSX</code> تنها برای استایل‌دهی استفاده می‌شود</p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p><code dir=\"lt\">React</code> چه مشکلی را با استفاده از <code dir=\"lt\">JSX</code> و کامپوننت‌ها حل می‌کند؟</p>",
+      "text": "<p><code dir=\"ltr\">React</code> چه مشکلی را با استفاده از <code dir=\"ltr\">JSX</code> و کامپوننت‌ها حل می‌کند؟</p>",
       "difficulty": 2,
-      "explanation": "<p>چرا گزینه <code dir=\"lt\">B</code> صحیح است؟ <code dir=\"lt\">React</code> با <code dir=\"lt\">JSX</code> و معماری کامپوننت‌ها مدیریت پیچیدگی <code dir=\"lt\">state</code> و <code dir=\"lt\">DOM</code> را ساده می‌کند و نوشتن <code dir=\"lt\">UI</code> تعاملی و خوانا را ممکن می‌سازد.</p>",
+      "explanation": "<p>چرا گزینه <code dir=\"ltr\">B</code> صحیح است؟ <code dir=\"ltr\">React</code> با <code dir=\"ltr\">JSX</code> و معماری کامپوننت‌ها مدیریت پیچیدگی <code dir=\"ltr\">state</code> و <code dir=\"ltr\">DOM</code> را ساده می‌کند و نوشتن <code dir=\"ltr\">UI</code> تعاملی و خوانا را ممکن می‌سازد.</p>",
       "tags": [
         "react.jsx"
       ],
       "answers": [
         {
-          "text": "<p><code dir=\"lt\">React</code> تنها <code dir=\"lt\">CSS</code> را بهتر مدیریت می‌کند</p>",
+          "text": "<p><code dir=\"ltr\">React</code> تنها <code dir=\"ltr\">CSS</code> را بهتر مدیریت می‌کند</p>",
           "isCorrect": false
         },
         {
-          "text": "<p><code dir=\"lt\">React</code> مدیریت پیچیدگی <code dir=\"lt\">state</code> و <code dir=\"lt\">DOM</code> را ساده می‌کند</p>",
+          "text": "<p><code dir=\"ltr\">React</code> مدیریت پیچیدگی <code dir=\"ltr\">state</code> و <code dir=\"ltr\">DOM</code> را ساده می‌کند</p>",
           "isCorrect": true
         },
         {
-          "text": "<p><code dir=\"lt\">React</code> جایگزین کامل جاوااسکریپت می‌شود</p>",
+          "text": "<p><code dir=\"ltr\">React</code> جایگزین کامل جاوااسکریپت می‌شود</p>",
           "isCorrect": false
         },
         {
-          "text": "<p><code dir=\"lt\">React</code> باعث ایجاد برنامه‌های غیر تعاملی می‌شود</p>",
+          "text": "<p><code dir=\"ltr\">React</code> باعث ایجاد برنامه‌های غیر تعاملی می‌شود</p>",
           "isCorrect": false
         }
       ]

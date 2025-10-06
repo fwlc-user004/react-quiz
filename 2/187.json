@@ -1,9 +1,9 @@
 {
   "questions": [
     {
-      "text": "<p><code dir=\"lt\">Node</code>.<code dir=\"lt\">js</code> چیست و چرا برای توسعه <code dir=\"lt\">React</code> نیاز به آن داریم؟</p>",
+      "text": "<p><code dir=\"ltr\">Node</code>.<code dir=\"ltr\">js</code> چیست و چرا برای توسعه <code dir=\"ltr\">React</code> نیاز به آن داریم؟</p>",
       "difficulty": 1,
-      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"lt\">B</code> است، چون <code dir=\"lt\">Node.js</code> به ما اجازه می‌دهد جاوااسکریپت را خارج از مرورگر اجرا کنیم و ابزارهای مختلف توسعه مانند <code dir=\"lt\">Webpack</code> و ابزارهای تست را مدیریت کنیم.</p>",
+      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"ltr\">B</code> است، چون <code dir=\"ltr\">Node.js</code> به ما اجازه می‌دهد جاوااسکریپت را خارج از مرورگر اجرا کنیم و ابزارهای مختلف توسعه مانند <code dir=\"ltr\">Webpack</code> و ابزارهای تست را مدیریت کنیم.</p>",
       "tags": [
         "react.setup"
       ],
@@ -13,7 +13,7 @@
           "isCorrect": false
         },
         {
-          "text": "<p>یک محیط اجرای جاوااسکریپت برای اجرای ابزارهای مختلف در توسعه <code dir=\"lt\">React</code></p>",
+          "text": "<p>یک محیط اجرای جاوااسکریپت برای اجرای ابزارهای مختلف در توسعه <code dir=\"ltr\">React</code></p>",
           "isCorrect": true
         },
         {
@@ -21,15 +21,15 @@
           "isCorrect": false
         },
         {
-          "text": "<p>یک سرویس میزبانی برای اپلیکیشن‌های <code dir=\"lt\">React</code></p>",
+          "text": "<p>یک سرویس میزبانی برای اپلیکیشن‌های <code dir=\"ltr\">React</code></p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p><code dir=\"lt\">npm</code> چیست و چه نقشی در توسعه <code dir=\"lt\">React</code> ایفا می‌کند؟</p>",
+      "text": "<p><code dir=\"ltr\">npm</code> چیست و چه نقشی در توسعه <code dir=\"ltr\">React</code> ایفا می‌کند؟</p>",
       "difficulty": 2,
-      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"lt\">A</code> است، چون <code dir=\"lt\">npm</code> مدیر پکیج است و برای نصب و مدیریت وابستگی‌های پروژه‌های <code dir=\"lt\">React</code> از جمله خود <code dir=\"lt\">React</code> و کتابخانه‌های دیگر استفاده می‌شود.</p>",
+      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"ltr\">A</code> است، چون <code dir=\"ltr\">npm</code> مدیر پکیج است و برای نصب و مدیریت وابستگی‌های پروژه‌های <code dir=\"ltr\">React</code> از جمله خود <code dir=\"ltr\">React</code> و کتابخانه‌های دیگر استفاده می‌شود.</p>",
       "tags": [
         "react.setup"
       ],
@@ -39,23 +39,23 @@
           "isCorrect": true
         },
         {
-          "text": "<p>یک ابزار برای ایجاد اپلیکیشن‌های <code dir=\"lt\">React</code></p>",
+          "text": "<p>یک ابزار برای ایجاد اپلیکیشن‌های <code dir=\"ltr\">React</code></p>",
           "isCorrect": false
         },
         {
-          "text": "<p>یک فریم ورک برای توسعه <code dir=\"lt\">React</code></p>",
+          "text": "<p>یک فریم ورک برای توسعه <code dir=\"ltr\">React</code></p>",
           "isCorrect": false
         },
         {
-          "text": "<p>یک <code dir=\"lt\">IDE</code> برای نوشتن کدهای <code dir=\"lt\">React</code></p>",
+          "text": "<p>یک <code dir=\"ltr\">IDE</code> برای نوشتن کدهای <code dir=\"ltr\">React</code></p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>چرا نسخه <code dir=\"lt\">LTS</code> (<code dir=\"lt\">Long-Term Support</code>) <code dir=\"lt\">Node.js</code> برای بیشتر کاربران توصیه می‌شود؟</p>",
+      "text": "<p>چرا نسخه <code dir=\"ltr\">LTS</code> (<code dir=\"ltr\">Long-Term Support</code>) <code dir=\"ltr\">Node.js</code> برای بیشتر کاربران توصیه می‌شود؟</p>",
       "difficulty": 2,
-      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"lt\">D</code> است، چون نسخه <code dir=\"lt\">LTS</code> پایدارترین نسخه است و از پشتیبانی بلندمدت برخوردار است.</p>",
+      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"ltr\">D</code> است، چون نسخه <code dir=\"ltr\">LTS</code> پایدارترین نسخه است و از پشتیبانی بلندمدت برخوردار است.</p>",
       "tags": [
         "react.setup"
       ],
@@ -79,35 +79,35 @@
       ]
     },
     {
-      "text": "<p>چه ابزارهایی در اکوسیستم <code dir=\"lt\">React</code> از <code dir=\"lt\">Node.js</code> استفاده می‌کنند؟</p>",
+      "text": "<p>چه ابزارهایی در اکوسیستم <code dir=\"ltr\">React</code> از <code dir=\"ltr\">Node.js</code> استفاده می‌کنند؟</p>",
       "difficulty": 3,
-      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"lt\">C</code> است، چون ابزارهایی مانند سرورهای توسعه محلی و باندلرها مانند <code dir=\"lt\">Webpack</code> از <code dir=\"lt\">Node.js</code> برای مدیریت وابستگی‌ها و اجرای فرایندها استفاده می‌کنند.</p>",
+      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"ltr\">C</code> است، چون ابزارهایی مانند سرورهای توسعه محلی و باندلرها مانند <code dir=\"ltr\">Webpack</code> از <code dir=\"ltr\">Node.js</code> برای مدیریت وابستگی‌ها و اجرای فرایندها استفاده می‌کنند.</p>",
       "tags": [
         "react.setup"
       ],
       "answers": [
         {
-          "text": "<p>فقط ابزارهای مربوط به طراحی <code dir=\"lt\">UI</code></p>",
+          "text": "<p>فقط ابزارهای مربوط به طراحی <code dir=\"ltr\">UI</code></p>",
           "isCorrect": false
         },
         {
-          "text": "<p>فقط برای مدیریت درخواست‌های <code dir=\"lt\">HTTP</code></p>",
+          "text": "<p>فقط برای مدیریت درخواست‌های <code dir=\"ltr\">HTTP</code></p>",
           "isCorrect": false
         },
         {
-          "text": "<p>ابزارهایی مانند سرورهای توسعه محلی و باندلرها مانند <code dir=\"lt\">Webpack</code></p>",
+          "text": "<p>ابزارهایی مانند سرورهای توسعه محلی و باندلرها مانند <code dir=\"ltr\">Webpack</code></p>",
           "isCorrect": true
         },
         {
-          "text": "<p>فقط برای اجرای کدهای <code dir=\"lt\">JavaScript</code> در مرورگر</p>",
+          "text": "<p>فقط برای اجرای کدهای <code dir=\"ltr\">JavaScript</code> در مرورگر</p>",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "<p>چرا <code dir=\"lt\">Visual</code> <code dir=\"lt\">Studio</code> <code dir=\"lt\">Code</code> (<code dir=\"lt\">VS Code</code>) برای توسعه <code dir=\"lt\">React</code> توصیه می‌شود؟</p>",
+      "text": "<p>چرا <code dir=\"ltr\">Visual</code> <code dir=\"ltr\">Studio</code> <code dir=\"ltr\">Code</code> (<code dir=\"ltr\">VS Code</code>) برای توسعه <code dir=\"ltr\">React</code> توصیه می‌شود؟</p>",
       "difficulty": 2,
-      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"lt\">B</code> است، چون <code dir=\"lt\">VS Code</code> پشتیبانی عالی از جاوااسکریپت و <code dir=\"lt\">React</code>، افزونه‌های متنوع و قابلیت‌های دیباگینگ داخلی دارد.</p>",
+      "explanation": "<p>پاسخ صحیح گزینه <code dir=\"ltr\">B</code> است، چون <code dir=\"ltr\">VS Code</code> پشتیبانی عالی از جاوااسکریپت و <code dir=\"ltr\">React</code>، افزونه‌های متنوع و قابلیت‌های دیباگینگ داخلی دارد.</p>",
       "tags": [
         "react.setup"
       ],
@@ -117,7 +117,7 @@
           "isCorrect": false
         },
         {
-          "text": "<p>چون پشتیبانی عالی از جاوااسکریپت و <code dir=\"lt\">React</code>، افزونه‌های متنوع و قابلیت‌های دیباگینگ داخلی دارد</p>",
+          "text": "<p>چون پشتیبانی عالی از جاوااسکریپت و <code dir=\"ltr\">React</code>، افزونه‌های متنوع و قابلیت‌های دیباگینگ داخلی دارد</p>",
           "isCorrect": true
         },
         {
@@ -125,7 +125,7 @@
           "isCorrect": false
         },
         {
-          "text": "<p>چون به صورت پیش‌فرض برای <code dir=\"lt\">React</code> پیکربندی شده است</p>",
+          "text": "<p>چون به صورت پیش‌فرض برای <code dir=\"ltr\">React</code> پیکربندی شده است</p>",
           "isCorrect": false
         }
       ]
